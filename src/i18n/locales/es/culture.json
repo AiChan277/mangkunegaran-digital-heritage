@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Cultura",
+    "description": "Batik, danza de corte, literatura, gamelán y wayang en Mangkunegaran, explicados con fuentes."
+  },
+  "header": {
+    "eyebrow": "Capítulo tres",
+    "title": "Cultura",
+    "intro": "Cuatro tradiciones que siguen vivas, contadas a partir de fuentes publicadas."
+  },
+  "stanzaChart": "Estrofas por métrica cantada en Serat Wedhatama",
+  "stanzas": "estrofas",
+  "stanzaTotal": "{{n}} estrofas en total"
+}

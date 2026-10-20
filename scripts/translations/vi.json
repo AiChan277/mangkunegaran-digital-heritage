@@ -1,0 +1,337 @@
+{
+  "common": {
+    "brand": {
+      "tagline": "Di sản sống",
+      "concept": "Ý tưởng",
+      "siteTitle": "Mangkunegaran — Di sản sống (Ý tưởng)"
+    },
+    "a11y": {
+      "skip": "Chuyển đến nội dung"
+    },
+    "nav": {
+      "primary": "Chính",
+      "home": "Trang chủ",
+      "history": "Lịch sử",
+      "architecture": "Kiến trúc",
+      "culture": "Văn hóa",
+      "stories": "Câu chuyện",
+      "gallery": "Thư viện ảnh",
+      "visit": "Tham quan",
+      "about": "Giới thiệu",
+      "menu": "Menu",
+      "close": "Đóng menu"
+    },
+    "lang": {
+      "label": "Ngôn ngữ",
+      "choose": "Chọn ngôn ngữ",
+      "draft": "bản nháp"
+    },
+    "footer": {
+      "disclaimer": "Thiết kế lại dạng ý tưởng độc lập của {{studio}}, phục vụ mục đích giáo dục và portfolio. Không liên kết, không được bảo trợ và không do Pura Mangkunegaran vận hành. Thông tin chính thức:",
+      "navLabel": "Trang web",
+      "explore": "Khám phá",
+      "project": "Dự án",
+      "sources": "Nguồn",
+      "credits": "Ghi công hình ảnh",
+      "translationStatus": "Tình trạng bản dịch",
+      "madeBy": "Một ý tưởng của",
+      "uiDraft": "Văn bản giao diện bằng {{language}} là bản dịch nháp bằng AI, đang chờ được duyệt."
+    },
+    "fallback": {
+      "label": "Thông báo ngôn ngữ",
+      "notice": "Trang này chưa có bằng {{language}}, nên được hiển thị bằng {{shownIn}}.",
+      "draft": "Văn bản này là bản dịch nháp bằng AI, đang chờ người bản ngữ duyệt.",
+      "link": "Tình trạng bản dịch"
+    },
+    "sources": {
+      "title": "Nguồn",
+      "refLabel": "Nguồn {{n}}",
+      "published": "xuất bản {{date}}",
+      "accessed": "truy cập {{date}}",
+      "archived": "bản lưu trữ",
+      "sourcesDiffer": "Các nguồn không thống nhất"
+    },
+    "aksara": {
+      "label": "Aksara Jawa (chữ Java)",
+      "awaiting": "đang chờ người bản ngữ duyệt"
+    },
+    "glossary": {
+      "hint": "xem định nghĩa"
+    },
+    "listen": {
+      "thisSection": "phần này",
+      "play": "Nghe {{name}}",
+      "pause": "Tạm dừng đọc {{name}}",
+      "stop": "Dừng đọc",
+      "playShort": "Nghe",
+      "pauseShort": "Tạm dừng",
+      "resumeShort": "Tiếp tục",
+      "statusPlaying": "Đang đọc to"
+    },
+    "notFound": {
+      "title": "Không tìm thấy trang này",
+      "body": "Địa chỉ có thể bị gõ sai, hoặc trang đã được chuyển đi.",
+      "home": "Về trang chủ",
+      "sections": "Hoặc tiếp tục đến"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Mangkunegaran — Di sản sống",
+      "description": "Một ý tưởng đa ngôn ngữ, độc lập về Pura Mangkunegaran ở Surakarta: lịch sử, kiến trúc và văn hóa sống động, mỗi dữ kiện đều có nguồn."
+    },
+    "hero": {
+      "eyebrow": "Surakarta, Trung Java",
+      "subtitle": "một di sản sống",
+      "concept": "Thiết kế lại dạng ý tưởng độc lập — không phải trang web chính thức của Pura Mangkunegaran."
+    },
+    "intro": {
+      "eyebrow": "Giới thiệu"
+    },
+    "journey": {
+      "eyebrow": "Hành trình kiến trúc",
+      "title": "Từ khoảng sân mở đến trái tim của ngôi nhà",
+      "cta": "Khám phá kiến trúc"
+    },
+    "stories": {
+      "eyebrow": "Câu chuyện",
+      "title": "Từ kho lưu trữ",
+      "cta": "Tất cả câu chuyện"
+    },
+    "arts": {
+      "eyebrow": "Nghệ thuật và truyền thống",
+      "title": "Múa, vải, ca và thơ",
+      "cta": "Khám phá văn hóa"
+    },
+    "photos": {
+      "eyebrow": "Nhiếp ảnh",
+      "title": "Ánh sáng trên cung điện",
+      "cta": "Mở thư viện ảnh"
+    },
+    "continuity": {
+      "eyebrow": "Sự tiếp nối văn hóa",
+      "title": "Di sản ở thì hiện tại"
+    },
+    "languages": {
+      "eyebrow": "Mười hai ngôn ngữ",
+      "title": "Một di sản, nhiều tiếng nói"
+    },
+    "sources": "Nguồn của trang này"
+  },
+  "history": {
+    "meta": {
+      "title": "Lịch sử",
+      "description": "Từ Hiệp ước Salatiga năm 1757 đến nay: dòng thời gian có nguồn về Mangkunegaran và các vị cai trị."
+    },
+    "header": {
+      "eyebrow": "Chương một",
+      "title": "Lịch sử",
+      "intro": "Từ một thỏa thuận năm 1757 đến người gìn giữ văn hóa hôm nay."
+    },
+    "eraNav": "Các thời kỳ",
+    "timelineLabel": "Dòng thời gian, {{range}}",
+    "rulers": {
+      "title": "Các vị cai trị Mangkunegaran",
+      "note": "Năm trị vì theo danh sách trên mangkunegaran.id, nơi tước hiệu được viết là Mangkoenagoro.",
+      "ruler": "Người cai trị",
+      "reign": "Thời gian trị vì"
+    }
+  },
+  "architecture": {
+    "meta": {
+      "title": "Kiến trúc",
+      "description": "Các không gian của Pura Mangkunegaran theo thứ tự khách gặp — Pamedan, Pendhapa Ageng, Pringgitan, Dalem Ageng và nhiều hơn nữa."
+    },
+    "header": {
+      "eyebrow": "Chương hai",
+      "title": "Kiến trúc",
+      "intro": "Các không gian theo thứ tự khách đi qua, từ khoảng sân mở đến ngôi nhà ở trung tâm.",
+      "note": "Những mô tả này không cho biết không gian nào mở cửa cho khách.",
+      "visitLink": "Thông tin tham quan"
+    },
+    "tocLabel": "Các không gian trên trang này",
+    "archival": {
+      "title": "Đại sảnh trong một bức ảnh xưa",
+      "body": "Một bức ảnh được ghi niên đại khoảng năm 1880 cho thấy pendhapa với mái dài và thấp. Ảnh lịch sử trên trang này đến từ các bộ sưu tập công cộng và mang niên đại theo danh mục của chúng.",
+      "cta": "Xem thêm ảnh"
+    }
+  },
+  "culture": {
+    "meta": {
+      "title": "Văn hóa",
+      "description": "Batik, múa cung đình, văn chương, gamelan và wayang ở Mangkunegaran — được giải thích kèm nguồn."
+    },
+    "header": {
+      "eyebrow": "Chương ba",
+      "title": "Văn hóa",
+      "intro": "Bốn truyền thống vẫn đang được gìn giữ, mỗi truyền thống kể lại từ các nguồn đã công bố."
+    },
+    "stanzaChart": "Số khổ thơ theo từng thể điệu trong Serat Wedhatama",
+    "stanzas": "khổ",
+    "stanzaTotal": "Tổng cộng {{n}} khổ"
+  },
+  "stories": {
+    "meta": {
+      "title": "Câu chuyện",
+      "description": "Những câu chuyện có nguồn từ lịch sử Mangkunegaran: đài phát thanh, bài hát chào đón hoàng gia và Quân đoàn."
+    },
+    "header": {
+      "eyebrow": "Chương bốn",
+      "title": "Câu chuyện",
+      "intro": "Những bài viết ngắn từ lịch sử của dòng họ, mỗi bài đều có nguồn."
+    },
+    "readingTime": "{{n}} phút đọc",
+    "back": "Tất cả câu chuyện",
+    "verified": "Nguồn được kiểm tra ngày {{date}}",
+    "related": "Đọc thêm",
+    "noteLabel": "Ghi chú về nguồn"
+  },
+  "gallery": {
+    "meta": {
+      "title": "Thư viện ảnh",
+      "description": "Ảnh Pura Mangkunegaran xưa và nay, mỗi ảnh đều có giấy phép mở và ghi công."
+    },
+    "header": {
+      "eyebrow": "Chương năm",
+      "title": "Thư viện ảnh",
+      "intro": "Ảnh cung điện xưa và nay — mỗi ảnh đều có giấy phép mở và ghi công."
+    },
+    "gridLabel": "Ảnh",
+    "open": "Mở ảnh: {{title}}",
+    "archival": "Tư liệu",
+    "dialogLabel": "Trình xem ảnh",
+    "close": "Đóng trình xem ảnh",
+    "prev": "Ảnh trước",
+    "next": "Ảnh tiếp theo",
+    "counter": "{{current}} / {{total}}",
+    "source": "Nguồn",
+    "license": "Giấy phép",
+    "note": "Tất cả ảnh được dùng theo giấy phép mở hoặc thuộc phạm vi công cộng, và được lưu trên trang này. Ảnh lịch sử mang niên đại do các bộ sưu tập lưu giữ cung cấp."
+  },
+  "visit": {
+    "meta": {
+      "title": "Tham quan",
+      "description": "Hướng dẫn tham quan Pura Mangkunegaran bằng hình tượng, sơ đồ tương tác và liên kết đến trang đặt chỗ chính thức."
+    },
+    "header": {
+      "eyebrow": "Chương sáu",
+      "title": "Tham quan",
+      "intro": "Những điều cần biết trước khi đến, giải thích bằng hình ảnh lẫn lời."
+    },
+    "official": {
+      "title": "Giờ mở cửa, vé và đặt chỗ",
+      "body": "Giờ mở cửa và giá vé có thể thay đổi, và các nguồn của chúng tôi không thống nhất. Vui lòng kiểm tra trang đặt chỗ chính thức trước khi đến.",
+      "tickets": "Trang đặt chỗ chính thức"
+    },
+    "address": {
+      "title": "Địa chỉ",
+      "map": "Mở trên bản đồ"
+    },
+    "rules": {
+      "title": "Trước khi đến",
+      "intro": "Hình tượng cho các quy định dành cho khách được liệt kê trên trang đặt chỗ chính thức, dễ hiểu dù bạn nói ngôn ngữ nào.",
+      "verified": "Kiểm tra lần cuối: {{date}} · Nguồn:",
+      "keyLabel": "Cách đọc hình tượng",
+      "keyProhibited": "Vòng tròn có gạch chéo: không được phép",
+      "keyGuidance": "Vòng tròn trơn: nên làm, hoặc cần biết",
+      "groups": {
+        "dress": "Trang phục",
+        "photo": "Chụp ảnh",
+        "conduct": "Ứng xử",
+        "tour": "Chuyến tham quan"
+      },
+      "items": {
+        "modest-dress": "Mặc trang phục kín đáo",
+        "no-shorts": "Không mặc quần đùi hoặc váy ngắn",
+        "no-parang": "Không mặc batik họa tiết parang hoặc lereng",
+        "no-velvet": "Không mặc đồ nhung",
+        "no-headwear": "Không đội mũ hay khăn trùm đầu",
+        "no-sunglasses": "Không đeo kính râm",
+        "no-flipflops": "Không đi dép xỏ ngón",
+        "camera-permission": "Máy ảnh chuyên nghiệp cần được cho phép",
+        "no-food": "Không mang đồ ăn, thức uống từ bên ngoài",
+        "no-smoking": "Không hút thuốc",
+        "no-weapons": "Không mang vũ khí hoặc vật sắc nhọn",
+        "keep-off-grass": "Không giẫm lên cỏ và cây",
+        "litter": "Bỏ rác vào thùng",
+        "guide": "Khách tham quan có hướng dẫn viên của cung điện đi cùng",
+        "arrive-early": "Đến trước giờ tham quan 15 phút",
+        "cashless": "Thanh toán không dùng tiền mặt",
+        "children-free": "Trẻ em 0–4 tuổi được miễn phí"
+      }
+    },
+    "plan": {
+      "title": "Sơ đồ",
+      "intro": "Sơ đồ giản lược các không gian được mô tả trên trang này. Chọn một con số để đọc về địa điểm đó.",
+      "disclaimer": "Sơ đồ giản lược, không theo tỉ lệ: vị trí dựa trên mô tả bằng văn bản, không phải đo đạc, và không cho biết khu vực nào mở cửa cho khách.",
+      "gate": "Cổng chính",
+      "legend": "Các địa điểm trên sơ đồ",
+      "close": "Đóng",
+      "more": "Đọc thêm trong mục Kiến trúc",
+      "rules": "Hướng dẫn tại đây",
+      "select": "Hiển thị {{name}}"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Về dự án này",
+      "description": "Nghiên cứu tình huống: vì sao và bằng cách nào ý tưởng độc lập mười hai ngôn ngữ về Pura Mangkunegaran được thực hiện, kèm nguồn, ghi công và tình trạng bản dịch."
+    },
+    "header": {
+      "eyebrow": "Chương bảy",
+      "title": "Về dự án này",
+      "intro": "Một nghiên cứu tình huống về việc giới thiệu di sản cho mọi người, bằng chính ngôn ngữ của họ."
+    },
+    "tocLabel": "Trên trang này",
+    "design": {
+      "palette": "Bảng màu",
+      "scriptsNote": "Phông chữ cho từng hệ chữ chỉ được tải trên những trang cần đến."
+    },
+    "sources": {
+      "title": "Nguồn",
+      "summary": "Trang web dựa trên {{facts}} nhận định đã được ghi lại và đối chiếu với {{sources}} nguồn: {{confirmed}} được nhiều nguồn xác nhận, {{single}} từ một nguồn duy nhất, và {{disputed}} trường hợp các nguồn không thống nhất và trang có ghi rõ.",
+      "ledger": "Xem toàn bộ sổ dữ kiện ({{n}} nhận định)",
+      "colClaim": "Nhận định",
+      "colConfidence": "Độ tin cậy",
+      "colSources": "Nguồn",
+      "kind": {
+        "primary": "sơ cấp",
+        "secondary": "thứ cấp",
+        "supporting": "bổ trợ"
+      },
+      "confidence": {
+        "confirmed": "đã xác nhận",
+        "single-source": "một nguồn",
+        "disputed": "nguồn không thống nhất"
+      }
+    },
+    "credits": {
+      "title": "Ghi công",
+      "images": "Ảnh",
+      "imagesNote": "Hình ảnh là bản sao lưu trên trang, đã được đổi kích thước và chuyển sang định dạng hiện đại. Các phiên bản đã cắt được ghi chú.",
+      "source": "nguồn",
+      "fonts": "Phông chữ",
+      "code": "Phần mềm"
+    },
+    "translation": {
+      "title": "Tình trạng bản dịch",
+      "intro": "Những gì đã được dịch, và mức độ có thể tin cậy.",
+      "language": "Ngôn ngữ",
+      "ui": "Giao diện",
+      "home": "Trang chủ",
+      "history": "Lịch sử",
+      "other": "Các trang khác",
+      "legend": "Bản gốc: viết cho trang này từ các nguồn được trích dẫn. Bản nháp AI: dịch với trợ lý AI, đang chờ người bản ngữ duyệt. Chưa có: hiển thị bằng tiếng Anh, hoặc tiếng Indonesia đối với người đọc tiếng Java.",
+      "javanese": "Chưa có người duyệt bản ngữ tiếng Java nào phê duyệt, vì vậy mọi văn bản tiếng Java và tiêu đề Aksara Jawa đều được đánh dấu là đang chờ duyệt."
+    },
+    "status": {
+      "source": "Bản gốc",
+      "ai-draft": "Bản nháp AI",
+      "missing": "Chưa có"
+    },
+    "studio": {
+      "title": "Thực hiện bởi",
+      "body": "Được thiết kế và xây dựng bởi {{studio}} như một dự án nhóm."
+    }
+  }
+}

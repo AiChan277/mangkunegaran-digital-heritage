@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Kona-ba projetu ne'e",
+    "description": "Estudu kazu: tansá no oinsá halo konseitu independente ne'e iha lian sanulu-resin-rua kona-ba Pura Mangkunegaran, ho fonte, krédituu no situasaun tradusaun."
+  },
+  "header": {
+    "eyebrow": "Kapítulu dahitu",
+    "title": "Kona-ba projetu ne'e",
+    "intro": "Estudu kazu ida kona-ba aprezenta patrimóniu ba ema hotu, iha sira-nia lian rasik."
+  },
+  "tocLabel": "Iha pájina ne'e",
+  "design": {
+    "palette": "Paleta kór",
+    "scriptsNote": "Fonte letra sira karrega de'it iha pájina ne'ebé uza."
+  },
+  "sources": {
+    "title": "Fonte sira",
+    "summary": "Sítiu ne'e hamriik ba deklarasaun {{facts}} ne'ebé rejista no verifika ho fonte {{sources}}: {{confirmed}} konfirma husi fonte liu ida, {{single}} husi fonte ida de'it, no {{disputed}} ne'ebé fonte sira la hanesan no pájina hatete.",
+    "ledger": "Hatudu lista faktu kompletu (deklarasaun {{n}})",
+    "colClaim": "Deklarasaun",
+    "colConfidence": "Konfiansa",
+    "colSources": "Fonte sira",
+    "kind": {
+      "primary": "primária",
+      "secondary": "sekundária",
+      "supporting": "apoiu"
+    },
+    "confidence": {
+      "confirmed": "konfirmadu",
+      "single-source": "fonte ida de'it",
+      "disputed": "fonte la hanesan"
+    }
+  },
+  "credits": {
+    "title": "Kréditu sira",
+    "images": "Foto sira",
+    "imagesNote": "Imajen sira mak kópia ne'ebé rai iha sítiu, muda tamañu no formatu modernu. Versaun ne'ebé koa ona hetan marka.",
+    "source": "fonte",
+    "fonts": "Tipu letra",
+    "code": "Software"
+  },
+  "translation": {
+    "title": "Situasaun tradusaun",
+    "intro": "Saida mak tradús ona, no to'o iha ne'ebé mak bele fiar.",
+    "language": "Lian",
+    "ui": "Interface",
+    "home": "Pájina inisiál",
+    "history": "Istória",
+    "other": "Pájina seluk",
+    "legend": "Orijinál: hakerek ba sítiu ne'e husi fonte ne'ebé sita. Rascunho AI: tradús ho asistente AI, hein revizaun husi ema lian-inan. Seidauk: hatudu iha inglés, ka indonéziu ba lee-na'in javanés.",
+    "javanese": "Seidauk iha revizór lian-inan javanés ida mak aprova, tanba ne'e testu javanés hotu no títulu Aksara Jawa hetan marka hein hela revizaun."
+  },
+  "status": {
+    "source": "Orijinál",
+    "ai-draft": "Rascunho AI",
+    "missing": "Seidauk"
+  },
+  "studio": {
+    "title": "Halo husi",
+    "body": "Dezeña no harii husi {{studio}} hanesan projetu grupu."
+  }
+}

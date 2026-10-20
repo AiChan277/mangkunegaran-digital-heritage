@@ -1,0 +1,211 @@
+.eraNav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-block: 1px solid var(--rule-strong);
+}
+
+.eraNav li + li {
+  border-inline-start: 1px solid var(--rule);
+}
+
+.eraNav a {
+  display: grid;
+  gap: 4px;
+  min-block-size: 72px;
+  padding: 16px 18px;
+  color: var(--text);
+  text-decoration: none;
+  transition: background-color var(--dur-micro) var(--ease);
+}
+
+.eraNav a:hover {
+  background: var(--surface-alt);
+}
+
+.eraNav .numeral {
+  color: var(--brass-text);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 700px) {
+  .eraNav ol {
+    grid-template-columns: 1fr;
+  }
+
+  .eraNav li + li {
+    border-inline-start: 0;
+    border-block-start: 1px solid var(--rule);
+  }
+}
+
+.era {
+  padding-block: var(--section);
+}
+
+.eraAlt {
+  background: var(--surface-alt);
+}
+
+.eraHead {
+  grid-column: 1 / span 4;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+  justify-items: start;
+}
+
+.eraRange {
+  font-size: clamp(2.4rem, 1.6rem + 3vw, 4.6rem);
+  font-weight: 280;
+  color: var(--brass-text);
+  line-height: 1;
+}
+
+.eraTitle {
+  font-size: var(--step-3);
+}
+
+.eraBody {
+  grid-column: 6 / span 7;
+  font-size: var(--step-1);
+}
+
+.eraFigure {
+  grid-column: 6 / span 6;
+  margin: 40px 0 0;
+}
+
+.eraFigure figcaption {
+  margin-block-start: 8px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.timeline {
+  grid-column: 1 / -1;
+  list-style: none;
+  margin: clamp(48px, 7vw, 88px) 0 0;
+  padding: 0;
+  border-block-start: 1px solid var(--rule-strong);
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gap);
+  padding-block: 28px;
+  border-block-end: 1px solid var(--rule);
+}
+
+.date {
+  grid-column: 1 / span 4;
+  font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.6rem);
+  font-weight: 320;
+  line-height: 1.1;
+  color: var(--accent);
+}
+
+.entryBody {
+  grid-column: 6 / span 6;
+  display: grid;
+  gap: 8px;
+}
+
+.entryTitle {
+  font-size: var(--step-2);
+}
+
+.disputed {
+  font-size: 0.9rem;
+  padding: 10px 14px;
+  border-inline-start: 3px solid var(--terracotta);
+  background: color-mix(in srgb, var(--terracotta) 7%, transparent);
+}
+
+.disputedInline {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-block-start: 4px;
+}
+
+@media (max-width: 860px) {
+  .eraHead,
+  .eraBody,
+  .eraFigure {
+    grid-column: 1 / -1;
+  }
+
+  .eraBody {
+    margin-block-start: 24px;
+  }
+
+  .date,
+  .entryBody {
+    grid-column: 1 / -1;
+  }
+
+  .date {
+    margin-block-end: 8px;
+  }
+}
+
+.rulersHead {
+  grid-column: 1 / span 4;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.rulersNote {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.tableWrap {
+  grid-column: 6 / -1;
+  overflow-x: auto;
+}
+
+.table {
+  inline-size: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  text-align: start;
+  padding: 14px 8px;
+  border-block-end: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.table thead th {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  font-weight: 600;
+  border-block-end: 1px solid var(--rule-strong);
+}
+
+.table tbody th {
+  font-family: var(--font-display);
+  font-weight: 420;
+  font-size: 1.1rem;
+}
+
+.ordinal {
+  display: inline-block;
+  min-inline-size: 3.2em;
+  color: var(--brass-text);
+}
+
+@media (max-width: 860px) {
+  .rulersHead,
+  .tableWrap {
+    grid-column: 1 / -1;
+  }
+}

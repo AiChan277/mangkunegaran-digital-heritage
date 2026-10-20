@@ -1,0 +1,76 @@
+{
+  "brand": {
+    "tagline": "Warisan ingkang Gesang",
+    "concept": "Konsep",
+    "siteTitle": "Mangkunegaran — Warisan ingkang Gesang (Konsep)"
+  },
+  "a11y": {
+    "skip": "Langsung dhateng isi"
+  },
+  "nav": {
+    "primary": "Utami",
+    "home": "Ngajeng",
+    "history": "Sejarah",
+    "architecture": "Wewangunan",
+    "culture": "Kabudayan",
+    "stories": "Cariyos",
+    "gallery": "Galeri",
+    "visit": "Sowan",
+    "about": "Babagan",
+    "menu": "Menu",
+    "close": "Tutup menu"
+  },
+  "lang": {
+    "label": "Basa",
+    "choose": "Pilih basa",
+    "draft": "draf"
+  },
+  "footer": {
+    "disclaimer": "Konsep desain ulang mardika dening {{studio}} kangge kaperluan pasinaon lan portofolio. Boten gadhah gegayutan kaliyan, boten dipun sengkuyung dening, saha boten dipun kelola dening Pura Mangkunegaran. Pawartos resmi:",
+    "navLabel": "Situs",
+    "explore": "Jelajah",
+    "project": "Proyek",
+    "sources": "Sumber",
+    "credits": "Kredit gambar",
+    "translationStatus": "Status pertalan",
+    "madeBy": "Konsep anggitanipun",
+    "uiDraft": "Seratan antarmuka ing {{language}} punika pertalan draf AI ingkang nengga dipun priksa."
+  },
+  "fallback": {
+    "label": "Pawartos basa",
+    "notice": "Kaca punika dèrèng wonten ing {{language}}, pramila dipun tampilaken ing {{shownIn}}.",
+    "draft": "Seratan punika pertalan draf AI ingkang nengga dipun priksa dening penutur asli.",
+    "link": "Status pertalan"
+  },
+  "sources": {
+    "title": "Sumber",
+    "refLabel": "Sumber {{n}}",
+    "published": "kawedalaken {{date}}",
+    "accessed": "dipun bikak {{date}}",
+    "archived": "salinan arsip",
+    "sourcesDiffer": "Sumber-sumber béda"
+  },
+  "aksara": {
+    "label": "Aksara Jawa",
+    "awaiting": "nengga dipun priksa penutur asli"
+  },
+  "glossary": {
+    "hint": "tampilaken teges"
+  },
+  "listen": {
+    "thisSection": "perangan punika",
+    "play": "Mirengaken {{name}}",
+    "pause": "Ngendhegaken waosan {{name}}",
+    "stop": "Mungkasi waosan",
+    "playShort": "Mirengaken",
+    "pauseShort": "Kendel",
+    "resumeShort": "Lajengaken",
+    "statusPlaying": "Saweg dipun waos"
+  },
+  "notFound": {
+    "title": "Kaca punika boten kepanggih",
+    "body": "Alamatipun bokmenawi lepat, utawi kacanipun sampun dipun pindhah.",
+    "home": "Dhateng kaca ngajeng",
+    "sections": "Utawi lajengaken dhateng"
+  }
+}

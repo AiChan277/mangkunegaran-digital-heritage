@@ -1,0 +1,76 @@
+{
+  "brand": {
+    "tagline": "Un patrimonio vivo",
+    "concept": "Concepto",
+    "siteTitle": "Mangkunegaran — Un patrimonio vivo (Concepto)"
+  },
+  "a11y": {
+    "skip": "Saltar al contenido"
+  },
+  "nav": {
+    "primary": "Principal",
+    "home": "Inicio",
+    "history": "Historia",
+    "architecture": "Arquitectura",
+    "culture": "Cultura",
+    "stories": "Relatos",
+    "gallery": "Galería",
+    "visit": "Visita",
+    "about": "Acerca de",
+    "menu": "Menú",
+    "close": "Cerrar menú"
+  },
+  "lang": {
+    "label": "Idioma",
+    "choose": "Elige un idioma",
+    "draft": "borrador"
+  },
+  "footer": {
+    "disclaimer": "Rediseño conceptual independiente de {{studio}} con fines educativos y de portafolio. Sin afiliación, respaldo ni gestión de Pura Mangkunegaran. Información oficial:",
+    "navLabel": "Sitio",
+    "explore": "Explorar",
+    "project": "El proyecto",
+    "sources": "Fuentes",
+    "credits": "Créditos de imágenes",
+    "translationStatus": "Estado de la traducción",
+    "madeBy": "Un concepto de",
+    "uiDraft": "El texto de la interfaz en {{language}} es una traducción en borrador hecha con IA, pendiente de revisión."
+  },
+  "fallback": {
+    "label": "Aviso de idioma",
+    "notice": "Esta página aún no está disponible en {{language}}, por eso se muestra en {{shownIn}}.",
+    "draft": "Este texto es una traducción en borrador hecha con IA, pendiente de revisión por una persona hablante nativa.",
+    "link": "Estado de la traducción"
+  },
+  "sources": {
+    "title": "Fuentes",
+    "refLabel": "Fuente {{n}}",
+    "published": "publicado {{date}}",
+    "accessed": "consultado {{date}}",
+    "archived": "copia archivada",
+    "sourcesDiffer": "Las fuentes difieren"
+  },
+  "aksara": {
+    "label": "Aksara Jawa (escritura javanesa)",
+    "awaiting": "pendiente de revisión nativa"
+  },
+  "glossary": {
+    "hint": "ver definición"
+  },
+  "listen": {
+    "thisSection": "esta sección",
+    "play": "Escuchar {{name}}",
+    "pause": "Pausar la lectura de {{name}}",
+    "stop": "Detener la lectura",
+    "playShort": "Escuchar",
+    "pauseShort": "Pausa",
+    "resumeShort": "Continuar",
+    "statusPlaying": "Leyendo en voz alta"
+  },
+  "notFound": {
+    "title": "No se encontró esta página",
+    "body": "Puede que la dirección esté mal escrita o que la página se haya movido.",
+    "home": "Ir al inicio",
+    "sections": "O continúa en"
+  }
+}

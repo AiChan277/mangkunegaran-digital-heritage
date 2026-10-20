@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Kisah",
+    "description": "Kisah bersumber dari sejarah Mangkunegaran: radio, tembang penyambutan kerajaan, dan Legiun."
+  },
+  "header": {
+    "eyebrow": "Bab empat",
+    "title": "Kisah",
+    "intro": "Esai pendek dari sejarah wangsa ini, masing-masing dengan sumbernya."
+  },
+  "readingTime": "{{n}} menit baca",
+  "back": "Semua kisah",
+  "verified": "Sumber diperiksa {{date}}",
+  "related": "Bacaan lanjutan",
+  "noteLabel": "Catatan tentang sumber"
+}

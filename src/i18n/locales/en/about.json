@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "About this project",
+    "description": "Case study: why and how this independent, twelve-language concept about Pura Mangkunegaran was made, with sources, credits and translation status."
+  },
+  "header": {
+    "eyebrow": "Chapter seven",
+    "title": "About this project",
+    "intro": "A case study in presenting heritage to everyone, in their own language."
+  },
+  "tocLabel": "On this page",
+  "design": {
+    "palette": "Colour palette",
+    "scriptsNote": "Script fonts load only on pages that use them."
+  },
+  "sources": {
+    "title": "Sources",
+    "summary": "The site rests on {{facts}} recorded claims checked against {{sources}} sources: {{confirmed}} confirmed by more than one source, {{single}} from a single source, and {{disputed}} where sources differ and the page says so.",
+    "ledger": "Show the full fact ledger ({{n}} claims)",
+    "colClaim": "Claim",
+    "colConfidence": "Confidence",
+    "colSources": "Sources",
+    "kind": {
+      "primary": "primary",
+      "secondary": "secondary",
+      "supporting": "supporting"
+    },
+    "confidence": {
+      "confirmed": "confirmed",
+      "single-source": "single source",
+      "disputed": "sources differ"
+    }
+  },
+  "credits": {
+    "title": "Credits",
+    "images": "Photographs",
+    "imagesNote": "Images are self-hosted copies, resized and converted to modern formats. Cropped versions are marked as such.",
+    "source": "source",
+    "fonts": "Typefaces",
+    "code": "Software"
+  },
+  "translation": {
+    "title": "Translation status",
+    "intro": "What has been translated, and how far it can be trusted.",
+    "language": "Language",
+    "ui": "Interface",
+    "home": "Home",
+    "history": "History",
+    "other": "Other pages",
+    "legend": "Original: written for this site from the cited sources. AI draft: translated with an AI assistant, awaiting native review. Not yet: shown in English, or in Indonesian for Javanese readers.",
+    "javanese": "No native Javanese reviewer has signed off yet, so all Javanese text and Aksara Jawa titles are marked as awaiting review."
+  },
+  "status": {
+    "source": "Original",
+    "ai-draft": "AI draft",
+    "missing": "Not yet"
+  },
+  "studio": {
+    "title": "Made by",
+    "body": "Designed and built by {{studio}} as a group project."
+  }
+}

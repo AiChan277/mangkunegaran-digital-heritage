@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Văn hóa",
+    "description": "Batik, múa cung đình, văn chương, gamelan và wayang ở Mangkunegaran — được giải thích kèm nguồn."
+  },
+  "header": {
+    "eyebrow": "Chương ba",
+    "title": "Văn hóa",
+    "intro": "Bốn truyền thống vẫn đang được gìn giữ, mỗi truyền thống kể lại từ các nguồn đã công bố."
+  },
+  "stanzaChart": "Số khổ thơ theo từng thể điệu trong Serat Wedhatama",
+  "stanzas": "khổ",
+  "stanzaTotal": "Tổng cộng {{n}} khổ"
+}

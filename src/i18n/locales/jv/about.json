@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Babagan proyek punika",
+    "description": "Studi kasus: kenging punapa lan kados pundi konsep mardika ing kalih welas basa bab Pura Mangkunegaran punika dipun damel, sesarengan sumber, kredit, saha status pertalan."
+  },
+  "header": {
+    "eyebrow": "Bab kaping pitu",
+    "title": "Babagan proyek punika",
+    "intro": "Studi kasus bab nyawisaken warisan kangge sedaya tiyang, ing basanipun piyambak."
+  },
+  "tocLabel": "Ing kaca punika",
+  "design": {
+    "palette": "Palèt werni",
+    "scriptsNote": "Fon aksara namung dipun momot ing kaca ingkang ngginakaken."
+  },
+  "sources": {
+    "title": "Sumber",
+    "summary": "Situs punika adhedhasar {{facts}} klaim ingkang kacathet lan dipun priksa kaliyan {{sources}} sumber: {{confirmed}} dipun kuwataken langkung saking satunggal sumber, {{single}} saking satunggal sumber, saha {{disputed}} ingkang sumberipun béda lan kaca nyebutaken.",
+    "ledger": "Tampilaken buku fakta jangkep ({{n}} klaim)",
+    "colClaim": "Klaim",
+    "colConfidence": "Kapitadosan",
+    "colSources": "Sumber",
+    "kind": {
+      "primary": "primer",
+      "secondary": "sekunder",
+      "supporting": "panyengkuyung"
+    },
+    "confidence": {
+      "confirmed": "kakuwataken",
+      "single-source": "satunggal sumber",
+      "disputed": "sumber béda"
+    }
+  },
+  "credits": {
+    "title": "Kredit",
+    "images": "Foto",
+    "imagesNote": "Gambar dipun simpen minangka salinan ing situs punika, dipun ewahi ukuran lan formatipun. Vèrsi ingkang dipun potong dipun tandhani.",
+    "source": "sumber",
+    "fonts": "Aksara (fon)",
+    "code": "Piranti alus"
+  },
+  "translation": {
+    "title": "Status pertalan",
+    "intro": "Punapa ingkang sampun dipun pertal, saha sepinten saged dipun pitados.",
+    "language": "Basa",
+    "ui": "Antarmuka",
+    "home": "Ngajeng",
+    "history": "Sejarah",
+    "other": "Kaca sanès",
+    "legend": "Asli: dipun serat kangge situs punika saking sumber ingkang dipun kutip. Draf AI: dipun pertal kanthi asistèn AI, nengga dipun priksa penutur asli. Dèrèng: dipun tampilaken ing basa Inggris, utawi basa Indonésia kangge pamaos basa Jawi.",
+    "javanese": "Dèrèng wonten pamriksa penutur asli basa Jawi ingkang nyarujuki, pramila sedaya seratan basa Jawi saha irah-irahan Aksara Jawa dipun tandhani nengga dipun priksa."
+  },
+  "status": {
+    "source": "Asli",
+    "ai-draft": "Draf AI",
+    "missing": "Dèrèng"
+  },
+  "studio": {
+    "title": "Dipun damel dening",
+    "body": "Dipun rancang lan dipun damel dening {{studio}} minangka pakaryan kelompok."
+  }
+}

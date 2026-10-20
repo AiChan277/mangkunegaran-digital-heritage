@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Cariyos",
+    "description": "Cariyos kanthi sumber saking sejarah Mangkunegaran: radio, tembang pambagya, saha Legiun."
+  },
+  "header": {
+    "eyebrow": "Bab kaping sekawan",
+    "title": "Cariyos",
+    "intro": "Seratan cekak saking sejarah trah punika, sedaya kanthi sumberipun."
+  },
+  "readingTime": "{{n}} menit maos",
+  "back": "Sedaya cariyos",
+  "verified": "Sumber dipun priksa {{date}}",
+  "related": "Waosan sanèsipun",
+  "noteLabel": "Cathetan bab sumber"
+}

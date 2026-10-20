@@ -1,0 +1,76 @@
+{
+  "brand": {
+    "tagline": "Warisan yang Hidup",
+    "concept": "Konsep",
+    "siteTitle": "Mangkunegaran — Warisan yang Hidup (Konsep)"
+  },
+  "a11y": {
+    "skip": "Langkau ke kandungan"
+  },
+  "nav": {
+    "primary": "Utama",
+    "home": "Laman utama",
+    "history": "Sejarah",
+    "architecture": "Seni bina",
+    "culture": "Budaya",
+    "stories": "Kisah",
+    "gallery": "Galeri",
+    "visit": "Lawatan",
+    "about": "Perihal",
+    "menu": "Menu",
+    "close": "Tutup menu"
+  },
+  "lang": {
+    "label": "Bahasa",
+    "choose": "Pilih bahasa",
+    "draft": "draf"
+  },
+  "footer": {
+    "disclaimer": "Konsep reka bentuk semula bebas oleh {{studio}} untuk tujuan pendidikan dan portfolio. Tidak bergabung dengan, tidak disokong oleh, dan tidak dikendalikan oleh Pura Mangkunegaran. Maklumat rasmi:",
+    "navLabel": "Laman",
+    "explore": "Teroka",
+    "project": "Projek",
+    "sources": "Sumber",
+    "credits": "Kredit imej",
+    "translationStatus": "Status terjemahan",
+    "madeBy": "Satu konsep oleh",
+    "uiDraft": "Teks antara muka dalam {{language}} ialah terjemahan draf AI yang menunggu semakan."
+  },
+  "fallback": {
+    "label": "Notis bahasa",
+    "notice": "Halaman ini belum tersedia dalam {{language}}, jadi ia dipaparkan dalam {{shownIn}}.",
+    "draft": "Teks ini ialah terjemahan draf AI yang menunggu semakan penutur asli.",
+    "link": "Status terjemahan"
+  },
+  "sources": {
+    "title": "Sumber",
+    "refLabel": "Sumber {{n}}",
+    "published": "diterbitkan {{date}}",
+    "accessed": "diakses {{date}}",
+    "archived": "salinan arkib",
+    "sourcesDiffer": "Sumber berbeza"
+  },
+  "aksara": {
+    "label": "Aksara Jawa",
+    "awaiting": "menunggu semakan penutur asli"
+  },
+  "glossary": {
+    "hint": "tunjukkan takrif"
+  },
+  "listen": {
+    "thisSection": "bahagian ini",
+    "play": "Dengar {{name}}",
+    "pause": "Jeda bacaan {{name}}",
+    "stop": "Henti bacaan",
+    "playShort": "Dengar",
+    "pauseShort": "Jeda",
+    "resumeShort": "Sambung",
+    "statusPlaying": "Sedang dibacakan"
+  },
+  "notFound": {
+    "title": "Halaman ini tidak ditemui",
+    "body": "Alamatnya mungkin tersalah taip, atau halaman telah dipindahkan.",
+    "home": "Ke laman utama",
+    "sections": "Atau teruskan ke"
+  }
+}

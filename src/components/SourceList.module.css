@@ -1,0 +1,56 @@
+.wrap {
+  border-block-start: 1px solid var(--rule-strong);
+  padding-block-start: 28px;
+  margin-block-start: 64px;
+}
+
+.title {
+  font-family: var(--font-text);
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-block-end: 20px;
+}
+
+:global(:lang(th)) .title,
+:global(:lang(km)) .title,
+:global(:lang(lo)) .title,
+:global(:lang(my)) .title {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  font-size: var(--step--1);
+  line-height: 1.5;
+  columns: 1;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 2.2em 1fr;
+  gap: 8px;
+  overflow-wrap: anywhere;
+}
+
+.item:target {
+  background: color-mix(in srgb, var(--brass) 18%, transparent);
+  outline: 1px solid var(--brass);
+  outline-offset: 4px;
+}
+
+.n {
+  color: var(--text-muted);
+  text-align: end;
+}
+
+.meta {
+  color: var(--text-muted);
+}

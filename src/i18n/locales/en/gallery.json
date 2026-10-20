@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Gallery",
+    "description": "Photographs of Pura Mangkunegaran, past and present, each openly licensed and credited."
+  },
+  "header": {
+    "eyebrow": "Chapter five",
+    "title": "Gallery",
+    "intro": "Photographs of the palace, past and present — each openly licensed and credited."
+  },
+  "gridLabel": "Photographs",
+  "open": "Open image: {{title}}",
+  "archival": "Archival",
+  "dialogLabel": "Image viewer",
+  "close": "Close image viewer",
+  "prev": "Previous image",
+  "next": "Next image",
+  "counter": "{{current}} of {{total}}",
+  "source": "Source",
+  "license": "Licence",
+  "note": "All photographs are used under open licences or are in the public domain, and are hosted on this site. Historical photographs carry the dates given by the collections that hold them."
+}

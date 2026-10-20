@@ -1,0 +1,22 @@
+.wrap {
+  padding-block-start: 20px;
+}
+
+.note {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  max-inline-size: 760px;
+  padding: 14px 18px;
+  border: 1px solid var(--rule-strong);
+  border-inline-start: 3px solid var(--brass);
+  background: color-mix(in srgb, var(--surface-alt) 70%, transparent);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.note svg {
+  flex: none;
+  margin-block-start: 3px;
+  color: var(--sogan);
+}

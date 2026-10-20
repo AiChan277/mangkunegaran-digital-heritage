@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Visit",
+    "description": "Visitor guidance for Pura Mangkunegaran with pictograms, an interactive site plan, and links to the official booking page."
+  },
+  "header": {
+    "eyebrow": "Chapter six",
+    "title": "Visit",
+    "intro": "What to know before you go, explained in pictures as well as words."
+  },
+  "official": {
+    "title": "Hours, tickets and booking",
+    "body": "Opening hours and ticket prices change, and our sources do not agree on them. Please check the official reservation page before you go.",
+    "tickets": "Official reservation page"
+  },
+  "address": {
+    "title": "Address",
+    "map": "Open in maps"
+  },
+  "rules": {
+    "title": "Before you go",
+    "intro": "Pictograms for the visitor rules listed on the official reservation page, readable whatever language you speak.",
+    "verified": "Last verified: {{date}} · Source:",
+    "keyLabel": "How to read the pictograms",
+    "keyProhibited": "Ring with a bar: not allowed",
+    "keyGuidance": "Plain ring: please do, or good to know",
+    "groups": {
+      "dress": "Dress",
+      "photo": "Photography",
+      "conduct": "Conduct",
+      "tour": "Your visit"
+    },
+    "items": {
+      "modest-dress": "Wear modest clothing",
+      "no-shorts": "No shorts or short skirts",
+      "no-parang": "No parang or lereng batik",
+      "no-velvet": "No velvet clothing",
+      "no-headwear": "No head coverings",
+      "no-sunglasses": "No sunglasses",
+      "no-flipflops": "No flip-flops",
+      "camera-permission": "Professional cameras need permission",
+      "no-food": "No outside food or drink",
+      "no-smoking": "No smoking",
+      "no-weapons": "No weapons or sharp objects",
+      "keep-off-grass": "Keep off the grass and plants",
+      "litter": "Put rubbish in the bins",
+      "guide": "Visits are accompanied by a palace guide",
+      "arrive-early": "Arrive 15 minutes before your session",
+      "cashless": "Payment is cashless",
+      "children-free": "Children aged 0–4 enter free"
+    }
+  },
+  "plan": {
+    "title": "Site plan",
+    "intro": "A schematic plan of the spaces described on this site. Select a number to read about a place.",
+    "disclaimer": "Schematic and not to scale: positions follow written descriptions, not a survey, and do not show which areas are open to visitors.",
+    "gate": "Main gate",
+    "legend": "Places on the plan",
+    "close": "Close",
+    "more": "Read more in Architecture",
+    "rules": "Guidance here",
+    "select": "Show {{name}}"
+  }
+}

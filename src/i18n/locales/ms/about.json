@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Perihal projek ini",
+    "description": "Kajian kes: mengapa dan bagaimana konsep bebas dua belas bahasa tentang Pura Mangkunegaran ini dihasilkan, beserta sumber, kredit dan status terjemahan."
+  },
+  "header": {
+    "eyebrow": "Bab tujuh",
+    "title": "Perihal projek ini",
+    "intro": "Satu kajian kes tentang menyampaikan warisan kepada semua orang, dalam bahasa mereka sendiri."
+  },
+  "tocLabel": "Dalam halaman ini",
+  "design": {
+    "palette": "Palet warna",
+    "scriptsNote": "Fon tulisan hanya dimuatkan pada halaman yang menggunakannya."
+  },
+  "sources": {
+    "title": "Sumber",
+    "summary": "Laman ini bersandar pada {{facts}} dakwaan yang direkodkan dan disemak terhadap {{sources}} sumber: {{confirmed}} disahkan oleh lebih daripada satu sumber, {{single}} daripada satu sumber, dan {{disputed}} yang sumbernya berbeza dan halaman menyatakannya.",
+    "ledger": "Tunjukkan lejar fakta penuh ({{n}} dakwaan)",
+    "colClaim": "Dakwaan",
+    "colConfidence": "Keyakinan",
+    "colSources": "Sumber",
+    "kind": {
+      "primary": "primer",
+      "secondary": "sekunder",
+      "supporting": "sokongan"
+    },
+    "confidence": {
+      "confirmed": "disahkan",
+      "single-source": "satu sumber",
+      "disputed": "sumber berbeza"
+    }
+  },
+  "credits": {
+    "title": "Kredit",
+    "images": "Gambar",
+    "imagesNote": "Imej disimpan sebagai salinan di laman ini, diubah saiz dan ditukar ke format moden. Versi yang dipotong ditandakan.",
+    "source": "sumber",
+    "fonts": "Muka taip",
+    "code": "Perisian"
+  },
+  "translation": {
+    "title": "Status terjemahan",
+    "intro": "Apa yang telah diterjemahkan, dan sejauh mana ia boleh dipercayai.",
+    "language": "Bahasa",
+    "ui": "Antara muka",
+    "home": "Laman utama",
+    "history": "Sejarah",
+    "other": "Halaman lain",
+    "legend": "Asal: ditulis untuk laman ini daripada sumber yang dipetik. Draf AI: diterjemahkan dengan pembantu AI, menunggu semakan penutur asli. Belum: dipaparkan dalam bahasa Inggeris, atau bahasa Indonesia bagi pembaca bahasa Jawa.",
+    "javanese": "Belum ada penyemak penutur asli bahasa Jawa yang meluluskan, jadi semua teks bahasa Jawa dan tajuk Aksara Jawa ditandakan sebagai menunggu semakan."
+  },
+  "status": {
+    "source": "Asal",
+    "ai-draft": "Draf AI",
+    "missing": "Belum"
+  },
+  "studio": {
+    "title": "Dihasilkan oleh",
+    "body": "Direka dan dibina oleh {{studio}} sebagai projek berkumpulan."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Galeria",
+    "description": "Foto sira Pura Mangkunegaran nian, uluk no agora, ida-idak ho lisensa nakloke no krédituu."
+  },
+  "header": {
+    "eyebrow": "Kapítulu dalimak",
+    "title": "Galeria",
+    "intro": "Foto sira palásiu nian, uluk no agora — ida-idak ho lisensa nakloke no krédituu."
+  },
+  "gridLabel": "Foto sira",
+  "open": "Loke imajen: {{title}}",
+  "archival": "Arkivu",
+  "dialogLabel": "Hatudu imajen",
+  "close": "Taka hatudu imajen",
+  "prev": "Imajen molok",
+  "next": "Imajen tuir mai",
+  "counter": "{{current}} husi {{total}}",
+  "source": "Fonte",
+  "license": "Lisensa",
+  "note": "Foto hotu uza ho lisensa nakloke ka iha domíniu públiku, no rai iha sítiu ne'e. Foto istóriku sira uza data ne'ebé koleksaun ne'ebé rai sira fó."
+}

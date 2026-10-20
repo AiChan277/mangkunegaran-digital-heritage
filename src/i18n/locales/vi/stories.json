@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Câu chuyện",
+    "description": "Những câu chuyện có nguồn từ lịch sử Mangkunegaran: đài phát thanh, bài hát chào đón hoàng gia và Quân đoàn."
+  },
+  "header": {
+    "eyebrow": "Chương bốn",
+    "title": "Câu chuyện",
+    "intro": "Những bài viết ngắn từ lịch sử của dòng họ, mỗi bài đều có nguồn."
+  },
+  "readingTime": "{{n}} phút đọc",
+  "back": "Tất cả câu chuyện",
+  "verified": "Nguồn được kiểm tra ngày {{date}}",
+  "related": "Đọc thêm",
+  "noteLabel": "Ghi chú về nguồn"
+}

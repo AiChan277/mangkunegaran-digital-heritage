@@ -1,0 +1,337 @@
+{
+  "common": {
+    "brand": {
+      "tagline": "Warisan yang Hidup",
+      "concept": "Konsep",
+      "siteTitle": "Mangkunegaran — Warisan yang Hidup (Konsep)"
+    },
+    "a11y": {
+      "skip": "Langkau ke kandungan"
+    },
+    "nav": {
+      "primary": "Utama",
+      "home": "Laman utama",
+      "history": "Sejarah",
+      "architecture": "Seni bina",
+      "culture": "Budaya",
+      "stories": "Kisah",
+      "gallery": "Galeri",
+      "visit": "Lawatan",
+      "about": "Perihal",
+      "menu": "Menu",
+      "close": "Tutup menu"
+    },
+    "lang": {
+      "label": "Bahasa",
+      "choose": "Pilih bahasa",
+      "draft": "draf"
+    },
+    "footer": {
+      "disclaimer": "Konsep reka bentuk semula bebas oleh {{studio}} untuk tujuan pendidikan dan portfolio. Tidak bergabung dengan, tidak disokong oleh, dan tidak dikendalikan oleh Pura Mangkunegaran. Maklumat rasmi:",
+      "navLabel": "Laman",
+      "explore": "Teroka",
+      "project": "Projek",
+      "sources": "Sumber",
+      "credits": "Kredit imej",
+      "translationStatus": "Status terjemahan",
+      "madeBy": "Satu konsep oleh",
+      "uiDraft": "Teks antara muka dalam {{language}} ialah terjemahan draf AI yang menunggu semakan."
+    },
+    "fallback": {
+      "label": "Notis bahasa",
+      "notice": "Halaman ini belum tersedia dalam {{language}}, jadi ia dipaparkan dalam {{shownIn}}.",
+      "draft": "Teks ini ialah terjemahan draf AI yang menunggu semakan penutur asli.",
+      "link": "Status terjemahan"
+    },
+    "sources": {
+      "title": "Sumber",
+      "refLabel": "Sumber {{n}}",
+      "published": "diterbitkan {{date}}",
+      "accessed": "diakses {{date}}",
+      "archived": "salinan arkib",
+      "sourcesDiffer": "Sumber berbeza"
+    },
+    "aksara": {
+      "label": "Aksara Jawa",
+      "awaiting": "menunggu semakan penutur asli"
+    },
+    "glossary": {
+      "hint": "tunjukkan takrif"
+    },
+    "listen": {
+      "thisSection": "bahagian ini",
+      "play": "Dengar {{name}}",
+      "pause": "Jeda bacaan {{name}}",
+      "stop": "Henti bacaan",
+      "playShort": "Dengar",
+      "pauseShort": "Jeda",
+      "resumeShort": "Sambung",
+      "statusPlaying": "Sedang dibacakan"
+    },
+    "notFound": {
+      "title": "Halaman ini tidak ditemui",
+      "body": "Alamatnya mungkin tersalah taip, atau halaman telah dipindahkan.",
+      "home": "Ke laman utama",
+      "sections": "Atau teruskan ke"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Mangkunegaran — Warisan yang Hidup",
+      "description": "Konsep pelbagai bahasa yang bebas tentang Pura Mangkunegaran di Surakarta: sejarah, seni bina dan budayanya yang hidup, dengan setiap fakta bersumber."
+    },
+    "hero": {
+      "eyebrow": "Surakarta, Jawa Tengah",
+      "subtitle": "warisan yang hidup",
+      "concept": "Konsep reka bentuk semula bebas — bukan laman web rasmi Pura Mangkunegaran."
+    },
+    "intro": {
+      "eyebrow": "Pengenalan"
+    },
+    "journey": {
+      "eyebrow": "Perjalanan seni bina",
+      "title": "Dari padang terbuka ke jantung rumah",
+      "cta": "Teroka seni bina"
+    },
+    "stories": {
+      "eyebrow": "Kisah",
+      "title": "Dari arkib",
+      "cta": "Semua kisah"
+    },
+    "arts": {
+      "eyebrow": "Seni dan tradisi",
+      "title": "Tarian, kain, lagu dan puisi",
+      "cta": "Teroka budaya"
+    },
+    "photos": {
+      "eyebrow": "Fotografi",
+      "title": "Cahaya di istana",
+      "cta": "Buka galeri"
+    },
+    "continuity": {
+      "eyebrow": "Kesinambungan budaya",
+      "title": "Warisan, pada masa kini"
+    },
+    "languages": {
+      "eyebrow": "Dua belas bahasa",
+      "title": "Satu warisan, banyak suara"
+    },
+    "sources": "Sumber untuk halaman ini"
+  },
+  "history": {
+    "meta": {
+      "title": "Sejarah",
+      "description": "Dari Perjanjian Salatiga pada 1757 hingga kini: garis masa bersumber tentang Mangkunegaran dan para pemerintahnya."
+    },
+    "header": {
+      "eyebrow": "Bab satu",
+      "title": "Sejarah",
+      "intro": "Dari satu persetujuan pada 1757 hingga penjaga budaya hari ini."
+    },
+    "eraNav": "Zaman",
+    "timelineLabel": "Garis masa, {{range}}",
+    "rulers": {
+      "title": "Para pemerintah Mangkunegaran",
+      "note": "Tahun pemerintahan seperti yang disenaraikan di mangkunegaran.id, yang mengeja gelaran itu Mangkoenagoro.",
+      "ruler": "Pemerintah",
+      "reign": "Pemerintahan"
+    }
+  },
+  "architecture": {
+    "meta": {
+      "title": "Seni bina",
+      "description": "Ruang-ruang Pura Mangkunegaran mengikut urutan yang ditemui pelawat — Pamedan, Pendhapa Ageng, Pringgitan, Dalem Ageng dan lain-lain."
+    },
+    "header": {
+      "eyebrow": "Bab dua",
+      "title": "Seni bina",
+      "intro": "Ruang-ruang mengikut urutan yang ditemui pelawat, dari padang terbuka hingga rumah di tengahnya.",
+      "note": "Huraian ini tidak menyatakan ruang mana yang dibuka kepada pelawat.",
+      "visitLink": "Maklumat lawatan"
+    },
+    "tocLabel": "Ruang dalam halaman ini",
+    "archival": {
+      "title": "Dewan dalam gambar awal",
+      "body": "Sebuah gambar yang dikatalogkan sekitar 1880 menunjukkan pendhapa dengan bumbungnya yang panjang dan rendah. Gambar bersejarah di laman ini datang daripada koleksi awam dan membawa tarikh yang diberikan oleh katalognya.",
+      "cta": "Lihat lebih banyak gambar"
+    }
+  },
+  "culture": {
+    "meta": {
+      "title": "Budaya",
+      "description": "Batik, tarian istana, sastera, gamelan dan wayang di Mangkunegaran — diterangkan dengan sumber."
+    },
+    "header": {
+      "eyebrow": "Bab tiga",
+      "title": "Budaya",
+      "intro": "Empat tradisi yang masih diamalkan, setiap satu diceritakan daripada sumber yang diterbitkan."
+    },
+    "stanzaChart": "Bilangan rangkap bagi setiap irama dalam Serat Wedhatama",
+    "stanzas": "rangkap",
+    "stanzaTotal": "Jumlah {{n}} rangkap"
+  },
+  "stories": {
+    "meta": {
+      "title": "Kisah",
+      "description": "Kisah bersumber daripada sejarah Mangkunegaran: radio, lagu sambutan diraja dan Legion."
+    },
+    "header": {
+      "eyebrow": "Bab empat",
+      "title": "Kisah",
+      "intro": "Esei pendek daripada sejarah keluarga ini, setiap satu dengan sumbernya."
+    },
+    "readingTime": "{{n}} minit bacaan",
+    "back": "Semua kisah",
+    "verified": "Sumber disemak {{date}}",
+    "related": "Bacaan lanjut",
+    "noteLabel": "Nota tentang sumber"
+  },
+  "gallery": {
+    "meta": {
+      "title": "Galeri",
+      "description": "Gambar Pura Mangkunegaran, dahulu dan kini, setiap satu berlesen terbuka dan dikreditkan."
+    },
+    "header": {
+      "eyebrow": "Bab lima",
+      "title": "Galeri",
+      "intro": "Gambar istana, dahulu dan kini — setiap satu berlesen terbuka dan dikreditkan."
+    },
+    "gridLabel": "Gambar",
+    "open": "Buka imej: {{title}}",
+    "archival": "Arkib",
+    "dialogLabel": "Pemapar imej",
+    "close": "Tutup pemapar imej",
+    "prev": "Imej sebelumnya",
+    "next": "Imej seterusnya",
+    "counter": "{{current}} daripada {{total}}",
+    "source": "Sumber",
+    "license": "Lesen",
+    "note": "Semua gambar digunakan di bawah lesen terbuka atau berada dalam domain awam, dan disimpan di laman ini. Gambar bersejarah membawa tarikh yang diberikan oleh koleksi yang menyimpannya."
+  },
+  "visit": {
+    "meta": {
+      "title": "Lawatan",
+      "description": "Panduan pelawat ke Pura Mangkunegaran dengan piktogram, pelan tapak interaktif dan pautan ke halaman tempahan rasmi."
+    },
+    "header": {
+      "eyebrow": "Bab enam",
+      "title": "Lawatan",
+      "intro": "Perkara yang perlu diketahui sebelum anda pergi, diterangkan dengan gambar dan kata-kata."
+    },
+    "official": {
+      "title": "Waktu, tiket dan tempahan",
+      "body": "Waktu dibuka dan harga tiket boleh berubah, dan sumber kami tidak sepakat tentangnya. Sila semak halaman tempahan rasmi sebelum anda pergi.",
+      "tickets": "Halaman tempahan rasmi"
+    },
+    "address": {
+      "title": "Alamat",
+      "map": "Buka dalam peta"
+    },
+    "rules": {
+      "title": "Sebelum anda pergi",
+      "intro": "Piktogram bagi peraturan pelawat yang disenaraikan di halaman tempahan rasmi, boleh difahami apa jua bahasa anda.",
+      "verified": "Kali terakhir disahkan: {{date}} · Sumber:",
+      "keyLabel": "Cara membaca piktogram",
+      "keyProhibited": "Bulatan dengan palang: tidak dibenarkan",
+      "keyGuidance": "Bulatan kosong: sila lakukan, atau untuk makluman",
+      "groups": {
+        "dress": "Pakaian",
+        "photo": "Fotografi",
+        "conduct": "Tingkah laku",
+        "tour": "Lawatan anda"
+      },
+      "items": {
+        "modest-dress": "Pakai pakaian yang sopan",
+        "no-shorts": "Tiada seluar pendek atau skirt pendek",
+        "no-parang": "Tiada batik motif parang atau lereng",
+        "no-velvet": "Tiada pakaian baldu",
+        "no-headwear": "Tiada penutup kepala",
+        "no-sunglasses": "Tiada cermin mata hitam",
+        "no-flipflops": "Tiada selipar jepit",
+        "camera-permission": "Kamera profesional memerlukan kebenaran",
+        "no-food": "Tiada makanan atau minuman dari luar",
+        "no-smoking": "Dilarang merokok",
+        "no-weapons": "Tiada senjata atau objek tajam",
+        "keep-off-grass": "Jangan pijak rumput dan tumbuhan",
+        "litter": "Buang sampah ke dalam tong",
+        "guide": "Lawatan diiringi pemandu istana",
+        "arrive-early": "Tiba 15 minit sebelum sesi anda",
+        "cashless": "Bayaran tanpa tunai",
+        "children-free": "Kanak-kanak berumur 0–4 tahun masuk percuma"
+      }
+    },
+    "plan": {
+      "title": "Pelan tapak",
+      "intro": "Pelan skematik ruang-ruang yang diterangkan di laman ini. Pilih satu nombor untuk membaca tentang sesuatu tempat.",
+      "disclaimer": "Skematik dan bukan mengikut skala: kedudukan mengikut huraian bertulis, bukan ukur, dan tidak menunjukkan kawasan yang dibuka kepada pelawat.",
+      "gate": "Pintu gerbang utama",
+      "legend": "Tempat pada pelan",
+      "close": "Tutup",
+      "more": "Baca lanjut dalam Seni bina",
+      "rules": "Panduan di sini",
+      "select": "Tunjukkan {{name}}"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Perihal projek ini",
+      "description": "Kajian kes: mengapa dan bagaimana konsep bebas dua belas bahasa tentang Pura Mangkunegaran ini dihasilkan, beserta sumber, kredit dan status terjemahan."
+    },
+    "header": {
+      "eyebrow": "Bab tujuh",
+      "title": "Perihal projek ini",
+      "intro": "Satu kajian kes tentang menyampaikan warisan kepada semua orang, dalam bahasa mereka sendiri."
+    },
+    "tocLabel": "Dalam halaman ini",
+    "design": {
+      "palette": "Palet warna",
+      "scriptsNote": "Fon tulisan hanya dimuatkan pada halaman yang menggunakannya."
+    },
+    "sources": {
+      "title": "Sumber",
+      "summary": "Laman ini bersandar pada {{facts}} dakwaan yang direkodkan dan disemak terhadap {{sources}} sumber: {{confirmed}} disahkan oleh lebih daripada satu sumber, {{single}} daripada satu sumber, dan {{disputed}} yang sumbernya berbeza dan halaman menyatakannya.",
+      "ledger": "Tunjukkan lejar fakta penuh ({{n}} dakwaan)",
+      "colClaim": "Dakwaan",
+      "colConfidence": "Keyakinan",
+      "colSources": "Sumber",
+      "kind": {
+        "primary": "primer",
+        "secondary": "sekunder",
+        "supporting": "sokongan"
+      },
+      "confidence": {
+        "confirmed": "disahkan",
+        "single-source": "satu sumber",
+        "disputed": "sumber berbeza"
+      }
+    },
+    "credits": {
+      "title": "Kredit",
+      "images": "Gambar",
+      "imagesNote": "Imej disimpan sebagai salinan di laman ini, diubah saiz dan ditukar ke format moden. Versi yang dipotong ditandakan.",
+      "source": "sumber",
+      "fonts": "Muka taip",
+      "code": "Perisian"
+    },
+    "translation": {
+      "title": "Status terjemahan",
+      "intro": "Apa yang telah diterjemahkan, dan sejauh mana ia boleh dipercayai.",
+      "language": "Bahasa",
+      "ui": "Antara muka",
+      "home": "Laman utama",
+      "history": "Sejarah",
+      "other": "Halaman lain",
+      "legend": "Asal: ditulis untuk laman ini daripada sumber yang dipetik. Draf AI: diterjemahkan dengan pembantu AI, menunggu semakan penutur asli. Belum: dipaparkan dalam bahasa Inggeris, atau bahasa Indonesia bagi pembaca bahasa Jawa.",
+      "javanese": "Belum ada penyemak penutur asli bahasa Jawa yang meluluskan, jadi semua teks bahasa Jawa dan tajuk Aksara Jawa ditandakan sebagai menunggu semakan."
+    },
+    "status": {
+      "source": "Asal",
+      "ai-draft": "Draf AI",
+      "missing": "Belum"
+    },
+    "studio": {
+      "title": "Dihasilkan oleh",
+      "body": "Direka dan dibina oleh {{studio}} sebagai projek berkumpulan."
+    }
+  }
+}

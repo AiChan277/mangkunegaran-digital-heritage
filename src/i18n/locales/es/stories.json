@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Relatos",
+    "description": "Relatos documentados de la historia de Mangkunegaran: la radio, una canción real de bienvenida y la Legión."
+  },
+  "header": {
+    "eyebrow": "Capítulo cuatro",
+    "title": "Relatos",
+    "intro": "Ensayos breves sobre la historia de la casa, cada uno con sus fuentes."
+  },
+  "readingTime": "{{n}} min de lectura",
+  "back": "Todos los relatos",
+  "verified": "Fuentes comprobadas el {{date}}",
+  "related": "Más lecturas",
+  "noteLabel": "Nota sobre las fuentes"
+}

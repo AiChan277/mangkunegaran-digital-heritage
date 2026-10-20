@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Lawatan",
+    "description": "Panduan pelawat ke Pura Mangkunegaran dengan piktogram, pelan tapak interaktif dan pautan ke halaman tempahan rasmi."
+  },
+  "header": {
+    "eyebrow": "Bab enam",
+    "title": "Lawatan",
+    "intro": "Perkara yang perlu diketahui sebelum anda pergi, diterangkan dengan gambar dan kata-kata."
+  },
+  "official": {
+    "title": "Waktu, tiket dan tempahan",
+    "body": "Waktu dibuka dan harga tiket boleh berubah, dan sumber kami tidak sepakat tentangnya. Sila semak halaman tempahan rasmi sebelum anda pergi.",
+    "tickets": "Halaman tempahan rasmi"
+  },
+  "address": {
+    "title": "Alamat",
+    "map": "Buka dalam peta"
+  },
+  "rules": {
+    "title": "Sebelum anda pergi",
+    "intro": "Piktogram bagi peraturan pelawat yang disenaraikan di halaman tempahan rasmi, boleh difahami apa jua bahasa anda.",
+    "verified": "Kali terakhir disahkan: {{date}} · Sumber:",
+    "keyLabel": "Cara membaca piktogram",
+    "keyProhibited": "Bulatan dengan palang: tidak dibenarkan",
+    "keyGuidance": "Bulatan kosong: sila lakukan, atau untuk makluman",
+    "groups": {
+      "dress": "Pakaian",
+      "photo": "Fotografi",
+      "conduct": "Tingkah laku",
+      "tour": "Lawatan anda"
+    },
+    "items": {
+      "modest-dress": "Pakai pakaian yang sopan",
+      "no-shorts": "Tiada seluar pendek atau skirt pendek",
+      "no-parang": "Tiada batik motif parang atau lereng",
+      "no-velvet": "Tiada pakaian baldu",
+      "no-headwear": "Tiada penutup kepala",
+      "no-sunglasses": "Tiada cermin mata hitam",
+      "no-flipflops": "Tiada selipar jepit",
+      "camera-permission": "Kamera profesional memerlukan kebenaran",
+      "no-food": "Tiada makanan atau minuman dari luar",
+      "no-smoking": "Dilarang merokok",
+      "no-weapons": "Tiada senjata atau objek tajam",
+      "keep-off-grass": "Jangan pijak rumput dan tumbuhan",
+      "litter": "Buang sampah ke dalam tong",
+      "guide": "Lawatan diiringi pemandu istana",
+      "arrive-early": "Tiba 15 minit sebelum sesi anda",
+      "cashless": "Bayaran tanpa tunai",
+      "children-free": "Kanak-kanak berumur 0–4 tahun masuk percuma"
+    }
+  },
+  "plan": {
+    "title": "Pelan tapak",
+    "intro": "Pelan skematik ruang-ruang yang diterangkan di laman ini. Pilih satu nombor untuk membaca tentang sesuatu tempat.",
+    "disclaimer": "Skematik dan bukan mengikut skala: kedudukan mengikut huraian bertulis, bukan ukur, dan tidak menunjukkan kawasan yang dibuka kepada pelawat.",
+    "gate": "Pintu gerbang utama",
+    "legend": "Tempat pada pelan",
+    "close": "Tutup",
+    "more": "Baca lanjut dalam Seni bina",
+    "rules": "Panduan di sini",
+    "select": "Tunjukkan {{name}}"
+  }
+}

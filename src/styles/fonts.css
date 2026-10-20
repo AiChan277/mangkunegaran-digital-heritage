@@ -1,0 +1,38 @@
+/*
+ * Self-hosted fonts (WOFF2 via Fontsource, bundled and hashed by Vite).
+ * Every face uses unicode-range, and the Noto script fonts are only named in
+ * the font stack of pages in that language (see lang.css), so a Latin page
+ * never downloads Thai, Khmer, Lao or Myanmar fonts. Language names shown in
+ * their own script elsewhere use the device's built-in fonts.
+ */
+@import "@fontsource-variable/newsreader/wght.css";
+@import "@fontsource-variable/newsreader/wght-italic.css";
+@import "@fontsource-variable/plus-jakarta-sans/wght.css";
+@import "@fontsource/noto-sans-javanese/javanese-400.css";
+@import "@fontsource/noto-sans-thai/thai-400.css";
+@import "@fontsource/noto-sans-thai/thai-600.css";
+@import "@fontsource/noto-sans-khmer/khmer-400.css";
+@import "@fontsource/noto-sans-khmer/khmer-600.css";
+@import "@fontsource/noto-sans-lao/lao-400.css";
+@import "@fontsource/noto-sans-lao/lao-600.css";
+@import "@fontsource/noto-sans-myanmar/myanmar-400.css";
+@import "@fontsource/noto-sans-myanmar/myanmar-600.css";
+
+/* Metric-matched local fallbacks (computed from the font files with fontTools). */
+@font-face {
+  font-family: "Newsreader Fallback";
+  src: local("Georgia"), local("Times New Roman");
+  size-adjust: 92.6%;
+  ascent-override: 79.3%;
+  descent-override: 28.6%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Fallback";
+  src: local("Arial"), local("Helvetica Neue"), local("Roboto");
+  size-adjust: 109.3%;
+  ascent-override: 95%;
+  descent-override: 20.3%;
+  line-gap-override: 0%;
+}

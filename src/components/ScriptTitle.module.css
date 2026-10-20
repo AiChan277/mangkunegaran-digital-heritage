@@ -1,0 +1,31 @@
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+  margin: 0;
+}
+
+.script {
+  color: var(--brass-text);
+  font-size: 1.5rem;
+  line-height: 1.9;
+}
+
+.light .script {
+  color: var(--brass-light);
+}
+
+.s .script {
+  font-size: 1.1rem;
+}
+
+.l .script {
+  font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.4rem);
+}
+
+.note {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}

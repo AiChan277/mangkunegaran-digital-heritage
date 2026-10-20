@@ -1,0 +1,76 @@
+{
+  "brand": {
+    "tagline": "A Living Heritage",
+    "concept": "Concept",
+    "siteTitle": "Mangkunegaran — A Living Heritage (Concept)"
+  },
+  "a11y": {
+    "skip": "Skip to content"
+  },
+  "nav": {
+    "primary": "Main",
+    "home": "Home",
+    "history": "History",
+    "architecture": "Architecture",
+    "culture": "Culture",
+    "stories": "Stories",
+    "gallery": "Gallery",
+    "visit": "Visit",
+    "about": "About",
+    "menu": "Menu",
+    "close": "Close menu"
+  },
+  "lang": {
+    "label": "Language",
+    "choose": "Choose a language",
+    "draft": "draft"
+  },
+  "footer": {
+    "disclaimer": "Independent concept redesign by {{studio}} for educational and portfolio purposes. Not affiliated with, endorsed by, or operated by Pura Mangkunegaran. For official information, visit",
+    "navLabel": "Site",
+    "explore": "Explore",
+    "project": "The project",
+    "sources": "Sources",
+    "credits": "Image credits",
+    "translationStatus": "Translation status",
+    "madeBy": "A concept by",
+    "uiDraft": "Interface text in {{language}} is an AI-drafted translation awaiting review."
+  },
+  "fallback": {
+    "label": "Language notice",
+    "notice": "This page is not yet available in {{language}}, so it is shown in {{shownIn}}.",
+    "draft": "This text is an AI-drafted translation awaiting review by a native speaker.",
+    "link": "Translation status"
+  },
+  "sources": {
+    "title": "Sources",
+    "refLabel": "Source {{n}}",
+    "published": "published {{date}}",
+    "accessed": "accessed {{date}}",
+    "archived": "archived copy",
+    "sourcesDiffer": "Sources differ"
+  },
+  "aksara": {
+    "label": "Aksara Jawa",
+    "awaiting": "awaiting native review"
+  },
+  "glossary": {
+    "hint": "show definition"
+  },
+  "listen": {
+    "thisSection": "this section",
+    "play": "Listen to {{name}}",
+    "pause": "Pause reading {{name}}",
+    "stop": "Stop reading",
+    "playShort": "Listen",
+    "pauseShort": "Pause",
+    "resumeShort": "Resume",
+    "statusPlaying": "Reading aloud"
+  },
+  "notFound": {
+    "title": "This page could not be found",
+    "body": "The address may be mistyped, or the page may have moved.",
+    "home": "Go to the home page",
+    "sections": "Or continue to"
+  }
+}

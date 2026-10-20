@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Kultura",
+    "description": "Batik, sayaw ng korte, panitikan, gamelan at wayang sa Mangkunegaran — ipinaliwanag nang may sanggunian."
+  },
+  "header": {
+    "eyebrow": "Kabanata tatlo",
+    "title": "Kultura",
+    "intro": "Apat na tradisyong isinasagawa pa rin, bawat isa'y isinalaysay mula sa nailathalang sanggunian."
+  },
+  "stanzaChart": "Bilang ng saknong bawat sukat na inaawit sa Serat Wedhatama",
+  "stanzas": "saknong",
+  "stanzaTotal": "{{n}} saknong lahat"
+}

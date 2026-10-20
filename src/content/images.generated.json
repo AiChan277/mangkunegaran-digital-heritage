@@ -1,0 +1,249 @@
+{
+  "aerial-archival": {
+    "width": 700,
+    "height": 521,
+    "color": "#585858",
+    "widths": [
+      480,
+      700
+    ]
+  },
+  "crafts": {
+    "width": 3840,
+    "height": 2160,
+    "color": "#f8f8f8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "dancers-female": {
+    "width": 3840,
+    "height": 2160,
+    "color": "#888878",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "dancers-male": {
+    "width": 3840,
+    "height": 2160,
+    "color": "#f8f8f8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "gamelan": {
+    "width": 2576,
+    "height": 1920,
+    "color": "#383838",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "gamelan-archival": {
+    "width": 700,
+    "height": 552,
+    "color": "#d8d8d8",
+    "widths": [
+      480,
+      700
+    ]
+  },
+  "gate": {
+    "width": 3840,
+    "height": 2160,
+    "color": "#c8d8e8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "gate-archival": {
+    "width": 541,
+    "height": 700,
+    "color": "#c8c8c8",
+    "widths": [
+      480,
+      541
+    ]
+  },
+  "kumudawati": {
+    "width": 3840,
+    "height": 2880,
+    "color": "#b8b8b8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "legion-archival": {
+    "width": 700,
+    "height": 553,
+    "color": "#484848",
+    "widths": [
+      480,
+      700
+    ]
+  },
+  "pamedan": {
+    "width": 1632,
+    "height": 962,
+    "color": "#080808",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1632
+    ]
+  },
+  "pendhapa-archival": {
+    "width": 3840,
+    "height": 2045,
+    "color": "#c8b8a8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "pendhapa-floor": {
+    "width": 2430,
+    "height": 1620,
+    "color": "#483818",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "pendhapa-grand": {
+    "width": 3840,
+    "height": 1472,
+    "color": "#c8d8e8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "pendhapa-grand-portrait": {
+    "width": 1190,
+    "height": 1472,
+    "color": "#c8d8e8",
+    "widths": [
+      480,
+      800,
+      1190
+    ]
+  },
+  "pendhapa-interior": {
+    "width": 3840,
+    "height": 2880,
+    "color": "#f8f8f8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "pracima-tuin": {
+    "width": 3840,
+    "height": 2160,
+    "color": "#b8c8d8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "pracimayasa-garden": {
+    "width": 3840,
+    "height": 2160,
+    "color": "#f8f8f8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "pringgitan": {
+    "width": 3264,
+    "height": 1860,
+    "color": "#b8a8a8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "stained-glass": {
+    "width": 3520,
+    "height": 2496,
+    "color": "#080808",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "wayang-archival": {
+    "width": 700,
+    "height": 498,
+    "color": "#080808",
+    "widths": [
+      480,
+      700
+    ]
+  },
+  "wayang-beber": {
+    "width": 2000,
+    "height": 888,
+    "color": "#d8d8c8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ]
+  }
+}

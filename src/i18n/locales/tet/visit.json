@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Vizita",
+    "description": "Matadalan ba vizitante Pura Mangkunegaran nian ho piktograma, planta interativa, no ligasaun ba pájina rezerva ofisiál."
+  },
+  "header": {
+    "eyebrow": "Kapítulu daneen",
+    "title": "Vizita",
+    "intro": "Saida mak di'ak atu hatene molok bá, esplika ho imajen no liafuan."
+  },
+  "official": {
+    "title": "Oras, bilete no rezerva",
+    "body": "Oras loke no folin bilete bele muda, no ami-nia fonte sira la hanesan. Favór haree pájina rezerva ofisiál molok bá.",
+    "tickets": "Pájina rezerva ofisiál"
+  },
+  "address": {
+    "title": "Enderesu",
+    "map": "Loke iha mapa"
+  },
+  "rules": {
+    "title": "Molok ita bá",
+    "intro": "Piktograma ba regra vizitante nian ne'ebé lista iha pájina rezerva ofisiál, bele komprende iha lian saida de'it.",
+    "verified": "Verifikasaun ikus: {{date}} · Fonte:",
+    "keyLabel": "Oinsá lee piktograma",
+    "keyProhibited": "Sírkulu ho liña: la permite",
+    "keyGuidance": "Sírkulu mamuk: favór halo, ka di'ak atu hatene",
+    "groups": {
+      "dress": "Hatais",
+      "photo": "Foti foto",
+      "conduct": "Hahalok",
+      "tour": "Ita-nia vizita"
+    },
+    "items": {
+      "modest-dress": "Hatais roupa ne'ebé moos no hakmatek",
+      "no-shorts": "La bele hatais kalsa badak ka saia badak",
+      "no-parang": "La bele hatais batik ho motivu parang ka lereng",
+      "no-velvet": "La bele hatais roupa veludu",
+      "no-headwear": "La bele hatais buat taka ulun",
+      "no-sunglasses": "La bele hatais óklu loron",
+      "no-flipflops": "La bele hatais sandália xinelu",
+      "camera-permission": "Kámara profisionál presiza lisensa",
+      "no-food": "La bele lori hahán ka hemu husi li'ur",
+      "no-smoking": "La bele fuma",
+      "no-weapons": "La bele lori kilat ka sasán kroat",
+      "keep-off-grass": "Labele tama iha du'ut no ai-horis",
+      "litter": "Soe lixu iha fatin lixu",
+      "guide": "Vizita akompaña ho guia palásiu nian",
+      "arrive-early": "To'o minutu 15 molok ita-nia sesaun",
+      "cashless": "Selu la ho osan-mean",
+      "children-free": "Labarik tinan 0–4 tama grátis"
+    }
+  },
+  "plan": {
+    "title": "Planta",
+    "intro": "Planta eskemátika ida husi fatin sira ne'ebé deskreve iha sítiu ne'e. Hili númeru ida atu lee kona-ba fatin ne'e.",
+    "disclaimer": "Eskemátiku no la tuir eskala: pozisaun tuir deskrisaun hakerek, la'ós sukat, no la hatudu área ne'ebé loke ba vizitante.",
+    "gate": "Odamatan prinsipál",
+    "legend": "Fatin sira iha planta",
+    "close": "Taka",
+    "more": "Lee tan iha Arkitetura",
+    "rules": "Matadalan iha ne'e",
+    "select": "Hatudu {{name}}"
+  }
+}

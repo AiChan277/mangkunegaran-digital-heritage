@@ -1,0 +1,62 @@
+.wrap {
+  display: grid;
+  gap: 20px;
+  justify-items: start;
+  padding-block: clamp(64px, 12vh, 140px) var(--section);
+  max-inline-size: 880px;
+}
+
+.code {
+  font-size: clamp(5rem, 3rem + 10vw, 12rem);
+  line-height: 0.85;
+  font-weight: 240;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--brass);
+}
+
+.title {
+  font-size: var(--step-4);
+}
+
+.body {
+  font-size: var(--step-1);
+  color: var(--text-muted);
+  max-inline-size: 48ch;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  color: var(--text);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0 20px;
+  inline-size: 100%;
+}
+
+.list a {
+  display: flex;
+  align-items: center;
+  min-block-size: 48px;
+  border-block-end: 1px solid var(--rule);
+  color: var(--text);
+  text-decoration: none;
+}

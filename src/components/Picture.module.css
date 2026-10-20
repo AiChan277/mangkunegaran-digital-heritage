@@ -1,0 +1,17 @@
+.img {
+  inline-size: 100%;
+  block-size: auto;
+  color: transparent; /* hides alt text flash while loading */
+}
+
+.fill {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.cover {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}

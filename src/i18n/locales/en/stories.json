@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Stories",
+    "description": "Sourced stories from the history of Mangkunegaran: radio, a royal welcome song, and the Legion."
+  },
+  "header": {
+    "eyebrow": "Chapter four",
+    "title": "Stories",
+    "intro": "Short essays from the history of the house, each with its sources."
+  },
+  "readingTime": "{{n}} min read",
+  "back": "All stories",
+  "verified": "Sources checked {{date}}",
+  "related": "Further reading",
+  "noteLabel": "A note on sources"
+}

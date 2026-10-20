@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Kasaysayan",
+    "description": "Mula sa Kasunduan sa Salatiga noong 1757 hanggang ngayon: isang timeline na may sanggunian tungkol sa Mangkunegaran at sa mga pinuno nito."
+  },
+  "header": {
+    "eyebrow": "Kabanata isa",
+    "title": "Kasaysayan",
+    "intro": "Mula sa isang kasunduan noong 1757 hanggang sa pagiging tagapag-ingat ng kultura ngayon."
+  },
+  "eraNav": "Mga panahon",
+  "timelineLabel": "Timeline, {{range}}",
+  "rulers": {
+    "title": "Ang mga pinuno ng Mangkunegaran",
+    "note": "Mga taon ng pamumuno ayon sa listahan sa mangkunegaran.id, na isinusulat ang titulo bilang Mangkoenagoro.",
+    "ruler": "Pinuno",
+    "reign": "Pamumuno"
+  }
+}

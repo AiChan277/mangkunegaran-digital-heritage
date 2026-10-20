@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Budaya",
+    "description": "Batik, tari istana, sastra, gamelan, dan wayang di Mangkunegaran — dijelaskan dengan sumber."
+  },
+  "header": {
+    "eyebrow": "Bab tiga",
+    "title": "Budaya",
+    "intro": "Empat tradisi yang masih dijalankan, masing-masing diceritakan dari sumber yang telah terbit."
+  },
+  "stanzaChart": "Jumlah bait per tembang dalam Serat Wedhatama",
+  "stanzas": "bait",
+  "stanzaTotal": "Total {{n}} bait"
+}

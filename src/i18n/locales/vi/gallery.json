@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Thư viện ảnh",
+    "description": "Ảnh Pura Mangkunegaran xưa và nay, mỗi ảnh đều có giấy phép mở và ghi công."
+  },
+  "header": {
+    "eyebrow": "Chương năm",
+    "title": "Thư viện ảnh",
+    "intro": "Ảnh cung điện xưa và nay — mỗi ảnh đều có giấy phép mở và ghi công."
+  },
+  "gridLabel": "Ảnh",
+  "open": "Mở ảnh: {{title}}",
+  "archival": "Tư liệu",
+  "dialogLabel": "Trình xem ảnh",
+  "close": "Đóng trình xem ảnh",
+  "prev": "Ảnh trước",
+  "next": "Ảnh tiếp theo",
+  "counter": "{{current}} / {{total}}",
+  "source": "Nguồn",
+  "license": "Giấy phép",
+  "note": "Tất cả ảnh được dùng theo giấy phép mở hoặc thuộc phạm vi công cộng, và được lưu trên trang này. Ảnh lịch sử mang niên đại do các bộ sưu tập lưu giữ cung cấp."
+}

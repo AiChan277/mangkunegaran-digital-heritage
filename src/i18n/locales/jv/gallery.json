@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Galeri",
+    "description": "Foto-foto Pura Mangkunegaran, rumiyin lan samangké, sedaya kanthi lisènsi terbuka lan kredit."
+  },
+  "header": {
+    "eyebrow": "Bab kaping gangsal",
+    "title": "Galeri",
+    "intro": "Foto-foto pura, rumiyin lan samangké — sedaya kanthi lisènsi terbuka lan kredit."
+  },
+  "gridLabel": "Foto",
+  "open": "Bikak gambar: {{title}}",
+  "archival": "Arsip",
+  "dialogLabel": "Panampil gambar",
+  "close": "Tutup panampil gambar",
+  "prev": "Gambar saderengipun",
+  "next": "Gambar salajengipun",
+  "counter": "{{current}} saking {{total}}",
+  "source": "Sumber",
+  "license": "Lisènsi",
+  "note": "Sedaya foto dipun ginakaken kanthi lisènsi terbuka utawi domain umum, saha dipun simpen ing situs punika. Foto sejarah nyerat tanggal saking koleksi ingkang nyimpen."
+}

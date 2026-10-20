@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Tungkol sa proyektong ito",
+    "description": "Case study: bakit at paano ginawa ang malayang konseptong ito sa labindalawang wika tungkol sa Pura Mangkunegaran, kasama ang mga sanggunian, kredito at kalagayan ng salin."
+  },
+  "header": {
+    "eyebrow": "Kabanata pito",
+    "title": "Tungkol sa proyektong ito",
+    "intro": "Isang case study sa paglalahad ng pamana sa lahat, sa sarili nilang wika."
+  },
+  "tocLabel": "Sa pahinang ito",
+  "design": {
+    "palette": "Paleta ng kulay",
+    "scriptsNote": "Naglo-load lang ang mga font ng sulat sa mga pahinang gumagamit nito."
+  },
+  "sources": {
+    "title": "Mga sanggunian",
+    "summary": "Nakasandig ang site sa {{facts}} naitalang pahayag na sinuri laban sa {{sources}} sanggunian: {{confirmed}} ang kinumpirma ng higit sa isang sanggunian, {{single}} ang mula sa iisang sanggunian, at {{disputed}} kung saan magkakaiba ang mga sanggunian at sinasabi iyon ng pahina.",
+    "ledger": "Ipakita ang buong talaan ng datos ({{n}} pahayag)",
+    "colClaim": "Pahayag",
+    "colConfidence": "Katiyakan",
+    "colSources": "Mga sanggunian",
+    "kind": {
+      "primary": "pangunahin",
+      "secondary": "pangalawa",
+      "supporting": "pansuporta"
+    },
+    "confidence": {
+      "confirmed": "kumpirmado",
+      "single-source": "iisang sanggunian",
+      "disputed": "magkakaiba ang sanggunian"
+    }
+  },
+  "credits": {
+    "title": "Mga kredito",
+    "images": "Mga litrato",
+    "imagesNote": "Ang mga larawan ay kopyang naka-host sa site, binago ang laki at ginawang modernong format. Minarkahan ang mga bersiyong na-crop.",
+    "source": "pinagmulan",
+    "fonts": "Mga typeface",
+    "code": "Software"
+  },
+  "translation": {
+    "title": "Kalagayan ng salin",
+    "intro": "Ano ang naisalin na, at gaano ito mapagkakatiwalaan.",
+    "language": "Wika",
+    "ui": "Interface",
+    "home": "Home",
+    "history": "Kasaysayan",
+    "other": "Ibang pahina",
+    "legend": "Orihinal: isinulat para sa site na ito mula sa mga binanggit na sanggunian. Draft ng AI: isinalin gamit ang AI assistant, naghihintay ng pagsusuri ng katutubong tagapagsalita. Wala pa: ipinapakita sa Ingles, o sa Indonesian para sa mga mambabasa ng Javanese.",
+    "javanese": "Wala pang katutubong tagasuri ng Javanese na nag-apruba, kaya lahat ng tekstong Javanese at pamagat sa Aksara Jawa ay minarkahang naghihintay ng pagsusuri."
+  },
+  "status": {
+    "source": "Orihinal",
+    "ai-draft": "Draft ng AI",
+    "missing": "Wala pa"
+  },
+  "studio": {
+    "title": "Ginawa ng",
+    "body": "Dinisenyo at binuo ng {{studio}} bilang proyekto ng grupo."
+  }
+}

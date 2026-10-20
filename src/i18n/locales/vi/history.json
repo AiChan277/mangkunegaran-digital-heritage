@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Lịch sử",
+    "description": "Từ Hiệp ước Salatiga năm 1757 đến nay: dòng thời gian có nguồn về Mangkunegaran và các vị cai trị."
+  },
+  "header": {
+    "eyebrow": "Chương một",
+    "title": "Lịch sử",
+    "intro": "Từ một thỏa thuận năm 1757 đến người gìn giữ văn hóa hôm nay."
+  },
+  "eraNav": "Các thời kỳ",
+  "timelineLabel": "Dòng thời gian, {{range}}",
+  "rulers": {
+    "title": "Các vị cai trị Mangkunegaran",
+    "note": "Năm trị vì theo danh sách trên mangkunegaran.id, nơi tước hiệu được viết là Mangkoenagoro.",
+    "ruler": "Người cai trị",
+    "reign": "Thời gian trị vì"
+  }
+}

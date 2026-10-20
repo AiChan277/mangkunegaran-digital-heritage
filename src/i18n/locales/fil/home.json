@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Mangkunegaran — Isang Buháy na Pamana",
+    "description": "Isang malaya at maraming-wikang konsepto tungkol sa Pura Mangkunegaran sa Surakarta: ang kasaysayan, arkitektura at buháy na kultura nito, at may sanggunian ang bawat datos."
+  },
+  "hero": {
+    "eyebrow": "Surakarta, Gitnang Java",
+    "subtitle": "isang buháy na pamana",
+    "concept": "Malayang konseptong muling disenyo — hindi ito ang opisyal na website ng Pura Mangkunegaran."
+  },
+  "intro": {
+    "eyebrow": "Panimula"
+  },
+  "journey": {
+    "eyebrow": "Ang paglalakbay sa arkitektura",
+    "title": "Mula sa bukas na parang hanggang sa puso ng bahay",
+    "cta": "Tuklasin ang arkitektura"
+  },
+  "stories": {
+    "eyebrow": "Mga Kuwento",
+    "title": "Mula sa archive",
+    "cta": "Lahat ng kuwento"
+  },
+  "arts": {
+    "eyebrow": "Sining at tradisyon",
+    "title": "Sayaw, tela, awit at tula",
+    "cta": "Tuklasin ang kultura"
+  },
+  "photos": {
+    "eyebrow": "Potograpiya",
+    "title": "Liwanag sa palasyo",
+    "cta": "Buksan ang galeriya"
+  },
+  "continuity": {
+    "eyebrow": "Pagpapatuloy ng kultura",
+    "title": "Pamana, sa kasalukuyan"
+  },
+  "languages": {
+    "eyebrow": "Labindalawang wika",
+    "title": "Iisang pamana, maraming tinig"
+  },
+  "sources": "Mga sanggunian ng pahinang ito"
+}

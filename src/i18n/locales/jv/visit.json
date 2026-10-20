@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Sowan",
+    "description": "Pitedah kangge tamu Pura Mangkunegaran kanthi piktogram, denah interaktif, saha link dhateng kaca reservasi resmi."
+  },
+  "header": {
+    "eyebrow": "Bab kaping nem",
+    "title": "Sowan",
+    "intro": "Bab ingkang prelu dipun mangertosi saderengipun rawuh, dipun andharaken kanthi gambar saha tembung."
+  },
+  "official": {
+    "title": "Wekdal bikak, karcis, saha reservasi",
+    "body": "Wekdal bikak lan reginipun karcis saged ewah, saha sumber-sumber kula boten sami. Sumangga mriksani kaca reservasi resmi saderengipun sowan.",
+    "tickets": "Kaca reservasi resmi"
+  },
+  "address": {
+    "title": "Alamat",
+    "map": "Bikak ing peta"
+  },
+  "rules": {
+    "title": "Saderengipun tindak",
+    "intro": "Piktogram kangge pranatan tamu ingkang kacathet ing kaca reservasi resmi, saged dipun mangertosi punapa kémawon basanipun.",
+    "verified": "Pungkasan dipun priksa: {{date}} · Sumber:",
+    "keyLabel": "Cara maos piktogram",
+    "keyProhibited": "Bunderan mawi garis: boten kepareng",
+    "keyGuidance": "Bunderan polos: sumangga dipun lampahi, utawi prelu dipun mangertosi",
+    "groups": {
+      "dress": "Busana",
+      "photo": "Fotografi",
+      "conduct": "Tata krama",
+      "tour": "Sowan panjenengan"
+    },
+    "items": {
+      "modest-dress": "Ngagem busana ingkang sopan",
+      "no-shorts": "Boten kepareng ngagem kathok utawi rok cekak",
+      "no-parang": "Boten kepareng ngagem bathik parang utawi lereng",
+      "no-velvet": "Boten kepareng ngagem busana beludru",
+      "no-headwear": "Boten kepareng ngagem tutup sirah",
+      "no-sunglasses": "Boten kepareng ngagem kacamata ireng",
+      "no-flipflops": "Boten kepareng ngagem sandhal jepit",
+      "camera-permission": "Kamera profésional mbetahaken palilah",
+      "no-food": "Boten kepareng mbekta dhaharan utawi unjukan saking njawi",
+      "no-smoking": "Boten kepareng ngrokok",
+      "no-weapons": "Boten kepareng mbekta gegaman utawi barang landhep",
+      "keep-off-grass": "Sampun ngidak suket saha tetuwuhan",
+      "litter": "Mbucal uwuh ing papanipun",
+      "guide": "Sowan dipun dherekaken pandhu pura",
+      "arrive-early": "Rawuh 15 menit saderengipun sesi",
+      "cashless": "Pambayaran tanpa arta tunai",
+      "children-free": "Laré yuswa 0–4 taun gratis"
+    }
+  },
+  "plan": {
+    "title": "Denah",
+    "intro": "Denah skematis papan-papan ingkang dipun andharaken ing situs punika. Pilih satunggaling angka kangge maos bab papan punika.",
+    "disclaimer": "Skematis lan boten miturut skala: papan miturut andharan seratan, sanès asil ukur, saha boten nedahaken papan pundi ingkang kabikak kangge tamu.",
+    "gate": "Gapura ageng",
+    "legend": "Papan ing denah",
+    "close": "Tutup",
+    "more": "Waos sangkepipun ing Wewangunan",
+    "rules": "Pitedah ing ngriki",
+    "select": "Tampilaken {{name}}"
+  }
+}

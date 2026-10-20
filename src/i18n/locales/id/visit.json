@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Berkunjung",
+    "description": "Panduan pengunjung Pura Mangkunegaran dengan piktogram, denah interaktif, dan tautan ke halaman reservasi resmi."
+  },
+  "header": {
+    "eyebrow": "Bab enam",
+    "title": "Berkunjung",
+    "intro": "Hal-hal yang perlu diketahui sebelum datang, dijelaskan dengan gambar maupun kata."
+  },
+  "official": {
+    "title": "Jam buka, tiket, dan reservasi",
+    "body": "Jam buka dan harga tiket dapat berubah, dan sumber-sumber kami tidak sepakat soal itu. Silakan periksa halaman reservasi resmi sebelum berkunjung.",
+    "tickets": "Halaman reservasi resmi"
+  },
+  "address": {
+    "title": "Alamat",
+    "map": "Buka di peta"
+  },
+  "rules": {
+    "title": "Sebelum berangkat",
+    "intro": "Piktogram untuk aturan pengunjung yang tercantum di halaman reservasi resmi, dapat dipahami apa pun bahasa Anda.",
+    "verified": "Terakhir diverifikasi: {{date}} · Sumber:",
+    "keyLabel": "Cara membaca piktogram",
+    "keyProhibited": "Lingkaran bergaris miring: tidak diperbolehkan",
+    "keyGuidance": "Lingkaran polos: harap dilakukan, atau perlu diketahui",
+    "groups": {
+      "dress": "Pakaian",
+      "photo": "Fotografi",
+      "conduct": "Perilaku",
+      "tour": "Kunjungan Anda"
+    },
+    "items": {
+      "modest-dress": "Kenakan pakaian sopan",
+      "no-shorts": "Dilarang celana pendek atau rok pendek",
+      "no-parang": "Dilarang batik motif parang atau lereng",
+      "no-velvet": "Dilarang pakaian berbahan beludru",
+      "no-headwear": "Dilarang memakai penutup kepala",
+      "no-sunglasses": "Dilarang memakai kacamata hitam",
+      "no-flipflops": "Dilarang memakai sandal jepit",
+      "camera-permission": "Kamera profesional memerlukan izin",
+      "no-food": "Dilarang membawa makanan atau minuman dari luar",
+      "no-smoking": "Dilarang merokok",
+      "no-weapons": "Dilarang membawa senjata atau benda tajam",
+      "keep-off-grass": "Jangan menginjak rumput dan tanaman",
+      "litter": "Buang sampah di tempatnya",
+      "guide": "Kunjungan didampingi pemandu istana",
+      "arrive-early": "Datang 15 menit sebelum sesi Anda",
+      "cashless": "Pembayaran nontunai",
+      "children-free": "Anak usia 0–4 tahun gratis"
+    }
+  },
+  "plan": {
+    "title": "Denah",
+    "intro": "Denah skematis ruang-ruang yang diuraikan di situs ini. Pilih sebuah nomor untuk membaca tentang tempat itu.",
+    "disclaimer": "Skematis dan tidak berskala: posisi mengikuti uraian tertulis, bukan hasil survei, dan tidak menunjukkan area mana yang terbuka bagi pengunjung.",
+    "gate": "Gerbang utama",
+    "legend": "Tempat pada denah",
+    "close": "Tutup",
+    "more": "Baca selengkapnya di Arsitektur",
+    "rules": "Panduan di sini",
+    "select": "Tampilkan {{name}}"
+  }
+}

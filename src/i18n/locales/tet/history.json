@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Istória",
+    "description": "Husi Tratadu Salatiga iha 1757 to'o ohin: kronolojia ho fonte kona-ba Mangkunegaran no ninia ukun-na'in sira."
+  },
+  "header": {
+    "eyebrow": "Kapítulu dahuluk",
+    "title": "Istória",
+    "intro": "Husi akordu ida iha 1757 to'o guarda kultura nian ohin loron."
+  },
+  "eraNav": "Períodu sira",
+  "timelineLabel": "Kronolojia, {{range}}",
+  "rulers": {
+    "title": "Ukun-na'in sira Mangkunegaran nian",
+    "note": "Tinan ukun tuir lista iha mangkunegaran.id, ne'ebé hakerek títulu hanesan Mangkoenagoro.",
+    "ruler": "Ukun-na'in",
+    "reign": "Tempu ukun"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Istória sira",
+    "description": "Istória ho fonte husi Mangkunegaran nia istória: rádiu, kanta simu-vizitante real, no Lejiaun."
+  },
+  "header": {
+    "eyebrow": "Kapítulu dahaat",
+    "title": "Istória sira",
+    "intro": "Testu badak husi família nia istória, ida-idak ho ninia fonte."
+  },
+  "readingTime": "Minutu {{n}} lee",
+  "back": "Istória hotu",
+  "verified": "Fonte sira verifika iha {{date}}",
+  "related": "Lee tan",
+  "noteLabel": "Nota kona-ba fonte sira"
+}

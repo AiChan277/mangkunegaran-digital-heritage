@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Sejarah",
+    "description": "Dari Perjanjian Salatiga tahun 1757 hingga kini: lini masa bersumber tentang Mangkunegaran dan para penguasanya."
+  },
+  "header": {
+    "eyebrow": "Bab satu",
+    "title": "Sejarah",
+    "intro": "Dari sebuah kesepakatan pada 1757 hingga penjaga kebudayaan masa kini."
+  },
+  "eraNav": "Masa",
+  "timelineLabel": "Lini masa, {{range}}",
+  "rulers": {
+    "title": "Para penguasa Mangkunegaran",
+    "note": "Tahun bertakhta sesuai daftar di mangkunegaran.id, yang mengeja gelarnya Mangkoenagoro.",
+    "ruler": "Penguasa",
+    "reign": "Masa bertakhta"
+  }
+}

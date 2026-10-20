@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Budaya",
+    "description": "Batik, tarian istana, sastera, gamelan dan wayang di Mangkunegaran — diterangkan dengan sumber."
+  },
+  "header": {
+    "eyebrow": "Bab tiga",
+    "title": "Budaya",
+    "intro": "Empat tradisi yang masih diamalkan, setiap satu diceritakan daripada sumber yang diterbitkan."
+  },
+  "stanzaChart": "Bilangan rangkap bagi setiap irama dalam Serat Wedhatama",
+  "stanzas": "rangkap",
+  "stanzaTotal": "Jumlah {{n}} rangkap"
+}

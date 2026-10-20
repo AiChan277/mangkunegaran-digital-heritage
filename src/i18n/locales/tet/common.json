@@ -1,0 +1,76 @@
+{
+  "brand": {
+    "tagline": "Patrimóniu ne'ebé Moris",
+    "concept": "Konseitu",
+    "siteTitle": "Mangkunegaran — Patrimóniu ne'ebé Moris (Konseitu)"
+  },
+  "a11y": {
+    "skip": "Ba direta ba konteúdu"
+  },
+  "nav": {
+    "primary": "Prinsipál",
+    "home": "Pájina inisiál",
+    "history": "Istória",
+    "architecture": "Arkitetura",
+    "culture": "Kultura",
+    "stories": "Istória sira",
+    "gallery": "Galeria",
+    "visit": "Vizita",
+    "about": "Kona-ba",
+    "menu": "Menu",
+    "close": "Taka menu"
+  },
+  "lang": {
+    "label": "Lian",
+    "choose": "Hili lian ida",
+    "draft": "rascunho"
+  },
+  "footer": {
+    "disclaimer": "Konseitu dezeñu foun independente husi {{studio}} ba objetivu edukasaun no portfóliu. La iha ligasaun ho, la hetan apoiu husi, no la jere husi Pura Mangkunegaran. Informasaun ofisiál:",
+    "navLabel": "Sítiu",
+    "explore": "Esplora",
+    "project": "Projetu",
+    "sources": "Fonte sira",
+    "credits": "Kréditu imajen",
+    "translationStatus": "Situasaun tradusaun",
+    "madeBy": "Konseitu husi",
+    "uiDraft": "Testu interface iha {{language}} mak tradusaun rascunho husi AI ne'ebé hein hela revizaun."
+  },
+  "fallback": {
+    "label": "Avizu kona-ba lian",
+    "notice": "Pájina ne'e seidauk iha {{language}}, tanba ne'e hatudu iha {{shownIn}}.",
+    "draft": "Testu ne'e mak tradusaun rascunho husi AI ne'ebé hein hela revizaun husi ema ne'ebé ko'alia lian ne'e hanesan lian-inan.",
+    "link": "Situasaun tradusaun"
+  },
+  "sources": {
+    "title": "Fonte sira",
+    "refLabel": "Fonte {{n}}",
+    "published": "publika iha {{date}}",
+    "accessed": "asesu iha {{date}}",
+    "archived": "kópia arkivu",
+    "sourcesDiffer": "Fonte sira la hanesan"
+  },
+  "aksara": {
+    "label": "Aksara Jawa (letra Javanés)",
+    "awaiting": "hein hela revizaun husi ema lian-inan"
+  },
+  "glossary": {
+    "hint": "hatudu signifikadu"
+  },
+  "listen": {
+    "thisSection": "parte ne'e",
+    "play": "Rona {{name}}",
+    "pause": "Para uitoan lee {{name}}",
+    "stop": "Para lee",
+    "playShort": "Rona",
+    "pauseShort": "Para uitoan",
+    "resumeShort": "Kontinua",
+    "statusPlaying": "Lee hela ho lian maka'as"
+  },
+  "notFound": {
+    "title": "La hetan pájina ne'e",
+    "body": "Karik hakerek sala enderesu, ka pájina ne'e muda ona.",
+    "home": "Bá pájina inisiál",
+    "sections": "Ka kontinua ba"
+  }
+}

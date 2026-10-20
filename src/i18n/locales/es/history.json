@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Historia",
+    "description": "Del Tratado de Salatiga en 1757 hasta hoy: una cronología documentada de Mangkunegaran y sus gobernantes."
+  },
+  "header": {
+    "eyebrow": "Capítulo uno",
+    "title": "Historia",
+    "intro": "De un acuerdo en 1757 a guardián de la cultura en la actualidad."
+  },
+  "eraNav": "Épocas",
+  "timelineLabel": "Cronología, {{range}}",
+  "rulers": {
+    "title": "Los gobernantes de Mangkunegaran",
+    "note": "Años de reinado según la lista de mangkunegaran.id, que escribe el título como Mangkoenagoro.",
+    "ruler": "Gobernante",
+    "reign": "Reinado"
+  }
+}

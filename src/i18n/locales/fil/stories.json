@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Mga Kuwento",
+    "description": "Mga kuwentong may sanggunian mula sa kasaysayan ng Mangkunegaran: radyo, isang awit ng pagsalubong, at ang Lehiyon."
+  },
+  "header": {
+    "eyebrow": "Kabanata apat",
+    "title": "Mga Kuwento",
+    "intro": "Maiikling sanaysay mula sa kasaysayan ng angkan, bawat isa'y may sanggunian."
+  },
+  "readingTime": "{{n}} minutong pagbasa",
+  "back": "Lahat ng kuwento",
+  "verified": "Sinuri ang mga sanggunian noong {{date}}",
+  "related": "Karagdagang babasahin",
+  "noteLabel": "Tala tungkol sa mga sanggunian"
+}

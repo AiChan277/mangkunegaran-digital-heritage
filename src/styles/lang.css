@@ -1,0 +1,84 @@
+/* Load the Noto font for a script only on pages written in that script. */
+:root:lang(th) {
+  --font-script: "Noto Sans Thai";
+}
+:root:lang(km) {
+  --font-script: "Noto Sans Khmer";
+}
+:root:lang(lo) {
+  --font-script: "Noto Sans Lao";
+}
+:root:lang(my) {
+  --font-script: "Noto Sans Myanmar";
+}
+
+/* Language names in their own script (selector, footer, home): system fonts. */
+.lang-name,
+.lang-name * {
+  font-family: var(--font-system) !important;
+}
+
+/*
+ * Per-script typography. Thai, Khmer, Lao, Myanmar and Javanese scripts
+ * need taller lines; they also never get uppercase transforms or wide
+ * letter-spacing, which are Latin conventions.
+ */
+:lang(th),
+:lang(km),
+:lang(lo),
+:lang(my) {
+  --leading-body: 1.85;
+  --leading-tight: 1.35;
+  letter-spacing: 0;
+  /* These scripts don't use spaces between words: allow normal breaking. */
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+:lang(th) .eyebrow,
+:lang(km) .eyebrow,
+:lang(lo) .eyebrow,
+:lang(my) .eyebrow {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+:lang(th) h1,
+:lang(th) h2,
+:lang(th) h3,
+:lang(km) h1,
+:lang(km) h2,
+:lang(km) h3,
+:lang(lo) h1,
+:lang(lo) h2,
+:lang(lo) h3,
+:lang(my) h1,
+:lang(my) h2,
+:lang(my) h3 {
+  font-family: var(--font-text);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: var(--leading-tight);
+}
+
+/* Myanmar stacks tall: give headings extra room. */
+:lang(my) h1,
+:lang(my) h2 {
+  line-height: 1.6;
+}
+
+/* Javanese script (Aksara Jawa). */
+:lang(jv-Java),
+[lang="jv-Java"] {
+  font-family: var(--font-java);
+  line-height: 1.9;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 400;
+}
+
+/* Vietnamese stacked diacritics need a touch more line height in display. */
+:lang(vi) h1,
+:lang(vi) h2 {
+  line-height: 1.2;
+}

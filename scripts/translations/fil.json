@@ -1,0 +1,337 @@
+{
+  "common": {
+    "brand": {
+      "tagline": "Isang Buháy na Pamana",
+      "concept": "Konsepto",
+      "siteTitle": "Mangkunegaran — Isang Buháy na Pamana (Konsepto)"
+    },
+    "a11y": {
+      "skip": "Lumaktaw sa nilalaman"
+    },
+    "nav": {
+      "primary": "Pangunahin",
+      "home": "Home",
+      "history": "Kasaysayan",
+      "architecture": "Arkitektura",
+      "culture": "Kultura",
+      "stories": "Mga Kuwento",
+      "gallery": "Galeriya",
+      "visit": "Pagbisita",
+      "about": "Tungkol",
+      "menu": "Menu",
+      "close": "Isara ang menu"
+    },
+    "lang": {
+      "label": "Wika",
+      "choose": "Pumili ng wika",
+      "draft": "draft"
+    },
+    "footer": {
+      "disclaimer": "Malayang konseptong muling disenyo ng {{studio}} para sa layuning pang-edukasyon at portfolio. Hindi kaanib, hindi inendorso, at hindi pinatatakbo ng Pura Mangkunegaran. Para sa opisyal na impormasyon, bisitahin ang",
+      "navLabel": "Site",
+      "explore": "Tuklasin",
+      "project": "Ang proyekto",
+      "sources": "Mga sanggunian",
+      "credits": "Kredito ng larawan",
+      "translationStatus": "Kalagayan ng salin",
+      "madeBy": "Isang konsepto ng",
+      "uiDraft": "Ang teksto ng interface sa {{language}} ay draft na salin gamit ang AI na naghihintay ng pagsusuri."
+    },
+    "fallback": {
+      "label": "Paunawa sa wika",
+      "notice": "Wala pang bersiyon ng pahinang ito sa {{language}}, kaya ipinapakita ito sa {{shownIn}}.",
+      "draft": "Ang tekstong ito ay draft na salin gamit ang AI na naghihintay ng pagsusuri ng katutubong tagapagsalita.",
+      "link": "Kalagayan ng salin"
+    },
+    "sources": {
+      "title": "Mga sanggunian",
+      "refLabel": "Sanggunian {{n}}",
+      "published": "inilathala {{date}}",
+      "accessed": "binuksan {{date}}",
+      "archived": "naka-archive na kopya",
+      "sourcesDiffer": "Magkakaiba ang mga sanggunian"
+    },
+    "aksara": {
+      "label": "Aksara Jawa (sulat Javanese)",
+      "awaiting": "naghihintay ng pagsusuri ng katutubong tagapagsalita"
+    },
+    "glossary": {
+      "hint": "ipakita ang kahulugan"
+    },
+    "listen": {
+      "thisSection": "bahaging ito",
+      "play": "Pakinggan ang {{name}}",
+      "pause": "I-pause ang pagbasa ng {{name}}",
+      "stop": "Itigil ang pagbasa",
+      "playShort": "Pakinggan",
+      "pauseShort": "I-pause",
+      "resumeShort": "Ituloy",
+      "statusPlaying": "Binabasa nang malakas"
+    },
+    "notFound": {
+      "title": "Hindi makita ang pahinang ito",
+      "body": "Maaaring mali ang pagkakatype ng address, o nailipat na ang pahina.",
+      "home": "Pumunta sa home",
+      "sections": "O magpatuloy sa"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Mangkunegaran — Isang Buháy na Pamana",
+      "description": "Isang malaya at maraming-wikang konsepto tungkol sa Pura Mangkunegaran sa Surakarta: ang kasaysayan, arkitektura at buháy na kultura nito, at may sanggunian ang bawat datos."
+    },
+    "hero": {
+      "eyebrow": "Surakarta, Gitnang Java",
+      "subtitle": "isang buháy na pamana",
+      "concept": "Malayang konseptong muling disenyo — hindi ito ang opisyal na website ng Pura Mangkunegaran."
+    },
+    "intro": {
+      "eyebrow": "Panimula"
+    },
+    "journey": {
+      "eyebrow": "Ang paglalakbay sa arkitektura",
+      "title": "Mula sa bukas na parang hanggang sa puso ng bahay",
+      "cta": "Tuklasin ang arkitektura"
+    },
+    "stories": {
+      "eyebrow": "Mga Kuwento",
+      "title": "Mula sa archive",
+      "cta": "Lahat ng kuwento"
+    },
+    "arts": {
+      "eyebrow": "Sining at tradisyon",
+      "title": "Sayaw, tela, awit at tula",
+      "cta": "Tuklasin ang kultura"
+    },
+    "photos": {
+      "eyebrow": "Potograpiya",
+      "title": "Liwanag sa palasyo",
+      "cta": "Buksan ang galeriya"
+    },
+    "continuity": {
+      "eyebrow": "Pagpapatuloy ng kultura",
+      "title": "Pamana, sa kasalukuyan"
+    },
+    "languages": {
+      "eyebrow": "Labindalawang wika",
+      "title": "Iisang pamana, maraming tinig"
+    },
+    "sources": "Mga sanggunian ng pahinang ito"
+  },
+  "history": {
+    "meta": {
+      "title": "Kasaysayan",
+      "description": "Mula sa Kasunduan sa Salatiga noong 1757 hanggang ngayon: isang timeline na may sanggunian tungkol sa Mangkunegaran at sa mga pinuno nito."
+    },
+    "header": {
+      "eyebrow": "Kabanata isa",
+      "title": "Kasaysayan",
+      "intro": "Mula sa isang kasunduan noong 1757 hanggang sa pagiging tagapag-ingat ng kultura ngayon."
+    },
+    "eraNav": "Mga panahon",
+    "timelineLabel": "Timeline, {{range}}",
+    "rulers": {
+      "title": "Ang mga pinuno ng Mangkunegaran",
+      "note": "Mga taon ng pamumuno ayon sa listahan sa mangkunegaran.id, na isinusulat ang titulo bilang Mangkoenagoro.",
+      "ruler": "Pinuno",
+      "reign": "Pamumuno"
+    }
+  },
+  "architecture": {
+    "meta": {
+      "title": "Arkitektura",
+      "description": "Ang mga espasyo ng Pura Mangkunegaran ayon sa pagkakasunod na dinaraanan ng bisita — Pamedan, Pendhapa Ageng, Pringgitan, Dalem Ageng at iba pa."
+    },
+    "header": {
+      "eyebrow": "Kabanata dalawa",
+      "title": "Arkitektura",
+      "intro": "Ang mga espasyo ayon sa pagkakasunod na dinaraanan ng bisita, mula sa bukas na parang hanggang sa bahay sa gitna.",
+      "note": "Hindi sinasabi ng mga paglalarawang ito kung aling espasyo ang bukás sa mga bisita.",
+      "visitLink": "Impormasyon sa pagbisita"
+    },
+    "tocLabel": "Mga espasyo sa pahinang ito",
+    "archival": {
+      "title": "Ang bulwagan sa isang lumang litrato",
+      "body": "Isang litratong nakatala bilang mga 1880 ang nagpapakita ng pendhapa at ng mahaba at mababang bubong nito. Ang mga makasaysayang litrato sa site na ito ay mula sa mga pampublikong koleksiyon at dala ang petsang ibinigay ng kanilang katalogo.",
+      "cta": "Tingnan ang iba pang litrato"
+    }
+  },
+  "culture": {
+    "meta": {
+      "title": "Kultura",
+      "description": "Batik, sayaw ng korte, panitikan, gamelan at wayang sa Mangkunegaran — ipinaliwanag nang may sanggunian."
+    },
+    "header": {
+      "eyebrow": "Kabanata tatlo",
+      "title": "Kultura",
+      "intro": "Apat na tradisyong isinasagawa pa rin, bawat isa'y isinalaysay mula sa nailathalang sanggunian."
+    },
+    "stanzaChart": "Bilang ng saknong bawat sukat na inaawit sa Serat Wedhatama",
+    "stanzas": "saknong",
+    "stanzaTotal": "{{n}} saknong lahat"
+  },
+  "stories": {
+    "meta": {
+      "title": "Mga Kuwento",
+      "description": "Mga kuwentong may sanggunian mula sa kasaysayan ng Mangkunegaran: radyo, isang awit ng pagsalubong, at ang Lehiyon."
+    },
+    "header": {
+      "eyebrow": "Kabanata apat",
+      "title": "Mga Kuwento",
+      "intro": "Maiikling sanaysay mula sa kasaysayan ng angkan, bawat isa'y may sanggunian."
+    },
+    "readingTime": "{{n}} minutong pagbasa",
+    "back": "Lahat ng kuwento",
+    "verified": "Sinuri ang mga sanggunian noong {{date}}",
+    "related": "Karagdagang babasahin",
+    "noteLabel": "Tala tungkol sa mga sanggunian"
+  },
+  "gallery": {
+    "meta": {
+      "title": "Galeriya",
+      "description": "Mga litrato ng Pura Mangkunegaran, noon at ngayon, bawat isa'y may bukás na lisensiya at kredito."
+    },
+    "header": {
+      "eyebrow": "Kabanata lima",
+      "title": "Galeriya",
+      "intro": "Mga litrato ng palasyo, noon at ngayon — bawat isa'y may bukás na lisensiya at kredito."
+    },
+    "gridLabel": "Mga litrato",
+    "open": "Buksan ang larawan: {{title}}",
+    "archival": "Archive",
+    "dialogLabel": "Tagatingin ng larawan",
+    "close": "Isara ang tagatingin",
+    "prev": "Nakaraang larawan",
+    "next": "Susunod na larawan",
+    "counter": "{{current}} sa {{total}}",
+    "source": "Pinagmulan",
+    "license": "Lisensiya",
+    "note": "Lahat ng litrato ay ginagamit sa ilalim ng bukás na lisensiya o nasa pampublikong domain, at naka-host sa site na ito. Dala ng mga makasaysayang litrato ang petsang ibinigay ng mga koleksiyong nag-iingat sa mga ito."
+  },
+  "visit": {
+    "meta": {
+      "title": "Pagbisita",
+      "description": "Gabay sa pagbisita sa Pura Mangkunegaran na may mga pictogram, interaktibong plano, at link sa opisyal na pahina ng reserbasyon."
+    },
+    "header": {
+      "eyebrow": "Kabanata anim",
+      "title": "Pagbisita",
+      "intro": "Mga dapat malaman bago pumunta, ipinaliwanag sa larawan at salita."
+    },
+    "official": {
+      "title": "Oras, tiket at reserbasyon",
+      "body": "Nagbabago ang oras ng pagbubukas at presyo ng tiket, at hindi nagkakasundo ang aming mga sanggunian. Pakitingnan ang opisyal na pahina ng reserbasyon bago pumunta.",
+      "tickets": "Opisyal na pahina ng reserbasyon"
+    },
+    "address": {
+      "title": "Address",
+      "map": "Buksan sa mapa"
+    },
+    "rules": {
+      "title": "Bago ka pumunta",
+      "intro": "Mga pictogram para sa mga patakaran sa bisita na nakalista sa opisyal na pahina ng reserbasyon, mauunawaan anuman ang iyong wika.",
+      "verified": "Huling sinuri: {{date}} · Sanggunian:",
+      "keyLabel": "Paano basahin ang mga pictogram",
+      "keyProhibited": "Bilog na may guhit: hindi pinapayagan",
+      "keyGuidance": "Payak na bilog: gawin ito, o mabuting malaman",
+      "groups": {
+        "dress": "Pananamit",
+        "photo": "Pagkuha ng litrato",
+        "conduct": "Asal",
+        "tour": "Ang iyong pagbisita"
+      },
+      "items": {
+        "modest-dress": "Magsuot ng disenteng damit",
+        "no-shorts": "Bawal ang shorts o maikling palda",
+        "no-parang": "Bawal ang batik na may motif na parang o lereng",
+        "no-velvet": "Bawal ang damit na pelus",
+        "no-headwear": "Bawal ang takip sa ulo",
+        "no-sunglasses": "Bawal ang sunglasses",
+        "no-flipflops": "Bawal ang tsinelas",
+        "camera-permission": "Kailangan ng pahintulot para sa propesyonal na kamera",
+        "no-food": "Bawal ang pagkain o inumin mula sa labas",
+        "no-smoking": "Bawal manigarilyo",
+        "no-weapons": "Bawal ang armas o matutulis na bagay",
+        "keep-off-grass": "Huwag tumapak sa damo at halaman",
+        "litter": "Itapon ang basura sa basurahan",
+        "guide": "May kasamang gabay ng palasyo ang pagbisita",
+        "arrive-early": "Dumating 15 minuto bago ang iyong sesyon",
+        "cashless": "Walang cash ang bayad",
+        "children-free": "Libre ang mga batang 0–4 taong gulang"
+      }
+    },
+    "plan": {
+      "title": "Plano ng lugar",
+      "intro": "Isang eskematikong plano ng mga espasyong inilalarawan sa site na ito. Pumili ng numero para mabasa ang tungkol sa lugar.",
+      "disclaimer": "Eskematiko at hindi ayon sa sukat: batay sa nakasulat na paglalarawan ang mga posisyon, hindi sa sukat, at hindi nito ipinapakita kung aling lugar ang bukás sa bisita.",
+      "gate": "Pangunahing tarangkahan",
+      "legend": "Mga lugar sa plano",
+      "close": "Isara",
+      "more": "Magbasa pa sa Arkitektura",
+      "rules": "Gabay dito",
+      "select": "Ipakita ang {{name}}"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Tungkol sa proyektong ito",
+      "description": "Case study: bakit at paano ginawa ang malayang konseptong ito sa labindalawang wika tungkol sa Pura Mangkunegaran, kasama ang mga sanggunian, kredito at kalagayan ng salin."
+    },
+    "header": {
+      "eyebrow": "Kabanata pito",
+      "title": "Tungkol sa proyektong ito",
+      "intro": "Isang case study sa paglalahad ng pamana sa lahat, sa sarili nilang wika."
+    },
+    "tocLabel": "Sa pahinang ito",
+    "design": {
+      "palette": "Paleta ng kulay",
+      "scriptsNote": "Naglo-load lang ang mga font ng sulat sa mga pahinang gumagamit nito."
+    },
+    "sources": {
+      "title": "Mga sanggunian",
+      "summary": "Nakasandig ang site sa {{facts}} naitalang pahayag na sinuri laban sa {{sources}} sanggunian: {{confirmed}} ang kinumpirma ng higit sa isang sanggunian, {{single}} ang mula sa iisang sanggunian, at {{disputed}} kung saan magkakaiba ang mga sanggunian at sinasabi iyon ng pahina.",
+      "ledger": "Ipakita ang buong talaan ng datos ({{n}} pahayag)",
+      "colClaim": "Pahayag",
+      "colConfidence": "Katiyakan",
+      "colSources": "Mga sanggunian",
+      "kind": {
+        "primary": "pangunahin",
+        "secondary": "pangalawa",
+        "supporting": "pansuporta"
+      },
+      "confidence": {
+        "confirmed": "kumpirmado",
+        "single-source": "iisang sanggunian",
+        "disputed": "magkakaiba ang sanggunian"
+      }
+    },
+    "credits": {
+      "title": "Mga kredito",
+      "images": "Mga litrato",
+      "imagesNote": "Ang mga larawan ay kopyang naka-host sa site, binago ang laki at ginawang modernong format. Minarkahan ang mga bersiyong na-crop.",
+      "source": "pinagmulan",
+      "fonts": "Mga typeface",
+      "code": "Software"
+    },
+    "translation": {
+      "title": "Kalagayan ng salin",
+      "intro": "Ano ang naisalin na, at gaano ito mapagkakatiwalaan.",
+      "language": "Wika",
+      "ui": "Interface",
+      "home": "Home",
+      "history": "Kasaysayan",
+      "other": "Ibang pahina",
+      "legend": "Orihinal: isinulat para sa site na ito mula sa mga binanggit na sanggunian. Draft ng AI: isinalin gamit ang AI assistant, naghihintay ng pagsusuri ng katutubong tagapagsalita. Wala pa: ipinapakita sa Ingles, o sa Indonesian para sa mga mambabasa ng Javanese.",
+      "javanese": "Wala pang katutubong tagasuri ng Javanese na nag-apruba, kaya lahat ng tekstong Javanese at pamagat sa Aksara Jawa ay minarkahang naghihintay ng pagsusuri."
+    },
+    "status": {
+      "source": "Orihinal",
+      "ai-draft": "Draft ng AI",
+      "missing": "Wala pa"
+    },
+    "studio": {
+      "title": "Ginawa ng",
+      "body": "Dinisenyo at binuo ng {{studio}} bilang proyekto ng grupo."
+    }
+  }
+}

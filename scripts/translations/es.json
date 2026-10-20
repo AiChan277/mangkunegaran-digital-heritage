@@ -1,0 +1,337 @@
+{
+  "common": {
+    "brand": {
+      "tagline": "Un patrimonio vivo",
+      "concept": "Concepto",
+      "siteTitle": "Mangkunegaran — Un patrimonio vivo (Concepto)"
+    },
+    "a11y": {
+      "skip": "Saltar al contenido"
+    },
+    "nav": {
+      "primary": "Principal",
+      "home": "Inicio",
+      "history": "Historia",
+      "architecture": "Arquitectura",
+      "culture": "Cultura",
+      "stories": "Relatos",
+      "gallery": "Galería",
+      "visit": "Visita",
+      "about": "Acerca de",
+      "menu": "Menú",
+      "close": "Cerrar menú"
+    },
+    "lang": {
+      "label": "Idioma",
+      "choose": "Elige un idioma",
+      "draft": "borrador"
+    },
+    "footer": {
+      "disclaimer": "Rediseño conceptual independiente de {{studio}} con fines educativos y de portafolio. Sin afiliación, respaldo ni gestión de Pura Mangkunegaran. Información oficial:",
+      "navLabel": "Sitio",
+      "explore": "Explorar",
+      "project": "El proyecto",
+      "sources": "Fuentes",
+      "credits": "Créditos de imágenes",
+      "translationStatus": "Estado de la traducción",
+      "madeBy": "Un concepto de",
+      "uiDraft": "El texto de la interfaz en {{language}} es una traducción en borrador hecha con IA, pendiente de revisión."
+    },
+    "fallback": {
+      "label": "Aviso de idioma",
+      "notice": "Esta página aún no está disponible en {{language}}, por eso se muestra en {{shownIn}}.",
+      "draft": "Este texto es una traducción en borrador hecha con IA, pendiente de revisión por una persona hablante nativa.",
+      "link": "Estado de la traducción"
+    },
+    "sources": {
+      "title": "Fuentes",
+      "refLabel": "Fuente {{n}}",
+      "published": "publicado {{date}}",
+      "accessed": "consultado {{date}}",
+      "archived": "copia archivada",
+      "sourcesDiffer": "Las fuentes difieren"
+    },
+    "aksara": {
+      "label": "Aksara Jawa (escritura javanesa)",
+      "awaiting": "pendiente de revisión nativa"
+    },
+    "glossary": {
+      "hint": "ver definición"
+    },
+    "listen": {
+      "thisSection": "esta sección",
+      "play": "Escuchar {{name}}",
+      "pause": "Pausar la lectura de {{name}}",
+      "stop": "Detener la lectura",
+      "playShort": "Escuchar",
+      "pauseShort": "Pausa",
+      "resumeShort": "Continuar",
+      "statusPlaying": "Leyendo en voz alta"
+    },
+    "notFound": {
+      "title": "No se encontró esta página",
+      "body": "Puede que la dirección esté mal escrita o que la página se haya movido.",
+      "home": "Ir al inicio",
+      "sections": "O continúa en"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Mangkunegaran — Un patrimonio vivo",
+      "description": "Un concepto multilingüe e independiente sobre Pura Mangkunegaran en Surakarta: su historia, arquitectura y cultura viva, con cada dato referenciado."
+    },
+    "hero": {
+      "eyebrow": "Surakarta, Java Central",
+      "subtitle": "un patrimonio vivo",
+      "concept": "Rediseño conceptual independiente — no es el sitio web oficial de Pura Mangkunegaran."
+    },
+    "intro": {
+      "eyebrow": "Introducción"
+    },
+    "journey": {
+      "eyebrow": "El recorrido arquitectónico",
+      "title": "Del campo abierto al corazón de la casa",
+      "cta": "Explorar la arquitectura"
+    },
+    "stories": {
+      "eyebrow": "Relatos",
+      "title": "Desde el archivo",
+      "cta": "Todos los relatos"
+    },
+    "arts": {
+      "eyebrow": "Artes y tradiciones",
+      "title": "Danza, tela, canto y verso",
+      "cta": "Explorar la cultura"
+    },
+    "photos": {
+      "eyebrow": "Fotografía",
+      "title": "Luz sobre el palacio",
+      "cta": "Abrir la galería"
+    },
+    "continuity": {
+      "eyebrow": "Continuidad cultural",
+      "title": "El patrimonio, en presente"
+    },
+    "languages": {
+      "eyebrow": "Doce idiomas",
+      "title": "Un patrimonio, muchas voces"
+    },
+    "sources": "Fuentes de esta página"
+  },
+  "history": {
+    "meta": {
+      "title": "Historia",
+      "description": "Del Tratado de Salatiga en 1757 hasta hoy: una cronología documentada de Mangkunegaran y sus gobernantes."
+    },
+    "header": {
+      "eyebrow": "Capítulo uno",
+      "title": "Historia",
+      "intro": "De un acuerdo en 1757 a guardián de la cultura en la actualidad."
+    },
+    "eraNav": "Épocas",
+    "timelineLabel": "Cronología, {{range}}",
+    "rulers": {
+      "title": "Los gobernantes de Mangkunegaran",
+      "note": "Años de reinado según la lista de mangkunegaran.id, que escribe el título como Mangkoenagoro.",
+      "ruler": "Gobernante",
+      "reign": "Reinado"
+    }
+  },
+  "architecture": {
+    "meta": {
+      "title": "Arquitectura",
+      "description": "Los espacios de Pura Mangkunegaran en el orden en que los encuentra quien visita: Pamedan, Pendhapa Ageng, Pringgitan, Dalem Ageng y más."
+    },
+    "header": {
+      "eyebrow": "Capítulo dos",
+      "title": "Arquitectura",
+      "intro": "Los espacios en el orden en que se recorren, del campo abierto a la casa del centro.",
+      "note": "Estas descripciones no indican qué espacios están abiertos al público.",
+      "visitLink": "Información para la visita"
+    },
+    "tocLabel": "Espacios en esta página",
+    "archival": {
+      "title": "La sala en una fotografía antigua",
+      "body": "Una fotografía catalogada hacia 1880 muestra el pendhapa con su tejado largo y bajo. Las fotografías históricas de este sitio provienen de colecciones públicas y llevan las fechas que indican sus catálogos.",
+      "cta": "Ver más fotografías"
+    }
+  },
+  "culture": {
+    "meta": {
+      "title": "Cultura",
+      "description": "Batik, danza de corte, literatura, gamelán y wayang en Mangkunegaran, explicados con fuentes."
+    },
+    "header": {
+      "eyebrow": "Capítulo tres",
+      "title": "Cultura",
+      "intro": "Cuatro tradiciones que siguen vivas, contadas a partir de fuentes publicadas."
+    },
+    "stanzaChart": "Estrofas por métrica cantada en Serat Wedhatama",
+    "stanzas": "estrofas",
+    "stanzaTotal": "{{n}} estrofas en total"
+  },
+  "stories": {
+    "meta": {
+      "title": "Relatos",
+      "description": "Relatos documentados de la historia de Mangkunegaran: la radio, una canción real de bienvenida y la Legión."
+    },
+    "header": {
+      "eyebrow": "Capítulo cuatro",
+      "title": "Relatos",
+      "intro": "Ensayos breves sobre la historia de la casa, cada uno con sus fuentes."
+    },
+    "readingTime": "{{n}} min de lectura",
+    "back": "Todos los relatos",
+    "verified": "Fuentes comprobadas el {{date}}",
+    "related": "Más lecturas",
+    "noteLabel": "Nota sobre las fuentes"
+  },
+  "gallery": {
+    "meta": {
+      "title": "Galería",
+      "description": "Fotografías de Pura Mangkunegaran, de ayer y de hoy, con licencia abierta y créditos."
+    },
+    "header": {
+      "eyebrow": "Capítulo cinco",
+      "title": "Galería",
+      "intro": "Fotografías del palacio, de ayer y de hoy, todas con licencia abierta y sus créditos."
+    },
+    "gridLabel": "Fotografías",
+    "open": "Abrir imagen: {{title}}",
+    "archival": "De archivo",
+    "dialogLabel": "Visor de imágenes",
+    "close": "Cerrar el visor",
+    "prev": "Imagen anterior",
+    "next": "Imagen siguiente",
+    "counter": "{{current}} de {{total}}",
+    "source": "Fuente",
+    "license": "Licencia",
+    "note": "Todas las fotografías se usan con licencias abiertas o son de dominio público, y se alojan en este sitio. Las fotografías históricas llevan las fechas indicadas por las colecciones que las conservan."
+  },
+  "visit": {
+    "meta": {
+      "title": "Visita",
+      "description": "Indicaciones para visitar Pura Mangkunegaran con pictogramas, un plano interactivo y enlaces a la página oficial de reservas."
+    },
+    "header": {
+      "eyebrow": "Capítulo seis",
+      "title": "Visita",
+      "intro": "Lo que conviene saber antes de ir, explicado con imágenes además de palabras."
+    },
+    "official": {
+      "title": "Horarios, entradas y reservas",
+      "body": "Los horarios y los precios cambian, y nuestras fuentes no coinciden. Consulta la página oficial de reservas antes de ir.",
+      "tickets": "Página oficial de reservas"
+    },
+    "address": {
+      "title": "Dirección",
+      "map": "Abrir en el mapa"
+    },
+    "rules": {
+      "title": "Antes de ir",
+      "intro": "Pictogramas para las normas de visita que figuran en la página oficial de reservas, comprensibles hables el idioma que hables.",
+      "verified": "Última verificación: {{date}} · Fuente:",
+      "keyLabel": "Cómo leer los pictogramas",
+      "keyProhibited": "Círculo con barra: no permitido",
+      "keyGuidance": "Círculo sin barra: hazlo, o es bueno saberlo",
+      "groups": {
+        "dress": "Vestimenta",
+        "photo": "Fotografía",
+        "conduct": "Comportamiento",
+        "tour": "Tu visita"
+      },
+      "items": {
+        "modest-dress": "Viste con ropa discreta",
+        "no-shorts": "Sin pantalones cortos ni faldas cortas",
+        "no-parang": "Sin batik con motivo parang o lereng",
+        "no-velvet": "Sin ropa de terciopelo",
+        "no-headwear": "Sin prendas en la cabeza",
+        "no-sunglasses": "Sin gafas de sol",
+        "no-flipflops": "Sin chanclas",
+        "camera-permission": "Las cámaras profesionales requieren permiso",
+        "no-food": "Sin comida ni bebida del exterior",
+        "no-smoking": "Prohibido fumar",
+        "no-weapons": "Sin armas ni objetos cortantes",
+        "keep-off-grass": "No pises el césped ni las plantas",
+        "litter": "Tira la basura en las papeleras",
+        "guide": "Las visitas van acompañadas por un guía del palacio",
+        "arrive-early": "Llega 15 minutos antes de tu turno",
+        "cashless": "El pago es sin efectivo",
+        "children-free": "Entrada gratuita para menores de 0 a 4 años"
+      }
+    },
+    "plan": {
+      "title": "Plano",
+      "intro": "Un plano esquemático de los espacios descritos en este sitio. Elige un número para leer sobre ese lugar.",
+      "disclaimer": "Esquemático y sin escala: las posiciones siguen descripciones escritas, no un levantamiento, y no indican qué zonas están abiertas al público.",
+      "gate": "Puerta principal",
+      "legend": "Lugares del plano",
+      "close": "Cerrar",
+      "more": "Leer más en Arquitectura",
+      "rules": "Indicaciones aquí",
+      "select": "Mostrar {{name}}"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Acerca de este proyecto",
+      "description": "Caso de estudio: por qué y cómo se creó este concepto independiente en doce idiomas sobre Pura Mangkunegaran, con fuentes, créditos y estado de la traducción."
+    },
+    "header": {
+      "eyebrow": "Capítulo siete",
+      "title": "Acerca de este proyecto",
+      "intro": "Un caso de estudio sobre cómo presentar el patrimonio a todo el mundo, en su propio idioma."
+    },
+    "tocLabel": "En esta página",
+    "design": {
+      "palette": "Paleta de colores",
+      "scriptsNote": "Las fuentes de cada escritura solo se cargan en las páginas que las usan."
+    },
+    "sources": {
+      "title": "Fuentes",
+      "summary": "El sitio se basa en {{facts}} afirmaciones registradas y comprobadas con {{sources}} fuentes: {{confirmed}} confirmadas por más de una fuente, {{single}} de una sola fuente y {{disputed}} en las que las fuentes difieren y la página lo indica.",
+      "ledger": "Ver el registro completo de datos ({{n}} afirmaciones)",
+      "colClaim": "Afirmación",
+      "colConfidence": "Confianza",
+      "colSources": "Fuentes",
+      "kind": {
+        "primary": "primaria",
+        "secondary": "secundaria",
+        "supporting": "de apoyo"
+      },
+      "confidence": {
+        "confirmed": "confirmada",
+        "single-source": "una sola fuente",
+        "disputed": "fuentes discrepantes"
+      }
+    },
+    "credits": {
+      "title": "Créditos",
+      "images": "Fotografías",
+      "imagesNote": "Las imágenes son copias alojadas en el sitio, redimensionadas y convertidas a formatos modernos. Las versiones recortadas se indican como tales.",
+      "source": "fuente",
+      "fonts": "Tipografías",
+      "code": "Software"
+    },
+    "translation": {
+      "title": "Estado de la traducción",
+      "intro": "Qué se ha traducido y hasta qué punto se puede confiar en ello.",
+      "language": "Idioma",
+      "ui": "Interfaz",
+      "home": "Inicio",
+      "history": "Historia",
+      "other": "Otras páginas",
+      "legend": "Original: escrito para este sitio a partir de las fuentes citadas. Borrador IA: traducido con un asistente de IA, pendiente de revisión nativa. Aún no: se muestra en inglés, o en indonesio para quienes leen en javanés.",
+      "javanese": "Ninguna persona revisora nativa de javanés lo ha aprobado todavía, así que todo el texto en javanés y los títulos en Aksara Jawa figuran como pendientes de revisión."
+    },
+    "status": {
+      "source": "Original",
+      "ai-draft": "Borrador IA",
+      "missing": "Aún no"
+    },
+    "studio": {
+      "title": "Creado por",
+      "body": "Diseñado y desarrollado por {{studio}} como proyecto de grupo."
+    }
+  }
+}

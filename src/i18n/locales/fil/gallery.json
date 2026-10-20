@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Galeriya",
+    "description": "Mga litrato ng Pura Mangkunegaran, noon at ngayon, bawat isa'y may bukás na lisensiya at kredito."
+  },
+  "header": {
+    "eyebrow": "Kabanata lima",
+    "title": "Galeriya",
+    "intro": "Mga litrato ng palasyo, noon at ngayon — bawat isa'y may bukás na lisensiya at kredito."
+  },
+  "gridLabel": "Mga litrato",
+  "open": "Buksan ang larawan: {{title}}",
+  "archival": "Archive",
+  "dialogLabel": "Tagatingin ng larawan",
+  "close": "Isara ang tagatingin",
+  "prev": "Nakaraang larawan",
+  "next": "Susunod na larawan",
+  "counter": "{{current}} sa {{total}}",
+  "source": "Pinagmulan",
+  "license": "Lisensiya",
+  "note": "Lahat ng litrato ay ginagamit sa ilalim ng bukás na lisensiya o nasa pampublikong domain, at naka-host sa site na ito. Dala ng mga makasaysayang litrato ang petsang ibinigay ng mga koleksiyong nag-iingat sa mga ito."
+}

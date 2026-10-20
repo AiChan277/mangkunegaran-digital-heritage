@@ -1,0 +1,337 @@
+{
+  "common": {
+    "brand": {
+      "tagline": "Warisan ingkang Gesang",
+      "concept": "Konsep",
+      "siteTitle": "Mangkunegaran — Warisan ingkang Gesang (Konsep)"
+    },
+    "a11y": {
+      "skip": "Langsung dhateng isi"
+    },
+    "nav": {
+      "primary": "Utami",
+      "home": "Ngajeng",
+      "history": "Sejarah",
+      "architecture": "Wewangunan",
+      "culture": "Kabudayan",
+      "stories": "Cariyos",
+      "gallery": "Galeri",
+      "visit": "Sowan",
+      "about": "Babagan",
+      "menu": "Menu",
+      "close": "Tutup menu"
+    },
+    "lang": {
+      "label": "Basa",
+      "choose": "Pilih basa",
+      "draft": "draf"
+    },
+    "footer": {
+      "disclaimer": "Konsep desain ulang mardika dening {{studio}} kangge kaperluan pasinaon lan portofolio. Boten gadhah gegayutan kaliyan, boten dipun sengkuyung dening, saha boten dipun kelola dening Pura Mangkunegaran. Pawartos resmi:",
+      "navLabel": "Situs",
+      "explore": "Jelajah",
+      "project": "Proyek",
+      "sources": "Sumber",
+      "credits": "Kredit gambar",
+      "translationStatus": "Status pertalan",
+      "madeBy": "Konsep anggitanipun",
+      "uiDraft": "Seratan antarmuka ing {{language}} punika pertalan draf AI ingkang nengga dipun priksa."
+    },
+    "fallback": {
+      "label": "Pawartos basa",
+      "notice": "Kaca punika dèrèng wonten ing {{language}}, pramila dipun tampilaken ing {{shownIn}}.",
+      "draft": "Seratan punika pertalan draf AI ingkang nengga dipun priksa dening penutur asli.",
+      "link": "Status pertalan"
+    },
+    "sources": {
+      "title": "Sumber",
+      "refLabel": "Sumber {{n}}",
+      "published": "kawedalaken {{date}}",
+      "accessed": "dipun bikak {{date}}",
+      "archived": "salinan arsip",
+      "sourcesDiffer": "Sumber-sumber béda"
+    },
+    "aksara": {
+      "label": "Aksara Jawa",
+      "awaiting": "nengga dipun priksa penutur asli"
+    },
+    "glossary": {
+      "hint": "tampilaken teges"
+    },
+    "listen": {
+      "thisSection": "perangan punika",
+      "play": "Mirengaken {{name}}",
+      "pause": "Ngendhegaken waosan {{name}}",
+      "stop": "Mungkasi waosan",
+      "playShort": "Mirengaken",
+      "pauseShort": "Kendel",
+      "resumeShort": "Lajengaken",
+      "statusPlaying": "Saweg dipun waos"
+    },
+    "notFound": {
+      "title": "Kaca punika boten kepanggih",
+      "body": "Alamatipun bokmenawi lepat, utawi kacanipun sampun dipun pindhah.",
+      "home": "Dhateng kaca ngajeng",
+      "sections": "Utawi lajengaken dhateng"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Mangkunegaran — Warisan ingkang Gesang",
+      "description": "Konsep mardika ing kathah basa bab Pura Mangkunegaran ing Surakarta: sejarah, wewangunan, saha kabudayanipun ingkang gesang, sedaya kanthi sumber."
+    },
+    "hero": {
+      "eyebrow": "Surakarta, Jawi Tengah",
+      "subtitle": "warisan ingkang gesang",
+      "concept": "Konsep desain ulang mardika — sanès situs resmi Pura Mangkunegaran."
+    },
+    "intro": {
+      "eyebrow": "Purwaka"
+    },
+    "journey": {
+      "eyebrow": "Lampahing wewangunan",
+      "title": "Saking ara-ara dumugi tengahing dalem",
+      "cta": "Jelajah wewangunan"
+    },
+    "stories": {
+      "eyebrow": "Cariyos",
+      "title": "Saking arsip",
+      "cta": "Sedaya cariyos"
+    },
+    "arts": {
+      "eyebrow": "Kagunan lan tradhisi",
+      "title": "Beksan, sinjang, tembang, saha sastra",
+      "cta": "Jelajah kabudayan"
+    },
+    "photos": {
+      "eyebrow": "Fotografi",
+      "title": "Pepadhang ing pura",
+      "cta": "Bikak galeri"
+    },
+    "continuity": {
+      "eyebrow": "Lestantuning kabudayan",
+      "title": "Warisan, ing jaman samangké"
+    },
+    "languages": {
+      "eyebrow": "Kalih welas basa",
+      "title": "Satunggal warisan, kathah swanten"
+    },
+    "sources": "Sumber kangge kaca punika"
+  },
+  "history": {
+    "meta": {
+      "title": "Sejarah",
+      "description": "Saking Prajanjian Salatiga taun 1757 dumugi samangké: lampahing wekdal kanthi sumber bab Mangkunegaran saha para pangagengipun."
+    },
+    "header": {
+      "eyebrow": "Bab kapisan",
+      "title": "Sejarah",
+      "intro": "Saking prajanjian ing taun 1757 dumugi pangreksa kabudayan ing jaman samangké."
+    },
+    "eraNav": "Jaman",
+    "timelineLabel": "Lampahing wekdal, {{range}}",
+    "rulers": {
+      "title": "Para pangageng Mangkunegaran",
+      "note": "Taun jumeneng miturut pratélan ing mangkunegaran.id, ingkang nyerat asmanipun Mangkoenagoro.",
+      "ruler": "Pangageng",
+      "reign": "Jumeneng"
+    }
+  },
+  "architecture": {
+    "meta": {
+      "title": "Wewangunan",
+      "description": "Papan-papan ing Pura Mangkunegaran miturut urutan ingkang dipun panggihi tamu — Pamedan, Pendhapa Ageng, Pringgitan, Dalem Ageng, lan sanèsipun."
+    },
+    "header": {
+      "eyebrow": "Bab kaping kalih",
+      "title": "Wewangunan",
+      "intro": "Papan-papan miturut urutan ingkang dipun panggihi tamu, saking ara-ara dumugi dalem ing tengah.",
+      "note": "Andharan punika boten nyebutaken papan pundi ingkang kabikak kangge tamu.",
+      "visitLink": "Pawartos sowan"
+    },
+    "tocLabel": "Papan ing kaca punika",
+    "archival": {
+      "title": "Bangsal ing foto rumiyin",
+      "body": "Satunggaling foto ingkang kacathet watawis taun 1880 nedahaken pendhapa kanthi payon ingkang panjang lan andhap. Foto-foto sejarah ing situs punika asalipun saking koleksi umum lan nyerat tanggal miturut katalogipun.",
+      "cta": "Mirsani foto sanèsipun"
+    }
+  },
+  "culture": {
+    "meta": {
+      "title": "Kabudayan",
+      "description": "Bathik, beksan pura, sastra, gamelan, saha wayang ing Mangkunegaran — dipun andharaken kanthi sumber."
+    },
+    "header": {
+      "eyebrow": "Bab kaping tiga",
+      "title": "Kabudayan",
+      "intro": "Sekawan tradhisi ingkang taksih lumampah, sedaya dipun cariyosaken saking sumber ingkang sampun kawedalaken."
+    },
+    "stanzaChart": "Cacahing pada saben tembang ing Serat Wedhatama",
+    "stanzas": "pada",
+    "stanzaTotal": "Gunggungipun {{n}} pada"
+  },
+  "stories": {
+    "meta": {
+      "title": "Cariyos",
+      "description": "Cariyos kanthi sumber saking sejarah Mangkunegaran: radio, tembang pambagya, saha Legiun."
+    },
+    "header": {
+      "eyebrow": "Bab kaping sekawan",
+      "title": "Cariyos",
+      "intro": "Seratan cekak saking sejarah trah punika, sedaya kanthi sumberipun."
+    },
+    "readingTime": "{{n}} menit maos",
+    "back": "Sedaya cariyos",
+    "verified": "Sumber dipun priksa {{date}}",
+    "related": "Waosan sanèsipun",
+    "noteLabel": "Cathetan bab sumber"
+  },
+  "gallery": {
+    "meta": {
+      "title": "Galeri",
+      "description": "Foto-foto Pura Mangkunegaran, rumiyin lan samangké, sedaya kanthi lisènsi terbuka lan kredit."
+    },
+    "header": {
+      "eyebrow": "Bab kaping gangsal",
+      "title": "Galeri",
+      "intro": "Foto-foto pura, rumiyin lan samangké — sedaya kanthi lisènsi terbuka lan kredit."
+    },
+    "gridLabel": "Foto",
+    "open": "Bikak gambar: {{title}}",
+    "archival": "Arsip",
+    "dialogLabel": "Panampil gambar",
+    "close": "Tutup panampil gambar",
+    "prev": "Gambar saderengipun",
+    "next": "Gambar salajengipun",
+    "counter": "{{current}} saking {{total}}",
+    "source": "Sumber",
+    "license": "Lisènsi",
+    "note": "Sedaya foto dipun ginakaken kanthi lisènsi terbuka utawi domain umum, saha dipun simpen ing situs punika. Foto sejarah nyerat tanggal saking koleksi ingkang nyimpen."
+  },
+  "visit": {
+    "meta": {
+      "title": "Sowan",
+      "description": "Pitedah kangge tamu Pura Mangkunegaran kanthi piktogram, denah interaktif, saha link dhateng kaca reservasi resmi."
+    },
+    "header": {
+      "eyebrow": "Bab kaping nem",
+      "title": "Sowan",
+      "intro": "Bab ingkang prelu dipun mangertosi saderengipun rawuh, dipun andharaken kanthi gambar saha tembung."
+    },
+    "official": {
+      "title": "Wekdal bikak, karcis, saha reservasi",
+      "body": "Wekdal bikak lan reginipun karcis saged ewah, saha sumber-sumber kula boten sami. Sumangga mriksani kaca reservasi resmi saderengipun sowan.",
+      "tickets": "Kaca reservasi resmi"
+    },
+    "address": {
+      "title": "Alamat",
+      "map": "Bikak ing peta"
+    },
+    "rules": {
+      "title": "Saderengipun tindak",
+      "intro": "Piktogram kangge pranatan tamu ingkang kacathet ing kaca reservasi resmi, saged dipun mangertosi punapa kémawon basanipun.",
+      "verified": "Pungkasan dipun priksa: {{date}} · Sumber:",
+      "keyLabel": "Cara maos piktogram",
+      "keyProhibited": "Bunderan mawi garis: boten kepareng",
+      "keyGuidance": "Bunderan polos: sumangga dipun lampahi, utawi prelu dipun mangertosi",
+      "groups": {
+        "dress": "Busana",
+        "photo": "Fotografi",
+        "conduct": "Tata krama",
+        "tour": "Sowan panjenengan"
+      },
+      "items": {
+        "modest-dress": "Ngagem busana ingkang sopan",
+        "no-shorts": "Boten kepareng ngagem kathok utawi rok cekak",
+        "no-parang": "Boten kepareng ngagem bathik parang utawi lereng",
+        "no-velvet": "Boten kepareng ngagem busana beludru",
+        "no-headwear": "Boten kepareng ngagem tutup sirah",
+        "no-sunglasses": "Boten kepareng ngagem kacamata ireng",
+        "no-flipflops": "Boten kepareng ngagem sandhal jepit",
+        "camera-permission": "Kamera profésional mbetahaken palilah",
+        "no-food": "Boten kepareng mbekta dhaharan utawi unjukan saking njawi",
+        "no-smoking": "Boten kepareng ngrokok",
+        "no-weapons": "Boten kepareng mbekta gegaman utawi barang landhep",
+        "keep-off-grass": "Sampun ngidak suket saha tetuwuhan",
+        "litter": "Mbucal uwuh ing papanipun",
+        "guide": "Sowan dipun dherekaken pandhu pura",
+        "arrive-early": "Rawuh 15 menit saderengipun sesi",
+        "cashless": "Pambayaran tanpa arta tunai",
+        "children-free": "Laré yuswa 0–4 taun gratis"
+      }
+    },
+    "plan": {
+      "title": "Denah",
+      "intro": "Denah skematis papan-papan ingkang dipun andharaken ing situs punika. Pilih satunggaling angka kangge maos bab papan punika.",
+      "disclaimer": "Skematis lan boten miturut skala: papan miturut andharan seratan, sanès asil ukur, saha boten nedahaken papan pundi ingkang kabikak kangge tamu.",
+      "gate": "Gapura ageng",
+      "legend": "Papan ing denah",
+      "close": "Tutup",
+      "more": "Waos sangkepipun ing Wewangunan",
+      "rules": "Pitedah ing ngriki",
+      "select": "Tampilaken {{name}}"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Babagan proyek punika",
+      "description": "Studi kasus: kenging punapa lan kados pundi konsep mardika ing kalih welas basa bab Pura Mangkunegaran punika dipun damel, sesarengan sumber, kredit, saha status pertalan."
+    },
+    "header": {
+      "eyebrow": "Bab kaping pitu",
+      "title": "Babagan proyek punika",
+      "intro": "Studi kasus bab nyawisaken warisan kangge sedaya tiyang, ing basanipun piyambak."
+    },
+    "tocLabel": "Ing kaca punika",
+    "design": {
+      "palette": "Palèt werni",
+      "scriptsNote": "Fon aksara namung dipun momot ing kaca ingkang ngginakaken."
+    },
+    "sources": {
+      "title": "Sumber",
+      "summary": "Situs punika adhedhasar {{facts}} klaim ingkang kacathet lan dipun priksa kaliyan {{sources}} sumber: {{confirmed}} dipun kuwataken langkung saking satunggal sumber, {{single}} saking satunggal sumber, saha {{disputed}} ingkang sumberipun béda lan kaca nyebutaken.",
+      "ledger": "Tampilaken buku fakta jangkep ({{n}} klaim)",
+      "colClaim": "Klaim",
+      "colConfidence": "Kapitadosan",
+      "colSources": "Sumber",
+      "kind": {
+        "primary": "primer",
+        "secondary": "sekunder",
+        "supporting": "panyengkuyung"
+      },
+      "confidence": {
+        "confirmed": "kakuwataken",
+        "single-source": "satunggal sumber",
+        "disputed": "sumber béda"
+      }
+    },
+    "credits": {
+      "title": "Kredit",
+      "images": "Foto",
+      "imagesNote": "Gambar dipun simpen minangka salinan ing situs punika, dipun ewahi ukuran lan formatipun. Vèrsi ingkang dipun potong dipun tandhani.",
+      "source": "sumber",
+      "fonts": "Aksara (fon)",
+      "code": "Piranti alus"
+    },
+    "translation": {
+      "title": "Status pertalan",
+      "intro": "Punapa ingkang sampun dipun pertal, saha sepinten saged dipun pitados.",
+      "language": "Basa",
+      "ui": "Antarmuka",
+      "home": "Ngajeng",
+      "history": "Sejarah",
+      "other": "Kaca sanès",
+      "legend": "Asli: dipun serat kangge situs punika saking sumber ingkang dipun kutip. Draf AI: dipun pertal kanthi asistèn AI, nengga dipun priksa penutur asli. Dèrèng: dipun tampilaken ing basa Inggris, utawi basa Indonésia kangge pamaos basa Jawi.",
+      "javanese": "Dèrèng wonten pamriksa penutur asli basa Jawi ingkang nyarujuki, pramila sedaya seratan basa Jawi saha irah-irahan Aksara Jawa dipun tandhani nengga dipun priksa."
+    },
+    "status": {
+      "source": "Asli",
+      "ai-draft": "Draf AI",
+      "missing": "Dèrèng"
+    },
+    "studio": {
+      "title": "Dipun damel dening",
+      "body": "Dipun rancang lan dipun damel dening {{studio}} minangka pakaryan kelompok."
+    }
+  }
+}

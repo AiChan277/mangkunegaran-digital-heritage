@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Về dự án này",
+    "description": "Nghiên cứu tình huống: vì sao và bằng cách nào ý tưởng độc lập mười hai ngôn ngữ về Pura Mangkunegaran được thực hiện, kèm nguồn, ghi công và tình trạng bản dịch."
+  },
+  "header": {
+    "eyebrow": "Chương bảy",
+    "title": "Về dự án này",
+    "intro": "Một nghiên cứu tình huống về việc giới thiệu di sản cho mọi người, bằng chính ngôn ngữ của họ."
+  },
+  "tocLabel": "Trên trang này",
+  "design": {
+    "palette": "Bảng màu",
+    "scriptsNote": "Phông chữ cho từng hệ chữ chỉ được tải trên những trang cần đến."
+  },
+  "sources": {
+    "title": "Nguồn",
+    "summary": "Trang web dựa trên {{facts}} nhận định đã được ghi lại và đối chiếu với {{sources}} nguồn: {{confirmed}} được nhiều nguồn xác nhận, {{single}} từ một nguồn duy nhất, và {{disputed}} trường hợp các nguồn không thống nhất và trang có ghi rõ.",
+    "ledger": "Xem toàn bộ sổ dữ kiện ({{n}} nhận định)",
+    "colClaim": "Nhận định",
+    "colConfidence": "Độ tin cậy",
+    "colSources": "Nguồn",
+    "kind": {
+      "primary": "sơ cấp",
+      "secondary": "thứ cấp",
+      "supporting": "bổ trợ"
+    },
+    "confidence": {
+      "confirmed": "đã xác nhận",
+      "single-source": "một nguồn",
+      "disputed": "nguồn không thống nhất"
+    }
+  },
+  "credits": {
+    "title": "Ghi công",
+    "images": "Ảnh",
+    "imagesNote": "Hình ảnh là bản sao lưu trên trang, đã được đổi kích thước và chuyển sang định dạng hiện đại. Các phiên bản đã cắt được ghi chú.",
+    "source": "nguồn",
+    "fonts": "Phông chữ",
+    "code": "Phần mềm"
+  },
+  "translation": {
+    "title": "Tình trạng bản dịch",
+    "intro": "Những gì đã được dịch, và mức độ có thể tin cậy.",
+    "language": "Ngôn ngữ",
+    "ui": "Giao diện",
+    "home": "Trang chủ",
+    "history": "Lịch sử",
+    "other": "Các trang khác",
+    "legend": "Bản gốc: viết cho trang này từ các nguồn được trích dẫn. Bản nháp AI: dịch với trợ lý AI, đang chờ người bản ngữ duyệt. Chưa có: hiển thị bằng tiếng Anh, hoặc tiếng Indonesia đối với người đọc tiếng Java.",
+    "javanese": "Chưa có người duyệt bản ngữ tiếng Java nào phê duyệt, vì vậy mọi văn bản tiếng Java và tiêu đề Aksara Jawa đều được đánh dấu là đang chờ duyệt."
+  },
+  "status": {
+    "source": "Bản gốc",
+    "ai-draft": "Bản nháp AI",
+    "missing": "Chưa có"
+  },
+  "studio": {
+    "title": "Thực hiện bởi",
+    "body": "Được thiết kế và xây dựng bởi {{studio}} như một dự án nhóm."
+  }
+}

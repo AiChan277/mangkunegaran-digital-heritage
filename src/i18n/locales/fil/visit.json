@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Pagbisita",
+    "description": "Gabay sa pagbisita sa Pura Mangkunegaran na may mga pictogram, interaktibong plano, at link sa opisyal na pahina ng reserbasyon."
+  },
+  "header": {
+    "eyebrow": "Kabanata anim",
+    "title": "Pagbisita",
+    "intro": "Mga dapat malaman bago pumunta, ipinaliwanag sa larawan at salita."
+  },
+  "official": {
+    "title": "Oras, tiket at reserbasyon",
+    "body": "Nagbabago ang oras ng pagbubukas at presyo ng tiket, at hindi nagkakasundo ang aming mga sanggunian. Pakitingnan ang opisyal na pahina ng reserbasyon bago pumunta.",
+    "tickets": "Opisyal na pahina ng reserbasyon"
+  },
+  "address": {
+    "title": "Address",
+    "map": "Buksan sa mapa"
+  },
+  "rules": {
+    "title": "Bago ka pumunta",
+    "intro": "Mga pictogram para sa mga patakaran sa bisita na nakalista sa opisyal na pahina ng reserbasyon, mauunawaan anuman ang iyong wika.",
+    "verified": "Huling sinuri: {{date}} · Sanggunian:",
+    "keyLabel": "Paano basahin ang mga pictogram",
+    "keyProhibited": "Bilog na may guhit: hindi pinapayagan",
+    "keyGuidance": "Payak na bilog: gawin ito, o mabuting malaman",
+    "groups": {
+      "dress": "Pananamit",
+      "photo": "Pagkuha ng litrato",
+      "conduct": "Asal",
+      "tour": "Ang iyong pagbisita"
+    },
+    "items": {
+      "modest-dress": "Magsuot ng disenteng damit",
+      "no-shorts": "Bawal ang shorts o maikling palda",
+      "no-parang": "Bawal ang batik na may motif na parang o lereng",
+      "no-velvet": "Bawal ang damit na pelus",
+      "no-headwear": "Bawal ang takip sa ulo",
+      "no-sunglasses": "Bawal ang sunglasses",
+      "no-flipflops": "Bawal ang tsinelas",
+      "camera-permission": "Kailangan ng pahintulot para sa propesyonal na kamera",
+      "no-food": "Bawal ang pagkain o inumin mula sa labas",
+      "no-smoking": "Bawal manigarilyo",
+      "no-weapons": "Bawal ang armas o matutulis na bagay",
+      "keep-off-grass": "Huwag tumapak sa damo at halaman",
+      "litter": "Itapon ang basura sa basurahan",
+      "guide": "May kasamang gabay ng palasyo ang pagbisita",
+      "arrive-early": "Dumating 15 minuto bago ang iyong sesyon",
+      "cashless": "Walang cash ang bayad",
+      "children-free": "Libre ang mga batang 0–4 taong gulang"
+    }
+  },
+  "plan": {
+    "title": "Plano ng lugar",
+    "intro": "Isang eskematikong plano ng mga espasyong inilalarawan sa site na ito. Pumili ng numero para mabasa ang tungkol sa lugar.",
+    "disclaimer": "Eskematiko at hindi ayon sa sukat: batay sa nakasulat na paglalarawan ang mga posisyon, hindi sa sukat, at hindi nito ipinapakita kung aling lugar ang bukás sa bisita.",
+    "gate": "Pangunahing tarangkahan",
+    "legend": "Mga lugar sa plano",
+    "close": "Isara",
+    "more": "Magbasa pa sa Arkitektura",
+    "rules": "Gabay dito",
+    "select": "Ipakita ang {{name}}"
+  }
+}

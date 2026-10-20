@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Kultura",
+    "description": "Batik, dansa kortezana, literatura, gamelan no wayang iha Mangkunegaran — esplika ho fonte."
+  },
+  "header": {
+    "eyebrow": "Kapítulu datoluk",
+    "title": "Kultura",
+    "intro": "Tradisaun haat ne'ebé ema sei pratika, ida-idak konta husi fonte ne'ebé publika ona."
+  },
+  "stanzaChart": "Estrofe tuir kada métrika kanta iha Serat Wedhatama",
+  "stanzas": "estrofe",
+  "stanzaTotal": "Total estrofe {{n}}"
+}

@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Sejarah",
+    "description": "Saking Prajanjian Salatiga taun 1757 dumugi samangké: lampahing wekdal kanthi sumber bab Mangkunegaran saha para pangagengipun."
+  },
+  "header": {
+    "eyebrow": "Bab kapisan",
+    "title": "Sejarah",
+    "intro": "Saking prajanjian ing taun 1757 dumugi pangreksa kabudayan ing jaman samangké."
+  },
+  "eraNav": "Jaman",
+  "timelineLabel": "Lampahing wekdal, {{range}}",
+  "rulers": {
+    "title": "Para pangageng Mangkunegaran",
+    "note": "Taun jumeneng miturut pratélan ing mangkunegaran.id, ingkang nyerat asmanipun Mangkoenagoro.",
+    "ruler": "Pangageng",
+    "reign": "Jumeneng"
+  }
+}

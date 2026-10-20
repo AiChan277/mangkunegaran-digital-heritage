@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Tentang proyek ini",
+    "description": "Studi kasus: mengapa dan bagaimana konsep independen dua belas bahasa tentang Pura Mangkunegaran ini dibuat, beserta sumber, kredit, dan status terjemahan."
+  },
+  "header": {
+    "eyebrow": "Bab tujuh",
+    "title": "Tentang proyek ini",
+    "intro": "Sebuah studi kasus tentang menyajikan warisan budaya bagi semua orang, dalam bahasanya sendiri."
+  },
+  "tocLabel": "Di halaman ini",
+  "design": {
+    "palette": "Palet warna",
+    "scriptsNote": "Fon aksara hanya dimuat di halaman yang menggunakannya."
+  },
+  "sources": {
+    "title": "Sumber",
+    "summary": "Situs ini bertumpu pada {{facts}} klaim tercatat yang diperiksa terhadap {{sources}} sumber: {{confirmed}} dikonfirmasi lebih dari satu sumber, {{single}} dari satu sumber, dan {{disputed}} yang sumbernya berbeda dan halaman menyebutkannya.",
+    "ledger": "Tampilkan buku fakta lengkap ({{n}} klaim)",
+    "colClaim": "Klaim",
+    "colConfidence": "Keyakinan",
+    "colSources": "Sumber",
+    "kind": {
+      "primary": "primer",
+      "secondary": "sekunder",
+      "supporting": "pendukung"
+    },
+    "confidence": {
+      "confirmed": "terkonfirmasi",
+      "single-source": "satu sumber",
+      "disputed": "sumber berbeda"
+    }
+  },
+  "credits": {
+    "title": "Kredit",
+    "images": "Foto",
+    "imagesNote": "Gambar disimpan sebagai salinan di situs ini, diubah ukuran dan formatnya. Versi yang dipotong ditandai.",
+    "source": "sumber",
+    "fonts": "Huruf",
+    "code": "Perangkat lunak"
+  },
+  "translation": {
+    "title": "Status terjemahan",
+    "intro": "Apa saja yang sudah diterjemahkan, dan seberapa jauh dapat dipercaya.",
+    "language": "Bahasa",
+    "ui": "Antarmuka",
+    "home": "Beranda",
+    "history": "Sejarah",
+    "other": "Halaman lain",
+    "legend": "Asli: ditulis untuk situs ini dari sumber yang dikutip. Draf AI: diterjemahkan dengan asisten AI, menunggu tinjauan penutur asli. Belum: ditampilkan dalam bahasa Inggris, atau bahasa Indonesia bagi pembaca bahasa Jawa.",
+    "javanese": "Belum ada peninjau penutur asli bahasa Jawa yang menyetujui, sehingga seluruh teks berbahasa Jawa dan judul Aksara Jawa ditandai menunggu tinjauan."
+  },
+  "status": {
+    "source": "Asli",
+    "ai-draft": "Draf AI",
+    "missing": "Belum"
+  },
+  "studio": {
+    "title": "Dibuat oleh",
+    "body": "Dirancang dan dibangun oleh {{studio}} sebagai tugas kelompok."
+  }
+}

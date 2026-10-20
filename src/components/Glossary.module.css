@@ -1,0 +1,52 @@
+.wrap {
+  position: relative;
+  display: inline;
+}
+
+.term {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-style: italic;
+  color: inherit;
+  cursor: help;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.22em;
+  text-decoration-color: var(--brass-text);
+}
+
+.panel {
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: calc(100% + 8px);
+  z-index: 20;
+  display: block;
+  inline-size: max-content;
+  max-inline-size: min(300px, 78vw);
+  padding: 14px 16px;
+  background: var(--ink);
+  color: var(--ivory);
+  font-family: var(--font-text);
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 1.5;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.18);
+}
+
+.panel[hidden] {
+  display: none;
+}
+
+.panelTerm {
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--brass-light);
+  margin-block-end: 4px;
+}

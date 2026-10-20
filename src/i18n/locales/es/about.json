@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Acerca de este proyecto",
+    "description": "Caso de estudio: por qué y cómo se creó este concepto independiente en doce idiomas sobre Pura Mangkunegaran, con fuentes, créditos y estado de la traducción."
+  },
+  "header": {
+    "eyebrow": "Capítulo siete",
+    "title": "Acerca de este proyecto",
+    "intro": "Un caso de estudio sobre cómo presentar el patrimonio a todo el mundo, en su propio idioma."
+  },
+  "tocLabel": "En esta página",
+  "design": {
+    "palette": "Paleta de colores",
+    "scriptsNote": "Las fuentes de cada escritura solo se cargan en las páginas que las usan."
+  },
+  "sources": {
+    "title": "Fuentes",
+    "summary": "El sitio se basa en {{facts}} afirmaciones registradas y comprobadas con {{sources}} fuentes: {{confirmed}} confirmadas por más de una fuente, {{single}} de una sola fuente y {{disputed}} en las que las fuentes difieren y la página lo indica.",
+    "ledger": "Ver el registro completo de datos ({{n}} afirmaciones)",
+    "colClaim": "Afirmación",
+    "colConfidence": "Confianza",
+    "colSources": "Fuentes",
+    "kind": {
+      "primary": "primaria",
+      "secondary": "secundaria",
+      "supporting": "de apoyo"
+    },
+    "confidence": {
+      "confirmed": "confirmada",
+      "single-source": "una sola fuente",
+      "disputed": "fuentes discrepantes"
+    }
+  },
+  "credits": {
+    "title": "Créditos",
+    "images": "Fotografías",
+    "imagesNote": "Las imágenes son copias alojadas en el sitio, redimensionadas y convertidas a formatos modernos. Las versiones recortadas se indican como tales.",
+    "source": "fuente",
+    "fonts": "Tipografías",
+    "code": "Software"
+  },
+  "translation": {
+    "title": "Estado de la traducción",
+    "intro": "Qué se ha traducido y hasta qué punto se puede confiar en ello.",
+    "language": "Idioma",
+    "ui": "Interfaz",
+    "home": "Inicio",
+    "history": "Historia",
+    "other": "Otras páginas",
+    "legend": "Original: escrito para este sitio a partir de las fuentes citadas. Borrador IA: traducido con un asistente de IA, pendiente de revisión nativa. Aún no: se muestra en inglés, o en indonesio para quienes leen en javanés.",
+    "javanese": "Ninguna persona revisora nativa de javanés lo ha aprobado todavía, así que todo el texto en javanés y los títulos en Aksara Jawa figuran como pendientes de revisión."
+  },
+  "status": {
+    "source": "Original",
+    "ai-draft": "Borrador IA",
+    "missing": "Aún no"
+  },
+  "studio": {
+    "title": "Creado por",
+    "body": "Diseñado y desarrollado por {{studio}} como proyecto de grupo."
+  }
+}

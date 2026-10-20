@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Galeri",
+    "description": "Foto-foto Pura Mangkunegaran, dulu dan kini, masing-masing berlisensi terbuka dan dicantumkan kreditnya."
+  },
+  "header": {
+    "eyebrow": "Bab lima",
+    "title": "Galeri",
+    "intro": "Foto-foto istana, dulu dan kini — masing-masing berlisensi terbuka dan dicantumkan kreditnya."
+  },
+  "gridLabel": "Foto",
+  "open": "Buka gambar: {{title}}",
+  "archival": "Arsip",
+  "dialogLabel": "Penampil gambar",
+  "close": "Tutup penampil gambar",
+  "prev": "Gambar sebelumnya",
+  "next": "Gambar berikutnya",
+  "counter": "{{current}} dari {{total}}",
+  "source": "Sumber",
+  "license": "Lisensi",
+  "note": "Semua foto digunakan dengan lisensi terbuka atau berstatus domain publik, dan disimpan di situs ini. Foto bersejarah mencantumkan tanggal dari koleksi yang menyimpannya."
+}

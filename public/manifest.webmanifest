@@ -1,0 +1,14 @@
+{
+  "name": "Mangkunegaran — A Living Heritage (Concept)",
+  "short_name": "Mangkunegaran",
+  "description": "Independent multilingual concept redesign by Kelompok 7. Not affiliated with Pura Mangkunegaran.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5efe2",
+  "theme_color": "#f5efe2",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}

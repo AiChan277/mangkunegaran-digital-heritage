@@ -1,0 +1,82 @@
+.list {
+  list-style: none;
+  margin-block: 0 var(--section);
+  padding-block: 0;
+  display: grid;
+  gap: clamp(56px, 8vw, 104px);
+}
+
+.link {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gap);
+  row-gap: 20px;
+  align-items: end;
+  color: inherit;
+  text-decoration: none;
+}
+
+.image {
+  grid-column: 1 / span 6;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.image img {
+  transition: transform 700ms var(--ease);
+}
+
+.link:hover .image img {
+  transform: scale(1.025);
+}
+
+.text {
+  grid-column: 8 / span 5;
+  display: grid;
+  gap: 12px;
+}
+
+.flip .image {
+  grid-column: 7 / span 6;
+  order: 2;
+}
+
+.flip .text {
+  grid-column: 1 / span 5;
+}
+
+.num {
+  font-size: 2.6rem;
+  color: var(--brass-text);
+  line-height: 1;
+}
+
+.title {
+  font-size: var(--step-3);
+}
+
+.link:hover .title {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.dek {
+  color: var(--text-muted);
+}
+
+.meta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+@media (max-width: 760px) {
+  .image,
+  .text,
+  .flip .image,
+  .flip .text {
+    grid-column: 1 / -1;
+    order: initial;
+  }
+}

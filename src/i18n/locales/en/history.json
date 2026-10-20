@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "History",
+    "description": "From the Treaty of Salatiga in 1757 to the present: a sourced timeline of Mangkunegaran and its rulers."
+  },
+  "header": {
+    "eyebrow": "Chapter one",
+    "title": "History",
+    "intro": "From a settlement in 1757 to a guardian of culture today."
+  },
+  "eraNav": "Eras",
+  "timelineLabel": "Timeline, {{range}}",
+  "rulers": {
+    "title": "The rulers of Mangkunegaran",
+    "note": "Reign years as listed on mangkunegaran.id, which spells the title Mangkoenagoro.",
+    "ruler": "Ruler",
+    "reign": "Reign"
+  }
+}

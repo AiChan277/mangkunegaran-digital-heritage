@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Sejarah",
+    "description": "Dari Perjanjian Salatiga pada 1757 hingga kini: garis masa bersumber tentang Mangkunegaran dan para pemerintahnya."
+  },
+  "header": {
+    "eyebrow": "Bab satu",
+    "title": "Sejarah",
+    "intro": "Dari satu persetujuan pada 1757 hingga penjaga budaya hari ini."
+  },
+  "eraNav": "Zaman",
+  "timelineLabel": "Garis masa, {{range}}",
+  "rulers": {
+    "title": "Para pemerintah Mangkunegaran",
+    "note": "Tahun pemerintahan seperti yang disenaraikan di mangkunegaran.id, yang mengeja gelaran itu Mangkoenagoro.",
+    "ruler": "Pemerintah",
+    "reign": "Pemerintahan"
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "common": {
+    "brand": {
+      "tagline": "Patrimóniu ne'ebé Moris",
+      "concept": "Konseitu",
+      "siteTitle": "Mangkunegaran — Patrimóniu ne'ebé Moris (Konseitu)"
+    },
+    "a11y": {
+      "skip": "Ba direta ba konteúdu"
+    },
+    "nav": {
+      "primary": "Prinsipál",
+      "home": "Pájina inisiál",
+      "history": "Istória",
+      "architecture": "Arkitetura",
+      "culture": "Kultura",
+      "stories": "Istória sira",
+      "gallery": "Galeria",
+      "visit": "Vizita",
+      "about": "Kona-ba",
+      "menu": "Menu",
+      "close": "Taka menu"
+    },
+    "lang": {
+      "label": "Lian",
+      "choose": "Hili lian ida",
+      "draft": "rascunho"
+    },
+    "footer": {
+      "disclaimer": "Konseitu dezeñu foun independente husi {{studio}} ba objetivu edukasaun no portfóliu. La iha ligasaun ho, la hetan apoiu husi, no la jere husi Pura Mangkunegaran. Informasaun ofisiál:",
+      "navLabel": "Sítiu",
+      "explore": "Esplora",
+      "project": "Projetu",
+      "sources": "Fonte sira",
+      "credits": "Kréditu imajen",
+      "translationStatus": "Situasaun tradusaun",
+      "madeBy": "Konseitu husi",
+      "uiDraft": "Testu interface iha {{language}} mak tradusaun rascunho husi AI ne'ebé hein hela revizaun."
+    },
+    "fallback": {
+      "label": "Avizu kona-ba lian",
+      "notice": "Pájina ne'e seidauk iha {{language}}, tanba ne'e hatudu iha {{shownIn}}.",
+      "draft": "Testu ne'e mak tradusaun rascunho husi AI ne'ebé hein hela revizaun husi ema ne'ebé ko'alia lian ne'e hanesan lian-inan.",
+      "link": "Situasaun tradusaun"
+    },
+    "sources": {
+      "title": "Fonte sira",
+      "refLabel": "Fonte {{n}}",
+      "published": "publika iha {{date}}",
+      "accessed": "asesu iha {{date}}",
+      "archived": "kópia arkivu",
+      "sourcesDiffer": "Fonte sira la hanesan"
+    },
+    "aksara": {
+      "label": "Aksara Jawa (letra Javanés)",
+      "awaiting": "hein hela revizaun husi ema lian-inan"
+    },
+    "glossary": {
+      "hint": "hatudu signifikadu"
+    },
+    "listen": {
+      "thisSection": "parte ne'e",
+      "play": "Rona {{name}}",
+      "pause": "Para uitoan lee {{name}}",
+      "stop": "Para lee",
+      "playShort": "Rona",
+      "pauseShort": "Para uitoan",
+      "resumeShort": "Kontinua",
+      "statusPlaying": "Lee hela ho lian maka'as"
+    },
+    "notFound": {
+      "title": "La hetan pájina ne'e",
+      "body": "Karik hakerek sala enderesu, ka pájina ne'e muda ona.",
+      "home": "Bá pájina inisiál",
+      "sections": "Ka kontinua ba"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Mangkunegaran — Patrimóniu ne'ebé Moris",
+      "description": "Konseitu independente iha lian barak kona-ba Pura Mangkunegaran iha Surakarta: ninia istória, arkitetura no kultura ne'ebé moris, ho fonte ba faktu hotu."
+    },
+    "hero": {
+      "eyebrow": "Surakarta, Java Sentrál",
+      "subtitle": "patrimóniu ida ne'ebé moris",
+      "concept": "Konseitu dezeñu foun independente — la'ós website ofisiál Pura Mangkunegaran nian."
+    },
+    "intro": {
+      "eyebrow": "Introdusaun"
+    },
+    "journey": {
+      "eyebrow": "Lalaok arkitetura",
+      "title": "Husi kampu nakloke to'o uma nia klaran",
+      "cta": "Esplora arkitetura"
+    },
+    "stories": {
+      "eyebrow": "Istória sira",
+      "title": "Husi arkivu",
+      "cta": "Istória hotu"
+    },
+    "arts": {
+      "eyebrow": "Arte no tradisaun",
+      "title": "Dansa, hena, kanta no poezia",
+      "cta": "Esplora kultura"
+    },
+    "photos": {
+      "eyebrow": "Fotografia",
+      "title": "Naroman iha palásiu",
+      "cta": "Loke galeria"
+    },
+    "continuity": {
+      "eyebrow": "Kontinuidade kulturál",
+      "title": "Patrimóniu, iha tempu agora"
+    },
+    "languages": {
+      "eyebrow": "Lian sanulu-resin-rua",
+      "title": "Patrimóniu ida, lian barak"
+    },
+    "sources": "Fonte sira ba pájina ne'e"
+  },
+  "history": {
+    "meta": {
+      "title": "Istória",
+      "description": "Husi Tratadu Salatiga iha 1757 to'o ohin: kronolojia ho fonte kona-ba Mangkunegaran no ninia ukun-na'in sira."
+    },
+    "header": {
+      "eyebrow": "Kapítulu dahuluk",
+      "title": "Istória",
+      "intro": "Husi akordu ida iha 1757 to'o guarda kultura nian ohin loron."
+    },
+    "eraNav": "Períodu sira",
+    "timelineLabel": "Kronolojia, {{range}}",
+    "rulers": {
+      "title": "Ukun-na'in sira Mangkunegaran nian",
+      "note": "Tinan ukun tuir lista iha mangkunegaran.id, ne'ebé hakerek títulu hanesan Mangkoenagoro.",
+      "ruler": "Ukun-na'in",
+      "reign": "Tempu ukun"
+    }
+  },
+  "architecture": {
+    "meta": {
+      "title": "Arkitetura",
+      "description": "Fatin sira Pura Mangkunegaran nian tuir orden ne'ebé vizitante hasoru — Pamedan, Pendhapa Ageng, Pringgitan, Dalem Ageng no seluk."
+    },
+    "header": {
+      "eyebrow": "Kapítulu daruak",
+      "title": "Arkitetura",
+      "intro": "Fatin sira tuir orden ne'ebé vizitante hasoru, husi kampu nakloke to'o uma iha klaran.",
+      "note": "Deskrisaun sira-ne'e la hatete fatin ne'ebé mak loke ba vizitante.",
+      "visitLink": "Informasaun vizita"
+    },
+    "tocLabel": "Fatin sira iha pájina ne'e",
+    "archival": {
+      "title": "Salaun iha foto tuan ida",
+      "body": "Foto ida ne'ebé katálogu hatete maizumenus 1880 hatudu pendhapa ho ninia kakuluk naruk no kraik. Foto istóriku sira iha sítiu ne'e mai husi koleksaun públiku no uza data ne'ebé sira-nia katálogu fó.",
+      "cta": "Haree foto barak liu"
+    }
+  },
+  "culture": {
+    "meta": {
+      "title": "Kultura",
+      "description": "Batik, dansa kortezana, literatura, gamelan no wayang iha Mangkunegaran — esplika ho fonte."
+    },
+    "header": {
+      "eyebrow": "Kapítulu datoluk",
+      "title": "Kultura",
+      "intro": "Tradisaun haat ne'ebé ema sei pratika, ida-idak konta husi fonte ne'ebé publika ona."
+    },
+    "stanzaChart": "Estrofe tuir kada métrika kanta iha Serat Wedhatama",
+    "stanzas": "estrofe",
+    "stanzaTotal": "Total estrofe {{n}}"
+  },
+  "stories": {
+    "meta": {
+      "title": "Istória sira",
+      "description": "Istória ho fonte husi Mangkunegaran nia istória: rádiu, kanta simu-vizitante real, no Lejiaun."
+    },
+    "header": {
+      "eyebrow": "Kapítulu dahaat",
+      "title": "Istória sira",
+      "intro": "Testu badak husi família nia istória, ida-idak ho ninia fonte."
+    },
+    "readingTime": "Minutu {{n}} lee",
+    "back": "Istória hotu",
+    "verified": "Fonte sira verifika iha {{date}}",
+    "related": "Lee tan",
+    "noteLabel": "Nota kona-ba fonte sira"
+  },
+  "gallery": {
+    "meta": {
+      "title": "Galeria",
+      "description": "Foto sira Pura Mangkunegaran nian, uluk no agora, ida-idak ho lisensa nakloke no krédituu."
+    },
+    "header": {
+      "eyebrow": "Kapítulu dalimak",
+      "title": "Galeria",
+      "intro": "Foto sira palásiu nian, uluk no agora — ida-idak ho lisensa nakloke no krédituu."
+    },
+    "gridLabel": "Foto sira",
+    "open": "Loke imajen: {{title}}",
+    "archival": "Arkivu",
+    "dialogLabel": "Hatudu imajen",
+    "close": "Taka hatudu imajen",
+    "prev": "Imajen molok",
+    "next": "Imajen tuir mai",
+    "counter": "{{current}} husi {{total}}",
+    "source": "Fonte",
+    "license": "Lisensa",
+    "note": "Foto hotu uza ho lisensa nakloke ka iha domíniu públiku, no rai iha sítiu ne'e. Foto istóriku sira uza data ne'ebé koleksaun ne'ebé rai sira fó."
+  },
+  "visit": {
+    "meta": {
+      "title": "Vizita",
+      "description": "Matadalan ba vizitante Pura Mangkunegaran nian ho piktograma, planta interativa, no ligasaun ba pájina rezerva ofisiál."
+    },
+    "header": {
+      "eyebrow": "Kapítulu daneen",
+      "title": "Vizita",
+      "intro": "Saida mak di'ak atu hatene molok bá, esplika ho imajen no liafuan."
+    },
+    "official": {
+      "title": "Oras, bilete no rezerva",
+      "body": "Oras loke no folin bilete bele muda, no ami-nia fonte sira la hanesan. Favór haree pájina rezerva ofisiál molok bá.",
+      "tickets": "Pájina rezerva ofisiál"
+    },
+    "address": {
+      "title": "Enderesu",
+      "map": "Loke iha mapa"
+    },
+    "rules": {
+      "title": "Molok ita bá",
+      "intro": "Piktograma ba regra vizitante nian ne'ebé lista iha pájina rezerva ofisiál, bele komprende iha lian saida de'it.",
+      "verified": "Verifikasaun ikus: {{date}} · Fonte:",
+      "keyLabel": "Oinsá lee piktograma",
+      "keyProhibited": "Sírkulu ho liña: la permite",
+      "keyGuidance": "Sírkulu mamuk: favór halo, ka di'ak atu hatene",
+      "groups": {
+        "dress": "Hatais",
+        "photo": "Foti foto",
+        "conduct": "Hahalok",
+        "tour": "Ita-nia vizita"
+      },
+      "items": {
+        "modest-dress": "Hatais roupa ne'ebé moos no hakmatek",
+        "no-shorts": "La bele hatais kalsa badak ka saia badak",
+        "no-parang": "La bele hatais batik ho motivu parang ka lereng",
+        "no-velvet": "La bele hatais roupa veludu",
+        "no-headwear": "La bele hatais buat taka ulun",
+        "no-sunglasses": "La bele hatais óklu loron",
+        "no-flipflops": "La bele hatais sandália xinelu",
+        "camera-permission": "Kámara profisionál presiza lisensa",
+        "no-food": "La bele lori hahán ka hemu husi li'ur",
+        "no-smoking": "La bele fuma",
+        "no-weapons": "La bele lori kilat ka sasán kroat",
+        "keep-off-grass": "Labele tama iha du'ut no ai-horis",
+        "litter": "Soe lixu iha fatin lixu",
+        "guide": "Vizita akompaña ho guia palásiu nian",
+        "arrive-early": "To'o minutu 15 molok ita-nia sesaun",
+        "cashless": "Selu la ho osan-mean",
+        "children-free": "Labarik tinan 0–4 tama grátis"
+      }
+    },
+    "plan": {
+      "title": "Planta",
+      "intro": "Planta eskemátika ida husi fatin sira ne'ebé deskreve iha sítiu ne'e. Hili númeru ida atu lee kona-ba fatin ne'e.",
+      "disclaimer": "Eskemátiku no la tuir eskala: pozisaun tuir deskrisaun hakerek, la'ós sukat, no la hatudu área ne'ebé loke ba vizitante.",
+      "gate": "Odamatan prinsipál",
+      "legend": "Fatin sira iha planta",
+      "close": "Taka",
+      "more": "Lee tan iha Arkitetura",
+      "rules": "Matadalan iha ne'e",
+      "select": "Hatudu {{name}}"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Kona-ba projetu ne'e",
+      "description": "Estudu kazu: tansá no oinsá halo konseitu independente ne'e iha lian sanulu-resin-rua kona-ba Pura Mangkunegaran, ho fonte, krédituu no situasaun tradusaun."
+    },
+    "header": {
+      "eyebrow": "Kapítulu dahitu",
+      "title": "Kona-ba projetu ne'e",
+      "intro": "Estudu kazu ida kona-ba aprezenta patrimóniu ba ema hotu, iha sira-nia lian rasik."
+    },
+    "tocLabel": "Iha pájina ne'e",
+    "design": {
+      "palette": "Paleta kór",
+      "scriptsNote": "Fonte letra sira karrega de'it iha pájina ne'ebé uza."
+    },
+    "sources": {
+      "title": "Fonte sira",
+      "summary": "Sítiu ne'e hamriik ba deklarasaun {{facts}} ne'ebé rejista no verifika ho fonte {{sources}}: {{confirmed}} konfirma husi fonte liu ida, {{single}} husi fonte ida de'it, no {{disputed}} ne'ebé fonte sira la hanesan no pájina hatete.",
+      "ledger": "Hatudu lista faktu kompletu (deklarasaun {{n}})",
+      "colClaim": "Deklarasaun",
+      "colConfidence": "Konfiansa",
+      "colSources": "Fonte sira",
+      "kind": {
+        "primary": "primária",
+        "secondary": "sekundária",
+        "supporting": "apoiu"
+      },
+      "confidence": {
+        "confirmed": "konfirmadu",
+        "single-source": "fonte ida de'it",
+        "disputed": "fonte la hanesan"
+      }
+    },
+    "credits": {
+      "title": "Kréditu sira",
+      "images": "Foto sira",
+      "imagesNote": "Imajen sira mak kópia ne'ebé rai iha sítiu, muda tamañu no formatu modernu. Versaun ne'ebé koa ona hetan marka.",
+      "source": "fonte",
+      "fonts": "Tipu letra",
+      "code": "Software"
+    },
+    "translation": {
+      "title": "Situasaun tradusaun",
+      "intro": "Saida mak tradús ona, no to'o iha ne'ebé mak bele fiar.",
+      "language": "Lian",
+      "ui": "Interface",
+      "home": "Pájina inisiál",
+      "history": "Istória",
+      "other": "Pájina seluk",
+      "legend": "Orijinál: hakerek ba sítiu ne'e husi fonte ne'ebé sita. Rascunho AI: tradús ho asistente AI, hein revizaun husi ema lian-inan. Seidauk: hatudu iha inglés, ka indonéziu ba lee-na'in javanés.",
+      "javanese": "Seidauk iha revizór lian-inan javanés ida mak aprova, tanba ne'e testu javanés hotu no títulu Aksara Jawa hetan marka hein hela revizaun."
+    },
+    "status": {
+      "source": "Orijinál",
+      "ai-draft": "Rascunho AI",
+      "missing": "Seidauk"
+    },
+    "studio": {
+      "title": "Halo husi",
+      "body": "Dezeña no harii husi {{studio}} hanesan projetu grupu."
+    }
+  }
+}

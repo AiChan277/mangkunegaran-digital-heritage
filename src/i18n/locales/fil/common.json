@@ -1,0 +1,76 @@
+{
+  "brand": {
+    "tagline": "Isang Buháy na Pamana",
+    "concept": "Konsepto",
+    "siteTitle": "Mangkunegaran — Isang Buháy na Pamana (Konsepto)"
+  },
+  "a11y": {
+    "skip": "Lumaktaw sa nilalaman"
+  },
+  "nav": {
+    "primary": "Pangunahin",
+    "home": "Home",
+    "history": "Kasaysayan",
+    "architecture": "Arkitektura",
+    "culture": "Kultura",
+    "stories": "Mga Kuwento",
+    "gallery": "Galeriya",
+    "visit": "Pagbisita",
+    "about": "Tungkol",
+    "menu": "Menu",
+    "close": "Isara ang menu"
+  },
+  "lang": {
+    "label": "Wika",
+    "choose": "Pumili ng wika",
+    "draft": "draft"
+  },
+  "footer": {
+    "disclaimer": "Malayang konseptong muling disenyo ng {{studio}} para sa layuning pang-edukasyon at portfolio. Hindi kaanib, hindi inendorso, at hindi pinatatakbo ng Pura Mangkunegaran. Para sa opisyal na impormasyon, bisitahin ang",
+    "navLabel": "Site",
+    "explore": "Tuklasin",
+    "project": "Ang proyekto",
+    "sources": "Mga sanggunian",
+    "credits": "Kredito ng larawan",
+    "translationStatus": "Kalagayan ng salin",
+    "madeBy": "Isang konsepto ng",
+    "uiDraft": "Ang teksto ng interface sa {{language}} ay draft na salin gamit ang AI na naghihintay ng pagsusuri."
+  },
+  "fallback": {
+    "label": "Paunawa sa wika",
+    "notice": "Wala pang bersiyon ng pahinang ito sa {{language}}, kaya ipinapakita ito sa {{shownIn}}.",
+    "draft": "Ang tekstong ito ay draft na salin gamit ang AI na naghihintay ng pagsusuri ng katutubong tagapagsalita.",
+    "link": "Kalagayan ng salin"
+  },
+  "sources": {
+    "title": "Mga sanggunian",
+    "refLabel": "Sanggunian {{n}}",
+    "published": "inilathala {{date}}",
+    "accessed": "binuksan {{date}}",
+    "archived": "naka-archive na kopya",
+    "sourcesDiffer": "Magkakaiba ang mga sanggunian"
+  },
+  "aksara": {
+    "label": "Aksara Jawa (sulat Javanese)",
+    "awaiting": "naghihintay ng pagsusuri ng katutubong tagapagsalita"
+  },
+  "glossary": {
+    "hint": "ipakita ang kahulugan"
+  },
+  "listen": {
+    "thisSection": "bahaging ito",
+    "play": "Pakinggan ang {{name}}",
+    "pause": "I-pause ang pagbasa ng {{name}}",
+    "stop": "Itigil ang pagbasa",
+    "playShort": "Pakinggan",
+    "pauseShort": "I-pause",
+    "resumeShort": "Ituloy",
+    "statusPlaying": "Binabasa nang malakas"
+  },
+  "notFound": {
+    "title": "Hindi makita ang pahinang ito",
+    "body": "Maaaring mali ang pagkakatype ng address, o nailipat na ang pahina.",
+    "home": "Pumunta sa home",
+    "sections": "O magpatuloy sa"
+  }
+}

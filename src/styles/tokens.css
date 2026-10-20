@@ -1,0 +1,82 @@
+/*
+ * Design tokens — "Modern Javanese Editorial".
+ * The palette is a design direction, not a claim about official
+ * institutional colours. Contrast pairs were checked by hand (see docs/DECISIONS.md)
+ * and by axe-core in tests/a11y.spec.ts.
+ */
+:root {
+  /* Base palette */
+  --green-pareanom: #2e4a3b;
+  --green-deep: #1d3128;
+  --brass: #a8833a; /* large display text and ornaments only on ivory */
+  --brass-light: #d4b56e; /* on dark surfaces */
+  --brass-text: #76591f; /* brass for text: ≥5:1 on ivory and ivory-2 */
+  --ivory: #f5efe2;
+  --ivory-2: #ebe2cf;
+  --teak: #3a271b;
+  --teak-night: #21170f;
+  --ink: #1c1a17;
+  --terracotta: #9a4529;
+  --sogan: #6e4b2a;
+
+  /* Semantic */
+  --surface: var(--ivory);
+  --surface-alt: var(--ivory-2);
+  --text: var(--ink);
+  --text-muted: #574d42;
+  --accent: var(--green-pareanom);
+  --accent-strong: var(--green-deep);
+  --focus-ring: var(--terracotta);
+  --rule: rgb(28 26 23 / 0.16);
+  --rule-strong: rgb(28 26 23 / 0.42);
+  --warning: var(--terracotta);
+
+  /* Night band */
+  --night-surface: var(--teak-night);
+  --night-text: #f5efe2;
+  --night-muted: #cdbfa6;
+  --night-accent: var(--brass-light);
+
+  /* Type */
+  /* Script fonts are added per language in lang.css. */
+  --font-script: system-ui;
+  --font-display: "Newsreader Variable", "Newsreader Fallback", var(--font-script), Georgia, serif;
+  --font-text: "Plus Jakarta Sans Variable", "Plus Jakarta Fallback", var(--font-script), system-ui, sans-serif;
+  --font-java: "Noto Sans Javanese", system-ui, sans-serif;
+  /* For language names shown in their own script outside their locale. */
+  --font-system: system-ui, -apple-system, "Segoe UI", "Leelawadee UI", "Khmer UI", "Lao UI", "Myanmar Text", "Noto Sans", sans-serif;
+
+  --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --step-1: clamp(1.2rem, 1.12rem + 0.4vw, 1.45rem);
+  --step-2: clamp(1.45rem, 1.3rem + 0.75vw, 1.95rem);
+  --step-3: clamp(1.8rem, 1.5rem + 1.5vw, 2.8rem);
+  --step-4: clamp(2.3rem, 1.7rem + 3vw, 4.2rem);
+  --step-5: clamp(2.9rem, 1.8rem + 5.5vw, 7rem);
+
+  --leading-body: 1.62;
+  --leading-tight: 1.08;
+  --measure: 66ch;
+
+  /* Space & layout */
+  --gutter: clamp(16px, 4vw, 48px);
+  --gap: clamp(16px, 2.2vw, 32px);
+  --section: clamp(72px, 10vw, 152px);
+  --max: 1360px;
+  --header-h: 64px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --dur-micro: 180ms;
+  --dur-reveal: 600ms;
+
+  --radius: 2px;
+  color-scheme: light;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-micro: 1ms;
+    --dur-reveal: 1ms;
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "brand": {
+    "tagline": "Di sản sống",
+    "concept": "Ý tưởng",
+    "siteTitle": "Mangkunegaran — Di sản sống (Ý tưởng)"
+  },
+  "a11y": {
+    "skip": "Chuyển đến nội dung"
+  },
+  "nav": {
+    "primary": "Chính",
+    "home": "Trang chủ",
+    "history": "Lịch sử",
+    "architecture": "Kiến trúc",
+    "culture": "Văn hóa",
+    "stories": "Câu chuyện",
+    "gallery": "Thư viện ảnh",
+    "visit": "Tham quan",
+    "about": "Giới thiệu",
+    "menu": "Menu",
+    "close": "Đóng menu"
+  },
+  "lang": {
+    "label": "Ngôn ngữ",
+    "choose": "Chọn ngôn ngữ",
+    "draft": "bản nháp"
+  },
+  "footer": {
+    "disclaimer": "Thiết kế lại dạng ý tưởng độc lập của {{studio}}, phục vụ mục đích giáo dục và portfolio. Không liên kết, không được bảo trợ và không do Pura Mangkunegaran vận hành. Thông tin chính thức:",
+    "navLabel": "Trang web",
+    "explore": "Khám phá",
+    "project": "Dự án",
+    "sources": "Nguồn",
+    "credits": "Ghi công hình ảnh",
+    "translationStatus": "Tình trạng bản dịch",
+    "madeBy": "Một ý tưởng của",
+    "uiDraft": "Văn bản giao diện bằng {{language}} là bản dịch nháp bằng AI, đang chờ được duyệt."
+  },
+  "fallback": {
+    "label": "Thông báo ngôn ngữ",
+    "notice": "Trang này chưa có bằng {{language}}, nên được hiển thị bằng {{shownIn}}.",
+    "draft": "Văn bản này là bản dịch nháp bằng AI, đang chờ người bản ngữ duyệt.",
+    "link": "Tình trạng bản dịch"
+  },
+  "sources": {
+    "title": "Nguồn",
+    "refLabel": "Nguồn {{n}}",
+    "published": "xuất bản {{date}}",
+    "accessed": "truy cập {{date}}",
+    "archived": "bản lưu trữ",
+    "sourcesDiffer": "Các nguồn không thống nhất"
+  },
+  "aksara": {
+    "label": "Aksara Jawa (chữ Java)",
+    "awaiting": "đang chờ người bản ngữ duyệt"
+  },
+  "glossary": {
+    "hint": "xem định nghĩa"
+  },
+  "listen": {
+    "thisSection": "phần này",
+    "play": "Nghe {{name}}",
+    "pause": "Tạm dừng đọc {{name}}",
+    "stop": "Dừng đọc",
+    "playShort": "Nghe",
+    "pauseShort": "Tạm dừng",
+    "resumeShort": "Tiếp tục",
+    "statusPlaying": "Đang đọc to"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang này",
+    "body": "Địa chỉ có thể bị gõ sai, hoặc trang đã được chuyển đi.",
+    "home": "Về trang chủ",
+    "sections": "Hoặc tiếp tục đến"
+  }
+}

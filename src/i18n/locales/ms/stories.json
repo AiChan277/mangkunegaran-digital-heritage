@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Kisah",
+    "description": "Kisah bersumber daripada sejarah Mangkunegaran: radio, lagu sambutan diraja dan Legion."
+  },
+  "header": {
+    "eyebrow": "Bab empat",
+    "title": "Kisah",
+    "intro": "Esei pendek daripada sejarah keluarga ini, setiap satu dengan sumbernya."
+  },
+  "readingTime": "{{n}} minit bacaan",
+  "back": "Semua kisah",
+  "verified": "Sumber disemak {{date}}",
+  "related": "Bacaan lanjut",
+  "noteLabel": "Nota tentang sumber"
+}

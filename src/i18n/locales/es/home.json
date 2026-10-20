@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Mangkunegaran — Un patrimonio vivo",
+    "description": "Un concepto multilingüe e independiente sobre Pura Mangkunegaran en Surakarta: su historia, arquitectura y cultura viva, con cada dato referenciado."
+  },
+  "hero": {
+    "eyebrow": "Surakarta, Java Central",
+    "subtitle": "un patrimonio vivo",
+    "concept": "Rediseño conceptual independiente — no es el sitio web oficial de Pura Mangkunegaran."
+  },
+  "intro": {
+    "eyebrow": "Introducción"
+  },
+  "journey": {
+    "eyebrow": "El recorrido arquitectónico",
+    "title": "Del campo abierto al corazón de la casa",
+    "cta": "Explorar la arquitectura"
+  },
+  "stories": {
+    "eyebrow": "Relatos",
+    "title": "Desde el archivo",
+    "cta": "Todos los relatos"
+  },
+  "arts": {
+    "eyebrow": "Artes y tradiciones",
+    "title": "Danza, tela, canto y verso",
+    "cta": "Explorar la cultura"
+  },
+  "photos": {
+    "eyebrow": "Fotografía",
+    "title": "Luz sobre el palacio",
+    "cta": "Abrir la galería"
+  },
+  "continuity": {
+    "eyebrow": "Continuidad cultural",
+    "title": "El patrimonio, en presente"
+  },
+  "languages": {
+    "eyebrow": "Doce idiomas",
+    "title": "Un patrimonio, muchas voces"
+  },
+  "sources": "Fuentes de esta página"
+}

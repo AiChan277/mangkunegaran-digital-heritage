@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Tham quan",
+    "description": "Hướng dẫn tham quan Pura Mangkunegaran bằng hình tượng, sơ đồ tương tác và liên kết đến trang đặt chỗ chính thức."
+  },
+  "header": {
+    "eyebrow": "Chương sáu",
+    "title": "Tham quan",
+    "intro": "Những điều cần biết trước khi đến, giải thích bằng hình ảnh lẫn lời."
+  },
+  "official": {
+    "title": "Giờ mở cửa, vé và đặt chỗ",
+    "body": "Giờ mở cửa và giá vé có thể thay đổi, và các nguồn của chúng tôi không thống nhất. Vui lòng kiểm tra trang đặt chỗ chính thức trước khi đến.",
+    "tickets": "Trang đặt chỗ chính thức"
+  },
+  "address": {
+    "title": "Địa chỉ",
+    "map": "Mở trên bản đồ"
+  },
+  "rules": {
+    "title": "Trước khi đến",
+    "intro": "Hình tượng cho các quy định dành cho khách được liệt kê trên trang đặt chỗ chính thức, dễ hiểu dù bạn nói ngôn ngữ nào.",
+    "verified": "Kiểm tra lần cuối: {{date}} · Nguồn:",
+    "keyLabel": "Cách đọc hình tượng",
+    "keyProhibited": "Vòng tròn có gạch chéo: không được phép",
+    "keyGuidance": "Vòng tròn trơn: nên làm, hoặc cần biết",
+    "groups": {
+      "dress": "Trang phục",
+      "photo": "Chụp ảnh",
+      "conduct": "Ứng xử",
+      "tour": "Chuyến tham quan"
+    },
+    "items": {
+      "modest-dress": "Mặc trang phục kín đáo",
+      "no-shorts": "Không mặc quần đùi hoặc váy ngắn",
+      "no-parang": "Không mặc batik họa tiết parang hoặc lereng",
+      "no-velvet": "Không mặc đồ nhung",
+      "no-headwear": "Không đội mũ hay khăn trùm đầu",
+      "no-sunglasses": "Không đeo kính râm",
+      "no-flipflops": "Không đi dép xỏ ngón",
+      "camera-permission": "Máy ảnh chuyên nghiệp cần được cho phép",
+      "no-food": "Không mang đồ ăn, thức uống từ bên ngoài",
+      "no-smoking": "Không hút thuốc",
+      "no-weapons": "Không mang vũ khí hoặc vật sắc nhọn",
+      "keep-off-grass": "Không giẫm lên cỏ và cây",
+      "litter": "Bỏ rác vào thùng",
+      "guide": "Khách tham quan có hướng dẫn viên của cung điện đi cùng",
+      "arrive-early": "Đến trước giờ tham quan 15 phút",
+      "cashless": "Thanh toán không dùng tiền mặt",
+      "children-free": "Trẻ em 0–4 tuổi được miễn phí"
+    }
+  },
+  "plan": {
+    "title": "Sơ đồ",
+    "intro": "Sơ đồ giản lược các không gian được mô tả trên trang này. Chọn một con số để đọc về địa điểm đó.",
+    "disclaimer": "Sơ đồ giản lược, không theo tỉ lệ: vị trí dựa trên mô tả bằng văn bản, không phải đo đạc, và không cho biết khu vực nào mở cửa cho khách.",
+    "gate": "Cổng chính",
+    "legend": "Các địa điểm trên sơ đồ",
+    "close": "Đóng",
+    "more": "Đọc thêm trong mục Kiến trúc",
+    "rules": "Hướng dẫn tại đây",
+    "select": "Hiển thị {{name}}"
+  }
+}
