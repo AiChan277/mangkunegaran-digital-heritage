@@ -37,7 +37,11 @@
     "imagesNote": "Gambar disimpan sebagai salinan di situs ini, diubah ukuran dan formatnya. Versi yang dipotong ditandai.",
     "source": "sumber",
     "fonts": "Huruf",
-    "code": "Perangkat lunak"
+    "code": "Perangkat lunak",
+    "ornament": "Ornamen batik",
+    "ornamentNote": "Motif kawung adalah pola Jawa klasik yang diadaptasi di sini sebagai vektor; motif ini tidak disajikan sebagai motif Mangkunegaran. Parang tidak dipakai: mangkunegaran.id menyebutnya motif larangan di dalam Pura.",
+    "colours": "Warna",
+    "coloursNote": "Hijau dan emas antik diambil dari situs resmi mangkunegaran.id sebagai acuan desain. Keduanya bukan spesifikasi warna resmi."
   },
   "translation": {
     "title": "Status terjemahan",
@@ -53,7 +57,8 @@
   "status": {
     "source": "Asli",
     "ai-draft": "Draf AI",
-    "missing": "Belum"
+    "missing": "Belum",
+    "partial": "Sebagian"
   },
   "studio": {
     "title": "Dibuat oleh",

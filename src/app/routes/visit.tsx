@@ -8,8 +8,7 @@ import { useT } from "~/i18n/useT";
 import { buildMeta } from "~/lib/meta";
 import { buildRefs, pageSetup } from "~/lib/page";
 import { localePath } from "~/lib/paths";
-import { PageHeader } from "~/components/PageHeader";
-import { FallbackNotice } from "~/components/FallbackNotice";
+import { PageHero } from "~/components/PageHero";
 import { Pictogram } from "~/components/Pictogram";
 import { Refs } from "~/components/Refs";
 import { SourceList } from "~/components/SourceList";
@@ -76,8 +75,16 @@ export default function Visit({ loaderData: d }: Route.ComponentProps) {
 
   return (
     <>
-      <FallbackNotice content={d.content} />
-      <PageHeader eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="06" intro={t("header.intro")} />
+      <PageHero variant="visit" eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="06" intro={t("header.intro")}>
+        <p className={styles.heroActions}>
+          <a href={OFFICIAL_TICKETS} className={styles.heroPrimary} rel="noopener">
+            {t("official.tickets")} <ExternalLink aria-hidden="true" size={18} />
+          </a>
+          <a href="#official-title" className="arrow-link">
+            {t("address.title")}
+          </a>
+        </p>
+      </PageHero>
 
       {/* Official information first: hours and prices are not reproduced. */}
       <section className={`container ${styles.official}`} aria-labelledby="official-title">

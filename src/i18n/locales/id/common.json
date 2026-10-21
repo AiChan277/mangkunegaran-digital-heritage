@@ -23,7 +23,20 @@
   "lang": {
     "label": "Bahasa",
     "choose": "Pilih bahasa",
-    "draft": "draf"
+    "open": "Ganti bahasa",
+    "current": "Bahasa saat ini: {{language}}",
+    "currentLabel": "Anda membaca dalam",
+    "close": "Tutup panel bahasa",
+    "filter": "Cari bahasa",
+    "filterHint": "Nama atau kode, mis. Tetun atau th",
+    "count": "Bahasa ditampilkan: {{count}}",
+    "none": "Tidak ada bahasa yang cocok dengan “{{query}}”.",
+    "availability": {
+      "complete": "Lengkap",
+      "draft-mixed": "Terjemahan draf AI · sebagian halaman dalam bahasa Indonesia",
+      "draft-partial": "Antarmuka draf AI · sebagian besar isi dalam bahasa Inggris"
+    },
+    "explain": "Bahasa Indonesia dan Inggris ditulis oleh tim proyek. Bahasa lainnya adalah draf AI yang belum ditinjau penutur asli; halaman yang belum diterjemahkan ditampilkan dalam bahasa Indonesia atau Inggris, disertai pemberitahuan."
   },
   "footer": {
     "disclaimer": "Konsep desain ulang independen oleh {{studio}} untuk tujuan edukasi dan portofolio. Tidak berafiliasi dengan, tidak didukung oleh, dan tidak dikelola oleh Pura Mangkunegaran. Informasi resmi:",
@@ -33,13 +46,9 @@
     "sources": "Sumber",
     "credits": "Kredit gambar",
     "translationStatus": "Status terjemahan",
-    "madeBy": "Sebuah konsep oleh",
-    "uiDraft": "Teks antarmuka dalam {{language}} adalah terjemahan draf AI yang menunggu tinjauan."
+    "madeBy": "Sebuah konsep oleh"
   },
   "fallback": {
-    "label": "Pemberitahuan bahasa",
-    "notice": "Halaman ini belum tersedia dalam {{language}}, sehingga ditampilkan dalam {{shownIn}}.",
-    "draft": "Teks ini adalah terjemahan draf AI yang menunggu tinjauan penutur asli.",
     "link": "Status terjemahan"
   },
   "sources": {

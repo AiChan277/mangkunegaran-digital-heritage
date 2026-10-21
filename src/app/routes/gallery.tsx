@@ -5,7 +5,7 @@ import { aksara, image } from "~/content/resolve";
 import { useT } from "~/i18n/useT";
 import { buildMeta } from "~/lib/meta";
 import { pageSetup } from "~/lib/page";
-import { PageHeader } from "~/components/PageHeader";
+import { PageHero } from "~/components/PageHero";
 import { Picture } from "~/components/Picture";
 import styles from "./gallery.module.css";
 
@@ -45,6 +45,7 @@ export async function loader({ request }: Route.LoaderArgs) {
     content,
     images,
     aksara: aksara("galeri"),
+    strip: ["arc-pendhapa-1874", "arc-gamelan-arnhem-1879", "arc-palace-1902"].map((id) => image(id, content.lang)),
     meta: buildMeta({
       locale,
       path: "gallery",
@@ -74,7 +75,7 @@ export default function Gallery({ loaderData: d }: Route.ComponentProps) {
 
   return (
     <>
-      <PageHeader eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="05" intro={t("header.intro")} />
+      <PageHero variant="gallery" eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="05" intro={t("header.intro")} strip={d.strip} />
       <section className="container" aria-label={t("gridLabel")}>
         <ul className={styles.mosaic}>
           {d.images.map((img, i) => {

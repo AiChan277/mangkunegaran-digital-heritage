@@ -1,0 +1,76 @@
+.ornament {
+  display: block;
+  pointer-events: none;
+  background: var(--gold-muted);
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+}
+
+/* Low-contrast patch, faded towards its inner edge. */
+.ornament[data-variant="field"] {
+  --tile: clamp(44px, 4vw, 64px);
+  background: var(--gold-on-royal);
+  opacity: var(--field-opacity, 0.13);
+  -webkit-mask-image:
+    url("/ornament/kawung-tile.svg"), linear-gradient(to left, #000 20%, transparent 95%);
+  mask-image:
+    url("/ornament/kawung-tile.svg"), linear-gradient(to left, #000 20%, transparent 95%);
+  -webkit-mask-size: var(--tile) var(--tile), 100% 100%;
+  mask-size: var(--tile) var(--tile), 100% 100%;
+  -webkit-mask-repeat: repeat, no-repeat;
+  mask-repeat: repeat, no-repeat;
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+
+.ornament[data-variant="border"] {
+  block-size: 12px;
+  background: var(--gold-on-royal);
+  opacity: 0.85;
+  -webkit-mask-image: url("/ornament/kawung-border.svg");
+  mask-image: url("/ornament/kawung-border.svg");
+  -webkit-mask-size: 24px 12px;
+  mask-size: 24px 12px;
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.ornament[data-variant="flower"] {
+  inline-size: 18px;
+  block-size: 18px;
+  -webkit-mask: url("/ornament/kawung-flower.svg") center / contain no-repeat;
+  mask: url("/ornament/kawung-flower.svg") center / contain no-repeat;
+}
+
+/* One restrained entrance; nothing loops. */
+@media (prefers-reduced-motion: no-preference) {
+  .ornament[data-variant="field"] {
+    animation: field-in 1600ms var(--ease) 200ms both;
+  }
+
+  .ornament[data-variant="border"] {
+    animation: border-in 1200ms var(--ease) 400ms both;
+  }
+}
+
+@keyframes field-in {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: var(--field-opacity, 0.13);
+    transform: none;
+  }
+}
+
+@keyframes border-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.85;
+  }
+}

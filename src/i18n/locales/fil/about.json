@@ -37,7 +37,11 @@
     "imagesNote": "Ang mga larawan ay kopyang naka-host sa site, binago ang laki at ginawang modernong format. Minarkahan ang mga bersiyong na-crop.",
     "source": "pinagmulan",
     "fonts": "Mga typeface",
-    "code": "Software"
+    "code": "Software",
+    "ornament": "Palamuting batik",
+    "ornamentNote": "Ang motif na kawung ay isang klasikong disenyong Javanese na inangkop dito bilang vector; hindi ito ipinapakilalang motif ng Mangkunegaran. Hindi ginagamit ang parang: inilalarawan ito ng mangkunegaran.id bilang ipinagbabawal (larangan) na motif sa loob ng palasyo.",
+    "colours": "Mga kulay",
+    "coloursNote": "Ang royal green at antique gold ay kinuha mula sa opisyal na website na mangkunegaran.id bilang sanggunian sa disenyo. Hindi ito opisyal na espesipikasyon ng kulay."
   },
   "translation": {
     "title": "Kalagayan ng salin",
@@ -53,7 +57,8 @@
   "status": {
     "source": "Orihinal",
     "ai-draft": "Draft ng AI",
-    "missing": "Wala pa"
+    "missing": "Wala pa",
+    "partial": "Bahagya"
   },
   "studio": {
     "title": "Ginawa ng",

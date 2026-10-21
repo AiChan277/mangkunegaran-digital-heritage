@@ -33,8 +33,11 @@ const SKIP_DIRECT = new Set(["pringgitan.jpg"]);
 async function run() {
   await mkdir(OUT, { recursive: true });
   const files = (await readdir(RAW)).filter((f) => f.endsWith(".jpg"));
+  // Archival scans (images-raw/archive/) keep their own tones: no filters are applied.
+  const archive = (await readdir(path.join(RAW, "archive"))).filter((f) => f.endsWith(".jpg"));
   const jobs: Job[] = [
     ...files.filter((f) => !SKIP_DIRECT.has(f)).map((f) => ({ id: path.basename(f, ".jpg"), src: f })),
+    ...archive.map((f) => ({ id: path.basename(f, ".jpg"), src: path.join("archive", f) })),
     ...DERIVED,
   ];
 

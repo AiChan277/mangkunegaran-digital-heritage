@@ -1,19 +1,60 @@
 {
   "meta": {
     "title": "Historia",
-    "description": "Del Tratado de Salatiga en 1757 hasta hoy: una cronología documentada de Mangkunegaran y sus gobernantes."
+    "description": "Desde el nacimiento de Raden Mas Said en 1725 hasta hoy: una cronología documentada de Mangkunegaran con fotografías de archivo y un guion de narración documental."
   },
   "header": {
     "eyebrow": "Capítulo uno",
     "title": "Historia",
-    "intro": "De un acuerdo en 1757 a guardián de la cultura en la actualidad."
+    "intro": "De la larga resistencia de un príncipe a guardián de la cultura en la actualidad."
   },
-  "eraNav": "Épocas",
   "timelineLabel": "Cronología, {{range}}",
   "rulers": {
     "title": "Los gobernantes de Mangkunegaran",
     "note": "Años de reinado según la lista de mangkunegaran.id, que escribe el título como Mangkoenagoro.",
     "ruler": "Gobernante",
     "reign": "Reinado"
+  },
+  "periodNav": "Periodos",
+  "entry": {
+    "precision": {
+      "approximate": "Fecha aproximada"
+    },
+    "turningPoint": "Punto de inflexión",
+    "more": "Leer más",
+    "context": "Contexto",
+    "happened": "Qué ocurrió",
+    "people": "Personas",
+    "significance": "Por qué importa",
+    "uncertainty": "Qué es incierto",
+    "archive": "Del archivo",
+    "sources": "Fuentes de esta entrada",
+    "related": "Historia relacionada"
+  },
+  "archive": {
+    "eyebrow": "Archivo",
+    "title": "Fotografías del archivo",
+    "intro": "Fotografías, una postal y una pintura catalogadas como Mangkunegaran por las Bibliotecas de la Universidad de Leiden y el Rijksmuseum. Las imágenes se muestran tal como las publicaron las instituciones —sin filtros ni recortes—, con la fecha de catálogo, el autor y la licencia.",
+    "record": "Registro del catálogo",
+    "file": "Archivo de imagen",
+    "candidatesTitle": "Aún sin verificar",
+    "candidatesIntro": "Estas fuentes parecen relevantes, pero aún no hemos comprobado su contenido ni sus derechos, por eso solo se enlazan aquí y no se reproducen.",
+    "candidateBadge": "Candidato"
+  },
+  "audio": {
+    "label": "Escucha este capítulo",
+    "lang": "Idioma de la narración",
+    "play": "Reproducir",
+    "pause": "Pausa",
+    "seek": "Posición en la grabación",
+    "time": "{{current}} de {{total}}",
+    "mute": "Silenciar",
+    "loading": "Cargando la grabación…",
+    "error": "No se pudo cargar la grabación. El texto del capítulo está completo sin ella.",
+    "unavailable": "Aún no grabado",
+    "unavailableBody": "La narración de este capítulo está prevista en indonesio e inglés. Todavía no existe ninguna grabación; el capítulo está completo sin ella.",
+    "script": "Leer el guion de la narración",
+    "transcript": "Leer la transcripción",
+    "region": "Audio de {{chapter}}"
   }
 }

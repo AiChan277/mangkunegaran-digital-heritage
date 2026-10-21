@@ -1,19 +1,60 @@
 {
   "meta": {
     "title": "Sejarah",
-    "description": "Saking Prajanjian Salatiga taun 1757 dumugi samangké: lampahing wekdal kanthi sumber bab Mangkunegaran saha para pangagengipun."
+    "description": "Saking wiyosipun Raden Mas Said ing taun 1725 dumugi samangké: lampahing wekdal kanthi sumber bab Mangkunegaran, jangkep kaliyan foto arsip saha naskah narasi dokumenter."
   },
   "header": {
     "eyebrow": "Bab kapisan",
     "title": "Sejarah",
-    "intro": "Saking prajanjian ing taun 1757 dumugi pangreksa kabudayan ing jaman samangké."
+    "intro": "Saking perlawanan dangu satunggaling pangeran dumugi pangreksa kabudayan ing jaman samangké."
   },
-  "eraNav": "Jaman",
   "timelineLabel": "Lampahing wekdal, {{range}}",
   "rulers": {
     "title": "Para pangageng Mangkunegaran",
     "note": "Taun jumeneng miturut pratélan ing mangkunegaran.id, ingkang nyerat asmanipun Mangkoenagoro.",
     "ruler": "Pangageng",
     "reign": "Jumeneng"
+  },
+  "periodNav": "Periode",
+  "entry": {
+    "precision": {
+      "approximate": "Tanggal kinten-kinten"
+    },
+    "turningPoint": "Titik owah",
+    "more": "Langkung jangkep",
+    "context": "Lelandhesan",
+    "happened": "Punapa ingkang kelampahan",
+    "people": "Paraga",
+    "significance": "Kenging punapa wigatos",
+    "uncertainty": "Ingkang dèrèng gamblang",
+    "archive": "Saking arsip",
+    "sources": "Sumber kangge prastawa punika",
+    "related": "Cariyos ingkang gegayutan"
+  },
+  "archive": {
+    "eyebrow": "Arsip",
+    "title": "Foto-foto saking arsip",
+    "intro": "Foto, kertu pos, saha lukisan ingkang dipun katalogaken minangka Mangkunegaran dening Perpustakaan Universitas Leiden saha Rijksmuseum. Pindaian katampilaken kados ingkang dipun terbitaken lembaganipun — tanpa filter, tanpa dipun potong — sesarengan kaliyan tanggal katalog, ingkang damel, saha lisènsinipun.",
+    "record": "Cathetan katalog",
+    "file": "Berkas gambar",
+    "candidatesTitle": "Dèrèng dipun verifikasi",
+    "candidatesIntro": "Sumber-sumber punika katingal gegayutan, nanging isi saha hakipun dèrèng kita priksa, pramila namung dipun tautaken ing ngriki lan boten dipun reproduksi.",
+    "candidateBadge": "Kandidat"
+  },
+  "audio": {
+    "label": "Mirengaken bab punika",
+    "lang": "Basa narasi",
+    "play": "Puter",
+    "pause": "Kendel",
+    "seek": "Papan ing rekaman",
+    "time": "{{current}} saking {{total}}",
+    "mute": "Mendel",
+    "loading": "Ngewrat rekaman…",
+    "error": "Rekaman boten saged dipun ewrat. Seratan bab ing nginggil sampun jangkep tanpa rekaman.",
+    "unavailable": "Dèrèng dipun rekam",
+    "unavailableBody": "Narasi bab punika dipun rancang mawi basa Indonesia saha Inggris. Dèrèng wonten rekaman; bab punika sampun jangkep tanpa rekaman.",
+    "script": "Maos naskah narasi",
+    "transcript": "Maos transkrip",
+    "region": "Audio kangge {{chapter}}"
   }
 }

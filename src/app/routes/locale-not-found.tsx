@@ -7,7 +7,8 @@ import { buildMeta } from "~/lib/meta";
 import { pageSetup } from "~/lib/page";
 import { localePath } from "~/lib/paths";
 import { NAV_ITEMS } from "~/components/Header";
-import { Ornament } from "~/components/Ornament";
+import { HeritageDivider } from "~/components/HeritageDivider";
+import { PageHero } from "~/components/PageHero";
 import styles from "./not-found.module.css";
 
 export async function loader({ request }: Route.LoaderArgs) {
@@ -34,18 +35,14 @@ export default function LocaleNotFound() {
   const t = useT();
   const locale = useLocale();
   return (
-    <section className={`container ${styles.wrap}`} aria-labelledby="nf-title">
-      <p className={`${styles.code} numeral`} aria-hidden="true">
-        404
-      </p>
-      <h1 id="nf-title" className={styles.title}>
-        {t("notFound.title")}
-      </h1>
-      <p className={styles.body}>{t("notFound.body")}</p>
-      <Link to={localePath(locale)} className="arrow-link">
-        {t("notFound.home")} <ArrowRight aria-hidden="true" size={18} />
-      </Link>
-      <Ornament />
+    <>
+      <PageHero variant="notice" eyebrow="404" title={t("notFound.title")} intro={t("notFound.body")}>
+        <Link to={localePath(locale)} className="arrow-link">
+          {t("notFound.home")} <ArrowRight aria-hidden="true" size={18} />
+        </Link>
+      </PageHero>
+      <section className={`container ${styles.wrap}`} aria-label={t("notFound.sections")}>
+      <HeritageDivider />
       <p className="eyebrow">{t("notFound.sections")}</p>
       <ul className={styles.links}>
         {NAV_ITEMS.map((item) => (
@@ -54,6 +51,7 @@ export default function LocaleNotFound() {
           </li>
         ))}
       </ul>
-    </section>
+      </section>
+    </>
   );
 }

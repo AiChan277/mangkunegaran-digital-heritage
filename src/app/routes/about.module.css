@@ -1,7 +1,7 @@
 .disclaimer {
   max-inline-size: 64ch;
   padding: 14px 18px;
-  border-inline-start: 3px solid var(--terracotta);
+  border-inline-start: 3px solid var(--gold-on-royal);
   background: var(--surface-alt);
   font-size: 0.95rem;
 }

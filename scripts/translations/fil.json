@@ -24,7 +24,20 @@
     "lang": {
       "label": "Wika",
       "choose": "Pumili ng wika",
-      "draft": "draft"
+      "open": "Palitan ang wika",
+      "current": "Kasalukuyang wika: {{language}}",
+      "currentLabel": "Nagbabasa ka sa",
+      "close": "Isara ang panel ng wika",
+      "filter": "Maghanap ng wika",
+      "filterHint": "Pangalan o code, hal. Tetun o th",
+      "count": "Mga wikang ipinapakita: {{count}}",
+      "none": "Walang wikang tumutugma sa “{{query}}”.",
+      "availability": {
+        "complete": "Kumpleto",
+        "draft-mixed": "Draft na salin ng AI · ilang pahina sa Indonesian",
+        "draft-partial": "Draft na interface ng AI · karamihan ng nilalaman sa Ingles"
+      },
+      "explain": "Ang Indonesian at Ingles ay isinulat ng proyekto. Ang ibang wika ay draft ng AI na hindi pa nasusuri ng mga katutubong nagsasalita; kapag walang salin ang isang pahina, ipinapakita ito sa Indonesian o Ingles, at sinasabi ito."
     },
     "footer": {
       "disclaimer": "Malayang konseptong muling disenyo ng {{studio}} para sa layuning pang-edukasyon at portfolio. Hindi kaanib, hindi inendorso, at hindi pinatatakbo ng Pura Mangkunegaran. Para sa opisyal na impormasyon, bisitahin ang",
@@ -34,13 +47,9 @@
       "sources": "Mga sanggunian",
       "credits": "Kredito ng larawan",
       "translationStatus": "Kalagayan ng salin",
-      "madeBy": "Isang konsepto ng",
-      "uiDraft": "Ang teksto ng interface sa {{language}} ay draft na salin gamit ang AI na naghihintay ng pagsusuri."
+      "madeBy": "Isang konsepto ng"
     },
     "fallback": {
-      "label": "Paunawa sa wika",
-      "notice": "Wala pang bersiyon ng pahinang ito sa {{language}}, kaya ipinapakita ito sa {{shownIn}}.",
-      "draft": "Ang tekstong ito ay draft na salin gamit ang AI na naghihintay ng pagsusuri ng katutubong tagapagsalita.",
       "link": "Kalagayan ng salin"
     },
     "sources": {
@@ -121,20 +130,61 @@
   "history": {
     "meta": {
       "title": "Kasaysayan",
-      "description": "Mula sa Kasunduan sa Salatiga noong 1757 hanggang ngayon: isang timeline na may sanggunian tungkol sa Mangkunegaran at sa mga pinuno nito."
+      "description": "Mula sa pagsilang ni Raden Mas Said noong 1725 hanggang ngayon: isang timeline ng Mangkunegaran na may mga sanggunian, mga larawang pang-arkibo at script ng dokumentaryong pagsasalaysay."
     },
     "header": {
       "eyebrow": "Kabanata isa",
       "title": "Kasaysayan",
-      "intro": "Mula sa isang kasunduan noong 1757 hanggang sa pagiging tagapag-ingat ng kultura ngayon."
+      "intro": "Mula sa mahabang paglaban ng isang prinsipe hanggang sa pagiging tagapag-ingat ng kultura ngayon."
     },
-    "eraNav": "Mga panahon",
     "timelineLabel": "Timeline, {{range}}",
     "rulers": {
       "title": "Ang mga pinuno ng Mangkunegaran",
       "note": "Mga taon ng pamumuno ayon sa listahan sa mangkunegaran.id, na isinusulat ang titulo bilang Mangkoenagoro.",
       "ruler": "Pinuno",
       "reign": "Pamumuno"
+    },
+    "periodNav": "Mga panahon",
+    "entry": {
+      "precision": {
+        "approximate": "Tinatayang petsa"
+      },
+      "turningPoint": "Pagbabagong-yugto",
+      "more": "Magbasa pa",
+      "context": "Konteksto",
+      "happened": "Ano ang nangyari",
+      "people": "Mga tao",
+      "significance": "Bakit ito mahalaga",
+      "uncertainty": "Ano ang hindi tiyak",
+      "archive": "Mula sa arkibo",
+      "sources": "Mga sanggunian para sa entry na ito",
+      "related": "Kaugnay na kuwento"
+    },
+    "archive": {
+      "eyebrow": "Arkibo",
+      "title": "Mga larawan mula sa arkibo",
+      "intro": "Mga larawan, isang postcard at isang painting na nakatala bilang Mangkunegaran ng Leiden University Libraries at ng Rijksmuseum. Ipinapakita ang mga scan ayon sa pagkakalathala ng mga institusyon — walang filter, walang crop — kasama ang petsa sa katalogo, ang gumawa at ang lisensya.",
+      "record": "Talaan sa katalogo",
+      "file": "File ng larawan",
+      "candidatesTitle": "Hindi pa beripikado",
+      "candidatesIntro": "Mukhang may kaugnayan ang mga sangguniang ito, pero hindi pa namin nasusuri ang nilalaman o karapatan nila, kaya naka-link lamang dito at hindi inilalathala muli.",
+      "candidateBadge": "Kandidato"
+    },
+    "audio": {
+      "label": "Pakinggan ang kabanatang ito",
+      "lang": "Wika ng pagsasalaysay",
+      "play": "I-play",
+      "pause": "I-pause",
+      "seek": "Posisyon sa recording",
+      "time": "{{current}} sa {{total}}",
+      "mute": "I-mute",
+      "loading": "Nilo-load ang recording…",
+      "error": "Hindi ma-load ang recording. Kumpleto ang teksto ng kabanata sa itaas kahit wala ito.",
+      "unavailable": "Hindi pa nai-record",
+      "unavailableBody": "Nakaplano ang pagsasalaysay ng kabanatang ito sa Indonesian at Ingles. Wala pang recording; kumpleto ang kabanata kahit wala ito.",
+      "script": "Basahin ang script ng pagsasalaysay",
+      "transcript": "Basahin ang transcript",
+      "region": "Audio para sa {{chapter}}"
     }
   },
   "architecture": {
@@ -311,7 +361,11 @@
       "imagesNote": "Ang mga larawan ay kopyang naka-host sa site, binago ang laki at ginawang modernong format. Minarkahan ang mga bersiyong na-crop.",
       "source": "pinagmulan",
       "fonts": "Mga typeface",
-      "code": "Software"
+      "code": "Software",
+      "ornament": "Palamuting batik",
+      "ornamentNote": "Ang motif na kawung ay isang klasikong disenyong Javanese na inangkop dito bilang vector; hindi ito ipinapakilalang motif ng Mangkunegaran. Hindi ginagamit ang parang: inilalarawan ito ng mangkunegaran.id bilang ipinagbabawal (larangan) na motif sa loob ng palasyo.",
+      "colours": "Mga kulay",
+      "coloursNote": "Ang royal green at antique gold ay kinuha mula sa opisyal na website na mangkunegaran.id bilang sanggunian sa disenyo. Hindi ito opisyal na espesipikasyon ng kulay."
     },
     "translation": {
       "title": "Kalagayan ng salin",
@@ -327,7 +381,8 @@
     "status": {
       "source": "Orihinal",
       "ai-draft": "Draft ng AI",
-      "missing": "Wala pa"
+      "missing": "Wala pa",
+      "partial": "Bahagya"
     },
     "studio": {
       "title": "Ginawa ng",

@@ -23,7 +23,20 @@
   "lang": {
     "label": "Ngôn ngữ",
     "choose": "Chọn ngôn ngữ",
-    "draft": "bản nháp"
+    "open": "Đổi ngôn ngữ",
+    "current": "Ngôn ngữ hiện tại: {{language}}",
+    "currentLabel": "Bạn đang đọc bằng",
+    "close": "Đóng bảng ngôn ngữ",
+    "filter": "Tìm ngôn ngữ",
+    "filterHint": "Tên hoặc mã, ví dụ Tetun hoặc th",
+    "count": "Số ngôn ngữ hiển thị: {{count}}",
+    "none": "Không có ngôn ngữ nào khớp với “{{query}}”.",
+    "availability": {
+      "complete": "Đầy đủ",
+      "draft-mixed": "Bản dịch nháp bằng AI · một số trang bằng tiếng Indonesia",
+      "draft-partial": "Giao diện nháp bằng AI · phần lớn nội dung bằng tiếng Anh"
+    },
+    "explain": "Tiếng Indonesia và tiếng Anh do nhóm dự án viết. Các ngôn ngữ khác là bản nháp bằng AI chưa được người bản ngữ duyệt; trang nào chưa có bản dịch sẽ hiển thị bằng tiếng Indonesia hoặc tiếng Anh, kèm thông báo."
   },
   "footer": {
     "disclaimer": "Thiết kế lại dạng ý tưởng độc lập của {{studio}}, phục vụ mục đích giáo dục và portfolio. Không liên kết, không được bảo trợ và không do Pura Mangkunegaran vận hành. Thông tin chính thức:",
@@ -33,13 +46,9 @@
     "sources": "Nguồn",
     "credits": "Ghi công hình ảnh",
     "translationStatus": "Tình trạng bản dịch",
-    "madeBy": "Một ý tưởng của",
-    "uiDraft": "Văn bản giao diện bằng {{language}} là bản dịch nháp bằng AI, đang chờ được duyệt."
+    "madeBy": "Một ý tưởng của"
   },
   "fallback": {
-    "label": "Thông báo ngôn ngữ",
-    "notice": "Trang này chưa có bằng {{language}}, nên được hiển thị bằng {{shownIn}}.",
-    "draft": "Văn bản này là bản dịch nháp bằng AI, đang chờ người bản ngữ duyệt.",
     "link": "Tình trạng bản dịch"
   },
   "sources": {

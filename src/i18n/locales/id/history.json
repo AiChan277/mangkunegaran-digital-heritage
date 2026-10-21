@@ -1,19 +1,60 @@
 {
   "meta": {
     "title": "Sejarah",
-    "description": "Dari Perjanjian Salatiga tahun 1757 hingga kini: lini masa bersumber tentang Mangkunegaran dan para penguasanya."
+    "description": "Dari kelahiran Raden Mas Said pada 1725 hingga kini: lini masa bersumber tentang Mangkunegaran, lengkap dengan foto arsip dan naskah narasi dokumenter."
   },
   "header": {
     "eyebrow": "Bab satu",
     "title": "Sejarah",
-    "intro": "Dari sebuah kesepakatan pada 1757 hingga penjaga kebudayaan masa kini."
+    "intro": "Dari perlawanan panjang seorang pangeran hingga penjaga kebudayaan masa kini."
   },
-  "eraNav": "Masa",
   "timelineLabel": "Lini masa, {{range}}",
   "rulers": {
     "title": "Para penguasa Mangkunegaran",
     "note": "Tahun bertakhta sesuai daftar di mangkunegaran.id, yang mengeja gelarnya Mangkoenagoro.",
     "ruler": "Penguasa",
     "reign": "Masa bertakhta"
+  },
+  "periodNav": "Periode",
+  "entry": {
+    "precision": {
+      "approximate": "Tanggal perkiraan"
+    },
+    "turningPoint": "Titik balik",
+    "more": "Selengkapnya",
+    "context": "Latar",
+    "happened": "Apa yang terjadi",
+    "people": "Tokoh",
+    "significance": "Mengapa penting",
+    "uncertainty": "Yang belum pasti",
+    "archive": "Dari arsip",
+    "sources": "Sumber untuk peristiwa ini",
+    "related": "Kisah terkait"
+  },
+  "archive": {
+    "eyebrow": "Arsip",
+    "title": "Foto-foto dari arsip",
+    "intro": "Foto, kartu pos, dan lukisan yang dikatalogkan sebagai Mangkunegaran oleh Perpustakaan Universitas Leiden dan Rijksmuseum. Pindaian ditampilkan sebagaimana diterbitkan lembaganya — tanpa filter, tanpa pemotongan — beserta tanggal katalog, pembuat, dan lisensinya.",
+    "record": "Catatan katalog",
+    "file": "Berkas gambar",
+    "candidatesTitle": "Belum diverifikasi",
+    "candidatesIntro": "Sumber-sumber ini tampak relevan, tetapi isi dan haknya belum kami periksa, sehingga hanya ditautkan di sini dan tidak direproduksi.",
+    "candidateBadge": "Kandidat"
+  },
+  "audio": {
+    "label": "Dengarkan bab ini",
+    "lang": "Bahasa narasi",
+    "play": "Putar",
+    "pause": "Jeda",
+    "seek": "Posisi dalam rekaman",
+    "time": "{{current}} dari {{total}}",
+    "mute": "Bisukan",
+    "loading": "Memuat rekaman…",
+    "error": "Rekaman tidak dapat dimuat. Teks bab di atas sudah lengkap tanpanya.",
+    "unavailable": "Belum direkam",
+    "unavailableBody": "Narasi bab ini direncanakan dalam bahasa Indonesia dan Inggris. Belum ada rekaman; bab ini sudah lengkap tanpanya.",
+    "script": "Baca naskah narasi",
+    "transcript": "Baca transkrip",
+    "region": "Audio untuk {{chapter}}"
   }
 }

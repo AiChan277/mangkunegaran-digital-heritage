@@ -24,12 +24,14 @@ export type ContentState = {
   fallback: boolean;
   /** True when the content shown is an unreviewed AI draft (e.g. Javanese). */
   draft: boolean;
+  /** True when only some fields are translated (AI draft) and the rest falls back. */
+  partial: boolean;
 };
 
 export function contentState(locale: Locale, page: string): ContentState {
   const lang = contentLangFor(locale, page);
   const status = contentStatus(locale, page);
-  return { lang, fallback: status === "missing", draft: status === "ai-draft" };
+  return { lang, fallback: status === "missing", draft: status === "ai-draft", partial: status === "partial" };
 }
 
 export async function pageSetup(request: Request, page: string, namespaces: Namespace[]) {

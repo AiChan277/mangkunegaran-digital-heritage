@@ -8,6 +8,173 @@
       700
     ]
   },
+  "arc-dancers-paris-1889": {
+    "width": 1920,
+    "height": 1241,
+    "color": "#d8d8b8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ]
+  },
+  "arc-entrance-postcard": {
+    "width": 1920,
+    "height": 1231,
+    "color": "#c8b898",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ]
+  },
+  "arc-gamelan-arnhem-1879": {
+    "width": 1920,
+    "height": 1145,
+    "color": "#d8c898",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ]
+  },
+  "arc-kepatihan-1900": {
+    "width": 1920,
+    "height": 998,
+    "color": "#b8a8b8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ]
+  },
+  "arc-legion-officers-1922": {
+    "width": 3840,
+    "height": 2788,
+    "color": "#b8a8a8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "arc-legion-parade-1916": {
+    "width": 1920,
+    "height": 1437,
+    "color": "#e8e8d8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ]
+  },
+  "arc-mn4-1866": {
+    "width": 3840,
+    "height": 4736,
+    "color": "#e8d8b8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "arc-mn4-carriage-1870": {
+    "width": 3840,
+    "height": 1889,
+    "color": "#e8d8a8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "arc-mn4-garden": {
+    "width": 3840,
+    "height": 2949,
+    "color": "#d8b888",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "arc-mn7-1931": {
+    "width": 1920,
+    "height": 2767,
+    "color": "#b8b8a8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ]
+  },
+  "arc-palace-1902": {
+    "width": 1920,
+    "height": 1416,
+    "color": "#b8b8a8",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ]
+  },
+  "arc-palace-lit-1938": {
+    "width": 1280,
+    "height": 824,
+    "color": "#383838",
+    "widths": [
+      480,
+      800,
+      1200,
+      1280
+    ]
+  },
+  "arc-pendhapa-1874": {
+    "width": 3840,
+    "height": 2928,
+    "color": "#281818",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "arc-pendopo-1890": {
+    "width": 1920,
+    "height": 1519,
+    "color": "#a89878",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ]
+  },
   "crafts": {
     "width": 3840,
     "height": 2160,

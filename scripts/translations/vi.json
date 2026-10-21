@@ -24,7 +24,20 @@
     "lang": {
       "label": "Ngôn ngữ",
       "choose": "Chọn ngôn ngữ",
-      "draft": "bản nháp"
+      "open": "Đổi ngôn ngữ",
+      "current": "Ngôn ngữ hiện tại: {{language}}",
+      "currentLabel": "Bạn đang đọc bằng",
+      "close": "Đóng bảng ngôn ngữ",
+      "filter": "Tìm ngôn ngữ",
+      "filterHint": "Tên hoặc mã, ví dụ Tetun hoặc th",
+      "count": "Số ngôn ngữ hiển thị: {{count}}",
+      "none": "Không có ngôn ngữ nào khớp với “{{query}}”.",
+      "availability": {
+        "complete": "Đầy đủ",
+        "draft-mixed": "Bản dịch nháp bằng AI · một số trang bằng tiếng Indonesia",
+        "draft-partial": "Giao diện nháp bằng AI · phần lớn nội dung bằng tiếng Anh"
+      },
+      "explain": "Tiếng Indonesia và tiếng Anh do nhóm dự án viết. Các ngôn ngữ khác là bản nháp bằng AI chưa được người bản ngữ duyệt; trang nào chưa có bản dịch sẽ hiển thị bằng tiếng Indonesia hoặc tiếng Anh, kèm thông báo."
     },
     "footer": {
       "disclaimer": "Thiết kế lại dạng ý tưởng độc lập của {{studio}}, phục vụ mục đích giáo dục và portfolio. Không liên kết, không được bảo trợ và không do Pura Mangkunegaran vận hành. Thông tin chính thức:",
@@ -34,13 +47,9 @@
       "sources": "Nguồn",
       "credits": "Ghi công hình ảnh",
       "translationStatus": "Tình trạng bản dịch",
-      "madeBy": "Một ý tưởng của",
-      "uiDraft": "Văn bản giao diện bằng {{language}} là bản dịch nháp bằng AI, đang chờ được duyệt."
+      "madeBy": "Một ý tưởng của"
     },
     "fallback": {
-      "label": "Thông báo ngôn ngữ",
-      "notice": "Trang này chưa có bằng {{language}}, nên được hiển thị bằng {{shownIn}}.",
-      "draft": "Văn bản này là bản dịch nháp bằng AI, đang chờ người bản ngữ duyệt.",
       "link": "Tình trạng bản dịch"
     },
     "sources": {
@@ -121,20 +130,61 @@
   "history": {
     "meta": {
       "title": "Lịch sử",
-      "description": "Từ Hiệp ước Salatiga năm 1757 đến nay: dòng thời gian có nguồn về Mangkunegaran và các vị cai trị."
+      "description": "Từ khi Raden Mas Said ra đời năm 1725 đến nay: dòng thời gian có nguồn dẫn về Mangkunegaran, kèm ảnh tư liệu và kịch bản thuyết minh phim tài liệu."
     },
     "header": {
       "eyebrow": "Chương một",
       "title": "Lịch sử",
-      "intro": "Từ một thỏa thuận năm 1757 đến người gìn giữ văn hóa hôm nay."
+      "intro": "Từ cuộc kháng chiến dài của một hoàng tử đến người gìn giữ văn hóa ngày nay."
     },
-    "eraNav": "Các thời kỳ",
     "timelineLabel": "Dòng thời gian, {{range}}",
     "rulers": {
       "title": "Các vị cai trị Mangkunegaran",
       "note": "Năm trị vì theo danh sách trên mangkunegaran.id, nơi tước hiệu được viết là Mangkoenagoro.",
       "ruler": "Người cai trị",
       "reign": "Thời gian trị vì"
+    },
+    "periodNav": "Các thời kỳ",
+    "entry": {
+      "precision": {
+        "approximate": "Ngày ước tính"
+      },
+      "turningPoint": "Bước ngoặt",
+      "more": "Đọc thêm",
+      "context": "Bối cảnh",
+      "happened": "Điều gì đã xảy ra",
+      "people": "Nhân vật",
+      "significance": "Vì sao quan trọng",
+      "uncertainty": "Điều chưa chắc chắn",
+      "archive": "Từ kho tư liệu",
+      "sources": "Nguồn cho mục này",
+      "related": "Câu chuyện liên quan"
+    },
+    "archive": {
+      "eyebrow": "Kho tư liệu",
+      "title": "Ảnh từ kho tư liệu",
+      "intro": "Ảnh chụp, một tấm bưu thiếp và một bức tranh được Thư viện Đại học Leiden và Rijksmuseum lập danh mục là Mangkunegaran. Bản quét được hiển thị đúng như các tổ chức đã công bố — không bộ lọc, không cắt xén — kèm ngày trong danh mục, tác giả và giấy phép.",
+      "record": "Hồ sơ danh mục",
+      "file": "Tệp hình ảnh",
+      "candidatesTitle": "Chưa xác minh",
+      "candidatesIntro": "Các nguồn này có vẻ liên quan, nhưng chúng tôi chưa kiểm tra nội dung hay quyền sử dụng, nên chỉ đặt liên kết ở đây mà không sao chép lại.",
+      "candidateBadge": "Ứng viên"
+    },
+    "audio": {
+      "label": "Nghe chương này",
+      "lang": "Ngôn ngữ thuyết minh",
+      "play": "Phát",
+      "pause": "Tạm dừng",
+      "seek": "Vị trí trong bản ghi",
+      "time": "{{current}} / {{total}}",
+      "mute": "Tắt tiếng",
+      "loading": "Đang tải bản ghi…",
+      "error": "Không tải được bản ghi. Nội dung chương ở trên vẫn đầy đủ khi không có nó.",
+      "unavailable": "Chưa được ghi âm",
+      "unavailableBody": "Phần thuyết minh cho chương này được dự kiến bằng tiếng Indonesia và tiếng Anh. Hiện chưa có bản ghi; chương vẫn đầy đủ khi không có nó.",
+      "script": "Đọc kịch bản thuyết minh",
+      "transcript": "Đọc bản chép lời",
+      "region": "Âm thanh cho {{chapter}}"
     }
   },
   "architecture": {
@@ -311,7 +361,11 @@
       "imagesNote": "Hình ảnh là bản sao lưu trên trang, đã được đổi kích thước và chuyển sang định dạng hiện đại. Các phiên bản đã cắt được ghi chú.",
       "source": "nguồn",
       "fonts": "Phông chữ",
-      "code": "Phần mềm"
+      "code": "Phần mềm",
+      "ornament": "Hoa văn batik",
+      "ornamentNote": "Họa tiết kawung là một mẫu hoa văn Java cổ điển, được chuyển thể ở đây dưới dạng vector; nó không được giới thiệu như một họa tiết của Mangkunegaran. Không dùng parang: mangkunegaran.id mô tả đây là họa tiết bị hạn chế (larangan) trong cung điện.",
+      "colours": "Màu sắc",
+      "coloursNote": "Màu xanh hoàng gia và vàng cổ được lấy mẫu từ trang web chính thức mangkunegaran.id làm tham chiếu thiết kế. Đây không phải là quy chuẩn màu chính thức."
     },
     "translation": {
       "title": "Tình trạng bản dịch",
@@ -327,7 +381,8 @@
     "status": {
       "source": "Bản gốc",
       "ai-draft": "Bản nháp AI",
-      "missing": "Chưa có"
+      "missing": "Chưa có",
+      "partial": "Một phần"
     },
     "studio": {
       "title": "Thực hiện bởi",

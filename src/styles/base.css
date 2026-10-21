@@ -252,7 +252,34 @@ button {
   text-decoration: underline;
 }
 
-/* Night band (teak) for pacing. */
+/*
+ * Royal-green surfaces (header, heroes, bands, footer). Both classes swap the
+ * text, rule, accent and focus tokens so components inside them stay legible.
+ */
+.on-royal,
+.night {
+  --surface: var(--royal);
+  --surface-alt: var(--royal-2);
+  --gold-text: var(--gold-on-royal);
+  --gold-display: var(--gold-on-royal);
+  --gold-muted: var(--gold-on-royal);
+  --gold-rule: var(--gold-rule-on-royal);
+}
+
+.on-royal {
+  background: var(--royal);
+  color: var(--on-royal);
+  --text: var(--on-royal);
+  --text-muted: var(--on-royal-muted);
+  --accent: var(--gold-on-royal);
+  --accent-strong: var(--gold-on-royal);
+  --brass-text: var(--gold-on-royal);
+  --focus-ring: var(--focus-on-royal);
+  --rule: rgb(245 239 226 / 0.16);
+  --rule-strong: rgb(245 239 226 / 0.4);
+}
+
+/* Night band (deep royal green) for pacing. */
 .night {
   background: var(--night-surface);
   color: var(--night-text);
@@ -260,8 +287,8 @@ button {
   --text-muted: var(--night-muted);
   --accent: var(--night-accent);
   --accent-strong: var(--night-accent);
-  --brass-text: var(--brass-light);
-  --focus-ring: var(--brass-light);
+  --brass-text: var(--gold-on-royal);
+  --focus-ring: var(--focus-on-royal);
   --rule: rgb(245 239 226 / 0.18);
   --rule-strong: rgb(245 239 226 / 0.45);
 }

@@ -6,8 +6,17 @@
  */
 :root {
   /* Base palette */
-  --green-pareanom: #2e4a3b;
-  --green-deep: #1d3128;
+  /*
+   * Royal green and antique gold are design references sampled on 2026-10-21
+   * from the CSS of mangkunegaran.id (its Tailwind colours "bush-500"
+   * rgb(17 48 27) and "crayola-500" rgb(228 197 136)). They are a researched
+   * reference, not an official brand specification.
+   */
+  --green-royal: #11301b;
+  --green-royal-2: #1a4329; /* lighter step for gradients and hover */
+  --green-deep: #0b2214;
+  --green-pareanom: var(--green-royal); /* kept name; same identity green */
+  --gold-antique: #e4c588;
   --brass: #a8833a; /* large display text and ornaments only on ivory */
   --brass-light: #d4b56e; /* on dark surfaces */
   --brass-text: #76591f; /* brass for text: ≥5:1 on ivory and ivory-2 */
@@ -31,11 +40,40 @@
   --rule-strong: rgb(28 26 23 / 0.42);
   --warning: var(--terracotta);
 
+  /*
+   * Heritage layers. Royal green is the identity colour: page heroes, header,
+   * footer, bands and markers. Paper carries the reading content. Gold is
+   * restrained: rules, numerals, ornament.
+   * Contrast (WCAG 2): on-royal/royal 12.5:1 · on-royal-muted/royal 9.6:1 ·
+   * gold-on-royal/royal 8.6:1 (6.7:1 on royal-2) · royal/paper 12.5:1 ·
+   * royal/royal-tint 11.5:1 · text-muted/royal-tint 6.6:1 · gold-text/paper
+   * 5.7:1 · gold-display 3.8:1 on paper, 3.4:1 on paper-2 (large numerals
+   * only) · gold-muted/paper 3.1:1 (non-text ornament only).
+   */
+  --paper: var(--ivory);
+  --paper-2: var(--ivory-2);
+  --royal: var(--green-royal);
+  --royal-2: var(--green-royal-2);
+  --royal-deep: var(--green-deep);
+  --royal-tint: #e1e8de;
+  --on-royal: #f5efe2;
+  --on-royal-muted: #cbd6cc;
+  --gold-muted: var(--brass);
+  --gold-text: var(--brass-text);
+  --gold-display: #957431;
+  --gold-on-royal: var(--gold-antique);
+  --gold-rule: rgb(168 131 58 / 0.5);
+  --gold-rule-on-royal: rgb(228 197 136 / 0.45);
+  --marker: var(--royal);
+  --marker-milestone: var(--gold-muted);
+  --focus-on-royal: var(--gold-antique);
+
   /* Night band */
-  --night-surface: var(--teak-night);
+  /* Night bands are royal green too, so the identity colour recurs. */
+  --night-surface: var(--green-deep);
   --night-text: #f5efe2;
-  --night-muted: #cdbfa6;
-  --night-accent: var(--brass-light);
+  --night-muted: #cbd6cc;
+  --night-accent: var(--gold-antique);
 
   /* Type */
   /* Script fonts are added per language in lang.css. */

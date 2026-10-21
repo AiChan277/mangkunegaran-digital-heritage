@@ -34,7 +34,23 @@
 
 /* ── 1 · Hero ────────────────────────────────────────────────────────── */
 .hero {
-  padding-block: clamp(32px, 5vw, 64px) clamp(56px, 8vw, 120px);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-block: clamp(32px, 5vw, 64px) clamp(64px, 8vw, 120px);
+  background:
+    radial-gradient(90% 80% at 15% 100%, var(--royal-2) 0%, transparent 65%),
+    var(--royal);
+}
+
+/* The kawung field sits behind the text on the left; the photo covers the right. */
+.hero > .heroField[data-variant] {
+  inset-inline: 0 auto;
+  inline-size: min(52%, 720px);
+  -webkit-mask-image:
+    url("/ornament/kawung-tile.svg"), linear-gradient(to right, #000 15%, transparent 90%);
+  mask-image:
+    url("/ornament/kawung-tile.svg"), linear-gradient(to right, #000 15%, transparent 90%);
 }
 
 .heroGrid {
@@ -73,7 +89,7 @@
 .heroSub {
   font-style: italic;
   font-weight: 330;
-  color: var(--accent);
+  color: var(--gold-on-royal);
   font-size: clamp(1.9rem, 1.2rem + 2.6vw, 3.8rem);
   margin-block-start: 0.15em;
 }
@@ -83,18 +99,29 @@
   color: var(--text-muted);
   max-inline-size: 36ch;
   padding-inline-start: 14px;
-  border-inline-start: 2px solid var(--terracotta);
+  border-inline-start: 2px solid var(--gold-on-royal);
 }
 
 .heroFigure {
+  position: relative;
   grid-column: 7 / -1;
   margin: 0;
 }
 
+/* Offset gold hairline frame, as on the page heroes. */
+.heroFigure::before {
+  content: "";
+  position: absolute;
+  inset: -12px 12px 40px -12px;
+  border: 1px solid var(--gold-rule-on-royal);
+  pointer-events: none;
+}
+
 .heroFrame {
+  position: relative;
   aspect-ratio: 16 / 9.2;
   overflow: hidden;
-  background: var(--surface-alt);
+  background: var(--royal-deep);
 }
 
 /* Reveal: scale from 1.04 → 1, transform only. */
@@ -159,10 +186,10 @@
   font-weight: 250;
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px var(--brass-text);
+  -webkit-text-stroke: 1px var(--gold-on-royal);
   pointer-events: none;
   z-index: 0;
-  opacity: 0.55;
+  opacity: 0.4;
 }
 
 @media (max-width: 899px) {
@@ -250,8 +277,8 @@
   place-content: center;
   justify-items: center;
   gap: 8px;
-  background: var(--teak-night);
-  color: var(--brass-light);
+  background: var(--royal);
+  color: var(--gold-on-royal);
 }
 
 .stepType [lang="jv-Java"] {

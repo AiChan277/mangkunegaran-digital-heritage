@@ -37,7 +37,11 @@
     "imagesNote": "Imajen sira mak kópia ne'ebé rai iha sítiu, muda tamañu no formatu modernu. Versaun ne'ebé koa ona hetan marka.",
     "source": "fonte",
     "fonts": "Tipu letra",
-    "code": "Software"
+    "code": "Software",
+    "ornament": "Ornamentu batik",
+    "ornamentNote": "Motivu kawung mak padraun Javanés klásiku, adapta iha ne'e nu'udar vetór; la aprezenta nu'udar motivu Mangkunegaran nian. Parang la uza: mangkunegaran.id deskreve nu'udar motivu restritu (larangan) iha palásiu laran.",
+    "colours": "Kór sira",
+    "coloursNote": "Matak real no osan-mean antigu foti husi website ofisiál mangkunegaran.id nu'udar referénsia dezeñu. Ne'e la'ós espesifikasaun kór ofisiál."
   },
   "translation": {
     "title": "Situasaun tradusaun",
@@ -53,7 +57,8 @@
   "status": {
     "source": "Orijinál",
     "ai-draft": "Rascunho AI",
-    "missing": "Seidauk"
+    "missing": "Seidauk",
+    "partial": "Parsiál"
   },
   "studio": {
     "title": "Halo husi",

@@ -15,7 +15,8 @@ export const DEFAULT_LOCALE: Locale = "id";
 export const NAMESPACES = ["common", "home", "history", "architecture", "culture", "stories", "gallery", "visit", "about"] as const;
 export type Namespace = (typeof NAMESPACES)[number];
 
-export type Status = "source" | "ai-draft" | "missing";
+/** partial = some fields translated (AI draft), the rest falls back. */
+export type Status = "source" | "ai-draft" | "partial" | "missing";
 
 export type LocaleInfo = {
   code: Locale;
@@ -70,7 +71,25 @@ export function uiStatus(locale: Locale): Status {
 export function contentStatus(locale: Locale, page: string): Status {
   if (locale === "id" || locale === "en") return "source";
   if (locale === "jv" && JV_CONTENT_PAGES.has(page)) return "ai-draft";
+  // History titles and summaries exist as AI drafts in every Tier 3 language.
+  if (page === "history") return "partial";
   return "missing";
+}
+
+/**
+ * How complete a locale is, for the language panel:
+ *  complete     — interface and content written by the project (id, en)
+ *  draft-mixed  — AI-draft interface; Home and History in draft Javanese,
+ *                 other pages in Indonesian (jv)
+ *  draft-partial — AI-draft interface; History titles and summaries in
+ *                 draft translation, everything else in English (Tier 3)
+ */
+export type Availability = "complete" | "draft-mixed" | "draft-partial";
+
+export function localeAvailability(locale: Locale): Availability {
+  if (locale === "id" || locale === "en") return "complete";
+  if (locale === "jv") return "draft-mixed";
+  return "draft-partial";
 }
 
 /**

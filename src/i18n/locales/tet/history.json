@@ -1,19 +1,60 @@
 {
   "meta": {
     "title": "Istória",
-    "description": "Husi Tratadu Salatiga iha 1757 to'o ohin: kronolojia ho fonte kona-ba Mangkunegaran no ninia ukun-na'in sira."
+    "description": "Husi Raden Mas Said moris iha 1725 to'o ohin: liña tempu ho fonte kona-ba Mangkunegaran, ho foto arkivu no skrip narasaun dokumentáriu."
   },
   "header": {
     "eyebrow": "Kapítulu dahuluk",
     "title": "Istória",
-    "intro": "Husi akordu ida iha 1757 to'o guarda kultura nian ohin loron."
+    "intro": "Husi prínsipe ida nia rezisténsia naruk to'o guarda kultura ohin loron."
   },
-  "eraNav": "Períodu sira",
   "timelineLabel": "Kronolojia, {{range}}",
   "rulers": {
     "title": "Ukun-na'in sira Mangkunegaran nian",
     "note": "Tinan ukun tuir lista iha mangkunegaran.id, ne'ebé hakerek títulu hanesan Mangkoenagoro.",
     "ruler": "Ukun-na'in",
     "reign": "Tempu ukun"
+  },
+  "periodNav": "Períodu sira",
+  "entry": {
+    "precision": {
+      "approximate": "Data aproximada"
+    },
+    "turningPoint": "Pontu mudansa",
+    "more": "Lee tan",
+    "context": "Kontestu",
+    "happened": "Saida mak akontese",
+    "people": "Ema sira",
+    "significance": "Tanba sa importante",
+    "uncertainty": "Saida mak seidauk serteza",
+    "archive": "Husi arkivu",
+    "sources": "Fonte ba entrada ida-ne'e",
+    "related": "Istória relasionadu"
+  },
+  "archive": {
+    "eyebrow": "Arkivu",
+    "title": "Foto sira husi arkivu",
+    "intro": "Foto, postal ida no pintura ida ne'ebé Biblioteka Universidade Leiden no Rijksmuseum rejista nu'udar Mangkunegaran. Eskaneamentu hatudu hanesan instituisaun sira publika — la ho filtru, la ko'a — ho data katálogu, autór no lisensa.",
+    "record": "Rejistu katálogu",
+    "file": "Arkivu imajen",
+    "candidatesTitle": "Seidauk verifika",
+    "candidatesIntro": "Fonte sira-ne'e hanesan relevante, maibé ami seidauk haree sira-nia konteúdu ka direitu, entaun ami fó ligasaun de'it iha ne'e no la reprodús.",
+    "candidateBadge": "Kandidatu"
+  },
+  "audio": {
+    "label": "Rona kapítulu ida-ne'e",
+    "lang": "Lian narasaun",
+    "play": "Toka",
+    "pause": "Para uitoan",
+    "seek": "Pozisaun iha gravasaun",
+    "time": "{{current}} husi {{total}}",
+    "mute": "Halo nonok",
+    "loading": "Karga hela gravasaun…",
+    "error": "La bele karga gravasaun. Testu kapítulu iha leten kompletu ona la ho nia.",
+    "unavailable": "Seidauk grava",
+    "unavailableBody": "Narasaun ba kapítulu ida-ne'e planeia iha lian Indonézia no Inglés. Seidauk iha gravasaun; kapítulu ne'e kompletu ona la ho nia.",
+    "script": "Lee skrip narasaun",
+    "transcript": "Lee transkrisaun",
+    "region": "Áudiu ba {{chapter}}"
   }
 }

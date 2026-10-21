@@ -10,7 +10,8 @@ import type { Route } from "./+types/root-index";
 import { DEFAULT_LOCALE, LOCALES, LOCALE_INFO, isLocale, matchLocale } from "~/i18n/config";
 import { readSavedLocale } from "~/lib/storage";
 import { buildMeta } from "~/lib/meta";
-import { Ornament } from "~/components/Ornament";
+import { HeritageDivider } from "~/components/HeritageDivider";
+import { PageHero } from "~/components/PageHero";
 import styles from "./root-index.module.css";
 
 const TITLE = "Mangkunegaran — A Living Heritage · Concept";
@@ -41,13 +42,19 @@ export default function RootIndex() {
   }, [navigate]);
 
   return (
-    <main id="main" className={`container ${styles.wrap}`}>
+    <main id="main">
       {/* i18n-exempt: language-neutral entry page listing every locale by native name */}
-      <p className="eyebrow">Mangkunegaran — A Living Heritage · Concept</p>
-      <h1 className={styles.title}>
-        <span lang="id">Pilih bahasa</span> · <span lang="en">Choose a language</span>
-      </h1>
-      <Ornament />
+      <PageHero
+        variant="notice"
+        eyebrow="Mangkunegaran — A Living Heritage · Concept"
+        title={
+          <>
+            <span lang="id">Pilih bahasa</span> · <span lang="en">Choose a language</span>
+          </>
+        }
+      />
+      <div className={`container ${styles.wrap}`}>
+      <HeritageDivider />
       <ul className={styles.list}>
         {LOCALES.map((code) => (
           <li key={code}>
@@ -64,6 +71,7 @@ export default function RootIndex() {
         <span lang="id">Konsep desain ulang independen — tidak berafiliasi dengan Pura Mangkunegaran.</span>{" "}
         <span lang="en">Independent concept redesign — not affiliated with Pura Mangkunegaran.</span>
       </p>
+      </div>
     </main>
   );
 }

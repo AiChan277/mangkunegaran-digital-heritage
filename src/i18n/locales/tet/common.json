@@ -23,7 +23,20 @@
   "lang": {
     "label": "Lian",
     "choose": "Hili lian ida",
-    "draft": "rascunho"
+    "open": "Troka lian",
+    "current": "Lian agora: {{language}}",
+    "currentLabel": "Ita lee iha",
+    "close": "Taka panel lian nian",
+    "filter": "Buka lian ida",
+    "filterHint": "Naran ka kódigu, ezemplu Tetun ka th",
+    "count": "Lian ne'ebé hatudu: {{count}}",
+    "none": "La iha lian ida ne'ebé hanesan ho “{{query}}”.",
+    "availability": {
+      "complete": "Kompletu",
+      "draft-mixed": "Tradusaun rascunho AI · pájina balun iha lian Indonézia",
+      "draft-partial": "Interface rascunho AI · konteúdu barak iha lian Inglés"
+    },
+    "explain": "Lian Indonézia no Inglés hakerek husi projetu. Lian sira seluk mak rascunho AI ne'ebé seidauk haree husi falante natív; pájina ne'ebé seidauk iha tradusaun hatudu iha lian Indonézia ka Inglés, no hatete nune'e."
   },
   "footer": {
     "disclaimer": "Konseitu dezeñu foun independente husi {{studio}} ba objetivu edukasaun no portfóliu. La iha ligasaun ho, la hetan apoiu husi, no la jere husi Pura Mangkunegaran. Informasaun ofisiál:",
@@ -33,13 +46,9 @@
     "sources": "Fonte sira",
     "credits": "Kréditu imajen",
     "translationStatus": "Situasaun tradusaun",
-    "madeBy": "Konseitu husi",
-    "uiDraft": "Testu interface iha {{language}} mak tradusaun rascunho husi AI ne'ebé hein hela revizaun."
+    "madeBy": "Konseitu husi"
   },
   "fallback": {
-    "label": "Avizu kona-ba lian",
-    "notice": "Pájina ne'e seidauk iha {{language}}, tanba ne'e hatudu iha {{shownIn}}.",
-    "draft": "Testu ne'e mak tradusaun rascunho husi AI ne'ebé hein hela revizaun husi ema ne'ebé ko'alia lian ne'e hanesan lian-inan.",
     "link": "Situasaun tradusaun"
   },
   "sources": {

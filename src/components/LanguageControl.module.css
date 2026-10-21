@@ -1,0 +1,281 @@
+/* Floating language control. */
+
+.fab {
+  --fab-size: 52px;
+  position: fixed;
+  z-index: 70;
+  inset-block-end: max(16px, calc(env(safe-area-inset-bottom) + 12px));
+  inset-inline-end: max(16px, calc(env(safe-area-inset-right) + 12px));
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-block-size: var(--fab-size);
+  min-inline-size: var(--fab-size);
+  padding: 0 16px 0 14px;
+  border: 1px solid var(--gold-on-royal);
+  border-radius: 999px;
+  background: var(--royal);
+  color: var(--on-royal);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow:
+    0 1px 2px rgb(28 26 23 / 0.2),
+    0 10px 24px rgb(28 26 23 / 0.18);
+  transition:
+    background-color var(--dur-micro) var(--ease),
+    transform var(--dur-micro) var(--ease);
+}
+
+.fab:hover {
+  background: var(--royal-deep);
+}
+
+.fab:active {
+  transform: scale(0.97);
+}
+
+.fab:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.fabCode {
+  line-height: 1;
+}
+
+@media print {
+  .fab {
+    display: none;
+  }
+}
+
+/* Panel */
+.dialog {
+  position: fixed;
+  inset: auto max(16px, calc(env(safe-area-inset-right) + 12px)) max(80px, calc(env(safe-area-inset-bottom) + 76px)) auto;
+  margin: 0;
+  padding: 0;
+  inline-size: min(400px, calc(100vw - 32px));
+  max-block-size: min(640px, calc(100dvh - 112px));
+  border: 1px solid var(--rule-strong);
+  background: var(--paper);
+  color: var(--text);
+  box-shadow: 0 24px 60px rgb(28 26 23 / 0.28);
+  overflow: hidden;
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog::backdrop {
+  background: rgb(28 26 23 / 0.28);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dialog[open] {
+    animation: rise 220ms var(--ease);
+  }
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+}
+
+/* Narrow screens and large zoom: a sheet across the bottom. */
+@media (max-width: 560px), (max-height: 520px) {
+  .dialog {
+    inset: auto 0 0 0;
+    inline-size: 100%;
+    max-inline-size: 100%;
+    max-block-size: calc(100dvh - 24px);
+    border-inline: 0;
+    border-block-end: 0;
+    padding-block-end: env(safe-area-inset-bottom);
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 0;
+  flex: 1;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 14px 6px 20px;
+  border-block-start: 3px solid var(--royal);
+}
+
+.title {
+  font-size: var(--step-1);
+}
+
+.close {
+  display: inline-grid;
+  place-items: center;
+  inline-size: 44px;
+  block-size: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.close:hover {
+  background: var(--paper-2);
+}
+
+.current {
+  padding: 0 20px 12px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.current strong {
+  color: var(--text);
+}
+
+.search {
+  display: grid;
+  gap: 6px;
+  padding: 0 20px;
+}
+
+.searchLabel {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.searchInput {
+  min-block-size: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: #fffdf8;
+  color: var(--text);
+  font: inherit;
+}
+
+.searchInput:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 1px;
+}
+
+.count {
+  padding: 10px 20px 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.list {
+  flex: 1;
+  min-block-size: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  margin: 0;
+  padding: 0 10px 8px;
+  list-style: none;
+}
+
+.option {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "names check"
+    "avail check";
+  align-items: center;
+  gap: 2px 12px;
+  min-block-size: 56px;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.option:hover,
+.option:focus-visible {
+  background: var(--royal-tint);
+}
+
+.option:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: -3px;
+}
+
+.option[aria-current="true"] {
+  background: var(--royal-tint);
+  box-shadow: inset 3px 0 0 var(--royal);
+}
+
+.names {
+  grid-area: names;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 8px;
+}
+
+.native {
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.english {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.availability {
+  grid-area: avail;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.dot {
+  flex: none;
+  inline-size: 8px;
+  block-size: 8px;
+  border-radius: 50%;
+  background: var(--royal);
+}
+
+/* Shape as well as colour: draft states use a hollow / half marker. */
+.option[data-availability="draft-mixed"] .dot {
+  background: linear-gradient(90deg, var(--gold-muted) 50%, transparent 50%);
+  border: 1px solid var(--gold-muted);
+}
+
+.option[data-availability="draft-partial"] .dot {
+  background: transparent;
+  border: 1px solid var(--gold-muted);
+}
+
+.check {
+  grid-area: check;
+  color: var(--royal);
+}
+
+.note {
+  padding: 12px 20px 16px;
+  border-block-start: 1px solid var(--rule);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}

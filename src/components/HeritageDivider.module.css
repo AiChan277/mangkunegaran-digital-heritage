@@ -1,0 +1,15 @@
+.divider {
+  inline-size: 100%;
+  max-inline-size: 360px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--gold-muted);
+}
+
+.rule {
+  flex: 1;
+  block-size: 1px;
+  background: var(--gold-rule);
+}

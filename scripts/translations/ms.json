@@ -24,7 +24,20 @@
     "lang": {
       "label": "Bahasa",
       "choose": "Pilih bahasa",
-      "draft": "draf"
+      "open": "Tukar bahasa",
+      "current": "Bahasa semasa: {{language}}",
+      "currentLabel": "Anda membaca dalam",
+      "close": "Tutup panel bahasa",
+      "filter": "Cari bahasa",
+      "filterHint": "Nama atau kod, cth. Tetun atau th",
+      "count": "Bahasa dipaparkan: {{count}}",
+      "none": "Tiada bahasa yang sepadan dengan “{{query}}”.",
+      "availability": {
+        "complete": "Lengkap",
+        "draft-mixed": "Terjemahan draf AI · sesetengah halaman dalam bahasa Indonesia",
+        "draft-partial": "Antara muka draf AI · kebanyakan kandungan dalam bahasa Inggeris"
+      },
+      "explain": "Bahasa Indonesia dan Inggeris ditulis oleh pasukan projek. Bahasa lain ialah draf AI yang belum disemak oleh penutur asli; halaman tanpa terjemahan dipaparkan dalam bahasa Indonesia atau Inggeris, berserta notis."
     },
     "footer": {
       "disclaimer": "Konsep reka bentuk semula bebas oleh {{studio}} untuk tujuan pendidikan dan portfolio. Tidak bergabung dengan, tidak disokong oleh, dan tidak dikendalikan oleh Pura Mangkunegaran. Maklumat rasmi:",
@@ -34,13 +47,9 @@
       "sources": "Sumber",
       "credits": "Kredit imej",
       "translationStatus": "Status terjemahan",
-      "madeBy": "Satu konsep oleh",
-      "uiDraft": "Teks antara muka dalam {{language}} ialah terjemahan draf AI yang menunggu semakan."
+      "madeBy": "Satu konsep oleh"
     },
     "fallback": {
-      "label": "Notis bahasa",
-      "notice": "Halaman ini belum tersedia dalam {{language}}, jadi ia dipaparkan dalam {{shownIn}}.",
-      "draft": "Teks ini ialah terjemahan draf AI yang menunggu semakan penutur asli.",
       "link": "Status terjemahan"
     },
     "sources": {
@@ -121,20 +130,61 @@
   "history": {
     "meta": {
       "title": "Sejarah",
-      "description": "Dari Perjanjian Salatiga pada 1757 hingga kini: garis masa bersumber tentang Mangkunegaran dan para pemerintahnya."
+      "description": "Dari kelahiran Raden Mas Said pada 1725 hingga kini: garis masa bersumber tentang Mangkunegaran, dengan foto arkib dan skrip narasi dokumentari."
     },
     "header": {
       "eyebrow": "Bab satu",
       "title": "Sejarah",
-      "intro": "Dari satu persetujuan pada 1757 hingga penjaga budaya hari ini."
+      "intro": "Dari penentangan panjang seorang putera hingga penjaga budaya masa kini."
     },
-    "eraNav": "Zaman",
     "timelineLabel": "Garis masa, {{range}}",
     "rulers": {
       "title": "Para pemerintah Mangkunegaran",
       "note": "Tahun pemerintahan seperti yang disenaraikan di mangkunegaran.id, yang mengeja gelaran itu Mangkoenagoro.",
       "ruler": "Pemerintah",
       "reign": "Pemerintahan"
+    },
+    "periodNav": "Tempoh",
+    "entry": {
+      "precision": {
+        "approximate": "Tarikh anggaran"
+      },
+      "turningPoint": "Titik perubahan",
+      "more": "Baca lagi",
+      "context": "Latar belakang",
+      "happened": "Apa yang berlaku",
+      "people": "Tokoh",
+      "significance": "Mengapa penting",
+      "uncertainty": "Perkara yang belum pasti",
+      "archive": "Dari arkib",
+      "sources": "Sumber untuk peristiwa ini",
+      "related": "Kisah berkaitan"
+    },
+    "archive": {
+      "eyebrow": "Arkib",
+      "title": "Foto dari arkib",
+      "intro": "Foto, poskad dan lukisan yang dikatalogkan sebagai Mangkunegaran oleh Perpustakaan Universiti Leiden dan Rijksmuseum. Imbasan dipaparkan seperti yang diterbitkan oleh institusinya — tanpa penapis, tanpa pemangkasan — bersama tarikh katalog, pencipta dan lesen.",
+      "record": "Rekod katalog",
+      "file": "Fail imej",
+      "candidatesTitle": "Belum disahkan",
+      "candidatesIntro": "Sumber ini kelihatan berkaitan, tetapi kandungan dan haknya belum kami semak, jadi ia hanya dipautkan di sini dan tidak diterbitkan semula.",
+      "candidateBadge": "Calon"
+    },
+    "audio": {
+      "label": "Dengar bab ini",
+      "lang": "Bahasa narasi",
+      "play": "Main",
+      "pause": "Jeda",
+      "seek": "Kedudukan dalam rakaman",
+      "time": "{{current}} daripada {{total}}",
+      "mute": "Senyap",
+      "loading": "Memuatkan rakaman…",
+      "error": "Rakaman tidak dapat dimuatkan. Teks bab di atas sudah lengkap tanpanya.",
+      "unavailable": "Belum dirakam",
+      "unavailableBody": "Narasi bab ini dirancang dalam bahasa Indonesia dan Inggeris. Belum ada rakaman; bab ini lengkap tanpanya.",
+      "script": "Baca skrip narasi",
+      "transcript": "Baca transkrip",
+      "region": "Audio untuk {{chapter}}"
     }
   },
   "architecture": {
@@ -311,7 +361,11 @@
       "imagesNote": "Imej disimpan sebagai salinan di laman ini, diubah saiz dan ditukar ke format moden. Versi yang dipotong ditandakan.",
       "source": "sumber",
       "fonts": "Muka taip",
-      "code": "Perisian"
+      "code": "Perisian",
+      "ornament": "Ornamen batik",
+      "ornamentNote": "Motif kawung ialah corak Jawa klasik yang diadaptasi di sini sebagai vektor; ia tidak dipersembahkan sebagai motif Mangkunegaran. Parang tidak digunakan: mangkunegaran.id menyifatkannya sebagai motif larangan di dalam istana.",
+      "colours": "Warna",
+      "coloursNote": "Hijau diraja dan emas antik diambil daripada laman web rasmi mangkunegaran.id sebagai rujukan reka bentuk. Ia bukan spesifikasi warna rasmi."
     },
     "translation": {
       "title": "Status terjemahan",
@@ -327,7 +381,8 @@
     "status": {
       "source": "Asal",
       "ai-draft": "Draf AI",
-      "missing": "Belum"
+      "missing": "Belum",
+      "partial": "Separa"
     },
     "studio": {
       "title": "Dihasilkan oleh",

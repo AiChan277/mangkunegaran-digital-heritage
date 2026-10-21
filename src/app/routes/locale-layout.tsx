@@ -5,6 +5,7 @@ import { useT } from "~/i18n/useT";
 import { requireLocale } from "~/lib/page";
 import { Header } from "~/components/Header";
 import { Footer } from "~/components/Footer";
+import { LanguageControl } from "~/components/LanguageControl";
 
 export async function loader({ request }: Route.LoaderArgs) {
   const locale = requireLocale(request);
@@ -23,6 +24,7 @@ export default function LocaleLayout() {
         <Outlet />
       </main>
       <Footer />
+      <LanguageControl />
     </>
   );
 }

@@ -1,5 +1,6 @@
 .footer {
-  padding-block: 72px 40px;
+  /* Extra end padding keeps the floating language button off the last line. */
+  padding-block: 72px 112px;
   font-size: 0.95rem;
 }
 
@@ -73,9 +74,6 @@
   font-size: 0.85rem;
 }
 
-.draft {
-  font-style: italic;
-}
 
 @media (max-width: 860px) {
   .top {

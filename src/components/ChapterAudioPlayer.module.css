@@ -1,0 +1,223 @@
+/* A compact listening card inside a chapter; royal-green edge, paper body. */
+.player {
+  display: grid;
+  gap: 12px;
+  padding: 16px 18px;
+  border: 1px solid var(--rule);
+  border-inline-start: 3px solid var(--royal);
+  background: color-mix(in srgb, var(--royal-tint) 55%, var(--paper));
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--royal);
+}
+
+.langs {
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.langOption {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.langOption input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.langOption:has(input:checked) {
+  background: var(--royal);
+  border-color: var(--royal);
+  color: var(--on-royal);
+}
+
+.langOption:has(input:focus-visible) {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.unavailable {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.badge {
+  padding: 1px 10px;
+  border: 1px dashed var(--royal);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--royal);
+  white-space: nowrap;
+}
+
+/* Recorded state */
+.controls {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.play {
+  display: inline-grid;
+  place-items: center;
+  inline-size: 44px;
+  block-size: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--royal);
+  color: var(--on-royal);
+  cursor: pointer;
+}
+
+.play:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.icon {
+  display: inline-grid;
+  place-items: center;
+  inline-size: 44px;
+  block-size: 44px;
+  border: 0;
+  background: transparent;
+  color: var(--royal);
+  cursor: pointer;
+}
+
+.seek {
+  appearance: none;
+  inline-size: 100%;
+  min-inline-size: 0;
+  block-size: 44px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.seek::-webkit-slider-runnable-track {
+  block-size: 4px;
+  background: linear-gradient(to right, var(--royal) var(--progress, 0%), var(--rule-strong) var(--progress, 0%));
+}
+
+.seek::-moz-range-track {
+  block-size: 4px;
+  background: linear-gradient(to right, var(--royal) var(--progress, 0%), var(--rule-strong) var(--progress, 0%));
+}
+
+.seek::-webkit-slider-thumb {
+  appearance: none;
+  margin-block-start: -6px;
+  inline-size: 16px;
+  block-size: 16px;
+  border-radius: 50%;
+  background: var(--royal);
+}
+
+.seek::-moz-range-thumb {
+  inline-size: 16px;
+  block-size: 16px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--royal);
+}
+
+.time {
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.live {
+  grid-column: 1 / -1;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.live:empty {
+  display: none;
+}
+
+.controls[data-state="error"] .live {
+  color: var(--terracotta);
+  font-weight: 600;
+}
+
+.credits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.transcript summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-block-size: 44px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--royal);
+  cursor: pointer;
+}
+
+.transcript summary:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.transcriptBody {
+  display: grid;
+  gap: 14px;
+  padding-block: 6px 4px;
+  max-inline-size: var(--measure);
+  font-size: 0.95rem;
+}
+
+.transcriptBody p + p {
+  margin-block-start: 0.6em;
+}
+
+.sectionTitle {
+  margin-block-end: 4px;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--text);
+}

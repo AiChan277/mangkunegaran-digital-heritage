@@ -1,11 +1,24 @@
 import { expect, test } from "@playwright/test";
 
 test.describe("language switching", () => {
+  const fab = (page: import("@playwright/test").Page) => page.getByRole("button", { name: /Change language/ });
+
+  test("header has no language dropdown; the floating control replaces it", async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto("/en");
+    await expect(page.locator("header").getByRole("button", { name: /Language/ })).toHaveCount(0);
+    await expect(fab(page)).toBeVisible();
+    // It sits in the bottom inline-end corner, inside the viewport.
+    const box = (await fab(page).boundingBox())!;
+    expect(box.x + box.width).toBeLessThanOrEqual(1280 - 12);
+    expect(box.y + box.height).toBeLessThanOrEqual(900 - 12);
+  });
+
   test("keeps the current page and survives back/forward", async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto("/en/history");
-    await page.getByRole("button", { name: /Language/ }).click();
-    await page.locator('a[hreflang="th"]').first().click();
+    await fab(page).click();
+    await page.getByRole("dialog").locator('a[hreflang="th"]').click();
     await expect(page).toHaveURL(/\/th\/history$/);
     await expect(page.locator("html")).toHaveAttribute("lang", "th");
     await page.goBack();
@@ -15,22 +28,73 @@ test.describe("language switching", () => {
     await expect(page).toHaveURL(/\/th\/history$/);
   });
 
-  test("language menu works by keyboard only", async ({ page }) => {
+  test("panel works by keyboard only, filters, and restores focus", async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto("/en");
-    const trigger = page.getByRole("button", { name: /Language/ });
+    const trigger = fab(page);
     await trigger.focus();
     await page.keyboard.press("Enter");
+    const dialog = page.getByRole("dialog", { name: "Language" });
+    await expect(dialog).toBeVisible();
     await expect(trigger).toHaveAttribute("aria-expanded", "true");
-    // Current language is focused; arrow down moves to the next.
-    await expect(page.locator('a[aria-current="true"][hreflang="en"]').first()).toBeFocused();
+    // Every language by native name, no flags (no images or emoji in the list).
+    await expect(dialog.locator("ul a")).toHaveCount(12);
+    await expect(dialog.locator("ul img")).toHaveCount(0);
+    await expect(dialog.getByText("ខ្មែរ")).toBeVisible();
+    // Current language is focused; arrow keys move; End goes last.
+    await expect(dialog.locator('a[aria-current="true"][hreflang="en"]')).toBeFocused();
     await page.keyboard.press("ArrowDown");
-    await expect(page.locator('a[hreflang="ms"]').first()).toBeFocused();
+    await expect(dialog.locator('a[hreflang="ms"]')).toBeFocused();
     await page.keyboard.press("End");
-    await expect(page.locator('a[hreflang="es"]').first()).toBeFocused();
+    await expect(dialog.locator('a[hreflang="es"]')).toBeFocused();
+    // Typing in the list goes to the filter; English names and codes match too.
+    await page.keyboard.type("khm");
+    await expect(dialog.getByRole("searchbox")).toBeFocused();
+    await expect(dialog.getByRole("searchbox")).toHaveValue("khm");
+    await expect(dialog.locator("ul a")).toHaveCount(1);
+    await expect(dialog.getByRole("status")).toHaveText(/1/);
+    await page.keyboard.press("ArrowDown");
+    await expect(dialog.locator('a[hreflang="km"]')).toBeFocused();
+    await dialog.getByRole("searchbox").fill("zz");
+    await expect(dialog.locator("ul a")).toHaveCount(0);
+    await expect(dialog.getByRole("status")).toContainText("zz");
+    // Tab and Shift+Tab stay in the modal panel.
+    await page.keyboard.press("Tab");
+    expect(await dialog.evaluate((d) => d.contains(document.activeElement))).toBe(true);
+    await page.keyboard.press("Shift+Tab");
+    await page.keyboard.press("Shift+Tab");
+    expect(await dialog.evaluate((d) => d.contains(document.activeElement))).toBe(true);
     await page.keyboard.press("Escape");
+    await expect(dialog).toBeHidden();
     await expect(trigger).toHaveAttribute("aria-expanded", "false");
     await expect(trigger).toBeFocused();
+  });
+
+  test("panel closes on an outside click and states translation status", async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto("/en/history");
+    await fab(page).click();
+    const dialog = page.getByRole("dialog", { name: "Language" });
+    await expect(dialog.locator('a[hreflang="en"]')).toContainText("Complete");
+    await expect(dialog.locator('a[hreflang="jv"]')).toContainText("some pages in Indonesian");
+    await expect(dialog.locator('a[hreflang="th"]')).toContainText("most content in English");
+    await expect(dialog).toContainText("not yet reviewed by native speakers");
+    await page.mouse.click(40, 450);
+    await expect(dialog).toBeHidden();
+  });
+
+  test("panel fits a phone screen as a bottom sheet", async ({ page }) => {
+    await page.setViewportSize({ width: 360, height: 640 });
+    await page.goto("/th/history");
+    await page.getByRole("button", { name: /เปลี่ยนภาษา/ }).click();
+    const dialog = page.getByRole("dialog");
+    // Measure after the entrance animation.
+    await dialog.evaluate((d) => Promise.all(d.getAnimations().map((a) => a.finished)));
+    const box = (await dialog.boundingBox())!;
+    expect(box.x).toBeGreaterThanOrEqual(0);
+    expect(box.x + box.width).toBeLessThanOrEqual(361);
+    expect(box.y + box.height).toBeLessThanOrEqual(641); // sub-pixel rounding
+    await expect(dialog.getByRole("button", { name: /Close|ปิด/ })).toBeInViewport();
   });
 
   test("root redirects using the browser language", async ({ browser }) => {

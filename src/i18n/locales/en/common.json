@@ -23,7 +23,20 @@
   "lang": {
     "label": "Language",
     "choose": "Choose a language",
-    "draft": "draft"
+    "open": "Change language",
+    "current": "Current language: {{language}}",
+    "currentLabel": "You are reading in",
+    "close": "Close language panel",
+    "filter": "Find a language",
+    "filterHint": "Name or code, e.g. Tetun or th",
+    "count": "Languages shown: {{count}}",
+    "none": "No language matches “{{query}}”.",
+    "availability": {
+      "complete": "Complete",
+      "draft-mixed": "AI-draft translation · some pages in Indonesian",
+      "draft-partial": "AI-draft interface · most content in English"
+    },
+    "explain": "Indonesian and English are written by the project. The other languages are AI-drafted and not yet reviewed by native speakers; where a page has no translation it is shown in Indonesian or English, and says so."
   },
   "footer": {
     "disclaimer": "Independent concept redesign by {{studio}} for educational and portfolio purposes. Not affiliated with, endorsed by, or operated by Pura Mangkunegaran. For official information, visit",
@@ -33,13 +46,9 @@
     "sources": "Sources",
     "credits": "Image credits",
     "translationStatus": "Translation status",
-    "madeBy": "A concept by",
-    "uiDraft": "Interface text in {{language}} is an AI-drafted translation awaiting review."
+    "madeBy": "A concept by"
   },
   "fallback": {
-    "label": "Language notice",
-    "notice": "This page is not yet available in {{language}}, so it is shown in {{shownIn}}.",
-    "draft": "This text is an AI-drafted translation awaiting review by a native speaker.",
     "link": "Translation status"
   },
   "sources": {

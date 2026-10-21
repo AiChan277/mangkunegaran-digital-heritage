@@ -9,8 +9,7 @@ import { pageSetup } from "~/lib/page";
 import { localePath } from "~/lib/paths";
 import { readingMinutes } from "~/lib/readingTime";
 import { plainText } from "~/components/Glossary";
-import { PageHeader } from "~/components/PageHeader";
-import { FallbackNotice } from "~/components/FallbackNotice";
+import { PageHero } from "~/components/PageHero";
 import { Picture } from "~/components/Picture";
 import { Reveal } from "~/components/Reveal";
 import styles from "./stories.module.css";
@@ -49,8 +48,7 @@ export default function Stories({ loaderData: d }: Route.ComponentProps) {
   const locale = useLocale();
   return (
     <>
-      <FallbackNotice content={d.content} />
-      <PageHeader eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="04" intro={t("header.intro")} />
+      <PageHero variant="stories" eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="04" intro={t("header.intro")} />
       <ol className={`container ${styles.list}`}>
         {d.stories.map((s, i) => (
           <Reveal as="li" key={s.slug} className={`${styles.item} ${i % 2 ? styles.flip : ""}`}>

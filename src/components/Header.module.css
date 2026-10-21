@@ -10,8 +10,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--surface);
-  border-block-end: 1px solid var(--rule);
+  background: var(--royal);
+  border-block-end: 1px solid var(--gold-rule-on-royal);
 }
 
 /* Soft shadow fades in once the page scrolls (opacity only). */
@@ -21,7 +21,7 @@
   inset-inline: 0;
   inset-block-end: -12px;
   block-size: 12px;
-  background: linear-gradient(rgb(28 26 23 / 0.08), transparent);
+  background: linear-gradient(rgb(11 34 20 / 0.22), transparent);
   opacity: 0;
   pointer-events: none;
   transition: opacity 260ms var(--ease);
@@ -260,7 +260,8 @@
   font-style: italic;
 }
 
-.drawerLangs {
-  display: grid;
-  gap: 10px;
+
+/* The bar sits on royal green; its own .concept tag switches to gold. */
+.bar .concept {
+  color: var(--gold-on-royal);
 }

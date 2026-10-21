@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import { useLocale } from "~/i18n/useLocale";
 import { useT } from "~/i18n/useT";
 import { localePath } from "~/lib/paths";
-import { LanguageList, LanguageSelector } from "./LanguageSelector";
 import styles from "./Header.module.css";
 
 export const NAV_ITEMS = ["history", "architecture", "culture", "stories", "gallery", "visit"] as const;
@@ -61,7 +60,7 @@ export function Header() {
 
   return (
     <header className={styles.header} data-compact={compact}>
-      <div className={`container ${styles.bar}`}>
+      <div className={`container on-royal ${styles.bar}`}>
         <Link to={localePath(locale)} className={styles.home}>
           <Wordmark />
           <span className="visually-hidden"> — {t("nav.home")}</span>
@@ -78,7 +77,6 @@ export function Header() {
           >
             {t("nav.about")}
           </NavLink>
-          <LanguageSelector />
         </div>
 
         <button
@@ -131,10 +129,6 @@ export function Header() {
               </li>
             </ul>
           </nav>
-          <section className={styles.drawerLangs} aria-label={t("lang.label")}>
-            <p className="eyebrow">{t("lang.choose")}</p>
-            <LanguageList onPick={closeDrawer} />
-          </section>
         </div>
       </dialog>
     </header>

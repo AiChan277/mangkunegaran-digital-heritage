@@ -1,19 +1,60 @@
 {
   "meta": {
     "title": "Kasaysayan",
-    "description": "Mula sa Kasunduan sa Salatiga noong 1757 hanggang ngayon: isang timeline na may sanggunian tungkol sa Mangkunegaran at sa mga pinuno nito."
+    "description": "Mula sa pagsilang ni Raden Mas Said noong 1725 hanggang ngayon: isang timeline ng Mangkunegaran na may mga sanggunian, mga larawang pang-arkibo at script ng dokumentaryong pagsasalaysay."
   },
   "header": {
     "eyebrow": "Kabanata isa",
     "title": "Kasaysayan",
-    "intro": "Mula sa isang kasunduan noong 1757 hanggang sa pagiging tagapag-ingat ng kultura ngayon."
+    "intro": "Mula sa mahabang paglaban ng isang prinsipe hanggang sa pagiging tagapag-ingat ng kultura ngayon."
   },
-  "eraNav": "Mga panahon",
   "timelineLabel": "Timeline, {{range}}",
   "rulers": {
     "title": "Ang mga pinuno ng Mangkunegaran",
     "note": "Mga taon ng pamumuno ayon sa listahan sa mangkunegaran.id, na isinusulat ang titulo bilang Mangkoenagoro.",
     "ruler": "Pinuno",
     "reign": "Pamumuno"
+  },
+  "periodNav": "Mga panahon",
+  "entry": {
+    "precision": {
+      "approximate": "Tinatayang petsa"
+    },
+    "turningPoint": "Pagbabagong-yugto",
+    "more": "Magbasa pa",
+    "context": "Konteksto",
+    "happened": "Ano ang nangyari",
+    "people": "Mga tao",
+    "significance": "Bakit ito mahalaga",
+    "uncertainty": "Ano ang hindi tiyak",
+    "archive": "Mula sa arkibo",
+    "sources": "Mga sanggunian para sa entry na ito",
+    "related": "Kaugnay na kuwento"
+  },
+  "archive": {
+    "eyebrow": "Arkibo",
+    "title": "Mga larawan mula sa arkibo",
+    "intro": "Mga larawan, isang postcard at isang painting na nakatala bilang Mangkunegaran ng Leiden University Libraries at ng Rijksmuseum. Ipinapakita ang mga scan ayon sa pagkakalathala ng mga institusyon — walang filter, walang crop — kasama ang petsa sa katalogo, ang gumawa at ang lisensya.",
+    "record": "Talaan sa katalogo",
+    "file": "File ng larawan",
+    "candidatesTitle": "Hindi pa beripikado",
+    "candidatesIntro": "Mukhang may kaugnayan ang mga sangguniang ito, pero hindi pa namin nasusuri ang nilalaman o karapatan nila, kaya naka-link lamang dito at hindi inilalathala muli.",
+    "candidateBadge": "Kandidato"
+  },
+  "audio": {
+    "label": "Pakinggan ang kabanatang ito",
+    "lang": "Wika ng pagsasalaysay",
+    "play": "I-play",
+    "pause": "I-pause",
+    "seek": "Posisyon sa recording",
+    "time": "{{current}} sa {{total}}",
+    "mute": "I-mute",
+    "loading": "Nilo-load ang recording…",
+    "error": "Hindi ma-load ang recording. Kumpleto ang teksto ng kabanata sa itaas kahit wala ito.",
+    "unavailable": "Hindi pa nai-record",
+    "unavailableBody": "Nakaplano ang pagsasalaysay ng kabanatang ito sa Indonesian at Ingles. Wala pang recording; kumpleto ang kabanata kahit wala ito.",
+    "script": "Basahin ang script ng pagsasalaysay",
+    "transcript": "Basahin ang transcript",
+    "region": "Audio para sa {{chapter}}"
   }
 }

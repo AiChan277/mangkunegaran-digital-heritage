@@ -1,12 +1,11 @@
 import { Link } from "react-router";
-import { LOCALE_INFO, uiStatus } from "~/i18n/config";
 import { useLocale } from "~/i18n/useLocale";
 import { useT } from "~/i18n/useT";
 import { localePath } from "~/lib/paths";
 import { site } from "~/site";
 import { NAV_ITEMS, Wordmark } from "./Header";
 import { LanguageList } from "./LanguageSelector";
-import { Ornament } from "./Ornament";
+import { HeritageDivider } from "./HeritageDivider";
 import styles from "./Footer.module.css";
 
 const BUILD_YEAR = new Date().getFullYear();
@@ -25,7 +24,7 @@ export function Footer() {
   return (
     <footer className={`night ${styles.footer}`}>
       <div className="container">
-        <Ornament tone="light" />
+        <HeritageDivider />
         <div className={styles.top}>
           <div className={styles.brand}>
             <Wordmark tone="light" />
@@ -79,9 +78,6 @@ export function Footer() {
           <p>
             {t("footer.madeBy")} {studio} · {BUILD_YEAR}
           </p>
-          {uiStatus(locale) === "ai-draft" && (
-            <p className={styles.draft}>{t("footer.uiDraft", { language: LOCALE_INFO[locale].nativeName })}</p>
-          )}
         </div>
       </div>
     </footer>

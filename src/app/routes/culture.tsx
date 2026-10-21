@@ -5,8 +5,7 @@ import { useLocale } from "~/i18n/useLocale";
 import { useT } from "~/i18n/useT";
 import { buildMeta } from "~/lib/meta";
 import { buildRefs, pageSetup } from "~/lib/page";
-import { PageHeader } from "~/components/PageHeader";
-import { FallbackNotice } from "~/components/FallbackNotice";
+import { PageHero } from "~/components/PageHero";
 import { Refs } from "~/components/Refs";
 import { SourceList } from "~/components/SourceList";
 import { Picture } from "~/components/Picture";
@@ -35,6 +34,7 @@ export async function loader({ request }: Route.LoaderArgs) {
     content,
     features,
     aksara: aksara("kabudayan"),
+    heroImage: image("dancers-female", content.lang),
     refs: buildRefs(features.flatMap((f) => f.factIds)),
     meta: buildMeta({
       locale,
@@ -84,8 +84,7 @@ export default function Culture({ loaderData: d }: Route.ComponentProps) {
 
   return (
     <>
-      <FallbackNotice content={d.content} />
-      <PageHeader eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="03" intro={t("header.intro")} />
+      <PageHero variant="culture" eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="03" intro={t("header.intro")} media={d.heroImage} />
 
       {d.features.map((f, i) => (
         <section

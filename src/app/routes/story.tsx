@@ -13,8 +13,8 @@ import { localePath } from "~/lib/paths";
 import { readingMinutes } from "~/lib/readingTime";
 import { absoluteUrl } from "~/site";
 import { GlossaryContext, RichText, plainText } from "~/components/Glossary";
-import { FallbackNotice } from "~/components/FallbackNotice";
 import { Picture } from "~/components/Picture";
+import { PageHero } from "~/components/PageHero";
 import { Refs } from "~/components/Refs";
 import { SourceList } from "~/components/SourceList";
 import { ListenButton } from "~/components/ListenButton";
@@ -117,26 +117,25 @@ export default function Story({ loaderData: d }: Route.ComponentProps) {
   return (
     <GlossaryContext.Provider value={d.glossary}>
       <ProgressBar target={articleRef} />
-      <FallbackNotice content={d.content} />
       <article ref={articleRef} className={styles.article}>
-        <header className={`container ${styles.header}`}>
-          <Link to={localePath(locale, "stories")} className={`arrow-link ${styles.back}`}>
-            <ArrowLeft aria-hidden="true" size={18} /> {t("back")}
-          </Link>
-          <p className="eyebrow">
-            {t("header.eyebrow")} · {t("readingTime", { n: d.minutes })}
-          </p>
-          <h1 className={styles.title} lang={contentLang}>
-            {d.article.title}
-          </h1>
-          <p className={styles.dek} lang={contentLang}>
-            {d.article.dek}
-          </p>
+        <PageHero
+          variant="article"
+          lead={
+            <Link to={localePath(locale, "stories")} className={`arrow-link ${styles.back}`}>
+              <ArrowLeft aria-hidden="true" size={18} /> {t("back")}
+            </Link>
+          }
+          eyebrow={`${t("header.eyebrow")} · ${t("readingTime", { n: d.minutes })}`}
+          title={d.article.title}
+          titleLang={contentLang}
+          intro={d.article.dek}
+          introLang={contentLang}
+        >
           <div className={styles.tools}>
             <ListenButton text={d.speech} lang={d.article.lang} label={d.article.title} />
             <span className={styles.verified}>{t("verified", { date: d.article.verifiedAt })}</span>
           </div>
-        </header>
+        </PageHero>
 
         <figure className={`container ${styles.hero}`}>
           <Picture image={d.hero} priority sizes="(max-width: 1360px) 100vw, 1360px" />

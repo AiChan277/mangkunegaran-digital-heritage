@@ -103,19 +103,130 @@ export type Article = z.infer<typeof articleSchema>;
 
 /* ── Structured content ───────────────────────────────────────────────── */
 
-export const timelineEntrySchema = z.object({
-  id: z.string(),
-  /** Display date per language; may carry "c." or a range. */
-  date: localized,
-  /** Machine sortable year. */
-  year: z.number().int(),
+/* ── History (iteration 2) ────────────────────────────────────────────── */
+
+export const historyPeriodSchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  numeral: z.string(),
+  range: z.string(),
+  from: z.number().int(),
+  to: z.number().int(),
   title: localized,
-  text: localized,
-  factIds: z.array(z.string()).min(1),
-  disputed: localized.optional(),
-  imageId: z.string().optional(),
+  intro: z.array(localized).min(1),
+  factIds: z.array(z.string()).default([]),
+  /** Optional sourced side note shown in the margin. */
+  sideNote: localized.optional(),
+  /** Confirmed archive item shown as the chapter's lead image. */
+  leadArchiveId: z.string().optional(),
 });
-export type TimelineEntry = z.infer<typeof timelineEntrySchema>;
+export type HistoryPeriod = z.infer<typeof historyPeriodSchema>;
+
+/**
+ * A timeline event. The id is stable across all languages; translations in
+ * src/content/history-translations/<lang>.ts attach to the same id.
+ */
+export const historyEntrySchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  periodId: z.string(),
+  /** Machine-sortable year (first year of a range). */
+  year: z.number().int(),
+  date: localized,
+  /** "exact" | "range" | "approximate" — shown as a small label. */
+  precision: z.enum(["exact", "range", "approximate"]).default("exact"),
+  title: localized,
+  summary: localized,
+  details: z.object({
+    context: localized.optional(),
+    happened: localized,
+    significance: localized,
+    uncertainty: localized.optional(),
+  }),
+  /** Names as written in the sources; not translated. */
+  people: z.array(z.string()).default([]),
+  factIds: z.array(z.string()).min(1),
+  archiveIds: z.array(z.string()).default([]),
+  relatedArticles: z.array(z.string()).default([]),
+  /** Highlight with the royal-green marker (major turning points). */
+  milestone: z.boolean().default(false),
+});
+export type HistoryEntry = z.infer<typeof historyEntrySchema>;
+export type HistoryEntryInput = z.input<typeof historyEntrySchema>;
+export type HistoryPeriodInput = z.input<typeof historyPeriodSchema>;
+
+/** Draft translations of short history fields for languages without full text. */
+export const historyTranslationSchema = z.object({
+  lang: z.string(),
+  status: z.enum(["ai-draft", "reviewed"]),
+  sourceLanguage: z.enum(["en", "id"]),
+  translatedAt: isoDate,
+  reviewedBy: z.string().optional(),
+  periods: z.record(z.string(), z.object({ title: z.string(), intro: z.string().optional() })),
+  entries: z.record(z.string(), z.object({ title: z.string(), summary: z.string(), date: z.string().optional() })),
+});
+export type HistoryTranslation = z.infer<typeof historyTranslationSchema>;
+
+/* ── Archive (iteration 2) ────────────────────────────────────────────── */
+
+export const archiveItemSchema = z.object({
+  id: z.string(),
+  kind: z.enum(["photograph", "postcard", "painting", "newspaper", "document"]),
+  /** Catalogue title as published by the holding institution (original language). */
+  originalTitle: z.string(),
+  title: localized,
+  description: localized,
+  dateLabel: localized,
+  year: z.number().int(),
+  creator: z.string(),
+  institution: z.string(),
+  /** Persistent record at the holding institution. */
+  recordUrl: z.url(),
+  /** Where the reproduction was obtained (e.g. Wikimedia Commons file page). */
+  mediaPageUrl: z.url().optional(),
+  originalFileUrl: z.url().optional(),
+  rightsStatement: z.string(),
+  license: z.string(),
+  licenseUrl: z.url().optional(),
+  attributionText: z.string(),
+  /** confirmed = relevance and rights checked; candidate = linked only, needs review. */
+  verification: z.enum(["confirmed", "candidate"]),
+  periodId: z.string(),
+  /** Local image id when the file is self-hosted (confirmed items only). */
+  imageId: z.string().optional(),
+  alt: localized.optional(),
+  note: localized.optional(),
+  modifications: z.string().optional(),
+});
+export type ArchiveItem = z.infer<typeof archiveItemSchema>;
+
+/* ── Chapter audio ───────────────────────────────────────────────────── */
+
+/**
+ * Narration for one History chapter (period) in one language. Data only:
+ * adding a language or a recording never requires a new component.
+ */
+export const chapterAudioSchema = z.object({
+  /** Stable History period id, e.g. "foundation". */
+  chapterId: z.string(),
+  /** Locale code of the narration. */
+  lang: z.string(),
+  /** Unset until a genuine recording exists. */
+  audioUrl: z.string().optional(),
+  status: z.enum(["script-draft", "ready-for-recording", "recorded", "reviewed", "published"]),
+  /** Where the narration text lives: a script file and its section ids. */
+  transcript: z
+    .object({
+      scriptPath: z.string(),
+      sections: z.array(z.string()).min(1),
+      scriptVersion: z.string(),
+    })
+    .optional(),
+  /** Measured duration of a real recording; never estimated. */
+  durationSeconds: z.number().int().positive().optional(),
+  credits: z.array(z.object({ role: z.string(), name: z.string() })).default([]),
+  published: z.boolean().default(false),
+});
+export type ChapterAudio = z.infer<typeof chapterAudioSchema>;
+export type ChapterAudioInput = z.input<typeof chapterAudioSchema>;
 
 export const rulerSchema = z.object({
   ordinal: z.string(),

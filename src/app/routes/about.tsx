@@ -1,5 +1,6 @@
 import type { Route } from "./+types/about";
 import { ABOUT_SECTIONS, CODE_CREDITS, FONT_CREDITS, SPECIMEN } from "~/content/about";
+import { ORNAMENTS } from "~/content/ornaments";
 import { ASSETS } from "~/content/assets";
 import { FACTS, SOURCES } from "~/content/sources";
 import { aksara, pick } from "~/content/resolve";
@@ -9,8 +10,7 @@ import { useT } from "~/i18n/useT";
 import { buildMeta } from "~/lib/meta";
 import { pageSetup } from "~/lib/page";
 import { site } from "~/site";
-import { PageHeader } from "~/components/PageHeader";
-import { FallbackNotice } from "~/components/FallbackNotice";
+import { PageHero } from "~/components/PageHero";
 import styles from "./about.module.css";
 
 const SWATCHES = [
@@ -82,10 +82,9 @@ export default function About({ loaderData: d }: Route.ComponentProps) {
 
   return (
     <>
-      <FallbackNotice content={d.content} />
-      <PageHeader eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="07" intro={t("header.intro")}>
+      <PageHero variant="about" eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="07" intro={t("header.intro")}>
         <p className={styles.disclaimer}>{t("common:footer.disclaimer", { studio: site.studioName })} mangkunegaran.id</p>
-      </PageHeader>
+      </PageHero>
 
       <div className={`container ${styles.layout}`}>
         <nav className={styles.toc} aria-label={t("tocLabel")}>
@@ -249,6 +248,21 @@ export default function About({ loaderData: d }: Route.ComponentProps) {
                 </li>
               ))}
             </ul>
+            <h3 className={styles.h3}>{t("credits.ornament")}</h3>
+            <p lang="en">{ORNAMENTS[0]!.attribution}</p>
+            <ul className={styles.credits}>
+              {ORNAMENTS[0]!.sources.map((src) => (
+                <li key={src.url} lang="en">
+                  <a href={src.url} className="text-link" rel="noopener">
+                    {src.title}
+                  </a>{" "}
+                  — {src.creator} · {src.license}
+                </li>
+              ))}
+            </ul>
+            <p className={styles.muted}>{t("credits.ornamentNote")}</p>
+            <h3 className={styles.h3}>{t("credits.colours")}</h3>
+            <p className={styles.muted}>{t("credits.coloursNote")}</p>
             <h3 className={styles.h3}>{t("credits.code")}</h3>
             <ul className={styles.credits}>
               {CODE_CREDITS.map((c) => (

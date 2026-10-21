@@ -17,9 +17,9 @@ import { Picture } from "~/components/Picture";
 import { Refs } from "~/components/Refs";
 import { SourceList } from "~/components/SourceList";
 import { ScriptTitle } from "~/components/ScriptTitle";
-import { FallbackNotice } from "~/components/FallbackNotice";
 import { GlossaryContext, RichText } from "~/components/Glossary";
-import { Ornament } from "~/components/Ornament";
+import { HeritageDivider } from "~/components/HeritageDivider";
+import { HeroEdge, HeroField } from "~/components/PageHero";
 import styles from "./home.module.css";
 
 const JOURNEY = ["pamedan", "pendhapa-ageng", "pringgitan", "dalem-ageng"];
@@ -104,10 +104,10 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
   return (
     <GlossaryContext.Provider value={d.glossary}>
-      <FallbackNotice content={d.content} />
 
       {/* 1 · Hero — split editorial layout; the photograph is the LCP element. */}
-      <section className={styles.hero} aria-labelledby="hero-title">
+      <section className={`on-royal ${styles.hero}`} aria-labelledby="hero-title">
+        <HeroField className={styles.heroField} />
         <div className={`container grid ${styles.heroGrid}`}>
           <div className={styles.heroText}>
             <p className="eyebrow">{t("hero.eyebrow")}</p>
@@ -130,6 +130,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             1757
           </span>
         </div>
+        <HeroEdge />
       </section>
 
       {/* 2 · Introduction — large serif lead, every sentence sourced. */}
@@ -311,7 +312,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* 8 · Multilingual entry point. */}
       <section className={`container section ${styles.languages}`} aria-labelledby="languages-title">
-        <Ornament />
+        <HeritageDivider />
         <div className={`grid ${styles.languagesGrid}`}>
           <div className={styles.languagesText}>
             <p className="eyebrow">{t("languages.eyebrow")}</p>

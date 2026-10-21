@@ -1,0 +1,271 @@
+/* ── Base: royal-green field, editorial grid ─────────────────────────── */
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-block: clamp(48px, 7vw, 104px) clamp(56px, 7vw, 96px);
+  /* Generous paper whitespace after the gold edge. */
+  margin-block-end: clamp(32px, 5vw, 64px);
+  background:
+    radial-gradient(120% 90% at 85% 0%, var(--royal-2) 0%, transparent 60%),
+    var(--royal);
+}
+
+.field {
+  position: absolute;
+  z-index: -1;
+  inset-block: 0;
+  inset-inline-end: 0;
+  inline-size: min(56%, 760px);
+}
+
+.grid {
+  row-gap: 28px;
+  align-items: end;
+}
+
+.folio {
+  grid-column: 1 / span 2;
+  align-self: start;
+  font-size: clamp(3rem, 2rem + 4vw, 6rem);
+  line-height: 0.9;
+  font-weight: 280;
+  color: var(--gold-on-royal);
+}
+
+.main {
+  grid-column: 3 / span 8;
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+  min-inline-size: 0;
+}
+
+.eyebrow {
+  color: var(--gold-on-royal);
+}
+
+.title {
+  font-size: var(--step-5);
+  font-weight: 360;
+  letter-spacing: -0.025em;
+  color: var(--on-royal);
+}
+
+.intro {
+  max-inline-size: 40ch;
+  color: var(--on-royal);
+}
+
+.extra {
+  inline-size: 100%;
+  margin-block-start: 8px;
+}
+
+.credit {
+  margin-block-start: 8px;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--on-royal-muted);
+}
+
+/* Photograph with an offset gold hairline frame. */
+.media {
+  position: relative;
+  margin: 0;
+}
+
+.frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--royal-deep);
+}
+
+.media::before {
+  content: "";
+  position: absolute;
+  inset: -10px 10px 34px -10px;
+  border: 1px solid var(--gold-rule-on-royal);
+  pointer-events: none;
+}
+
+/* Transition into paper: a kawung row, then a gold hairline. */
+.edge {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  padding-block-end: 1px;
+  border-block-end: 1px solid var(--gold-on-royal);
+}
+
+.edge > span {
+  margin-block-end: 10px;
+}
+
+.mark {
+  color: var(--gold-on-royal);
+  background: var(--gold-on-royal);
+  inline-size: 22px;
+  block-size: 22px;
+}
+
+/* ── Entrance (once; reduced motion keeps everything still) ─────────── */
+@media (prefers-reduced-motion: no-preference) {
+  .main > *,
+  .media,
+  .strip {
+    animation: rise 760ms var(--ease) both;
+  }
+
+  .main > *:nth-child(2) {
+    animation-delay: 70ms;
+  }
+
+  .main > *:nth-child(3) {
+    animation-delay: 140ms;
+  }
+
+  .main > *:nth-child(n + 4) {
+    animation-delay: 210ms;
+  }
+
+  .media,
+  .strip {
+    animation-delay: 120ms;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+/* ── Variants ─────────────────────────────────────────────────────────── */
+
+/* Photographic: text left, framed photograph right. */
+.hero[data-media="true"] .main {
+  grid-column: 3 / span 5;
+}
+
+.hero[data-media="true"] .media {
+  grid-column: 9 / span 4;
+  align-self: center;
+}
+
+/* History: archival photograph, wider landscape crop, sepia left as is. */
+.hero[data-variant="history"] .frame {
+  aspect-ratio: 4 / 3;
+}
+
+.hero[data-variant="history"] .media {
+  grid-column: 8 / span 5;
+}
+
+.hero[data-variant="history"] .main {
+  grid-column: 3 / span 5;
+}
+
+/* Architecture: tall, column-like crop. */
+.hero[data-variant="architecture"] .frame {
+  aspect-ratio: 3 / 4;
+}
+
+/* Literary (stories, article): centred title, flower mark above. */
+.hero[data-variant="stories"] .main,
+.hero[data-variant="article"] .main {
+  grid-column: 2 / span 10;
+  justify-items: center;
+  text-align: center;
+}
+
+.hero[data-variant="stories"] .intro,
+.hero[data-variant="article"] .intro {
+  font-family: var(--font-display);
+  font-style: italic;
+  max-inline-size: 46ch;
+}
+
+.hero[data-variant="stories"] .field,
+.hero[data-variant="article"] .field {
+  inline-size: 100%;
+  --field-opacity: 0.07;
+}
+
+.hero[data-variant="article"] .title {
+  font-size: var(--step-4);
+}
+
+/* Gallery: a row of archival thumbnails under the text. */
+.strip {
+  grid-column: 3 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(10px, 1.6vw, 20px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.strip figure {
+  margin: 0;
+}
+
+.stripFrame {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--royal-deep);
+  outline: 1px solid var(--gold-rule-on-royal);
+  outline-offset: 4px;
+}
+
+.hero[data-variant="gallery"] .main {
+  grid-column: 3 / span 8;
+}
+
+/* Practical (visit): roomy text block, actions below. */
+.hero[data-variant="visit"] .intro {
+  max-inline-size: 52ch;
+}
+
+/* Notices (404): compact. */
+.hero[data-variant="notice"] {
+  padding-block: clamp(40px, 6vw, 80px) clamp(48px, 6vw, 80px);
+}
+
+/* ── Small screens ───────────────────────────────────────────────────── */
+@media (max-width: 860px) {
+  .folio {
+    grid-column: 1 / -1;
+    font-size: 2.6rem;
+  }
+
+  .main,
+  .hero[data-media="true"] .main,
+  .hero[data-variant="history"] .main,
+  .hero[data-variant="gallery"] .main,
+  .hero[data-variant="stories"] .main,
+  .hero[data-variant="article"] .main,
+  .hero[data-media="true"] .media,
+  .hero[data-variant="history"] .media,
+  .strip {
+    grid-column: 1 / -1;
+  }
+
+  .hero[data-media="true"] .media {
+    max-inline-size: 520px;
+    margin-inline-start: 10px;
+  }
+
+  .frame,
+  .hero[data-variant="architecture"] .frame {
+    aspect-ratio: 4 / 3;
+  }
+
+  .field {
+    inline-size: 100%;
+    --field-opacity: 0.08;
+  }
+}

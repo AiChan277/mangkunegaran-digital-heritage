@@ -37,7 +37,11 @@
     "imagesNote": "Imej disimpan sebagai salinan di laman ini, diubah saiz dan ditukar ke format moden. Versi yang dipotong ditandakan.",
     "source": "sumber",
     "fonts": "Muka taip",
-    "code": "Perisian"
+    "code": "Perisian",
+    "ornament": "Ornamen batik",
+    "ornamentNote": "Motif kawung ialah corak Jawa klasik yang diadaptasi di sini sebagai vektor; ia tidak dipersembahkan sebagai motif Mangkunegaran. Parang tidak digunakan: mangkunegaran.id menyifatkannya sebagai motif larangan di dalam istana.",
+    "colours": "Warna",
+    "coloursNote": "Hijau diraja dan emas antik diambil daripada laman web rasmi mangkunegaran.id sebagai rujukan reka bentuk. Ia bukan spesifikasi warna rasmi."
   },
   "translation": {
     "title": "Status terjemahan",
@@ -53,7 +57,8 @@
   "status": {
     "source": "Asal",
     "ai-draft": "Draf AI",
-    "missing": "Belum"
+    "missing": "Belum",
+    "partial": "Separa"
   },
   "studio": {
     "title": "Dihasilkan oleh",

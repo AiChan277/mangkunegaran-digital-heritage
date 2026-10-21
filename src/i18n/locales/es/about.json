@@ -37,7 +37,11 @@
     "imagesNote": "Las imágenes son copias alojadas en el sitio, redimensionadas y convertidas a formatos modernos. Las versiones recortadas se indican como tales.",
     "source": "fuente",
     "fonts": "Tipografías",
-    "code": "Software"
+    "code": "Software",
+    "ornament": "Ornamento de batik",
+    "ornamentNote": "El motivo kawung es un patrón javanés clásico, adaptado aquí como vector; no se presenta como un motivo de Mangkunegaran. No se usa el parang: mangkunegaran.id lo describe como un motivo restringido (larangan) dentro del palacio.",
+    "colours": "Colores",
+    "coloursNote": "El verde real y el oro antiguo se tomaron del sitio oficial mangkunegaran.id como referencia de diseño. No son una especificación oficial de color."
   },
   "translation": {
     "title": "Estado de la traducción",
@@ -53,7 +57,8 @@
   "status": {
     "source": "Original",
     "ai-draft": "Borrador IA",
-    "missing": "Aún no"
+    "missing": "Aún no",
+    "partial": "Parcial"
   },
   "studio": {
     "title": "Creado por",

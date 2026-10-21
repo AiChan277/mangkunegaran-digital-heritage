@@ -23,7 +23,20 @@
   "lang": {
     "label": "Idioma",
     "choose": "Elige un idioma",
-    "draft": "borrador"
+    "open": "Cambiar idioma",
+    "current": "Idioma actual: {{language}}",
+    "currentLabel": "Estás leyendo en",
+    "close": "Cerrar el panel de idiomas",
+    "filter": "Buscar un idioma",
+    "filterHint": "Nombre o código, p. ej., Tetun o th",
+    "count": "Idiomas mostrados: {{count}}",
+    "none": "Ningún idioma coincide con «{{query}}».",
+    "availability": {
+      "complete": "Completo",
+      "draft-mixed": "Traducción borrador de IA · algunas páginas en indonesio",
+      "draft-partial": "Interfaz borrador de IA · casi todo el contenido en inglés"
+    },
+    "explain": "El indonesio y el inglés los redacta el proyecto. Los demás idiomas son borradores de IA aún no revisados por hablantes nativos; si una página no tiene traducción, se muestra en indonesio o en inglés y lo indica."
   },
   "footer": {
     "disclaimer": "Rediseño conceptual independiente de {{studio}} con fines educativos y de portafolio. Sin afiliación, respaldo ni gestión de Pura Mangkunegaran. Información oficial:",
@@ -33,13 +46,9 @@
     "sources": "Fuentes",
     "credits": "Créditos de imágenes",
     "translationStatus": "Estado de la traducción",
-    "madeBy": "Un concepto de",
-    "uiDraft": "El texto de la interfaz en {{language}} es una traducción en borrador hecha con IA, pendiente de revisión."
+    "madeBy": "Un concepto de"
   },
   "fallback": {
-    "label": "Aviso de idioma",
-    "notice": "Esta página aún no está disponible en {{language}}, por eso se muestra en {{shownIn}}.",
-    "draft": "Este texto es una traducción en borrador hecha con IA, pendiente de revisión por una persona hablante nativa.",
     "link": "Estado de la traducción"
   },
   "sources": {

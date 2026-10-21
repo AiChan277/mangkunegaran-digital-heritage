@@ -37,7 +37,11 @@
     "imagesNote": "Hình ảnh là bản sao lưu trên trang, đã được đổi kích thước và chuyển sang định dạng hiện đại. Các phiên bản đã cắt được ghi chú.",
     "source": "nguồn",
     "fonts": "Phông chữ",
-    "code": "Phần mềm"
+    "code": "Phần mềm",
+    "ornament": "Hoa văn batik",
+    "ornamentNote": "Họa tiết kawung là một mẫu hoa văn Java cổ điển, được chuyển thể ở đây dưới dạng vector; nó không được giới thiệu như một họa tiết của Mangkunegaran. Không dùng parang: mangkunegaran.id mô tả đây là họa tiết bị hạn chế (larangan) trong cung điện.",
+    "colours": "Màu sắc",
+    "coloursNote": "Màu xanh hoàng gia và vàng cổ được lấy mẫu từ trang web chính thức mangkunegaran.id làm tham chiếu thiết kế. Đây không phải là quy chuẩn màu chính thức."
   },
   "translation": {
     "title": "Tình trạng bản dịch",
@@ -53,7 +57,8 @@
   "status": {
     "source": "Bản gốc",
     "ai-draft": "Bản nháp AI",
-    "missing": "Chưa có"
+    "missing": "Chưa có",
+    "partial": "Một phần"
   },
   "studio": {
     "title": "Thực hiện bởi",

@@ -1,0 +1,52 @@
+.figure {
+  margin: 0;
+}
+
+.mount {
+  padding: clamp(10px, 1.6vw, 18px);
+  background: #fffdf7;
+  border: 1px solid var(--rule);
+  box-shadow: 0 1px 0 var(--rule);
+}
+
+.caption {
+  display: grid;
+  gap: 3px;
+  margin-block-start: 10px;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.date {
+  color: var(--gold-text);
+  font-weight: 600;
+}
+
+.desc {
+  color: var(--text);
+}
+
+.provenance {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* Caption links are separate targets, not inline prose. */
+.provenance a {
+  display: inline-block;
+  padding-block: 3px;
+}
+
+.note {
+  margin-block-start: 4px;
+  padding-inline-start: 10px;
+  border-inline-start: 2px solid var(--gold-rule);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}

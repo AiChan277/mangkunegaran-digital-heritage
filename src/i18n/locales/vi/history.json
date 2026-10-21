@@ -1,19 +1,60 @@
 {
   "meta": {
     "title": "Lịch sử",
-    "description": "Từ Hiệp ước Salatiga năm 1757 đến nay: dòng thời gian có nguồn về Mangkunegaran và các vị cai trị."
+    "description": "Từ khi Raden Mas Said ra đời năm 1725 đến nay: dòng thời gian có nguồn dẫn về Mangkunegaran, kèm ảnh tư liệu và kịch bản thuyết minh phim tài liệu."
   },
   "header": {
     "eyebrow": "Chương một",
     "title": "Lịch sử",
-    "intro": "Từ một thỏa thuận năm 1757 đến người gìn giữ văn hóa hôm nay."
+    "intro": "Từ cuộc kháng chiến dài của một hoàng tử đến người gìn giữ văn hóa ngày nay."
   },
-  "eraNav": "Các thời kỳ",
   "timelineLabel": "Dòng thời gian, {{range}}",
   "rulers": {
     "title": "Các vị cai trị Mangkunegaran",
     "note": "Năm trị vì theo danh sách trên mangkunegaran.id, nơi tước hiệu được viết là Mangkoenagoro.",
     "ruler": "Người cai trị",
     "reign": "Thời gian trị vì"
+  },
+  "periodNav": "Các thời kỳ",
+  "entry": {
+    "precision": {
+      "approximate": "Ngày ước tính"
+    },
+    "turningPoint": "Bước ngoặt",
+    "more": "Đọc thêm",
+    "context": "Bối cảnh",
+    "happened": "Điều gì đã xảy ra",
+    "people": "Nhân vật",
+    "significance": "Vì sao quan trọng",
+    "uncertainty": "Điều chưa chắc chắn",
+    "archive": "Từ kho tư liệu",
+    "sources": "Nguồn cho mục này",
+    "related": "Câu chuyện liên quan"
+  },
+  "archive": {
+    "eyebrow": "Kho tư liệu",
+    "title": "Ảnh từ kho tư liệu",
+    "intro": "Ảnh chụp, một tấm bưu thiếp và một bức tranh được Thư viện Đại học Leiden và Rijksmuseum lập danh mục là Mangkunegaran. Bản quét được hiển thị đúng như các tổ chức đã công bố — không bộ lọc, không cắt xén — kèm ngày trong danh mục, tác giả và giấy phép.",
+    "record": "Hồ sơ danh mục",
+    "file": "Tệp hình ảnh",
+    "candidatesTitle": "Chưa xác minh",
+    "candidatesIntro": "Các nguồn này có vẻ liên quan, nhưng chúng tôi chưa kiểm tra nội dung hay quyền sử dụng, nên chỉ đặt liên kết ở đây mà không sao chép lại.",
+    "candidateBadge": "Ứng viên"
+  },
+  "audio": {
+    "label": "Nghe chương này",
+    "lang": "Ngôn ngữ thuyết minh",
+    "play": "Phát",
+    "pause": "Tạm dừng",
+    "seek": "Vị trí trong bản ghi",
+    "time": "{{current}} / {{total}}",
+    "mute": "Tắt tiếng",
+    "loading": "Đang tải bản ghi…",
+    "error": "Không tải được bản ghi. Nội dung chương ở trên vẫn đầy đủ khi không có nó.",
+    "unavailable": "Chưa được ghi âm",
+    "unavailableBody": "Phần thuyết minh cho chương này được dự kiến bằng tiếng Indonesia và tiếng Anh. Hiện chưa có bản ghi; chương vẫn đầy đủ khi không có nó.",
+    "script": "Đọc kịch bản thuyết minh",
+    "transcript": "Đọc bản chép lời",
+    "region": "Âm thanh cho {{chapter}}"
   }
 }

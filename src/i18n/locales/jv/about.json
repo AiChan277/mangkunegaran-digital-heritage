@@ -37,7 +37,11 @@
     "imagesNote": "Gambar dipun simpen minangka salinan ing situs punika, dipun ewahi ukuran lan formatipun. Vèrsi ingkang dipun potong dipun tandhani.",
     "source": "sumber",
     "fonts": "Aksara (fon)",
-    "code": "Piranti alus"
+    "code": "Piranti alus",
+    "ornament": "Ornamen bathik",
+    "ornamentNote": "Motif kawung punika pola Jawi klasik ingkang dipun adaptasi ing ngriki minangka vektor; boten dipun aturaken minangka motif Mangkunegaran. Parang boten dipun ginakaken: mangkunegaran.id nyebat motif punika motif larangan ing salebeting Pura.",
+    "colours": "Warni",
+    "coloursNote": "Ijem saha emas antik dipun pundhut saking situs resmi mangkunegaran.id minangka acuan desain. Sanès spesifikasi warni resmi."
   },
   "translation": {
     "title": "Status pertalan",
@@ -53,7 +57,8 @@
   "status": {
     "source": "Asli",
     "ai-draft": "Draf AI",
-    "missing": "Dèrèng"
+    "missing": "Dèrèng",
+    "partial": "Sawetawis"
   },
   "studio": {
     "title": "Dipun damel dening",

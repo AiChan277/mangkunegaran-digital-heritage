@@ -5,6 +5,8 @@
  * AVIF/WebP variants listed in images.generated.json.
  */
 import { assetSchema, parseAll, type AssetInput } from "./schema";
+import { ARCHIVE } from "./archive";
+import archiveDownloads from "../../images-raw/archive/_commons-metadata.json";
 
 const CC_BY_SA_3 = { license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/" };
 const CC_BY_SA_4 = { license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/" };
@@ -337,5 +339,28 @@ const RAW: AssetInput[] = [
   },
 ];
 
-export const ASSETS = parseAll(assetSchema, RAW, "assets");
+/**
+ * Archival images (iteration 2) are described once, in archive.ts, and
+ * registered here as assets so every page renders them the same way.
+ * Original file URLs come from the download log in images-raw/archive/.
+ */
+const ARCHIVE_ASSETS: AssetInput[] = ARCHIVE.filter((a) => a.verification === "confirmed" && a.imageId && a.alt).map((a) => {
+  const log = (archiveDownloads as Record<string, { originalFileUrl: string }>)[a.imageId!];
+  return {
+    id: a.imageId!,
+    subject: a.originalTitle,
+    sourcePageUrl: a.mediaPageUrl ?? a.recordUrl,
+    originalFileUrl: (log?.originalFileUrl ?? a.recordUrl).split("?")[0]!,
+    author: a.creator,
+    license: a.license,
+    licenseUrl: a.licenseUrl,
+    attributionText: a.attributionText,
+    alt: a.alt!,
+    intendedUse: "History archive",
+    archival: true,
+    dated: a.dateLabel.en,
+  };
+});
+
+export const ASSETS = parseAll(assetSchema, [...RAW, ...ARCHIVE_ASSETS], "assets");
 export const ASSET_BY_ID = new Map(ASSETS.map((a) => [a.id, a]));

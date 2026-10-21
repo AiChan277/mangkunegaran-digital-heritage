@@ -1,19 +1,60 @@
 {
   "meta": {
     "title": "History",
-    "description": "From the Treaty of Salatiga in 1757 to the present: a sourced timeline of Mangkunegaran and its rulers."
+    "description": "From the birth of Raden Mas Said in 1725 to today: a sourced timeline of Mangkunegaran with archival photographs and a documentary narration script."
   },
   "header": {
     "eyebrow": "Chapter one",
     "title": "History",
-    "intro": "From a settlement in 1757 to a guardian of culture today."
+    "intro": "From a prince's long resistance to a guardian of culture today."
   },
-  "eraNav": "Eras",
   "timelineLabel": "Timeline, {{range}}",
   "rulers": {
     "title": "The rulers of Mangkunegaran",
     "note": "Reign years as listed on mangkunegaran.id, which spells the title Mangkoenagoro.",
     "ruler": "Ruler",
     "reign": "Reign"
+  },
+  "periodNav": "Periods",
+  "entry": {
+    "precision": {
+      "approximate": "Approximate date"
+    },
+    "turningPoint": "Turning point",
+    "more": "Read more",
+    "context": "Background",
+    "happened": "What happened",
+    "people": "People",
+    "significance": "Why it matters",
+    "uncertainty": "What is uncertain",
+    "archive": "From the archive",
+    "sources": "Sources for this entry",
+    "related": "Related story"
+  },
+  "archive": {
+    "eyebrow": "Archive",
+    "title": "Photographs from the archive",
+    "intro": "Photographs, a postcard and a painting catalogued as Mangkunegaran by Leiden University Libraries and the Rijksmuseum. Scans are shown as the institutions published them — no filters, no crops — with the catalogue date, creator and licence.",
+    "record": "Catalogue record",
+    "file": "Image file",
+    "candidatesTitle": "Not yet verified",
+    "candidatesIntro": "These sources look relevant, but we have not yet checked their content or rights, so they are linked here and not reproduced.",
+    "candidateBadge": "Candidate"
+  },
+  "audio": {
+    "label": "Listen to this chapter",
+    "lang": "Narration language",
+    "play": "Play",
+    "pause": "Pause",
+    "seek": "Position in the recording",
+    "time": "{{current}} of {{total}}",
+    "mute": "Mute",
+    "loading": "Loading the recording…",
+    "error": "The recording could not be loaded. The chapter text above is complete without it.",
+    "unavailable": "Not yet recorded",
+    "unavailableBody": "Narration for this chapter is planned in Bahasa Indonesia and English. No recording exists yet; the chapter is complete without it.",
+    "script": "Read the narration script",
+    "transcript": "Read the transcript",
+    "region": "Audio for {{chapter}}"
   }
 }

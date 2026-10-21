@@ -23,6 +23,7 @@ It has two jobs:
 
 - [Ground rules](#ground-rules)
 - [What's on the site](#whats-on-the-site)
+- [History and visual identity](#history-and-visual-identity)
 - [Community-requested features](#community-requested-features)
 - [Languages](#languages)
 - [Tech stack](#tech-stack)
@@ -52,7 +53,7 @@ These override everything else in the project, including feature requests.
 | **Every fact has a source** | Each claim cites a fact in the ledger (`src/content/sources.ts`, mirrored in `docs/FACT_LEDGER.md`). The build fails if a page cites an unknown fact, or if Wikipedia is a fact's only source. |
 | **Where sources disagree, say so** | e.g. the Treaty of Salatiga (17 vs 13 March 1757) and opening hours (not shown at all: the official page and the press disagree). |
 | **Rights-safe images only** | Openly licensed (Wikimedia Commons) or public-domain photos, self-hosted, credited where shown. No AI-generated "historical" images. |
-| **Honest translations** | AI-drafted translations are labelled as drafts. Missing content falls back to English (Indonesian for Javanese) with a visible notice. |
+| **Honest translations** | The status of every language is stated in the language panel and in the translation-status table on the About page. Missing content falls back to English (Indonesian for Javanese), marked with the correct `lang`. Pages carry no warning banners. |
 | **Two separate institutions** | Pura Mangkunegaran and Keraton Kasunanan Surakarta Hadiningrat are distinct; their histories are never merged. |
 
 **Spelling convention:** the institution is *Mangkunegaran*, as on the official site. Rulers are written *Mangkunegara I–X*; the official site writes *Mangkoenagoro*. Variants such as *Mangkunagaran* appear only in source titles.
@@ -67,7 +68,7 @@ All pages are prerendered static HTML at locale-prefixed URLs (`/id/history`, `/
 |---|---|
 | `/` | Picks a language (saved choice → browser language → Indonesian) and redirects. Without JavaScript it is a plain list of the 12 languages. |
 | `/:lang` | Home: hero, sourced introduction, architectural journey (Pamedan → Pendhapa Ageng → Pringgitan → Dalem Ageng), stories, arts band, photo mosaic, dated "cultural continuity" ledger, multilingual section |
-| `/:lang/history` | Three eras, a 13-entry sourced timeline (disputed dates labelled), and the list of rulers |
+| `/:lang/history` | Four historical chapters (1725 → today), each with an introduction, an archival lead image and its own audio control (not yet recorded); a 30-entry sourced timeline whose entries open to show background, what happened, people, why it matters, what is uncertain and per-entry sources; an archival exhibition of 14 catalogued items plus 2 unverified candidates; the list of rulers |
 | `/:lang/architecture` | Seven spaces with sources, an original line diagram, and an archival photo |
 | `/:lang/culture` | Batik Mangkunegaran, Bedhaya Bedhah Madiun, Serat Wedhatama (with a stanza chart), gamelan and wayang |
 | `/:lang/stories` and `/:lang/stories/:slug` | Three sourced stories: Solosche Radio Vereeniging, the panembrama for the King of Siam, and the Legion of Mangkunegaran — with reading-progress bar, footnoted sources, related reading |
@@ -78,11 +79,23 @@ All pages are prerendered static HTML at locale-prefixed URLs (`/id/history`, `/
 
 ---
 
+## History and visual identity
+
+| Part | What it is | Where |
+|---|---|---|
+| Timeline | 4 chapters (periods), 30 entries with stable ids. Each entry has a short summary and opens (native `<details>`, works without JavaScript) to background, what happened, people, why it matters, what is uncertain, its own sources, archive figures and related stories. Turning points are marked with a filled green marker **and** the words "Turning point". Seven entries were added from further mangkunegaran.id history articles (the Estri Ladrang Mangungkung troop, Tasikmadu, schools and the Studiefonds, the 1901 electricity company, the Kali Samin hydro plant, the Ponten bathhouse, the 1942 end of SRV). | `src/content/history.ts`, `src/app/routes/history.tsx` |
+| Translations | Indonesian and English are complete. Every other language has AI-draft titles, dates and summaries keyed by the same entry ids; longer text falls back to English (Indonesian for Javanese), and every fallback paragraph carries its real `lang`. | `src/content/history-translations/` |
+| Chapter audio | Audio belongs to each historical chapter, not to a separate section. Each chapter has an Indonesian and an English entry in `src/content/chapter-audio.ts` (stable chapter id, language, audio URL, status, transcript reference, measured duration, credits). **No recording exists**, so each chapter shows "Not yet recorded" — no play button, no duration, no waveform — and stays complete without audio. When a real file is configured, the same component shows play/pause, seek, current time and duration, mute, loading and error states. The narration text written in iteration 2 (`content/audio/`) is referenced, not duplicated. | `src/components/ChapterAudioPlayer.tsx`, `docs/AUDIO.md` |
+| Archive | 14 confirmed items (13 Leiden University Libraries / KITLV photographs and a postcard under CC BY 4.0, 1 public-domain Rijksmuseum painting) shown unfiltered and uncropped with catalogue date, creator, institution, licence and a link to the catalogue record; 2 candidates linked but not reproduced. | `src/content/archive.ts`, `docs/ARCHIVE_RESEARCH.md` |
+| Identity | Royal green `#11301b` and antique gold `#e4c588`, sampled from mangkunegaran.id's own stylesheet as a design reference (not an official specification), over the existing ivory paper. Every public page opens with a royal-green `PageHero` in a page-specific variant and ends in a kawung border and a gold hairline. Batik is a documented vector (kawung), never CSS-drawn; parang is deliberately not used. | `src/styles/tokens.css`, `src/components/PageHero.tsx`, `docs/BATIK_ASSETS.md` |
+
+---
+
 ## Community-requested features
 
 Requested in the team's group chat, all built — adjusted where needed to follow the ground rules.
 
-1. **Language switcher** — a dropdown showing each language by its native name, with a short code badge (`ID`, `JV`, `TH`…) and a "draft" label where the translation isn't reviewed. **No flags**: a flag stands for a country, not a language (Javanese has none; Spanish and English span many countries). Works by mouse, touch and keyboard (arrows, Home/End, type-to-jump, Esc), keeps you on the same page, and remembers your choice. → `src/components/LanguageSelector.tsx`
+1. **Language switcher** — since iteration 2, a floating button in the bottom corner (clear of phone safe areas) opens a panel listing every language by its native name, with a search box, the current language, and a plain statement of how complete each translation is ("Complete", "AI-draft translation · some pages in Indonesian", "AI-draft interface · most content in English"). **No flags**: a flag stands for a country, not a language (Javanese has none; Spanish and English span many countries). Works by mouse, touch and keyboard (arrows, Home/End, type to filter, Esc, outside click), returns focus to the button, keeps you on the same page, and remembers your choice. The footer keeps a plain list of language links that works without JavaScript. → `src/components/LanguageControl.tsx`
 2. **Visitor pictograms** — 17 original icons for the rules on the **official reservation page**: dress (modest clothing; no shorts, parang/lereng batik, velvet, head coverings, sunglasses, flip-flops), professional cameras need permission, no outside food, smoking, weapons, keep off the grass, use the bins, guided visits, arrive 15 minutes early, cashless payment, children 0–4 free. A ring with a bar = not allowed; a plain ring = please do. Each has a text label in all 12 languages. Rules we couldn't verify on the official page (e.g. tripods, footwear) are not shown. → `src/components/Pictogram.tsx`, `src/content/etiquette.ts`
 3. **🔊 Listen button** — real, not a placeholder: it reads the section aloud with the browser's built-in speech engine (no cost, no server). It only appears when the browser has a voice for that language, so it's never a dead button. → `src/components/ListenButton.tsx`
 4. **Aksara Jawa titles** — every page title and space name has its Javanese-script form (e.g. ꦥꦼꦤ꧀ꦝꦥ ꦲꦒꦼꦁ), labelled "awaiting native review" until a Javanese speaker checks it. → `src/content/aksara.ts`
@@ -97,8 +110,8 @@ Requested in the team's group chat, all built — adjusted where needed to follo
 |---|---|---|---|---|
 | `id` | Bahasa Indonesia | 1 | original | all pages |
 | `en` | English | 1 | original | all pages |
-| `jv` | Basa Jawa | 2 | AI draft (krama) | Home + History (AI draft); other pages shown in Indonesian with a notice |
-| `ms` `th` `vi` `fil` `km` `lo` `my` `tet` `es` | Bahasa Melayu, ไทย, Tiếng Việt, Filipino, ខ្មែរ, ລາວ, မြန်မာ, Tetun, Español | 3 | AI draft | shown in English with a notice |
+| `jv` | Basa Jawa | 2 | AI draft (krama) | Home + History (AI draft); other pages shown in Indonesian |
+| `ms` `th` `vi` `fil` `km` `lo` `my` `tet` `es` | Bahasa Melayu, ไทย, Tiếng Việt, Filipino, ខ្មែរ, ລາວ, မြန်မာ, Tetun, Español | 3 | AI draft | History: period and entry titles, dates and summaries (AI draft); everything else shown in English |
 
 Thai, Khmer, Lao and Burmese pages load their Noto font only on pages in that language; language names elsewhere use the device's own fonts. Full table: `docs/TRANSLATION_STATUS.md` (generated).
 
@@ -133,14 +146,20 @@ No backend, database, CMS, analytics, third-party scripts or secret keys.
 │  │  ├─ routes.ts           route table (one subtree per locale)
 │  │  └─ routes/             home, history, architecture, culture, stories, story,
 │  │                         gallery, visit, about, 404s, root language picker
-│  ├─ components/            Header, LanguageSelector, Footer, Picture, Lightbox,
-│  │                         SitePlan, Pictogram, ListenButton, ScriptTitle,
+│  ├─ components/            Header, LanguageControl (floating), Footer, Picture,
+│  │                         Lightbox, SitePlan, Pictogram, ListenButton,
+│  │                         PageHero, BatikOrnament, HeritageDivider,
+│  │                         ArchivalImage, ChapterAudioPlayer, ScriptTitle,
 │  │                         Glossary (terms), Refs + SourceList (footnotes), …
 │  ├─ content/
 │  │  ├─ schema.ts           Zod schemas
 │  │  ├─ sources.ts          fact ledger + sources
 │  │  ├─ assets.ts           image manifest (licence, author, alt text)
 │  │  ├─ home.ts history.ts spaces.ts culture.ts about.ts
+│  │  ├─ history-translations/   draft titles + summaries per language
+│  │  ├─ archive.ts          archival exhibition manifest (confirmed + candidates)
+│  │  ├─ chapter-audio.ts audio-script.ts   per-chapter audio config + script parser
+│  │  ├─ ornaments.ts        batik asset record (source, licence, adaptation)
 │  │  ├─ etiquette.ts aksara.ts glossary.ts
 │  │  ├─ articles/           one file per story (en + id records)
 │  │  └─ images.generated.json   sizes + placeholder colours (generated)
@@ -150,14 +169,17 @@ No backend, database, CMS, analytics, third-party scripts or secret keys.
 │  ├─ lib/ hooks/ styles/    helpers, useReveal/useSpeech, tokens/base/fonts/lang CSS
 │  └─ site.ts                project variables (from .env)
 ├─ public/                   images/ (generated), og/ (generated), icons, _headers, manifest
-├─ images-raw/               licensed originals + _commons-metadata.json
+├─ content/audio/<lang>/     narration text referenced by chapter audio (Markdown)
+├─ assets-src/batik/         original CC0 kawung vector (source of public/ornament/)
+├─ images-raw/               licensed originals + _commons-metadata.json; archive/ scans
 ├─ scripts/
 │  ├─ translations/<lang>.json   translator-friendly files (all namespaces)
 │  ├─ split-translations.ts  → src/i18n/locales/<lang>/*.json
 │  ├─ check-i18n.ts check-sources.ts postbuild.ts
 │  ├─ optimize-images.ts generate-og.ts generate-docs.ts serve-static.ts
-├─ tests/                    Playwright specs (smoke, layout, interaction, a11y, scripts)
-├─ docs/                     FACT_LEDGER, ASSET_MANIFEST, TRANSLATION_STATUS (generated), DECISIONS
+├─ tests/                    Playwright specs (smoke, layout, interaction, history, a11y, scripts)
+├─ docs/                     FACT_LEDGER, ASSET_MANIFEST, TRANSLATION_STATUS, ARCHIVE_RESEARCH,
+│                            AUDIO (generated), DECISIONS
 ├─ wrangler.jsonc  .env.example  .nvmrc  eslint.config.js  playwright.config.ts
 ```
 
@@ -273,9 +295,10 @@ Set in `.env` (copy from `.env.example`). Blank values are allowed; whatever dep
 
 "Modern Javanese Editorial": a museum catalogue, not a tourism brochure.
 
-- **Palette** (`src/styles/tokens.css`): green *pareanom* `#2e4a3b`, brass `#a8833a` (lines and large type) with a darker brass `#76591f` for small text, ivory `#f5efe2`, teak, ink, terracotta. A design direction, not a claim about official colours. All text pairs pass WCAG AA (checked by axe).
+- **Palette** (`src/styles/tokens.css`): royal green `#11301b` and antique gold `#e4c588` (sampled from mangkunegaran.id as a design reference — not an official colour specification), ivory paper `#f5efe2` / `#ebe2cf`, brass `#a8833a` for ornament with `#76591f` for small gold text, ink, terracotta. Header, page heroes, bands and footer are royal green; reading content stays on paper. All text pairs pass WCAG AA (ratios noted in the file, checked by axe).
 - **Type:** Newsreader (display) and Plus Jakarta Sans (text, designed in Jakarta), with metric-matched fallbacks so text doesn't jump when fonts load.
-- **Layout:** 12-column grid, asymmetric compositions, oversized numerals, thin rules, one original ornament (a stepped roof line).
+- **Layout:** 12-column grid, asymmetric compositions, oversized numerals, thin gold rules. One shared `PageHero` with page variants (photographic, archival, literary, practical, institutional).
+- **Batik:** one motif family — kawung — as SVG files in `public/ornament/` (a hero field, a border row, a single flower in the gold divider). Sources, licence and adaptation notes in `docs/BATIK_ASSETS.md`.
 - **Motion:** transform/opacity only, one easing curve, hero intro under 1.2 s, scroll reveals that never hide content without JavaScript or with reduced motion.
 
 ---
@@ -312,24 +335,29 @@ After the first deploy, put the URL in `.env` as `SITE_URL`, rebuild and redeplo
 
 ## Verification
 
-Results from the last local run (2026-10-20). Nothing here was measured on a deployed site.
+Results from the last local run (2026-10-21, after the design-system correction). Nothing here was measured on a deployed site.
 
 | Check | Result |
 |---|---|
 | `tsc` | ✅ 0 errors |
 | ESLint (incl. no hardcoded UI text) | ✅ 0 errors |
-| `check:i18n` | ✅ 12 locales × 9 namespaces, 217 keys each |
-| `check:sources` | ✅ 48 facts, 20 sources, 22 images resolve (1 fact recorded but intentionally not shown) |
+| `check:i18n` | ✅ 12 locales × 9 namespaces, 269 keys each |
+| `check:sources` | ✅ 72 facts, 39 sources, 36 images resolve; history links, archive manifest, chapter audio, narration scripts and batik asset record validated (2 facts recorded but not cited on a page) |
 | Build | ✅ 146 prerendered pages (12 locales × 12 routes + 2), each with `lang`, title and one `h1` |
 | Playwright smoke (144 pages) | ✅ 200, correct `lang`, title, one `h1`, disclaimer, no console errors |
 | No horizontal overflow (360/768/1280/1920 px × id/en/th/my/vi) | ✅ |
 | Language switch keeps page + back/forward; root redirect; no-JS root | ✅ |
-| Language menu, drawer, lightbox, site plan by keyboard | ✅ |
+| Floating language panel: keyboard only, filter, Esc, outside click, focus return, phone bottom sheet, translation status shown | ✅ |
+| History: progressive disclosure (with and without JS), draft-translation fallbacks with `lang`, one audio control per chapter and none per entry, unrecorded audio shows no play button/duration/progress, narration language switch + script, new sourced entries, archive record links and licences | ✅ |
+| Royal-green hero on every public route (12 routes checked incl. 404, id and th), one `h1` inside it, paper below | ✅ |
+| Batik: masks reference the kawung SVG files, which are served as SVG; no CSS repeating gradients; ornament motion runs once and is off under reduced motion | ✅ |
+| Drawer, lightbox, site plan by keyboard | ✅ |
 | 404 pages (localized + root) | ✅ |
 | Content visible without JS, with reduced motion, after fast scrolling | ✅ |
-| axe-core, 22 Indonesian + English pages | ✅ 0 serious/critical |
+| axe-core, 22 Indonesian + English pages, History with every entry and the transcript open, Thai History, the open language panel | ✅ 0 serious/critical |
 | Script rendering (jv, th, km, lo, my) | ✅ Chromium and WebKit, fonts confirmed loaded; ⚠️ **not run in Firefox** — Firefox would not launch in this environment (`spawn UNKNOWN`) |
-| Lighthouse | ⚠️ **local only** — see below; must be re-run on the deployed URL |
+| Audio playback controls | ⚠️ **not exercised** — no recording exists, so the playable path of the player has not run against a real file |
+| Lighthouse | ⚠️ **local only, iteration 1** — see below; not re-run after iteration 2; must be re-run on the deployed URL |
 
 **Lighthouse (mobile emulation, simulated slow 4G + 4× CPU), local production build served with compression, 2026-10-20:**
 
@@ -347,6 +375,8 @@ LCP misses the 2.5 s target in this setup; the main cost is the ~107 KB framewor
 
 - **`SITE_URL`** — the final domain (turns on canonical, hreflang, sitemap, OG image URLs).
 - **A native Javanese reviewer** for the Javanese text and all Aksara Jawa titles (currently marked as drafts).
+- **Narrators** for the Indonesian and English chapter narration, and a historian to review the scripts and timeline before recording.
+- **Manual archive research** in Delpher (it refuses automated access) and a reading of the Darmo-Kondo 1916 candidate.
 - **Native reviewers** for the other AI-drafted languages, if wanted.
 - **A Cloudflare login** to deploy, then a Lighthouse run on the live URL.
 - Optional: `STUDIO_URL` / `CONTACT_EMAIL`, and permission requests if official palace photographs are ever wanted.
@@ -359,7 +389,10 @@ LCP misses the 2.5 s target in this setup; the main cost is the ~107 KB framewor
 |---|---|
 | `docs/FACT_LEDGER.md` | Every claim, its sources, access date and confidence (generated) |
 | `docs/ASSET_MANIFEST.md` | Every image, licence, author, alt text and attribution (generated) |
-| `docs/TRANSLATION_STATUS.md` | Status of each language and each Aksara Jawa title (generated) |
+| `docs/TRANSLATION_STATUS.md` | Status of each language, the History draft translations and each Aksara Jawa title (generated) |
+| `docs/ARCHIVE_RESEARCH.md` | Archive method, confirmed items with records and licences, candidates and why they are not confirmed (generated) |
+| `docs/AUDIO.md` | Chapter audio status per chapter and language, and how to record and publish one chapter (generated) |
+| `docs/BATIK_ASSETS.md` | Batik ornament record: why kawung (and not parang), sources, licences, adaptation (generated) |
 | `docs/DECISIONS.md` | Trade-offs: no flags, real speech, i18n approach, JS budget, what was left out and why |
 
 ---
@@ -367,6 +400,7 @@ LCP misses the 2.5 s target in this setup; the main cost is the ~107 KB framewor
 ## Credits and licences
 
 - **Photographs:** Wikimedia Commons contributors and the Tropenmuseum / Nationaal Museum van Wereldculturen collection, under CC BY-SA 3.0 / 4.0 or public domain; every credit is on the image and on the About page.
+- **Archive:** Leiden University Libraries, KITLV collection (CC BY 4.0) and the Rijksmuseum, Amsterdam (public domain); each item links to its catalogue record.
 - **Fonts:** Newsreader (Production Type), Plus Jakarta Sans (Tokotype), Noto Sans scripts (Google) — SIL Open Font License 1.1.
 - **Code libraries:** React, React Router, Zod (MIT), Lucide (ISC), Fontsource (MIT).
 - **Licences:** code under [MIT](LICENSE); original text, translations and artwork under CC BY-SA 4.0; photographs and fonts under their own licences — see [CONTENT-LICENSE.md](CONTENT-LICENSE.md).

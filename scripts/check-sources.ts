@@ -7,9 +7,17 @@
  *    in id + en, and has generated files on disk
  *  - every aksaraId and [[glossary]] term resolves
  *  - article related links resolve
+ *  - history entries: period, archive, story and documentary-chapter links
+ *    resolve; draft translations cover every entry (validated on import)
+ *  - archive manifest: confirmed items have generated images; candidates
+ *    have none
+ *  - chapter audio: every chapter id is a History period, transcript
+ *    sections exist in the scripts, scripts cite only known fact ids, any
+ *    audioUrl points at a real file
+ *  - batik ornaments: every recorded file exists and has a source
  * Usage: npx tsx scripts/check-sources.ts
  */
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { FACTS, FACT_BY_ID, SOURCE_BY_ID } from "../src/content/sources";
 import { ASSETS, ASSET_BY_ID } from "../src/content/assets";
@@ -18,7 +26,12 @@ import { GLOSSARY, GLOSSARY_BY_ID } from "../src/content/glossary";
 import { ETIQUETTE, VISIT_FACT_IDS } from "../src/content/etiquette";
 import { SPACES } from "../src/content/spaces";
 import { CULTURE } from "../src/content/culture";
-import { ERAS, RULERS, TIMELINE } from "../src/content/history";
+import { ENTRIES, PERIODS, RULERS } from "../src/content/history";
+import { HISTORY_TRANSLATIONS } from "../src/content/history-translations";
+import { ARCHIVE } from "../src/content/archive";
+import { CHAPTER_AUDIO, SCRIPT_PATHS, SCRIPT_SECTIONS } from "../src/content/chapter-audio";
+import { ORNAMENTS } from "../src/content/ornaments";
+import { parseScript } from "../src/content/audio-script";
 import { HOME, HOME_FACT_IDS } from "../src/content/home";
 import { ARTICLES } from "../src/content/articles";
 import generated from "../src/content/images.generated.json";
@@ -70,7 +83,8 @@ for (const a of ASSETS) {
   if (!a.license.trim()) errors.push(`asset ${a.id}: no licence`);
   if (!a.alt.en.trim() || !a.alt.id.trim()) errors.push(`asset ${a.id}: alt text missing in en or id`);
   if (!a.attributionText.trim()) errors.push(`asset ${a.id}: no attribution`);
-  if (!a.derivedFrom && !existsSync(path.join("images-raw", `${a.id}.jpg`))) errors.push(`asset ${a.id}: original missing in images-raw/`);
+  const original = [path.join("images-raw", `${a.id}.jpg`), path.join("images-raw/archive", `${a.id}.jpg`)];
+  if (!a.derivedFrom && !original.some((f) => existsSync(f))) errors.push(`asset ${a.id}: original missing in images-raw/`);
   imageRef(`asset ${a.id}`, a.id);
 }
 
@@ -87,15 +101,87 @@ for (const c of CULTURE) {
   imageRef(`culture ${c.id}`, c.imageId);
   aksaraRef(`culture ${c.id}`, c.aksaraId);
 }
-for (const e of ERAS) {
-  facts(`era ${e.id}`, e.factIds);
-  imageRef(`era ${e.id}`, e.imageId);
-  for (const p of e.paragraphs) glossaryRefs(`era ${e.id}`, `${p.en} ${p.id} ${p.jv ?? ""}`);
+const periodIds = new Set(PERIODS.map((p) => p.id));
+for (const p of PERIODS) {
+  facts(`period ${p.id}`, p.factIds);
+  if (p.leadArchiveId) {
+    const a = ARCHIVE.find((x) => x.id === p.leadArchiveId);
+    if (!a || a.verification !== "confirmed") errors.push(`period ${p.id}: lead archive item "${p.leadArchiveId}" is not a confirmed item`);
+  }
+  for (const x of p.intro) glossaryRefs(`period ${p.id}`, `${x.en} ${x.id} ${x.jv ?? ""}`);
 }
-for (const t of TIMELINE) {
-  facts(`timeline ${t.id}`, t.factIds);
-  imageRef(`timeline ${t.id}`, t.imageId);
+const archiveById = new Map(ARCHIVE.map((a) => [a.id, a]));
+for (const e of ENTRIES) {
+  const where = `history ${e.id}`;
+  if (!periodIds.has(e.periodId)) errors.push(`${where}: unknown period "${e.periodId}"`);
+  const period = PERIODS.find((p) => p.id === e.periodId);
+  if (period && (e.year < period.from || e.year > period.to)) errors.push(`${where}: year ${e.year} outside period ${period.range}`);
+  facts(where, e.factIds);
+  for (const d of Object.values(e.details)) if (d) glossaryRefs(where, `${d.en} ${d.id} ${d.jv ?? ""}`);
+  for (const id of e.archiveIds) {
+    const a = archiveById.get(id);
+    if (!a) errors.push(`${where}: unknown archive item "${id}"`);
+    else if (a.verification !== "confirmed") errors.push(`${where}: archive item "${id}" is only a candidate`);
+  }
+  for (const slug of e.relatedArticles) if (!ARTICLES[slug]) errors.push(`${where}: related story "${slug}" does not exist`);
 }
+const years = ENTRIES.map((e) => e.year);
+if (years.some((y, i) => i > 0 && y < years[i - 1]!)) errors.push("history: entries are not in chronological order");
+for (const [lang, tr] of Object.entries(HISTORY_TRANSLATIONS)) {
+  if (tr.status === "reviewed" && !tr.reviewedBy) errors.push(`history translation ${lang}: reviewed without reviewedBy`);
+}
+
+// Archive manifest
+for (const a of ARCHIVE) {
+  const where = `archive ${a.id}`;
+  if (!periodIds.has(a.periodId)) errors.push(`${where}: unknown period "${a.periodId}"`);
+  if (a.verification === "confirmed") {
+    if (!a.imageId) errors.push(`${where}: confirmed item without image`);
+    imageRef(where, a.imageId);
+    if (!a.alt) errors.push(`${where}: confirmed item without alt text`);
+  } else if (a.imageId) errors.push(`${where}: candidate must not be reproduced`);
+}
+
+// Narration scripts and chapter audio
+const scripts = new Map<string, ReturnType<typeof parseScript>>();
+for (const [lang, scriptPath] of Object.entries(SCRIPT_PATHS)) {
+  if (!existsSync(scriptPath)) {
+    errors.push(`script ${lang}: ${scriptPath} not found`);
+    continue;
+  }
+  const source = readFileSync(scriptPath, "utf8");
+  try {
+    const parsed = parseScript(source);
+    scripts.set(lang, parsed);
+    if (parsed.meta.language !== lang) errors.push(`script ${lang}: front matter language is "${parsed.meta.language}"`);
+    const ids = parsed.chapters.map((c) => c.id).join(",");
+    if (ids !== SCRIPT_SECTIONS.join(",")) errors.push(`script ${lang}: sections ${ids} ≠ ${SCRIPT_SECTIONS.join(",")}`);
+  } catch (err) {
+    errors.push(`script ${lang}: ${(err as Error).message}`);
+    continue;
+  }
+  const after = source.slice(source.indexOf("<!-- narration:end -->"));
+  for (const m of after.matchAll(/f-[a-z0-9-]+/g)) facts(`script ${lang} sources`, [m[0]]);
+}
+for (const a of CHAPTER_AUDIO) {
+  const where = `chapter audio ${a.chapterId}/${a.lang}`;
+  if (!periodIds.has(a.chapterId)) errors.push(`${where}: no History period "${a.chapterId}"`);
+  if (a.transcript) {
+    const parsed = scripts.get(a.lang);
+    for (const sec of a.transcript.sections) if (parsed && !parsed.chapters.some((c) => c.id === sec)) errors.push(`${where}: script has no section "${sec}"`);
+    if (parsed && parsed.meta.script_version !== a.transcript.scriptVersion) errors.push(`${where}: script version ${parsed.meta.script_version} ≠ ${a.transcript.scriptVersion}`);
+  }
+  if (a.audioUrl && !existsSync(path.join("public", a.audioUrl))) errors.push(`${where}: audio file ${a.audioUrl} not found in public/`);
+}
+for (const p of PERIODS) if (!CHAPTER_AUDIO.some((a) => a.chapterId === p.id)) errors.push(`period ${p.id}: no chapter audio entry`);
+
+// Batik ornaments
+for (const o of ORNAMENTS) {
+  if (!existsSync(o.file)) errors.push(`ornament ${o.id}: ${o.file} not found`);
+  if (o.origin !== "original" && !o.sources.length) errors.push(`ornament ${o.id}: ${o.origin} asset without a source`);
+}
+
+
 for (const r of RULERS) facts(`ruler ${r.ordinal}`, r.factIds);
 for (const g of GLOSSARY) facts(`glossary ${g.id}`, g.factIds);
 for (const e of ETIQUETTE) facts(`etiquette ${e.id}`, e.factIds);

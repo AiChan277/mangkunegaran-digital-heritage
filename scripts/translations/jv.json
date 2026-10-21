@@ -24,7 +24,20 @@
     "lang": {
       "label": "Basa",
       "choose": "Pilih basa",
-      "draft": "draf"
+      "open": "Gantos basa",
+      "current": "Basa samangké: {{language}}",
+      "currentLabel": "Panjenengan maos ing",
+      "close": "Tutup panel basa",
+      "filter": "Pados basa",
+      "filterHint": "Nama utawi kode, tuladhanipun Tetun utawi th",
+      "count": "Basa ingkang katampilaken: {{count}}",
+      "none": "Boten wonten basa ingkang cocog kaliyan “{{query}}”.",
+      "availability": {
+        "complete": "Jangkep",
+        "draft-mixed": "Pertalan draf AI · sawetawis kaca mawi basa Indonesia",
+        "draft-partial": "Antarmuka draf AI · kathahipun isi mawi basa Inggris"
+      },
+      "explain": "Basa Indonesia saha Inggris dipun serat dening tim proyek. Basa sanèsipun draf AI ingkang dèrèng dipun priksa dening penutur asli; kaca ingkang dèrèng dipun pertal katampilaken mawi basa Indonesia utawi Inggris, kanthi pawartos."
     },
     "footer": {
       "disclaimer": "Konsep desain ulang mardika dening {{studio}} kangge kaperluan pasinaon lan portofolio. Boten gadhah gegayutan kaliyan, boten dipun sengkuyung dening, saha boten dipun kelola dening Pura Mangkunegaran. Pawartos resmi:",
@@ -34,13 +47,9 @@
       "sources": "Sumber",
       "credits": "Kredit gambar",
       "translationStatus": "Status pertalan",
-      "madeBy": "Konsep anggitanipun",
-      "uiDraft": "Seratan antarmuka ing {{language}} punika pertalan draf AI ingkang nengga dipun priksa."
+      "madeBy": "Konsep anggitanipun"
     },
     "fallback": {
-      "label": "Pawartos basa",
-      "notice": "Kaca punika dèrèng wonten ing {{language}}, pramila dipun tampilaken ing {{shownIn}}.",
-      "draft": "Seratan punika pertalan draf AI ingkang nengga dipun priksa dening penutur asli.",
       "link": "Status pertalan"
     },
     "sources": {
@@ -121,20 +130,61 @@
   "history": {
     "meta": {
       "title": "Sejarah",
-      "description": "Saking Prajanjian Salatiga taun 1757 dumugi samangké: lampahing wekdal kanthi sumber bab Mangkunegaran saha para pangagengipun."
+      "description": "Saking wiyosipun Raden Mas Said ing taun 1725 dumugi samangké: lampahing wekdal kanthi sumber bab Mangkunegaran, jangkep kaliyan foto arsip saha naskah narasi dokumenter."
     },
     "header": {
       "eyebrow": "Bab kapisan",
       "title": "Sejarah",
-      "intro": "Saking prajanjian ing taun 1757 dumugi pangreksa kabudayan ing jaman samangké."
+      "intro": "Saking perlawanan dangu satunggaling pangeran dumugi pangreksa kabudayan ing jaman samangké."
     },
-    "eraNav": "Jaman",
     "timelineLabel": "Lampahing wekdal, {{range}}",
     "rulers": {
       "title": "Para pangageng Mangkunegaran",
       "note": "Taun jumeneng miturut pratélan ing mangkunegaran.id, ingkang nyerat asmanipun Mangkoenagoro.",
       "ruler": "Pangageng",
       "reign": "Jumeneng"
+    },
+    "periodNav": "Periode",
+    "entry": {
+      "precision": {
+        "approximate": "Tanggal kinten-kinten"
+      },
+      "turningPoint": "Titik owah",
+      "more": "Langkung jangkep",
+      "context": "Lelandhesan",
+      "happened": "Punapa ingkang kelampahan",
+      "people": "Paraga",
+      "significance": "Kenging punapa wigatos",
+      "uncertainty": "Ingkang dèrèng gamblang",
+      "archive": "Saking arsip",
+      "sources": "Sumber kangge prastawa punika",
+      "related": "Cariyos ingkang gegayutan"
+    },
+    "archive": {
+      "eyebrow": "Arsip",
+      "title": "Foto-foto saking arsip",
+      "intro": "Foto, kertu pos, saha lukisan ingkang dipun katalogaken minangka Mangkunegaran dening Perpustakaan Universitas Leiden saha Rijksmuseum. Pindaian katampilaken kados ingkang dipun terbitaken lembaganipun — tanpa filter, tanpa dipun potong — sesarengan kaliyan tanggal katalog, ingkang damel, saha lisènsinipun.",
+      "record": "Cathetan katalog",
+      "file": "Berkas gambar",
+      "candidatesTitle": "Dèrèng dipun verifikasi",
+      "candidatesIntro": "Sumber-sumber punika katingal gegayutan, nanging isi saha hakipun dèrèng kita priksa, pramila namung dipun tautaken ing ngriki lan boten dipun reproduksi.",
+      "candidateBadge": "Kandidat"
+    },
+    "audio": {
+      "label": "Mirengaken bab punika",
+      "lang": "Basa narasi",
+      "play": "Puter",
+      "pause": "Kendel",
+      "seek": "Papan ing rekaman",
+      "time": "{{current}} saking {{total}}",
+      "mute": "Mendel",
+      "loading": "Ngewrat rekaman…",
+      "error": "Rekaman boten saged dipun ewrat. Seratan bab ing nginggil sampun jangkep tanpa rekaman.",
+      "unavailable": "Dèrèng dipun rekam",
+      "unavailableBody": "Narasi bab punika dipun rancang mawi basa Indonesia saha Inggris. Dèrèng wonten rekaman; bab punika sampun jangkep tanpa rekaman.",
+      "script": "Maos naskah narasi",
+      "transcript": "Maos transkrip",
+      "region": "Audio kangge {{chapter}}"
     }
   },
   "architecture": {
@@ -311,7 +361,11 @@
       "imagesNote": "Gambar dipun simpen minangka salinan ing situs punika, dipun ewahi ukuran lan formatipun. Vèrsi ingkang dipun potong dipun tandhani.",
       "source": "sumber",
       "fonts": "Aksara (fon)",
-      "code": "Piranti alus"
+      "code": "Piranti alus",
+      "ornament": "Ornamen bathik",
+      "ornamentNote": "Motif kawung punika pola Jawi klasik ingkang dipun adaptasi ing ngriki minangka vektor; boten dipun aturaken minangka motif Mangkunegaran. Parang boten dipun ginakaken: mangkunegaran.id nyebat motif punika motif larangan ing salebeting Pura.",
+      "colours": "Warni",
+      "coloursNote": "Ijem saha emas antik dipun pundhut saking situs resmi mangkunegaran.id minangka acuan desain. Sanès spesifikasi warni resmi."
     },
     "translation": {
       "title": "Status pertalan",
@@ -327,7 +381,8 @@
     "status": {
       "source": "Asli",
       "ai-draft": "Draf AI",
-      "missing": "Dèrèng"
+      "missing": "Dèrèng",
+      "partial": "Sawetawis"
     },
     "studio": {
       "title": "Dipun damel dening",

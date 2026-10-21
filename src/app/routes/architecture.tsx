@@ -8,8 +8,7 @@ import { useT } from "~/i18n/useT";
 import { buildMeta } from "~/lib/meta";
 import { buildRefs, pageSetup } from "~/lib/page";
 import { localePath } from "~/lib/paths";
-import { PageHeader } from "~/components/PageHeader";
-import { FallbackNotice } from "~/components/FallbackNotice";
+import { PageHero } from "~/components/PageHero";
 import { Refs } from "~/components/Refs";
 import { SourceList } from "~/components/SourceList";
 import { Picture } from "~/components/Picture";
@@ -39,6 +38,7 @@ export async function loader({ request }: Route.LoaderArgs) {
     content,
     spaces,
     aksara: aksara("wewangunan"),
+    heroImage: image("pendhapa-interior", content.lang),
     archival: image("pendhapa-archival", lang),
     refs: buildRefs([...spaces.flatMap((s) => s.factIds), "f-palace-1757", "f-sequence"]),
     meta: buildMeta({
@@ -91,8 +91,7 @@ export default function Architecture({ loaderData: d }: Route.ComponentProps) {
 
   return (
     <>
-      <FallbackNotice content={d.content} />
-      <PageHeader eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="02" intro={t("header.intro")}>
+      <PageHero variant="architecture" eyebrow={t("header.eyebrow")} title={t("header.title")} aksara={d.aksara} folio="02" intro={t("header.intro")} media={d.heroImage}>
         <SequenceDiagram names={d.spaces.slice(0, 4).map((s) => s.name)} />
         <p className={styles.note}>
           {t("header.note")}{" "}
@@ -100,7 +99,7 @@ export default function Architecture({ loaderData: d }: Route.ComponentProps) {
             {t("header.visitLink")}
           </Link>
         </p>
-      </PageHeader>
+      </PageHero>
 
       <nav className={`container ${styles.toc}`} aria-label={t("tocLabel")}>
         <ol>

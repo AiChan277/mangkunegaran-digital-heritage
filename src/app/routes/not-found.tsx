@@ -6,7 +6,8 @@
 import { Link } from "react-router";
 import type { Route } from "./+types/not-found";
 import { LOCALES, LOCALE_INFO } from "~/i18n/config";
-import { Ornament } from "~/components/Ornament";
+import { HeritageDivider } from "~/components/HeritageDivider";
+import { PageHero } from "~/components/PageHero";
 import styles from "./not-found.module.css";
 
 export function meta(_: Route.MetaArgs) {
@@ -18,17 +19,21 @@ export function meta(_: Route.MetaArgs) {
 
 export default function NotFound() {
   return (
-    <main id="main" className={`container ${styles.wrap}`}>
+    <main id="main">
       {/* i18n-exempt: language-neutral fallback page */}
-      <p className={`${styles.code} numeral`} aria-hidden="true">
-        404
-      </p>
-      <h1 className={styles.title}>
-        <span lang="id">Halaman tidak ditemukan</span>
-        <br />
-        <span lang="en">Page not found</span>
-      </h1>
-      <Ornament />
+      <PageHero
+        variant="notice"
+        eyebrow="404"
+        title={
+          <>
+            <span lang="id">Halaman tidak ditemukan</span>
+            <br />
+            <span lang="en">Page not found</span>
+          </>
+        }
+      />
+      <div className={`container ${styles.wrap}`}>
+      <HeritageDivider />
       <ul className={styles.list}>
         {LOCALES.map((code) => (
           <li key={code}>
@@ -38,6 +43,7 @@ export default function NotFound() {
           </li>
         ))}
       </ul>
+      </div>
     </main>
   );
 }

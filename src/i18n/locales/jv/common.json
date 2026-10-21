@@ -23,7 +23,20 @@
   "lang": {
     "label": "Basa",
     "choose": "Pilih basa",
-    "draft": "draf"
+    "open": "Gantos basa",
+    "current": "Basa samangké: {{language}}",
+    "currentLabel": "Panjenengan maos ing",
+    "close": "Tutup panel basa",
+    "filter": "Pados basa",
+    "filterHint": "Nama utawi kode, tuladhanipun Tetun utawi th",
+    "count": "Basa ingkang katampilaken: {{count}}",
+    "none": "Boten wonten basa ingkang cocog kaliyan “{{query}}”.",
+    "availability": {
+      "complete": "Jangkep",
+      "draft-mixed": "Pertalan draf AI · sawetawis kaca mawi basa Indonesia",
+      "draft-partial": "Antarmuka draf AI · kathahipun isi mawi basa Inggris"
+    },
+    "explain": "Basa Indonesia saha Inggris dipun serat dening tim proyek. Basa sanèsipun draf AI ingkang dèrèng dipun priksa dening penutur asli; kaca ingkang dèrèng dipun pertal katampilaken mawi basa Indonesia utawi Inggris, kanthi pawartos."
   },
   "footer": {
     "disclaimer": "Konsep desain ulang mardika dening {{studio}} kangge kaperluan pasinaon lan portofolio. Boten gadhah gegayutan kaliyan, boten dipun sengkuyung dening, saha boten dipun kelola dening Pura Mangkunegaran. Pawartos resmi:",
@@ -33,13 +46,9 @@
     "sources": "Sumber",
     "credits": "Kredit gambar",
     "translationStatus": "Status pertalan",
-    "madeBy": "Konsep anggitanipun",
-    "uiDraft": "Seratan antarmuka ing {{language}} punika pertalan draf AI ingkang nengga dipun priksa."
+    "madeBy": "Konsep anggitanipun"
   },
   "fallback": {
-    "label": "Pawartos basa",
-    "notice": "Kaca punika dèrèng wonten ing {{language}}, pramila dipun tampilaken ing {{shownIn}}.",
-    "draft": "Seratan punika pertalan draf AI ingkang nengga dipun priksa dening penutur asli.",
     "link": "Status pertalan"
   },
   "sources": {

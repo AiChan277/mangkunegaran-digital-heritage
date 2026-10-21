@@ -169,3 +169,28 @@
   max-inline-size: 720px;
   margin-block-end: 36px;
 }
+
+/* Hero: the one practical action first, then a jump to the address. */
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+}
+
+.heroPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-block-size: 48px;
+  padding: 0 20px;
+  background: var(--gold-on-royal);
+  color: var(--royal-deep);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color var(--dur-micro) var(--ease);
+}
+
+.heroPrimary:hover {
+  background: var(--on-royal);
+}

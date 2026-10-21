@@ -23,7 +23,20 @@
   "lang": {
     "label": "Wika",
     "choose": "Pumili ng wika",
-    "draft": "draft"
+    "open": "Palitan ang wika",
+    "current": "Kasalukuyang wika: {{language}}",
+    "currentLabel": "Nagbabasa ka sa",
+    "close": "Isara ang panel ng wika",
+    "filter": "Maghanap ng wika",
+    "filterHint": "Pangalan o code, hal. Tetun o th",
+    "count": "Mga wikang ipinapakita: {{count}}",
+    "none": "Walang wikang tumutugma sa “{{query}}”.",
+    "availability": {
+      "complete": "Kumpleto",
+      "draft-mixed": "Draft na salin ng AI · ilang pahina sa Indonesian",
+      "draft-partial": "Draft na interface ng AI · karamihan ng nilalaman sa Ingles"
+    },
+    "explain": "Ang Indonesian at Ingles ay isinulat ng proyekto. Ang ibang wika ay draft ng AI na hindi pa nasusuri ng mga katutubong nagsasalita; kapag walang salin ang isang pahina, ipinapakita ito sa Indonesian o Ingles, at sinasabi ito."
   },
   "footer": {
     "disclaimer": "Malayang konseptong muling disenyo ng {{studio}} para sa layuning pang-edukasyon at portfolio. Hindi kaanib, hindi inendorso, at hindi pinatatakbo ng Pura Mangkunegaran. Para sa opisyal na impormasyon, bisitahin ang",
@@ -33,13 +46,9 @@
     "sources": "Mga sanggunian",
     "credits": "Kredito ng larawan",
     "translationStatus": "Kalagayan ng salin",
-    "madeBy": "Isang konsepto ng",
-    "uiDraft": "Ang teksto ng interface sa {{language}} ay draft na salin gamit ang AI na naghihintay ng pagsusuri."
+    "madeBy": "Isang konsepto ng"
   },
   "fallback": {
-    "label": "Paunawa sa wika",
-    "notice": "Wala pang bersiyon ng pahinang ito sa {{language}}, kaya ipinapakita ito sa {{shownIn}}.",
-    "draft": "Ang tekstong ito ay draft na salin gamit ang AI na naghihintay ng pagsusuri ng katutubong tagapagsalita.",
     "link": "Kalagayan ng salin"
   },
   "sources": {
