@@ -26,7 +26,26 @@ const TYPES: Record<string, string> = {
   ".txt": "text/plain; charset=utf-8",
   ".xml": "application/xml",
   ".data": "text/x-script",
+  ".mp3": "audio/mpeg",
 };
+
+const COMPRESSIBLE = [".html", ".js", ".css", ".json", ".svg", ".data", ".txt", ".xml", ".webmanifest"];
+
+/**
+ * Compressed bodies, by file and encoding. Brotli at its default (maximum)
+ * quality is slow and synchronous; compressing each file once keeps the
+ * server responsive when several browsers load pages in parallel (tests).
+ */
+const compressed = new Map<string, Buffer>();
+function compress(file: string, body: Buffer, encoding: "br" | "gzip"): Buffer {
+  const key = `${encoding}:${file}`;
+  let out = compressed.get(key);
+  if (!out) {
+    out = encoding === "br" ? brotliCompressSync(body) : gzipSync(body);
+    compressed.set(key, out);
+  }
+  return out;
+}
 
 async function isFile(p: string) {
   try {
@@ -68,13 +87,31 @@ createServer(async (req, res) => {
     const headers: Record<string, string> = { "Content-Type": TYPES[ext] ?? "application/octet-stream", Vary: "Accept-Encoding" };
     // Compress text like Cloudflare does, so local Lighthouse runs are realistic.
     const accept = String(req.headers["accept-encoding"] ?? "");
-    if ([".html", ".js", ".css", ".json", ".svg", ".data", ".txt", ".xml", ".webmanifest"].includes(ext)) {
+    if (COMPRESSIBLE.includes(ext)) {
       if (accept.includes("br")) {
-        body = brotliCompressSync(body);
+        body = compress(r.file, body, "br");
         headers["Content-Encoding"] = "br";
       } else if (accept.includes("gzip")) {
-        body = gzipSync(body);
+        body = compress(r.file, body, "gzip");
         headers["Content-Encoding"] = "gzip";
+      }
+    } else {
+      // Byte ranges, as Cloudflare serves them: browsers need them to seek in audio.
+      headers["Accept-Ranges"] = "bytes";
+      const range = /^bytes=(\d*)-(\d*)$/.exec(String(req.headers.range ?? ""));
+      if (range && r.status === 200 && (range[1] || range[2])) {
+        const size = body.length;
+        const start = range[1] ? Number(range[1]) : Math.max(0, size - Number(range[2]));
+        const end = range[1] && range[2] ? Math.min(Number(range[2]), size - 1) : size - 1;
+        if (start >= size || start > end) {
+          res.writeHead(416, { "Content-Range": `bytes */${size}` });
+          res.end();
+          return;
+        }
+        headers["Content-Range"] = `bytes ${start}-${end}/${size}`;
+        res.writeHead(206, headers);
+        res.end(body.subarray(start, end + 1));
+        return;
       }
     }
     if (req.url?.startsWith("/assets/")) headers["Cache-Control"] = "public, max-age=31536000, immutable";

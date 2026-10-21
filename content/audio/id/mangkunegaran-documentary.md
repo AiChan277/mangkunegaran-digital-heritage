@@ -3,7 +3,7 @@ title: "Mangkunegaran: Sebuah Wangsa di Surakarta"
 language: id
 track_id: documentary-id
 script_version: 1.1
-status: ready-for-recording
+status: recorded
 fact_check: diperiksa terhadap docs/FACT_LEDGER.md (2026-10-21); belum ditinjau sejarawan eksternal
 target_audience: Pengunjung umum dan pelajar usia 15 tahun ke atas; tidak memerlukan pengetahuan awal tentang sejarah Jawa
 delivery: Narasi dokumenter yang terukur. Tenang, jelas, tidak tergesa-gesa; hangat tetapi tidak teatrikal. Tanpa menirukan suara tokoh.
@@ -174,5 +174,5 @@ Setiap paragraf bertumpu pada fakta yang tercatat di `src/content/sources.ts` (s
 ## Kredit
 
 - Naskah: Kelompok 7 (disusun dengan bantuan asisten AI dari sumber yang dikutip).
-- Narator: belum ditentukan.
-- Perekaman dan mixing: belum direkam.
+- Narator: suara sintetis AI (suara neural Microsoft Edge, id-ID-ArdiNeural); bukan narator manusia.
+- Perekaman dan mixing: dibuat otomatis dari naskah ini oleh `scripts/generate-voice-over.ts`; jeda sesuai baris JEDA, tanpa musik atau efek suara.

@@ -118,6 +118,21 @@ test.describe("chapter audio", () => {
     expect(audioRequests).toEqual([]);
   });
 
+  test("pressing play loads and plays the recording", async ({ page }) => {
+    await page.goto("/en/history");
+    const player = page.locator('section[data-chapter="modern"]');
+    const audioResponse = page.waitForResponse((r) => r.url().includes("/audio/modern-en.mp3"));
+    await player.getByRole("button", { name: "Play" }).click();
+    const response = await audioResponse;
+    expect([200, 206]).toContain(response.status());
+    expect(response.headers()["content-type"]).toBe("audio/mpeg");
+    await expect(player.getByRole("button", { name: "Pause" })).toBeVisible();
+    await expect.poll(() => player.locator("audio").evaluate((el: HTMLAudioElement) => el.currentTime), { timeout: 15_000 }).toBeGreaterThan(0.5);
+    await player.getByRole("button", { name: "Pause" }).click();
+    await expect(player.getByRole("button", { name: "Play" })).toBeVisible();
+    await expect(player).not.toContainText("could not be loaded");
+  });
+
   test("the AI label is translated", async ({ page }) => {
     await page.goto("/id/history");
     await expect(page.locator('section[data-chapter="court"]').getByText("Suara AI", { exact: true })).toBeVisible();

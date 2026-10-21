@@ -8,6 +8,8 @@ const LOCALES = ["en", "id", "th", "my", "vi"];
 for (const width of WIDTHS) {
   for (const locale of LOCALES) {
     test(`no horizontal overflow at ${width}px · ${locale}`, async ({ page }) => {
+      // One test visits every page, so its time budget scales with the page count.
+      test.setTimeout(PAGES.length * 10_000);
       await page.setViewportSize({ width, height: 900 });
       for (const p of PAGES) {
         await page.goto(p ? `/${locale}/${p}` : `/${locale}`, { waitUntil: "domcontentloaded" });

@@ -3,7 +3,7 @@ title: "Mangkunegaran: A House in Surakarta"
 language: en
 track_id: documentary-en
 script_version: 1.1
-status: ready-for-recording
+status: recorded
 fact_check: checked against docs/FACT_LEDGER.md (2026-10-21); not yet reviewed by an external historian
 target_audience: General visitors and students, age 15 and over; no prior knowledge of Javanese history assumed
 delivery: Measured documentary narration. Calm, clear, unhurried; warm but not theatrical. No character voices.
@@ -188,5 +188,5 @@ Each paragraph rests on facts recorded in `src/content/sources.ts` (mirrored in 
 ## Credits
 
 - Script: Kelompok 7 (drafted with an AI assistant from the cited sources).
-- Narrator: to be cast.
-- Recording and mix: not yet recorded.
+- Narrator: synthetic AI voice (Microsoft Edge neural voice, en-GB-RyanNeural); not a human narrator.
+- Recording and mix: generated automatically from this script by `scripts/generate-voice-over.ts`; pauses follow the PAUSE lines, with no music or sound effects.
