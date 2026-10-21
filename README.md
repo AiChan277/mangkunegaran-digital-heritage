@@ -68,7 +68,7 @@ All pages are prerendered static HTML at locale-prefixed URLs (`/id/history`, `/
 |---|---|
 | `/` | Picks a language (saved choice → browser language → Indonesian) and redirects. Without JavaScript it is a plain list of the 12 languages. |
 | `/:lang` | Home: hero, sourced introduction, architectural journey (Pamedan → Pendhapa Ageng → Pringgitan → Dalem Ageng), stories, arts band, photo mosaic, dated "cultural continuity" ledger, multilingual section |
-| `/:lang/history` | Four historical chapters (1725 → today), each with an introduction, an archival lead image and its own audio control (not yet recorded); a 30-entry sourced timeline whose entries open to show background, what happened, people, why it matters, what is uncertain and per-entry sources; an archival exhibition of 14 catalogued items plus 2 unverified candidates; the list of rulers |
+| `/:lang/history` | Four historical chapters (1725 → today), each with an introduction, an archival lead image and its own audio control (synthetic AI narration in Indonesian and English, labelled as such); a 30-entry sourced timeline whose entries open to show background, what happened, people, why it matters, what is uncertain and per-entry sources; an archival exhibition of 14 catalogued items plus 2 unverified candidates; the list of rulers |
 | `/:lang/architecture` | Seven spaces with sources, an original line diagram, and an archival photo |
 | `/:lang/culture` | Batik Mangkunegaran, Bedhaya Bedhah Madiun, Serat Wedhatama (with a stanza chart), gamelan and wayang |
 | `/:lang/stories` and `/:lang/stories/:slug` | Three sourced stories: Solosche Radio Vereeniging, the panembrama for the King of Siam, and the Legion of Mangkunegaran — with reading-progress bar, footnoted sources, related reading |
@@ -85,7 +85,7 @@ All pages are prerendered static HTML at locale-prefixed URLs (`/id/history`, `/
 |---|---|---|
 | Timeline | 4 chapters (periods), 30 entries with stable ids. Each entry has a short summary and opens (native `<details>`, works without JavaScript) to background, what happened, people, why it matters, what is uncertain, its own sources, archive figures and related stories. Turning points are marked with a filled green marker **and** the words "Turning point". Seven entries were added from further mangkunegaran.id history articles (the Estri Ladrang Mangungkung troop, Tasikmadu, schools and the Studiefonds, the 1901 electricity company, the Kali Samin hydro plant, the Ponten bathhouse, the 1942 end of SRV). | `src/content/history.ts`, `src/app/routes/history.tsx` |
 | Translations | Indonesian and English are complete. Every other language has AI-draft titles, dates and summaries keyed by the same entry ids; longer text falls back to English (Indonesian for Javanese), and every fallback paragraph carries its real `lang`. | `src/content/history-translations/` |
-| Chapter audio | Audio belongs to each historical chapter, not to a separate section. Each chapter has an Indonesian and an English entry in `src/content/chapter-audio.ts` (stable chapter id, language, audio URL, status, transcript reference, measured duration, credits). **No recording exists**, so each chapter shows "Not yet recorded" — no play button, no duration, no waveform — and stays complete without audio. When a real file is configured, the same component shows play/pause, seek, current time and duration, mute, loading and error states. The narration text written in iteration 2 (`content/audio/`) is referenced, not duplicated. | `src/components/ChapterAudioPlayer.tsx`, `docs/AUDIO.md` |
+| Chapter audio | Audio belongs to each historical chapter, not to a separate section. Each chapter has an Indonesian and an English entry in `src/content/chapter-audio.ts` (stable chapter id, language, audio URL, status, transcript reference, measured duration, credits). Every chapter has a **synthetic (AI) narration** made by `scripts/generate-voice-over.ts` with Microsoft Edge neural voices (id-ID-ArdiNeural, en-GB-RyanNeural); no human narrator has recorded it. The player says "AI voice" in every language, shows play/pause, seek, current time and measured duration, mute, loading and error states, and downloads nothing until play is pressed (mono MP3, 48 kbps, 0.3–1.8 MB per chapter). A chapter without a file would show "Not yet recorded" and no play button. The narration text written in iteration 2 (`content/audio/`) is referenced, not duplicated. | `src/components/ChapterAudioPlayer.tsx`, `docs/AUDIO.md` |
 | Archive | 14 confirmed items (13 Leiden University Libraries / KITLV photographs and a postcard under CC BY 4.0, 1 public-domain Rijksmuseum painting) shown unfiltered and uncropped with catalogue date, creator, institution, licence and a link to the catalogue record; 2 candidates linked but not reproduced. | `src/content/archive.ts`, `docs/ARCHIVE_RESEARCH.md` |
 | Identity | Royal green `#11301b` and antique gold `#e4c588`, sampled from mangkunegaran.id's own stylesheet as a design reference (not an official specification), over the existing ivory paper. Every public page opens with a royal-green `PageHero` in a page-specific variant and ends in a kawung border and a gold hairline. Batik is a documented vector (kawung), never CSS-drawn; parang is deliberately not used. | `src/styles/tokens.css`, `src/components/PageHero.tsx`, `docs/BATIK_ASSETS.md` |
 
@@ -177,6 +177,7 @@ No backend, database, CMS, analytics, third-party scripts or secret keys.
 │  ├─ split-translations.ts  → src/i18n/locales/<lang>/*.json
 │  ├─ check-i18n.ts check-sources.ts postbuild.ts
 │  ├─ optimize-images.ts generate-og.ts generate-docs.ts serve-static.ts
+│  ├─ generate-voice-over.ts tts-lexicon.ts   synthetic chapter narration
 ├─ tests/                    Playwright specs (smoke, layout, interaction, history, a11y, scripts)
 ├─ docs/                     FACT_LEDGER, ASSET_MANIFEST, TRANSLATION_STATUS, ARCHIVE_RESEARCH,
 │                            AUDIO (generated), DECISIONS
@@ -232,6 +233,8 @@ Then open `http://localhost:4173`.
 | `npm run i18n:split` | Turn `scripts/translations/<lang>.json` into the per-namespace locale files |
 | `npm run images` | Convert `images-raw/` into AVIF/WebP sizes in `public/images/` |
 | `npm run og` | Regenerate app icons and Open Graph cards |
+| `npm run voice-over:sample` | About one minute per candidate voice in `sample-audio/` (git-ignored), for choosing a voice |
+| `npm run voice-over` | Synthetic (AI) chapter narration from `content/audio/` into `public/audio/`; prints measured durations for `src/content/chapter-audio.ts` |
 | `npx tsx scripts/generate-docs.ts` | Regenerate the fact ledger, asset manifest and translation status docs |
 | `npm run test:e2e` | Playwright suite against the production build (run `npm run build` first) |
 | `npm run test:a11y` | axe-core scan of the Indonesian and English pages |
@@ -356,7 +359,7 @@ Results from the last local run (2026-10-21, after the design-system correction)
 | Content visible without JS, with reduced motion, after fast scrolling | ✅ |
 | axe-core, 22 Indonesian + English pages, History with every entry and the transcript open, Thai History, the open language panel | ✅ 0 serious/critical |
 | Script rendering (jv, th, km, lo, my) | ✅ Chromium and WebKit, fonts confirmed loaded; ⚠️ **not run in Firefox** — Firefox would not launch in this environment (`spawn UNKNOWN`) |
-| Audio playback controls | ⚠️ **not exercised** — no recording exists, so the playable path of the player has not run against a real file |
+| Audio playback controls | ⚠️ **not exercised** — synthetic recordings now exist (2026-10-21) and a Playwright test for the AI label and no-download-before-play was added, but the Playwright suite has not been re-run since |
 | Lighthouse | ⚠️ **local only, iteration 1** — see below; not re-run after iteration 2; must be re-run on the deployed URL |
 
 **Lighthouse (mobile emulation, simulated slow 4G + 4× CPU), local production build served with compression, 2026-10-20:**
@@ -375,7 +378,7 @@ LCP misses the 2.5 s target in this setup; the main cost is the ~107 KB framewor
 
 - **`SITE_URL`** — the final domain (turns on canonical, hreflang, sitemap, OG image URLs).
 - **A native Javanese reviewer** for the Javanese text and all Aksara Jawa titles (currently marked as drafts).
-- **Narrators** for the Indonesian and English chapter narration, and a historian to review the scripts and timeline before recording.
+- **A listen-through** of the synthetic narration (pronunciation of Javanese and Dutch names; then set `status: "reviewed"`), and optionally **human narrators** to replace it. A historian to review the scripts and timeline.
 - **Manual archive research** in Delpher (it refuses automated access) and a reading of the Darmo-Kondo 1916 candidate.
 - **Native reviewers** for the other AI-drafted languages, if wanted.
 - **A Cloudflare login** to deploy, then a Lighthouse run on the live URL.
@@ -391,7 +394,7 @@ LCP misses the 2.5 s target in this setup; the main cost is the ~107 KB framewor
 | `docs/ASSET_MANIFEST.md` | Every image, licence, author, alt text and attribution (generated) |
 | `docs/TRANSLATION_STATUS.md` | Status of each language, the History draft translations and each Aksara Jawa title (generated) |
 | `docs/ARCHIVE_RESEARCH.md` | Archive method, confirmed items with records and licences, candidates and why they are not confirmed (generated) |
-| `docs/AUDIO.md` | Chapter audio status per chapter and language, and how to record and publish one chapter (generated) |
+| `docs/AUDIO.md` | Chapter audio status per chapter and language, how to regenerate the synthetic narration, and how to record one chapter with a human narrator (generated) |
 | `docs/BATIK_ASSETS.md` | Batik ornament record: why kawung (and not parang), sources, licences, adaptation (generated) |
 | `docs/DECISIONS.md` | Trade-offs: no flags, real speech, i18n approach, JS budget, what was left out and why |
 

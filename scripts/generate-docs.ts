@@ -178,18 +178,24 @@ async function archive() {
 }
 
 async function audio() {
+  const recorded = CHAPTER_AUDIO.filter((a) => a.audioUrl);
+  const synthetic = recorded.filter((a) => a.synthetic);
+  const status =
+    recorded.length === 0
+      ? "**No narration has been recorded.** Every chapter and language is *ready-for-recording*: the page shows “Not yet recorded”, no play button, no duration and no waveform, and the chapter text is complete without audio."
+      : `${recorded.length} of ${CHAPTER_AUDIO.length} chapter narrations have a file${synthetic.length ? `; **${synthetic.length} use a synthetic (AI) voice**, made by \`scripts/generate-voice-over.ts\` with Microsoft Edge neural voices, and the player labels them “AI voice” in every language. No human narrator has recorded them` : ""}. Files are mono MP3 and are not downloaded until the visitor presses play. A chapter without a file shows “Not yet recorded” and no play button.`;
   const lines = [
     "# Chapter audio",
     "",
     "Generated from `src/content/chapter-audio.ts` and the scripts in `content/audio/` by `scripts/generate-docs.ts`.",
     "",
-    "Audio belongs to each History chapter (period), not to a separate documentary section. **No narration has been recorded.** Every chapter and language is *ready-for-recording*: the page shows “Not yet recorded”, no play button, no duration and no waveform, and the chapter text is complete without audio.",
+    `Audio belongs to each History chapter (period), not to a separate documentary section. ${status}`,
     "",
-    "| chapter | language | status | script sections | audio file | duration | published |",
-    "|---|---|---|---|---|---|---|",
+    "| chapter | language | status | script sections | audio file | voice | duration | published |",
+    "|---|---|---|---|---|---|---|---|",
     ...CHAPTER_AUDIO.map(
       (a) =>
-        `| \`${a.chapterId}\` | ${a.lang} | ${a.status} | ${a.transcript ? a.transcript.sections.join(", ") : "—"} | ${a.audioUrl ?? "—"} | ${a.durationSeconds ? `${a.durationSeconds} s (measured)` : "—"} | ${a.published ? "yes" : "no"} |`,
+        `| \`${a.chapterId}\` | ${a.lang} | ${a.status} | ${a.transcript ? a.transcript.sections.join(", ") : "—"} | ${a.audioUrl ?? "—"} | ${a.audioUrl ? `${a.credits.find((c) => c.role === "voice")?.name ?? "—"}${a.synthetic ? " (synthetic, AI)" : ""}` : "—"} | ${a.durationSeconds ? `${a.durationSeconds} s (measured)` : "—"} | ${a.published ? "yes" : "no"} |`,
     ),
     "",
     "## Narration scripts",
@@ -201,7 +207,14 @@ async function audio() {
   }
   lines.push(
     "",
-    "## Recording and publishing one chapter",
+    "## Regenerating the synthetic narration",
+    "",
+    "1. `npm run voice-over:sample` writes about one minute per candidate voice to `sample-audio/` (git-ignored) for choosing a voice.",
+    "2. `npm run voice-over` reads the scripts through `parseScript` (only narration between the markers; headings and blockquote notes are never read), turns each `PAUSE`/`JEDA` into silence of the stated length, adds a 0.5 s breath between other paragraphs, calibrates the speaking rate per chapter to the script's words per minute, and writes `public/audio/<chapter>-<lang>.mp3` (mono, 48 kbps). It prints each file's measured duration.",
+    "3. Copy those durations into `RECORDINGS` in `src/content/chapter-audio.ts`, then run this generator.",
+    "4. Names the voice would misread are respelled for the voice only in `scripts/tts-lexicon.ts`; the scripts and the site keep the original spelling.",
+    "",
+    "## Recording and publishing one chapter (human narrator)",
     "",
     "1. Record the sections listed for that chapter from the script. Read only the narration between the markers; blockquote lines (`> SOUND:`, `> PAUSE:`, `> SUARA:`, `> JEDA:`) are production notes.",
     "2. Export a compressed file (for example AAC in M4A or Opus in WebM, mono, ~64 kbps) to `public/audio/`, e.g. `public/audio/foundation-id.m4a`.",

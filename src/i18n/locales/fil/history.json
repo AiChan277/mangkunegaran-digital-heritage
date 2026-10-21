@@ -55,6 +55,12 @@
     "unavailableBody": "Nakaplano ang pagsasalaysay ng kabanatang ito sa Indonesian at Ingles. Wala pang recording; kumpleto ang kabanata kahit wala ito.",
     "script": "Basahin ang script ng pagsasalaysay",
     "transcript": "Basahin ang transcript",
-    "region": "Audio para sa {{chapter}}"
+    "region": "Audio para sa {{chapter}}",
+    "aiBadge": "Boses ng AI",
+    "aiBody": "Ang pagsasalaysay na ito ay binasa ng sintetikong boses na gawa ng AI (neural na boses ng Microsoft Edge), hindi ng taong tagapagsalaysay.",
+    "credit": {
+      "voice": "Boses",
+      "script": "Iskrip"
+    }
   }
 }

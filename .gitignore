@@ -22,6 +22,9 @@ dist/
 # Generated at build time (written into build/ by scripts/postbuild.ts)
 .cache/
 
+# Voice-over samples for choosing a voice (never published)
+sample-audio/
+
 # Credentials and keys — never commit
 *.pem
 *.key

@@ -222,7 +222,10 @@ export const chapterAudioSchema = z.object({
     .optional(),
   /** Measured duration of a real recording; never estimated. */
   durationSeconds: z.number().int().positive().optional(),
+  /** Credit roles are i18n keys under history:audio.credit (e.g. "voice", "script"). */
   credits: z.array(z.object({ role: z.string(), name: z.string() })).default([]),
+  /** True when the voice is synthetic (AI); the player then labels it as such. */
+  synthetic: z.boolean().default(false),
   published: z.boolean().default(false),
 });
 export type ChapterAudio = z.infer<typeof chapterAudioSchema>;

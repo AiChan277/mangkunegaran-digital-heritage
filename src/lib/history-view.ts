@@ -183,6 +183,7 @@ export function chapterAudioViews(scripts: Record<string, ParsedScript>) {
       audioUrl: a.audioUrl,
       durationSeconds: a.durationSeconds,
       credits: a.credits,
+      synthetic: a.synthetic,
       transcript,
     });
   }

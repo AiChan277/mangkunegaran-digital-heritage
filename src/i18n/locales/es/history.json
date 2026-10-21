@@ -55,6 +55,12 @@
     "unavailableBody": "La narración de este capítulo está prevista en indonesio e inglés. Todavía no existe ninguna grabación; el capítulo está completo sin ella.",
     "script": "Leer el guion de la narración",
     "transcript": "Leer la transcripción",
-    "region": "Audio de {{chapter}}"
+    "region": "Audio de {{chapter}}",
+    "aiBadge": "Voz de IA",
+    "aiBody": "Esta narración la lee una voz sintética generada por IA (voz neuronal de Microsoft Edge), no un narrador humano.",
+    "credit": {
+      "voice": "Voz",
+      "script": "Guion"
+    }
   }
 }

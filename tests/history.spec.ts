@@ -100,16 +100,27 @@ test.describe("chapter audio", () => {
     await expect(page.locator("li section[data-chapter]")).toHaveCount(0);
   });
 
-  test("unrecorded audio cannot be mistaken for a recording", async ({ page }) => {
+  test("synthetic narration is labelled as AI and downloads nothing before play", async ({ page }) => {
+    const audioRequests: string[] = [];
+    page.on("request", (r) => {
+      if (r.url().includes("/audio/")) audioRequests.push(r.url());
+    });
     await page.goto("/en/history");
     const player = page.locator('section[data-chapter="foundation"]');
-    await expect(player.getByText("Not yet recorded")).toBeVisible();
-    // No audio element, no play button, no progress bar, no duration.
-    await expect(page.locator("audio")).toHaveCount(0);
-    await expect(player.getByRole("button", { name: /Play/ })).toHaveCount(0);
-    await expect(player.locator('input[type="range"]')).toHaveCount(0);
-    await expect(player).not.toContainText(/\d+:\d\d/);
-    await expect(player).not.toContainText(/\bmin\b/);
+    await expect(player.getByText("AI voice", { exact: true })).toBeVisible();
+    await expect(player).toContainText("not by a human narrator");
+    await expect(player).toContainText("Voice: Microsoft Edge");
+    await expect(player.getByRole("button", { name: "Play" })).toBeVisible();
+    // The measured duration is shown before anything loads.
+    await expect(player).toContainText("0:00 of 5:06");
+    await expect(player.locator("audio")).toHaveAttribute("preload", "none");
+    await page.waitForLoadState("networkidle");
+    expect(audioRequests).toEqual([]);
+  });
+
+  test("the AI label is translated", async ({ page }) => {
+    await page.goto("/id/history");
+    await expect(page.locator('section[data-chapter="court"]').getByText("Suara AI", { exact: true })).toBeVisible();
   });
 
   test("narration language follows the locale, can be switched, and shows the script", async ({ page }) => {

@@ -55,6 +55,12 @@
     "unavailableBody": "Narasi bab ini dirancang dalam bahasa Indonesia dan Inggeris. Belum ada rakaman; bab ini lengkap tanpanya.",
     "script": "Baca skrip narasi",
     "transcript": "Baca transkrip",
-    "region": "Audio untuk {{chapter}}"
+    "region": "Audio untuk {{chapter}}",
+    "aiBadge": "Suara AI",
+    "aiBody": "Naratif ini dibacakan oleh suara sintetik yang dijana AI (suara neural Microsoft Edge), bukan oleh narator manusia.",
+    "credit": {
+      "voice": "Suara",
+      "script": "Skrip"
+    }
   }
 }

@@ -10,6 +10,8 @@ export type ChapterAudioView = {
   audioUrl?: string;
   durationSeconds?: number;
   credits: { role: string; name: string }[];
+  /** Synthetic (AI) voice: always labelled as such. */
+  synthetic?: boolean;
   /** Narration text from the script, by section. */
   transcript: { title: string; paragraphs: string[] }[];
 };
@@ -46,7 +48,9 @@ function Controls({ track }: { track: ChapterAudioView & { audioUrl: string } })
       <audio
         ref={ref}
         src={track.audioUrl}
-        preload="metadata"
+        // Nothing is downloaded until the visitor presses play; the duration
+        // shown before that is the measured durationSeconds.
+        preload="none"
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
         onEnded={() => setPlaying(false)}
@@ -145,6 +149,13 @@ export function ChapterAudioPlayer({
         )}
       </div>
 
+      {recorded && track.synthetic && (
+        <p className={styles.synthetic}>
+          <span className={styles.badge}>{t("audio.aiBadge")}</span>
+          <span>{t("audio.aiBody")}</span>
+        </p>
+      )}
+
       {recorded ? (
         <Controls key={track.lang} track={track as ChapterAudioView & { audioUrl: string }} />
       ) : (
@@ -158,7 +169,7 @@ export function ChapterAudioPlayer({
         <p className={styles.credits}>
           {track.credits.map((c) => (
             <span key={c.role}>
-              {c.role}: {c.name}
+              {t(`audio.credit.${c.role}`)}: {c.name}
             </span>
           ))}
         </p>

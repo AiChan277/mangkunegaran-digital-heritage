@@ -87,6 +87,20 @@
   white-space: nowrap;
 }
 
+/* Synthetic-voice label, shown above the controls whenever the voice is AI */
+.synthetic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.synthetic .badge {
+  border-style: solid;
+}
+
 /* Recorded state */
 .controls {
   display: grid;

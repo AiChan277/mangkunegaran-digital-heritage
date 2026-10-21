@@ -55,6 +55,12 @@
     "unavailableBody": "Narasaun ba kapítulu ida-ne'e planeia iha lian Indonézia no Inglés. Seidauk iha gravasaun; kapítulu ne'e kompletu ona la ho nia.",
     "script": "Lee skrip narasaun",
     "transcript": "Lee transkrisaun",
-    "region": "Áudiu ba {{chapter}}"
+    "region": "Áudiu ba {{chapter}}",
+    "aiBadge": "Lian AI",
+    "aiBody": "Narrasaun ne'e lee husi lian sintétiku ne'ebé AI halo (lian neural Microsoft Edge), la'ós husi narradór ema.",
+    "credit": {
+      "voice": "Lian",
+      "script": "Skript"
+    }
   }
 }

@@ -98,3 +98,15 @@ Significant trade-offs made while building v1 (October 2026). Newest last.
 
 At the owner's request, pages no longer show translation warning banners, per-entry “AI-draft translation” tags or the footer draft line. Translation status is still stated in two places: the floating language panel (“Complete”, “AI-draft translation · some pages in Indonesian”, “AI-draft interface · most content in English”) and the translation-status table on the About page (`docs/TRANSLATION_STATUS.md`). Fallback text keeps its real `lang` attribute, so screen readers and browsers still treat it as English or Indonesian.
 
+
+## Synthetic (AI) chapter narration
+
+**A labelled synthetic voice is not a fake feature.** Iteration 2 ruled out a synthetic voice because, unlabelled, it would pass for a recording that does not exist. The narration is now generated with Microsoft Edge neural voices (id-ID-ArdiNeural, en-GB-RyanNeural) and every player says "AI voice" — and that no human narrator read it — in all 12 languages, above the controls rather than in the credits. The MP3 files carry the same statement in their metadata. Status stays `recorded` until someone listens through and approves it.
+
+**Edge voices through `msedge-tts`, no API key.** The service behind Edge's Read Aloud is not an official, documented API: it may change or stop, and Microsoft does not spell out rights for publishing its output. We accepted that for a non-commercial educational concept; the alternative with clear terms is Azure Speech (same voices, needs an account and a key in `.env`). The generator imports `parseScript`, so exactly the transcript text is read — no headings, no blockquote production notes — and the scripts' `PAUSE`/`JEDA` lines become silence of the stated length. No music or effects. A 0.5 s breath separates paragraphs that have no marked pause.
+
+**Pronunciation by respelling, for the voice only.** The Edge voices accept no phoneme markup, so `scripts/tts-lexicon.ts` respells Javanese and Dutch names (from the scripts' pronunciation guides) in the text sent to the voice. The scripts and the site keep the original spelling. The respellings are drafts until a native Javanese speaker reviews them.
+
+**Rate is calibrated per chapter.** One fixed rate calibrated on the opening read later chapters up to 15 % fast (long spelled-out years), so each chapter is calibrated to the script's own words per minute (125 Indonesian, 140 English).
+
+**Weight.** Mono MP3 at 48 kbps (the voices' native format, encoded once after adding silence): 0.3–1.8 MB per chapter, about 3.8 MB per language in total. `preload="none"` means nothing is downloaded before the visitor presses play; the duration shown before that is the measured `durationSeconds`.

@@ -19,6 +19,8 @@
     "i18n:split": "tsx scripts/split-translations.ts",
     "images": "tsx scripts/optimize-images.ts",
     "og": "tsx scripts/generate-og.ts",
+    "voice-over": "tsx scripts/generate-voice-over.ts",
+    "voice-over:sample": "tsx scripts/generate-voice-over.ts --sample",
     "test:e2e": "playwright test",
     "test:a11y": "playwright test tests/a11y.spec.ts",
     "verify": "npm run typecheck && npm run lint && npm run build && npm run test:e2e",
@@ -51,6 +53,8 @@
     "eslint": "^10.13.0",
     "eslint-plugin-i18next": "^6.1.5",
     "eslint-plugin-react-hooks": "^7.1.1",
+    "ffmpeg-static": "^5.3.0",
+    "msedge-tts": "^2.1.0",
     "sharp": "^0.35.5",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",
@@ -60,6 +64,7 @@
   },
   "allowScripts": {
     "esbuild@0.28.2": true,
+    "ffmpeg-static@5.3.0": true,
     "workerd@1.20261019.1": true
   }
 }

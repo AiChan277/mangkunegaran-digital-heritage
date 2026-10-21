@@ -55,6 +55,12 @@
     "unavailableBody": "Narasi bab punika dipun rancang mawi basa Indonesia saha Inggris. Dèrèng wonten rekaman; bab punika sampun jangkep tanpa rekaman.",
     "script": "Maos naskah narasi",
     "transcript": "Maos transkrip",
-    "region": "Audio kangge {{chapter}}"
+    "region": "Audio kangge {{chapter}}",
+    "aiBadge": "Swanten AI",
+    "aiBody": "Narasi punika dipunwaosaken dening swanten sintetis damelan AI (swanten neural Microsoft Edge), sanès dening narator manungsa.",
+    "credit": {
+      "voice": "Swanten",
+      "script": "Naskah"
+    }
   }
 }

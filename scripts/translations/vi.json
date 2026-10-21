@@ -184,7 +184,13 @@
       "unavailableBody": "Phần thuyết minh cho chương này được dự kiến bằng tiếng Indonesia và tiếng Anh. Hiện chưa có bản ghi; chương vẫn đầy đủ khi không có nó.",
       "script": "Đọc kịch bản thuyết minh",
       "transcript": "Đọc bản chép lời",
-      "region": "Âm thanh cho {{chapter}}"
+      "region": "Âm thanh cho {{chapter}}",
+      "aiBadge": "Giọng AI",
+      "aiBody": "Phần thuyết minh này do giọng nói tổng hợp bằng AI (giọng neural của Microsoft Edge) đọc, không phải người thuyết minh thật.",
+      "credit": {
+        "voice": "Giọng đọc",
+        "script": "Kịch bản"
+      }
     }
   },
   "architecture": {

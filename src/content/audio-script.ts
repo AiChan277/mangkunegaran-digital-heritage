@@ -12,10 +12,15 @@
  * Node scripts (via fs) share it.
  */
 
+/** Narration in reading order: paragraphs and the marked pauses between them. */
+export type ScriptPart = { kind: "text"; text: string } | { kind: "pause"; seconds: number };
+
 export type ScriptChapter = {
   id: string;
   title: string;
   paragraphs: string[];
+  /** The same paragraphs, with each marked pause where it occurs. */
+  parts: ScriptPart[];
   words: number;
 };
 
@@ -54,7 +59,7 @@ function plain(text: string): string {
   return text.replace(/\*\*(.+?)\*\*/g, "$1").replace(/\*(.+?)\*/g, "$1").replace(/`(.+?)`/g, "$1").trim();
 }
 
-const countWords = (text: string) => text.split(/\s+/).filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
+export const countWords = (text: string) => text.split(/\s+/).filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
 
 export function parseScript(source: string): ParsedScript {
   const meta = frontMatter(source);
@@ -69,7 +74,11 @@ export function parseScript(source: string): ParsedScript {
   let pauseSeconds = 0;
 
   const flush = () => {
-    if (current && paragraph.length) current.paragraphs.push(plain(paragraph.join(" ")));
+    if (current && paragraph.length) {
+      const text = plain(paragraph.join(" "));
+      current.paragraphs.push(text);
+      current.parts.push({ kind: "text", text });
+    }
     paragraph = [];
   };
 
@@ -78,14 +87,17 @@ export function parseScript(source: string): ParsedScript {
     const heading = /^##\s+(.+?)\s*\{#([a-z0-9-]+)\}\s*$/.exec(line);
     if (heading) {
       flush();
-      current = { id: heading[2]!, title: heading[1]!, paragraphs: [], words: 0 };
+      current = { id: heading[2]!, title: heading[1]!, paragraphs: [], parts: [], words: 0 };
       chapters.push(current);
       continue;
     }
     if (line.startsWith(">")) {
       flush();
       const pause = /^>\s*(?:PAUSE|JEDA):\s*(\d+(?:\.\d+)?)/i.exec(line);
-      if (pause) pauseSeconds += Number(pause[1]);
+      if (pause) {
+        pauseSeconds += Number(pause[1]);
+        current?.parts.push({ kind: "pause", seconds: Number(pause[1]) });
+      }
       continue;
     }
     if (!line) {
