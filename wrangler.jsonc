@@ -1,2 +1,4 @@
-// wrangler.jsonc
-"name": "mangkunegaran-digital-heritage",
+{
+  "name": "mangkunegaran-digital-heritage",
+  "compatibility_date": "2026-10-23"
+}
