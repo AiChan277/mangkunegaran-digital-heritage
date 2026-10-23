@@ -2,7 +2,7 @@
   // Cloudflare Workers with Static Assets. Every route is prerendered to
   // build/client, so no Worker script is needed.
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "mangkunegaran-living-heritage",
+  "name": "mangkunegaran-digital-heritage",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./build/client",
