@@ -1,14 +1,11 @@
+
 {
-  // Cloudflare Workers with Static Assets. Every route is prerendered to
-  // build/client, so no Worker script is needed.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "mangkunegaran-digital-heritage",
-  "compatibility_date": "2026-10-01",
+  "compatibility_date": "2026-10-23",
   "assets": {
     "directory": "./build/client",
-    // /en/history serves /en/history/index.html without a redirect.
     "html_handling": "drop-trailing-slash",
-    // Unknown paths get the nearest 404.html (per-locale, then root).
     "not_found_handling": "404-page"
   }
 }
